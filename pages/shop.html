@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Shop — Treyond World</title><meta name="description" content="Shop premium mens sherwanis, suits, kurta sets and indo-western wear."><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../css/global.css"><link rel="stylesheet" href="../css/nav.css"><link rel="stylesheet" href="../css/homepage.css"><link rel="stylesheet" href="../css/category.css"><link rel="stylesheet" href="../css/footer.css"></head><body><!-- _nav.html - Include this header in every page -->
+<div id="announcement-bar" class="announcement-bar">
+  âœ¦ FREE SHIPPING ON ORDERS ABOVE â‚¹2999 &nbsp;|&nbsp; USE CODE <strong>TREYOND10</strong> FOR 10% OFF &nbsp;|&nbsp; <a href="../pages/shop.html">SHOP NOW</a>
+  <button id="announcement-close" class="announcement-close" aria-label="Close">Ã—</button>
+</div>
+
+<header id="site-header" class="site-header">
+  <div class="container header-inner">
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Logo -->
+    <a href="../index.html" class="nav-logo">TREYOND WORLD</a>
+
+    <!-- Desktop Nav -->
+    <nav class="nav-menu" aria-label="Main navigation">
+      <div class="nav-item">
+        <a href="../index.html" class="nav-link">Home</a>
+      </div>
+      <div class="nav-item">
+        <a href="../pages/collections.html" class="nav-link">Collections
+          <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </a>
+        <div class="mega-dropdown">
+          <div class="mega-inner">
+            <div class="mega-col">
+              <div class="mega-col-title">Traditional</div>
+              <a href="../pages/shop.html?cat=sherwanis">Sherwanis</a>
+              <a href="../pages/shop.html?cat=kurta-sets">Kurta Sets</a>
+              <a href="../pages/shop.html?cat=dhoti-sets">Dhoti Sets</a>
+              <a href="../pages/shop.html?cat=pathani">Pathani Suits</a>
+            </div>
+            <div class="mega-col">
+              <div class="mega-col-title">Formal</div>
+              <a href="../pages/shop.html?cat=suits">Men's Suits</a>
+              <a href="../pages/shop.html?cat=tuxedos">Tuxedos</a>
+              <a href="../pages/shop.html?cat=blazers">Blazers</a>
+              <a href="../pages/shop.html?cat=indo-western">Indo-Western</a>
+            </div>
+            <div class="mega-col">
+              <div class="mega-col-title">Essentials</div>
+              <a href="../pages/shop.html?cat=shirts">Shirts</a>
+              <a href="../pages/shop.html?cat=trousers">Trousers</a>
+              <a href="../pages/shop.html?cat=accessories">Accessories</a>
+              <a href="../pages/shop.html?cat=new-arrivals">New Arrivals</a>
+            </div>
+            <div class="mega-col">
+              <div class="mega-featured">
+                <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=800" alt="New Collection">
+                <div class="mega-featured-label">New Season</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="../pages/shop.html" class="nav-link">Shop</a>
+      </div>
+      <div class="nav-item">
+        <a href="../pages/blog.html" class="nav-link">Journal</a>
+      </div>
+      <div class="nav-item">
+        <a href="../pages/about.html" class="nav-link">About</a>
+      </div>
+      <div class="nav-item">
+        <a href="../pages/contact.html" class="nav-link">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Icons -->
+    <div class="nav-icons">
+      <button id="search-icon" class="nav-icon-btn" aria-label="Search">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+      </button>
+      <button class="nav-icon-btn" aria-label="Wishlist" onclick="window.location='/pages/wishlist.html'">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+      </button>
+      <button id="cart-icon" class="nav-icon-btn" aria-label="Cart">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+        <span class="cart-badge" style="display:none">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Search Bar -->
+<div id="search-bar" class="search-bar">
+  <div class="search-bar-inner">
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20" style="color:var(--gray-400);flex-shrink:0"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+    <input id="search-input" type="search" placeholder="Search for sherwanis, suits, kurtasâ€¦" autocomplete="off">
+    <button id="search-close" class="search-close" aria-label="Close search">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div id="search-suggestions" class="search-suggestions"></div>
+</div>
+
+<!-- Mobile Nav -->
+<div id="mobile-nav" class="mobile-nav">
+  <div class="mobile-nav-header">
+    <span class="nav-logo" style="font-size:1.1rem">TREYOND WORLD</span>
+    <button id="mobile-nav-close" class="mobile-nav-close" aria-label="Close menu">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="22" height="22"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div class="mobile-nav-body">
+    <div class="mobile-nav-item">
+      <a href="../index.html" class="mobile-nav-link">Home</a>
+    </div>
+    <div class="mobile-nav-item">
+      <div class="mobile-nav-link" data-submenu="mob-collections">Collections <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/></svg></div>
+      <div id="mob-collections" class="mobile-nav-submenu">
+        <a href="../pages/shop.html?cat=sherwanis">Sherwanis</a>
+        <a href="../pages/shop.html?cat=kurta-sets">Kurta Sets</a>
+        <a href="../pages/shop.html?cat=suits">Men's Suits</a>
+        <a href="../pages/shop.html?cat=blazers">Blazers</a>
+        <a href="../pages/shop.html?cat=indo-western">Indo-Western</a>
+        <a href="../pages/shop.html?cat=shirts">Shirts</a>
+        <a href="../pages/shop.html?cat=accessories">Accessories</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item"><a href="../pages/shop.html" class="mobile-nav-link">Shop All</a></div>
+    <div class="mobile-nav-item"><a href="../pages/blog.html" class="mobile-nav-link">Journal</a></div>
+    <div class="mobile-nav-item"><a href="../pages/about.html" class="mobile-nav-link">About</a></div>
+    <div class="mobile-nav-item"><a href="../pages/contact.html" class="mobile-nav-link">Contact</a></div>
+  </div>
+  <div class="mobile-nav-footer">
+    <p style="font-size:0.75rem;color:var(--gray-500);margin-bottom:8px">Follow us</p>
+    <div class="social-links">
+      <a href="#" aria-label="Instagram"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      <a href="#" aria-label="Facebook"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="16" height="16"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+      <a href="#" aria-label="WhatsApp"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="16" height="16"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<!-- Cart Drawer -->
+<div id="cart-drawer" class="cart-drawer">
+  <div class="cart-drawer-header">
+    <div class="cart-drawer-title">Shopping Bag <span id="cart-count-text"></span></div>
+    <button id="cart-drawer-close" class="cart-drawer-close" aria-label="Close cart">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div id="cart-drawer-body" class="cart-drawer-body"></div>
+  <div class="cart-drawer-footer">
+    <div class="cart-subtotal">
+      <span class="cart-subtotal-label">Subtotal</span>
+      <span class="cart-subtotal-price" id="cart-subtotal">â‚¹0</span>
+    </div>
+    <p class="cart-shipping-note">Shipping & taxes calculated at checkout</p>
+    <a href="../pages/cart.html" class="btn btn-outline w-full" style="margin-bottom:10px">View Cart</a>
+    <a href="../pages/checkout.html" class="btn btn-primary w-full cart-checkout-btn">Checkout</a>
+  </div>
+</div>
+
+<!-- Mobile Bottom Bar -->
+<div class="mobile-bottom-bar">
+  <div class="mobile-bottom-bar-inner">
+    <a href="../index.html" class="mobile-bottom-btn active">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+      Home
+    </a>
+    <button class="mobile-bottom-btn" onclick="openSearch()">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+      Search
+    </button>
+    <a href="../pages/wishlist.html" class="mobile-bottom-btn">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+      Wishlist
+    </a>
+    <button class="mobile-bottom-btn" onclick="openCartDrawer()">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+      Cart
+    </button>
+  </div>
+</div>
+
+<!-- Overlay -->
+<div id="overlay" class="overlay"></div>
+
+<!-- Quick View Modal -->
+<div id="quickview-modal" class="modal">
+  <div class="modal-backdrop" onclick="closeQuickView()"></div>
+  <div class="modal-box quickview-modal" style="max-width:900px;padding:0;overflow:hidden">
+    <div class="quickview-inner">
+      <div class="quickview-gallery">
+        <img src="" alt="Product" style="width:100%;height:100%;object-fit:cover">
+      </div>
+      <div class="quickview-info" style="padding:40px;overflow-y:auto"></div>
+    </div>
+  </div>
+</div>
+<main><div style="position:relative;height:260px;overflow:hidden"><img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Shop" style="width:100%;height:100%;object-fit:cover"><div class="category-hero-content"><div class="section-label" style="color:var(--accent)">Premium Menswear</div><h1 class="category-title">Shop All</h1></div></div><div class="container"><nav class="breadcrumb"><a href="../index.html">Home</a><span class="breadcrumb-sep">›</span><span class="breadcrumb-current">Shop</span></nav><div class="shop-layout" id="shop-section"><aside class="filter-sidebar"><div class="filter-sidebar-header"><span class="filter-title">Filters</span><span class="filter-clear" id="filter-clear">Clear All</span></div><div class="filter-group"><div class="filter-group-header open"><span class="filter-group-label">Category</span></div><div class="filter-group-body open"><div class="filter-options"><div class="filter-option" data-category="sherwanis"><div class="filter-checkbox"></div>Sherwanis</div><div class="filter-option" data-category="suits"><div class="filter-checkbox"></div>Suits</div><div class="filter-option" data-category="kurta-sets"><div class="filter-checkbox"></div>Kurta Sets</div><div class="filter-option" data-category="blazers"><div class="filter-checkbox"></div>Blazers</div><div class="filter-option" data-category="indo-western"><div class="filter-checkbox"></div>Indo-Western</div></div></div></div><div class="filter-group"><div class="filter-group-header"><span class="filter-group-label">Size</span></div><div class="filter-group-body"><div class="filter-options"><div class="filter-option" data-size="S"><div class="filter-checkbox"></div>S</div><div class="filter-option" data-size="M"><div class="filter-checkbox"></div>M</div><div class="filter-option" data-size="L"><div class="filter-checkbox"></div>L</div><div class="filter-option" data-size="XL"><div class="filter-checkbox"></div>XL</div><div class="filter-option" data-size="XXL"><div class="filter-checkbox"></div>XXL</div></div></div></div></aside><div><div class="shop-controls"><span id="results-count" class="results-count"></span><div class="shop-controls-right"><select class="sort-select" id="sort-select"><option value="featured">Featured</option><option value="newest">Newest</option><option value="price-asc">Price: Low–High</option><option value="price-desc">Price: High–Low</option></select><div class="view-toggle"><button class="view-btn active" data-view="grid"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="16" height="16"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></button><button class="view-btn" data-view="list"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="16" height="16"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button></div></div></div><div id="active-filters" class="active-filters"></div><div class="products-grid" id="products-grid"></div><div id="pagination" class="pagination"></div></div></div></div></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand"><span class="nav-logo">TREYOND WORLD</span><p>Premium menswear crafted for every milestone.</p></div><div><div class="footer-col-title">Shop</div><div class="footer-links"><a href="shop.html">All Products</a><a href="shop.html?cat=sherwanis">Sherwanis</a><a href="shop.html?cat=suits">Suits</a></div></div><div><div class="footer-col-title">Help</div><div class="footer-links"><a href="contact.html">Contact</a><a href="shipping.html">Shipping</a><a href="refund.html">Returns</a></div></div></div><div class="footer-bottom"><span>© 2025 Treyond World</span><div class="footer-bottom-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="refund.html">Refund</a></div></div></div></footer><div id="toast-container" class="toast-container"></div><script src="../js/global.js"></script><script src="../js/search.js"></script><script src="../js/animations.js"></script><script src="../js/category.js"></script><script>window.CATEGORY_PRODUCTS=[{id:"sherwani-01",name:"Royal Sherwani",price:18999,badge:"Bestseller",sizes:["S","M","L","XL","XXL"],images:["https://images.pexels.com/photos/3622608/pexels-photo-3622608.jpeg?auto=compress&cs=tinysrgb&w=800"],url:"product.html?id=sherwani-01"},{id:"kurta-set-01",name:"Premium Kurta Set",price:5999,badge:"New",sizes:["S","M","L","XL"],images:["https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=800"],url:"product.html?id=kurta-set-01"},{id:"suit-01",name:"Italian Tuxedo Suit",price:24999,badge:"Premium",sizes:["38","40","42","44"],images:["https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=800"],url:"product.html?id=suit-01"},{id:"blazer-01",name:"Indo-Western Blazer",price:8999,badge:"",sizes:["S","M","L","XL"],images:["https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&w=800"],url:"product.html?id=blazer-01"},{id:"jacket-01",name:"Bandhgala Jacket",price:12999,badge:"New",sizes:["S","M","L","XL"],images:["https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=800"],url:"product.html?id=jacket-01"},{id:"kurta-02",name:"Classic Cotton Kurta",price:2999,badge:"",sizes:["S","M","L","XL","XXL"],images:["https://images.pexels.com/photos/3622608/pexels-photo-3622608.jpeg?auto=compress&cs=tinysrgb&w=800"],url:"product.html?id=kurta-02"},{id:"sherwani-02",name:"Embroidered Sherwani",price:32999,badge:"Limited",sizes:["S","M","L","XL"],images:["https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=800"],url:"product.html?id=sherwani-02"},{id:"suit-02",name:"Double Breasted Suit",price:19999,badge:"",sizes:["38","40","42","44","46"],images:["https://images.pexels.com/photos/1300402/pexels-photo-1300402.jpeg?auto=compress&cs=tinysrgb&w=800"],url:"product.html?id=suit-02"}];</script></body></html>
