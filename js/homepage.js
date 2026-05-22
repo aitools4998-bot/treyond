@@ -298,6 +298,73 @@ const PRODUCTS_DATA = [
   { id: 'kurta-02', name: 'Classic Cotton Kurta', price: 2999, badge: '', sizes: ['S','M','L','XL','XXL'], images: ['https://images.pexels.com/photos/3622608/pexels-photo-3622608.jpeg?auto=compress&cs=tinysrgb&w=800'], url: '/pages/product.html?id=kurta-02', category: 'kurta-sets' },
   { id: 'sherwani-02', name: 'Embroidered Wedding Sherwani', price: 32999, badge: 'Limited', sizes: ['S','M','L','XL'], images: ['https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=800'], url: '/pages/product.html?id=sherwani-02', category: 'sherwanis' },
   { id: 'suit-02', name: 'Double Breasted Suit', price: 19999, badge: '', sizes: ['38','40','42','44','46'], images: ['https://images.pexels.com/photos/1300402/pexels-photo-1300402.jpeg?auto=compress&cs=tinysrgb&w=800'], url: '/pages/product.html?id=suit-02', category: 'suits' },
+  {
+    id: 'shirt-09',
+    name: "Mango Color Fila Fill Soft Premium Cotton Formal Shirt",
+    price: 1100,
+    badge: 'Plain Shirts',
+    sizes: ['38','40','42','44'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08491.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08483.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08495.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08493.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08489.jpg'
+    ],
+    url: '/pages/men-mango-color-fila-fill-soft-premium-cotton-formal-shirt.html',
+    category: 'plain-shirts'
+  },
+  {
+    id: 'shirt-10',
+    name: "Lemon Color Super Soft Premium Dobby Cotton Formal Shirt",
+    price: 1100,
+    badge: 'Plain Shirts',
+    sizes: ['38','40','42','44'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08471.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08481.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08479.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08477.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08475.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08473.jpg'
+    ],
+    url: '/pages/men-lemon-color-super-soft-premium-dobby-cotton-formal-shirt.html',
+    category: 'plain-shirts'
+  },
+  {
+    id: 'shirt-11',
+    name: "Pink Color Super Soft Premium Cotton Dobby Formal Shirt For Men’s",
+    price: 1100,
+    badge: 'Plain Shirts',
+    sizes: ['38','40','42','44'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08458.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08468.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08467.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08464.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08463.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08461.jpg'
+    ],
+    url: '/pages/men-pink-color-super-soft-premium-cotton-dobby-formal-shirt-for-mens.html',
+    category: 'plain-shirts'
+  },
+  {
+    id: 'shirt-12',
+    name: "Move Color Fila Fill Soft Premium Cotton Formal Shirt",
+    price: 1100,
+    badge: 'Plain Shirts',
+    sizes: ['38','40','42','44'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08445.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08454.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08452.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08451.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08450.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08447.jpg'
+    ],
+    url: '/pages/men-move-color-fila-fill-soft-premium-cotton-formal-shirt.html',
+    category: 'plain-shirts'
+  }
 ];
 
 // ===== RENDER PRODUCT GRID =====
@@ -343,6 +410,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initCountdown();
   renderProductGrid('featured-products', PRODUCTS_DATA.slice(4,8));
   renderProductGrid('new-arrivals-grid', PRODUCTS_DATA.filter(p=>p.category==='check-shirts'));
-  renderProductGrid('bestsellers-grid', PRODUCTS_DATA.filter(p=>p.badge==='Bestseller'||p.badge==='Limited'));
+  renderProductGrid('plain-shirts-grid', PRODUCTS_DATA.filter(p=>p.category==='plain-shirts'));
   renderProductGrid('trending-grid', PRODUCTS_DATA.slice(8,12));
 });
