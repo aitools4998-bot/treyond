@@ -1,4 +1,4 @@
-﻿/* homepage.js */
+/* homepage.js */
 'use strict';
 
 // ===== HERO SLIDER =====
@@ -158,14 +158,78 @@ function initCountdown() {
 
 // ===== PRODUCTS DATA =====
 const PRODUCTS_DATA = [
-  { id: 'sherwani-01', name: 'Royal Sherwani', price: 18999, badge: 'Bestseller', sizes: ['S','M','L','XL','XXL'], images: ['https://images.pexels.com/photos/3622608/pexels-photo-3622608.jpeg?auto=compress&cs=tinysrgb&w=800'], url: '/pages/product.html?id=sherwani-01' },
-  { id: 'kurta-set-01', name: 'Premium Kurta Set', price: 5999, badge: 'New', sizes: ['S','M','L','XL'], images: ['https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=800'], url: '/pages/product.html?id=kurta-set-01' },
-  { id: 'suit-01', name: 'Italian Tuxedo Suit', price: 24999, badge: 'Premium', sizes: ['38','40','42','44'], images: ['https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=800'], url: '/pages/product.html?id=suit-01' },
-  { id: 'blazer-01', name: 'Indo-Western Blazer', price: 8999, badge: '', sizes: ['S','M','L','XL'], images: ['https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&w=800'], url: '/pages/product.html?id=blazer-01' },
-  { id: 'jacket-01', name: 'Wedding Bandhgala Jacket', price: 12999, badge: 'New', sizes: ['S','M','L','XL'], images: ['https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=800'], url: '/pages/product.html?id=jacket-01' },
-  { id: 'kurta-02', name: 'Classic Cotton Kurta', price: 2999, badge: '', sizes: ['S','M','L','XL','XXL'], images: ['https://images.pexels.com/photos/3622608/pexels-photo-3622608.jpeg?auto=compress&cs=tinysrgb&w=800'], url: '/pages/product.html?id=kurta-02' },
-  { id: 'sherwani-02', name: 'Embroidered Wedding Sherwani', price: 32999, badge: 'Limited', sizes: ['S','M','L','XL'], images: ['https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=800'], url: '/pages/product.html?id=sherwani-02' },
-  { id: 'suit-02', name: 'Double Breasted Suit', price: 19999, badge: '', sizes: ['38','40','42','44','46'], images: ['https://images.pexels.com/photos/1300402/pexels-photo-1300402.jpeg?auto=compress&cs=tinysrgb&w=800'], url: '/pages/product.html?id=suit-02' },
+  {
+    id: 'shirt-01',
+    name: 'Light Khaki Oxford Soft Premium Cotton Formal Shirt',
+    price: 1300,
+    badge: 'Shirts',
+    sizes: ['38','40','42','44'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08714.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08720.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08718.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08717.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08708.jpg'
+    ],
+    url: '/pages/men-light-khaki-oxford-soft-premium-cotton-formal-shirt-for-mens.html',
+    category: 'shirts'
+  },
+  {
+    id: 'shirt-02',
+    name: 'Gray Color Oxford Soft Premium Cotton Formal Shirt',
+    price: 1300,
+    badge: 'Shirts',
+    sizes: ['38','40','42','44'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08729.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08735.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08733.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08732.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08724.jpg'
+    ],
+    url: '/pages/gray-color-oxford-soft-premium-cotton-formal-shirt-for-mens.html',
+    category: 'shirts'
+  },
+  {
+    id: 'shirt-03',
+    name: 'Dark Grey Fila Fill Soft Premium Cotton Formal Shirt',
+    price: 1100,
+    badge: 'Shirts',
+    sizes: ['38','40','42','44'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08743.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08746.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08749.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08747.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08738.jpg'
+    ],
+    url: '/pages/men-dark-grey-fila-fill-soft-premium-cotton-formal-shirt.html',
+    category: 'shirts'
+  },
+  {
+    id: 'shirt-04',
+    name: 'Orange Color Super Soft Premium Cotton Dobby Formal Shirt',
+    price: 1100,
+    badge: 'Shirts',
+    sizes: ['38','40','42','44'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08768.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08775.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08773.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08772.jpg',
+      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08771.jpg'
+    ],
+    url: '/pages/men-orange-color-super-soft-premium-cotton-dobby-formal-shirt.html',
+    category: 'shirts'
+  },
+  { id: 'sherwani-01', name: 'Royal Sherwani', price: 18999, badge: 'Bestseller', sizes: ['S','M','L','XL','XXL'], images: ['https://images.pexels.com/photos/3622608/pexels-photo-3622608.jpeg?auto=compress&cs=tinysrgb&w=800'], url: '/pages/product.html?id=sherwani-01', category: 'sherwanis' },
+  { id: 'kurta-set-01', name: 'Premium Kurta Set', price: 5999, badge: 'New', sizes: ['S','M','L','XL'], images: ['https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=800'], url: '/pages/product.html?id=kurta-set-01', category: 'kurta-sets' },
+  { id: 'suit-01', name: 'Italian Tuxedo Suit', price: 24999, badge: 'Premium', sizes: ['38','40','42','44'], images: ['https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=800'], url: '/pages/product.html?id=suit-01', category: 'suits' },
+  { id: 'blazer-01', name: 'Indo-Western Blazer', price: 8999, badge: '', sizes: ['S','M','L','XL'], images: ['https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&w=800'], url: '/pages/product.html?id=blazer-01', category: 'blazers' },
+  { id: 'jacket-01', name: 'Wedding Bandhgala Jacket', price: 12999, badge: 'New', sizes: ['S','M','L','XL'], images: ['https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=800'], url: '/pages/product.html?id=jacket-01', category: 'blazers' },
+  { id: 'kurta-02', name: 'Classic Cotton Kurta', price: 2999, badge: '', sizes: ['S','M','L','XL','XXL'], images: ['https://images.pexels.com/photos/3622608/pexels-photo-3622608.jpeg?auto=compress&cs=tinysrgb&w=800'], url: '/pages/product.html?id=kurta-02', category: 'kurta-sets' },
+  { id: 'sherwani-02', name: 'Embroidered Wedding Sherwani', price: 32999, badge: 'Limited', sizes: ['S','M','L','XL'], images: ['https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=800'], url: '/pages/product.html?id=sherwani-02', category: 'sherwanis' },
+  { id: 'suit-02', name: 'Double Breasted Suit', price: 19999, badge: '', sizes: ['38','40','42','44','46'], images: ['https://images.pexels.com/photos/1300402/pexels-photo-1300402.jpeg?auto=compress&cs=tinysrgb&w=800'], url: '/pages/product.html?id=suit-02', category: 'suits' },
 ];
 
 // ===== RENDER PRODUCT GRID =====

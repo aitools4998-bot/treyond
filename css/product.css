@@ -198,6 +198,35 @@
   margin-top: 10px;
 }
 .buy-now-btn:hover { background: var(--black); color: var(--white); }
+.whatsapp-btn {
+  width: 100%;
+  height: 52px;
+  background: #25D366;
+  color: var(--white);
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 10px;
+  text-decoration: none;
+}
+.whatsapp-btn:hover {
+  background: #128C7E;
+  color: var(--white);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);
+}
+.whatsapp-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
 .wishlist-btn {
   width: 52px;
   height: 52px;
