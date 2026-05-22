@@ -159,6 +159,74 @@ function initCountdown() {
 // ===== PRODUCTS DATA =====
 const PRODUCTS_DATA = [
   {
+    id: 'shirt-05',
+    name: "Men's Premium multi Color Printed Cotton Casual Party Wear Shirt",
+    price: 1400,
+    badge: 'Check Shirts',
+    sizes: ['38','40','42','44'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__ocm_b3_acrylicshirt_2__2024-2-5-20-23-38__2730X4096.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__a2_all_set211_shirtfolded_front2__2024-2-5-20-22-4__2730X4096.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set199_m_trouser_front2__2024-2-5-20-22-26__2730X4096.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set211_nomo_shirtfolded_front7__2024-2-5-20-22-41__2730X4096.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set211_shirtfolded_front3__2024-2-5-20-22-55__2730X4096.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set255_hanger_shirt__2024-2-5-20-23-13__2730X4096.jpg'
+    ],
+    url: '/pages/mens-premium-multi-color-printed-cotton-casual-party-wear-shirt.html',
+    category: 'check-shirts'
+  },
+  {
+    id: 'shirt-06',
+    name: "Men's Premium multi Color Printed Cotton Party Wear Shirt",
+    price: 1400,
+    badge: 'Check Shirts',
+    sizes: ['38','40','42','44'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__ocm_b3_acrylicshirt_2__2024-2-4-22-52-25__2730X4096.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set255_hanger_shirt__2024-2-4-22-50-59__2730X4096.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set250_shirtandswatch__2024-2-4-22-50-34__2730X4096.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set211_shirtfolded_front3__2024-2-4-22-50-18__2730X4096.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set211_nomo_shirtfolded_front7__2024-2-4-22-49-57__2730X4096.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__a2_all_set211_shirtfolded_front2__2024-2-4-22-48-58__2730X4096.jpg'
+    ],
+    url: '/pages/mens-premium-multi-color-printed-cotton-party-wear-shirt.html',
+    category: 'check-shirts'
+  },
+  {
+    id: 'shirt-07',
+    name: "Men's Premium Sky Color Printed Cotton Regular Fit Shirt",
+    price: 1400,
+    badge: 'Check Shirts',
+    sizes: ['38','40','42','44'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__ocm_b3_acrylicshirt_2__2024-2-4-21-7-44__2730X4096.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set161_men_formal_side2__2024-2-4-21-12-27__2730X4096.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set199_m_trouser_front2__2024-2-4-21-12-2__2730X4096.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set211_nomo_shirtfolded_front7__2024-2-4-21-11-37__2730X4096.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set211_shirtfolded_front3__2024-2-4-21-11-26__2730X4096.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set255_hanger_shirt__2024-2-4-21-8-40__2730X4096.jpg'
+    ],
+    url: '/pages/mens-premium-sky-color-printed-cotton-regular-fit-shirt.html',
+    category: 'check-shirts'
+  },
+  {
+    id: 'shirt-08',
+    name: "Men's Premium Firoz Printed Cotton Party Wear Shirt",
+    price: 1400,
+    badge: 'Check Shirts',
+    sizes: ['38','40','42','44'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__ocm_b3_acrylicshirt_2__2024-2-4-21-30-23__2730X4096.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__ocm_b3_acrylicshirt_4__2024-2-4-21-30-40__2730X4096.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set255_hanger_shirt__2024-2-4-21-31-1__2730X4096.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set211_shirtfolded_front3__2024-2-4-21-32-19__2730X4096.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set211_nomo_shirtfolded_front7__2024-2-4-21-32-33__2730X4096.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set199_m_trouser_front2__2024-2-4-21-32-44__2730X4096.jpg'
+    ],
+    url: '/pages/men-premium-firoz-printed-cotton-party-wear-shirt.html',
+    category: 'check-shirts'
+  },
+  {
     id: 'shirt-01',
     name: 'Light Khaki Oxford Soft Premium Cotton Formal Shirt',
     price: 1300,
@@ -273,8 +341,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initTestimonialsSlider();
   initNewsletter();
   initCountdown();
-  renderProductGrid('featured-products', PRODUCTS_DATA.slice(0,4));
-  renderProductGrid('new-arrivals-grid', PRODUCTS_DATA.filter(p=>p.badge==='New'));
+  renderProductGrid('featured-products', PRODUCTS_DATA.slice(4,8));
+  renderProductGrid('new-arrivals-grid', PRODUCTS_DATA.filter(p=>p.category==='check-shirts'));
   renderProductGrid('bestsellers-grid', PRODUCTS_DATA.filter(p=>p.badge==='Bestseller'||p.badge==='Limited'));
-  renderProductGrid('trending-grid', PRODUCTS_DATA.slice(4,8));
+  renderProductGrid('trending-grid', PRODUCTS_DATA.slice(8,12));
 });
