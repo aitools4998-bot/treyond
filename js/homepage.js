@@ -364,6 +364,74 @@ const PRODUCTS_DATA = [
     ],
     url: '/pages/men-move-color-fila-fill-soft-premium-cotton-formal-shirt.html',
     category: 'plain-shirts'
+  },
+  {
+    id: 'uniform-01',
+    name: 'CRPF Khaki Uniform By Ajanta Oswal super Premium Trovine',
+    price: 2099,
+    badge: 'Uniform',
+    sizes: ['38','40','42','44','46'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00578-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00585-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00583-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00582-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00580-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00575-copy-scaled.jpg'
+    ],
+    url: '/pages/crpf-khaki-uniform-oswal-ajanta.html',
+    category: 'uniforms'
+  },
+  {
+    id: 'uniform-02',
+    name: 'Police Stretchable Khaki Uniform By Vimal Officer Stretch fit',
+    price: 2199,
+    badge: 'Uniform',
+    sizes: ['38','40','42','44','46'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00690-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00697-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00693-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00726-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00696-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00694-scaled.jpg'
+    ],
+    url: '/pages/police-stretchable-khaki-uniform.html',
+    category: 'uniforms'
+  },
+  {
+    id: 'uniform-03',
+    name: 'Police Khaki Uniform By Vimal Premium Trovine',
+    price: 2199,
+    badge: 'Uniform',
+    sizes: ['38','40','42','44','46'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00651-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00657-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00653-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00659-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00656-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00655-copy-scaled.jpg'
+    ],
+    url: '/pages/police-khaki-uniform-premium.html',
+    category: 'uniforms'
+  },
+  {
+    id: 'uniform-04',
+    name: 'Police Khaki Uniform Vimal Premium Trovine Light Color',
+    price: 2199,
+    badge: 'Uniform',
+    sizes: ['38','40','42','44','46'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00640-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00646-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00644-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00641-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00645-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00648-copy-scaled.jpg'
+    ],
+    url: '/pages/police-khaki-uniform-premium-trovine.html',
+    category: 'uniforms'
   }
 ];
 
@@ -408,7 +476,13 @@ document.addEventListener('DOMContentLoaded', () => {
   initTestimonialsSlider();
   initNewsletter();
   initCountdown();
-  renderProductGrid('featured-products', PRODUCTS_DATA.slice(4,8));
+  
+  if (window.location.pathname.includes('uniform.html')) {
+    renderProductGrid('featured-products', PRODUCTS_DATA.filter(p=>p.category==='uniforms'));
+  } else {
+    renderProductGrid('featured-products', PRODUCTS_DATA.slice(4,8));
+  }
+  
   renderProductGrid('new-arrivals-grid', PRODUCTS_DATA.filter(p=>p.category==='check-shirts'));
   renderProductGrid('plain-shirts-grid', PRODUCTS_DATA.filter(p=>p.category==='plain-shirts'));
   renderProductGrid('trending-grid', PRODUCTS_DATA.slice(8,12));
