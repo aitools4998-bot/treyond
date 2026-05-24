@@ -506,6 +506,70 @@ const PRODUCTS_DATA = [
     ],
     url: '/pages/ssb-new-pattern-combat-uniform.html',
     category: 'combat-uniforms'
+  },
+  {
+    id: 'tshirt-01',
+    name: 'White Premium Cotton T-Shirt',
+    price: 450,
+    badge: 'T-Shirt',
+    sizes: ['36','38','40','42'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00717-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00720-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00724-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00723-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00722-scaled.jpg'
+    ],
+    url: '/pages/white-cotton-t-shirt1.html',
+    category: 't-shirts'
+  },
+  {
+    id: 'tshirt-02',
+    name: 'White Cotton T-Shirt',
+    price: 450,
+    badge: 'T-Shirt',
+    sizes: ['36','38','40','42'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00709-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00711-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00715-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00714-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00713-scaled.jpg'
+    ],
+    url: '/pages/white-cotton-t-shirt.html',
+    category: 't-shirts'
+  },
+  {
+    id: 'tshirt-03',
+    name: 'White Cotton T-Shirt (Matty)',
+    price: 399,
+    badge: 'T-Shirt',
+    sizes: ['36','38','40','42'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00709-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00711-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00715-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00714-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00713-scaled.jpg'
+    ],
+    url: '/pages/white-t-shirt-cotton-matty.html',
+    category: 't-shirts'
+  },
+  {
+    id: 'tshirt-04',
+    name: 'White Premium Cotton T-Shirt',
+    price: 599,
+    badge: 'T-Shirt',
+    sizes: ['36','38','40','42'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00700-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00702-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00706-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00705-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00704-scaled.jpg'
+    ],
+    url: '/pages/white-t-shirt-cotton.html',
+    category: 't-shirts'
   }
 ];
 
@@ -559,6 +623,6 @@ document.addEventListener('DOMContentLoaded', () => {
     renderProductGrid('new-arrivals-grid', PRODUCTS_DATA.filter(p=>p.category==='check-shirts'));
   }
   
-  renderProductGrid('plain-shirts-grid', PRODUCTS_DATA.filter(p=>p.category==='plain-shirts'));
+  renderProductGrid('t-shirts-grid', PRODUCTS_DATA.filter(p=>p.category==='t-shirts'));
   renderProductGrid('trending-grid', PRODUCTS_DATA.slice(8,12));
 });
