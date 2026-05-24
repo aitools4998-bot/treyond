@@ -669,7 +669,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNewsletter();
   initCountdown();
   
-  if (window.location.pathname.includes('uniform.html')) {
+  if (document.getElementById('uniform-page') || window.location.pathname.includes('uniform')) {
     renderProductGrid('featured-products', PRODUCTS_DATA.filter(p=>p.category==='uniforms'));
     renderProductGrid('new-arrivals-grid', PRODUCTS_DATA.filter(p=>p.category==='combat-uniforms'));
     renderProductGrid('trending-grid', [
