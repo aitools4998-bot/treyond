@@ -434,6 +434,40 @@ const PRODUCTS_DATA = [
     category: 'uniforms'
   },
   {
+    id: 'uniform-05',
+    name: 'BSF Graviera Khaki Uniform',
+    price: 1700,
+    badge: 'Uniform',
+    sizes: ['36','38','40','42','44','46'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00468-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00472-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00473-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00476-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00477-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00493-scaled.jpg'
+    ],
+    url: '/pages/bsf-khaki-uniform-graviera.html',
+    category: 'uniforms'
+  },
+  {
+    id: 'uniform-06',
+    name: 'Police Khaki Uniform BY Vimal Super Trovine',
+    price: 1999,
+    badge: 'Uniform',
+    sizes: ['36','38','40','42','44','46'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00667-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00669-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00668-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00676-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00675-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00673-copy-scaled.jpg'
+    ],
+    url: '/pages/police-khaki-uniform-vimal-super-fabric.html',
+    category: 'uniforms'
+  },
+  {
     id: 'combat-01',
     name: 'SSB New Pattern Combat Uniform (Premium)',
     price: 2099,
@@ -505,6 +539,26 @@ const PRODUCTS_DATA = [
       'https://treyondworld.com/wp-content/uploads/2024/05/CKS00732-scaled.jpg'
     ],
     url: '/pages/ssb-new-pattern-combat-uniform.html',
+    category: 'combat-uniforms'
+  },
+  {
+    id: 'combat-05',
+    name: 'CRPF Combat Cotton 80% Poly 20% Us Pattern Wardi',
+    price: 1550,
+    badge: 'Combat',
+    sizes: ['36','38','40','42','44','46'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00598-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00608-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00602-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00600-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00611-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00610-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00607-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00606-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00603-copy-scaled.jpg'
+    ],
+    url: '/pages/crpf-combat-cotton-80-poly-20-us-pattern-wardi.html',
     category: 'combat-uniforms'
   },
   {
@@ -618,11 +672,17 @@ document.addEventListener('DOMContentLoaded', () => {
   if (window.location.pathname.includes('uniform.html')) {
     renderProductGrid('featured-products', PRODUCTS_DATA.filter(p=>p.category==='uniforms'));
     renderProductGrid('new-arrivals-grid', PRODUCTS_DATA.filter(p=>p.category==='combat-uniforms'));
+    renderProductGrid('trending-grid', [
+      PRODUCTS_DATA.find(p=>p.id==='uniform-05'),
+      PRODUCTS_DATA.find(p=>p.id==='combat-05'),
+      PRODUCTS_DATA.find(p=>p.id==='uniform-06'),
+      PRODUCTS_DATA.find(p=>p.id==='tshirt-04')
+    ]);
   } else {
     renderProductGrid('featured-products', PRODUCTS_DATA.slice(4,8));
     renderProductGrid('new-arrivals-grid', PRODUCTS_DATA.filter(p=>p.category==='check-shirts'));
+    renderProductGrid('trending-grid', PRODUCTS_DATA.slice(8,12));
   }
   
   renderProductGrid('t-shirts-grid', PRODUCTS_DATA.filter(p=>p.category==='t-shirts'));
-  renderProductGrid('trending-grid', PRODUCTS_DATA.slice(8,12));
 });
