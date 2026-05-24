@@ -432,6 +432,80 @@ const PRODUCTS_DATA = [
     ],
     url: '/pages/police-khaki-uniform-premium-trovine.html',
     category: 'uniforms'
+  },
+  {
+    id: 'combat-01',
+    name: 'SSB New Pattern Combat Uniform (Premium)',
+    price: 2099,
+    badge: 'Combat',
+    sizes: ['38','40','42','44','46'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00770-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00772-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00778-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00776-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00775-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00774-scaled.jpg'
+    ],
+    url: '/pages/ssb-new-pattern-combat-uniforms.html',
+    category: 'combat-uniforms'
+  },
+  {
+    id: 'combat-02',
+    name: 'SSB US Pattern Combat Uniform (Trovine Premium)',
+    price: 2199,
+    badge: 'Combat',
+    sizes: ['38','40','42','44','46'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00758-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00760-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00768-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00765-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00764-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00763-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00760-1-scaled.jpg'
+    ],
+    url: '/pages/ssb-us-pattern-combat-uniform-ssb-3.html',
+    category: 'combat-uniforms'
+  },
+  {
+    id: 'combat-03',
+    name: 'SSB New Pattern Combat Uniform',
+    price: 1799,
+    badge: 'Combat',
+    sizes: ['38','40','42','44','46'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00743-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00745-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00756-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00754-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00752-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00749-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00748-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00747-scaled.jpg'
+    ],
+    url: '/pages/ssb-new-pattern-combat.html',
+    category: 'combat-uniforms'
+  },
+  {
+    id: 'combat-04',
+    name: 'SSB US Pattern Combat Uniform',
+    price: 1999,
+    badge: 'Combat',
+    sizes: ['38','40','42','44','46'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00728-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00729-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00741-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00740-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00738-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00737-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00734-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00733-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00732-scaled.jpg'
+    ],
+    url: '/pages/ssb-new-pattern-combat-uniform.html',
+    category: 'combat-uniforms'
   }
 ];
 
@@ -479,11 +553,12 @@ document.addEventListener('DOMContentLoaded', () => {
   
   if (window.location.pathname.includes('uniform.html')) {
     renderProductGrid('featured-products', PRODUCTS_DATA.filter(p=>p.category==='uniforms'));
+    renderProductGrid('new-arrivals-grid', PRODUCTS_DATA.filter(p=>p.category==='combat-uniforms'));
   } else {
     renderProductGrid('featured-products', PRODUCTS_DATA.slice(4,8));
+    renderProductGrid('new-arrivals-grid', PRODUCTS_DATA.filter(p=>p.category==='check-shirts'));
   }
   
-  renderProductGrid('new-arrivals-grid', PRODUCTS_DATA.filter(p=>p.category==='check-shirts'));
   renderProductGrid('plain-shirts-grid', PRODUCTS_DATA.filter(p=>p.category==='plain-shirts'));
   renderProductGrid('trending-grid', PRODUCTS_DATA.slice(8,12));
 });
