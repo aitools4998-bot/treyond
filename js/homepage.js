@@ -592,6 +592,65 @@ const PRODUCTS_DATA = [
     category: 'combat-uniforms'
   },
   {
+    id: 'combat-06',
+    name: 'CRPF Combat Manipuri Pattern Uniform By Cool Touch Ajanta Osawal',
+    price: 2199,
+    badge: 'Combat',
+    sizes: ['36','38','40','42','44','46'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00613-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00615-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00627-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00626-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00625-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00623-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00622-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00620-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00619-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00618-copy-scaled.jpg'
+    ],
+    url: '/pages/crpf-combet-manipuri-pattern-uniform-cool-touch.html',
+    category: 'combat-uniforms'
+  },
+  {
+    id: 'combat-07',
+    name: 'CRPF Cotton Us Pattern Combat Uniform',
+    price: 2199,
+    badge: 'Combat',
+    sizes: ['36','38','40','42','44','46'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00598-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00608-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00602-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00600-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00611-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00610-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00607-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00606-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00603-copy-scaled.jpg'
+    ],
+    url: '/pages/crpf-cotton-us-pattern-combat-uniform.html',
+    category: 'combat-uniforms'
+  },
+  {
+    id: 'combat-08',
+    name: 'CRPF Combat Uniform Cool Touch Fast color by Ajanta',
+    price: 1799,
+    badge: 'Combat',
+    sizes: ['36','38','40','42','44','46'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2024/05/crpf-poly-coot-touch-main-photo.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00594-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00590-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00592-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00596-copy-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00593-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00593-copy-scaled.jpg'
+    ],
+    url: '/pages/crpf-combat-uniform-cool-touch-fast-colour-by-ajanta.html',
+    category: 'combat-uniforms'
+  },
+  {
     id: 'tshirt-01',
     name: 'White Premium Cotton T-Shirt',
     price: 450,
