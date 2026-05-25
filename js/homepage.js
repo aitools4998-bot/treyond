@@ -670,8 +670,9 @@ document.addEventListener('DOMContentLoaded', () => {
   initCountdown();
   
   if (document.getElementById('uniform-page') || window.location.pathname.includes('uniform')) {
-    renderProductGrid('featured-products', PRODUCTS_DATA.filter(p=>p.category==='uniforms'));
-    renderProductGrid('new-arrivals-grid', PRODUCTS_DATA.filter(p=>p.category==='combat-uniforms'));
+    renderProductGrid('uniforms-featured-grid', PRODUCTS_DATA.filter(p=>p.category==='uniforms'));
+    renderProductGrid('combat-featured-grid', PRODUCTS_DATA.filter(p=>p.category==='combat-uniforms'));
+    renderProductGrid('tshirts-featured-grid', PRODUCTS_DATA.filter(p=>p.category==='t-shirts'));
     renderProductGrid('trending-grid', [
       PRODUCTS_DATA.find(p=>p.id==='uniform-05'),
       PRODUCTS_DATA.find(p=>p.id==='combat-05'),
@@ -682,7 +683,6 @@ document.addEventListener('DOMContentLoaded', () => {
     renderProductGrid('featured-products', PRODUCTS_DATA.slice(4,8));
     renderProductGrid('new-arrivals-grid', PRODUCTS_DATA.filter(p=>p.category==='check-shirts'));
     renderProductGrid('trending-grid', PRODUCTS_DATA.slice(8,12));
+    renderProductGrid('t-shirts-grid', PRODUCTS_DATA.filter(p=>p.category==='t-shirts'));
   }
-  
-  renderProductGrid('t-shirts-grid', PRODUCTS_DATA.filter(p=>p.category==='t-shirts'));
 });
