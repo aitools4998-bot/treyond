@@ -468,6 +468,36 @@ const PRODUCTS_DATA = [
     category: 'uniforms'
   },
   {
+    id: 'uniform-07',
+    name: 'BSF Khaki Uniform Vimal Super Premium Trovine',
+    price: 2099,
+    badge: 'Uniform',
+    sizes: ['36','38','40','42','44','46'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00496-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00506-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00507-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00504-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00503-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00498-scaled.jpg'
+    ],
+    url: '/pages/bsf-khaki-uniform-vimal-super-premium-trovine.html',
+    category: 'uniforms'
+  },
+  {
+    id: 'uniform-08',
+    name: 'BSF Khaki Uniform Vimal Saphire matty',
+    price: 1999,
+    badge: 'Uniform',
+    sizes: ['36','38','40','42','44','46'],
+    images: [
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00512-scaled.jpg',
+      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00510-scaled.jpg'
+    ],
+    url: '/pages/bsf-khaki-uniform-vimal-saphire-matty.html',
+    category: 'uniforms'
+  },
+  {
     id: 'combat-01',
     name: 'SSB New Pattern Combat Uniform (Premium)',
     price: 2099,
