@@ -1,283 +1,57 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Shop — Treyond World</title><meta name="description" content="Shop premium mens sherwanis, suits, kurta sets and indo-western wear."><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../css/global.css"><link rel="stylesheet" href="../css/nav.css"><link rel="stylesheet" href="../css/homepage.css"><link rel="stylesheet" href="../css/category.css"><link rel="stylesheet" href="../css/footer.css"></head><body><!-- _nav.html - Include this header in every page -->
-<div id="announcement-bar" class="announcement-bar">
-  âœ¦ FREE SHIPPING ON ORDERS ABOVE â‚¹2999 &nbsp;|&nbsp; USE CODE <strong>TREYOND10</strong> FOR 10% OFF &nbsp;|&nbsp; <a href="../pages/shop.html">SHOP NOW</a>
-  <button id="announcement-close" class="announcement-close" aria-label="Close">Ã—</button>
-</div>
-
-<header id="site-header" class="site-header">
-  <div class="container header-inner">
-    <!-- Mobile Menu Button -->
-    <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
-
-    <!-- Logo -->
-    <a href="../index.html" class="nav-logo">TREYOND WORLD</a>
-
-    <!-- Desktop Nav -->
-    <nav class="nav-menu" aria-label="Main navigation">
-      <div class="nav-item">
-        <a href="../index.html" class="nav-link">Home</a>
-      </div>
-      <div class="nav-item">
-        <a href="../pages/collections.html" class="nav-link">Collections
-          <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-        </a>
-        <div class="mega-dropdown">
-          <div class="mega-inner">
-            <div class="mega-col">
-              <div class="mega-col-title">Traditional</div>
-              <a href="../pages/shop.html?cat=sherwanis">Sherwanis</a>
-              <a href="../pages/shop.html?cat=kurta-sets">Kurta Sets</a>
-              <a href="../pages/shop.html?cat=dhoti-sets">Dhoti Sets</a>
-              <a href="../pages/shop.html?cat=pathani">Pathani Suits</a>
-            </div>
-            <div class="mega-col">
-              <div class="mega-col-title">Formal</div>
-              <a href="../pages/shop.html?cat=suits">Men's Suits</a>
-              <a href="../pages/shop.html?cat=tuxedos">Tuxedos</a>
-              <a href="../pages/shop.html?cat=blazers">Blazers</a>
-              <a href="../pages/shop.html?cat=indo-western">Indo-Western</a>
-            </div>
-            <div class="mega-col">
-              <div class="mega-col-title">Essentials</div>
-              <a href="../pages/shop.html?cat=shirts">Shirts</a>
-              <a href="../pages/shop.html?cat=trousers">Trousers</a>
-              <a href="../pages/shop.html?cat=accessories">Accessories</a>
-              <a href="../pages/shop.html?cat=check-shirts">Check Shirts</a>
-              <a href="../pages/shop.html?cat=t-shirts">T-Shirts</a>
-            </div>
-            <div class="mega-col">
-              <div class="mega-featured">
-                <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=800" alt="New Collection">
-                <div class="mega-featured-label">New Season</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="nav-item">
-        <a href="../pages/shop.html" class="nav-link">Shop</a>
-      </div>
-      <div class="nav-item">
-        <a href="../pages/blog.html" class="nav-link">Journal</a>
-      </div>
-      <div class="nav-item">
-        <a href="../pages/about.html" class="nav-link">About</a>
-      </div>
-      <div class="nav-item">
-        <a href="../pages/contact.html" class="nav-link">Contact</a>
-      </div>
-    </nav>
-
-    <!-- Icons -->
-    <div class="nav-icons">
-      <button id="search-icon" class="nav-icon-btn" aria-label="Search">
-        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-      </button>
-      <button class="nav-icon-btn" aria-label="Wishlist" onclick="window.location='/pages/wishlist.html'">
-        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
-      </button>
-      <button id="cart-icon" class="nav-icon-btn" aria-label="Cart">
-        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
-        <span class="cart-badge" style="display:none">0</span>
-      </button>
-    </div>
-  </div>
-</header>
-
-<!-- Search Bar -->
-<div id="search-bar" class="search-bar">
-  <div class="search-bar-inner">
-    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20" style="color:var(--gray-400);flex-shrink:0"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-    <input id="search-input" type="search" placeholder="Search for sherwanis, suits, kurtasâ€¦" autocomplete="off">
-    <button id="search-close" class="search-close" aria-label="Close search">
-      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/></svg>
-    </button>
-  </div>
-  <div id="search-suggestions" class="search-suggestions"></div>
-</div>
-
-<!-- Mobile Nav -->
-<div id="mobile-nav" class="mobile-nav">
-  <div class="mobile-nav-header">
-    <span class="nav-logo" style="font-size:1.1rem">TREYOND WORLD</span>
-    <button id="mobile-nav-close" class="mobile-nav-close" aria-label="Close menu">
-      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="22" height="22"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/></svg>
-    </button>
-  </div>
-  <div class="mobile-nav-body">
-    <div class="mobile-nav-item">
-      <a href="../index.html" class="mobile-nav-link">Home</a>
-    </div>
-    <div class="mobile-nav-item">
-      <div class="mobile-nav-link" data-submenu="mob-collections">Collections <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/></svg></div>
-      <div id="mob-collections" class="mobile-nav-submenu">
-        <a href="../pages/shop.html?cat=sherwanis">Sherwanis</a>
-        <a href="../pages/shop.html?cat=kurta-sets">Kurta Sets</a>
-        <a href="../pages/shop.html?cat=suits">Men's Suits</a>
-        <a href="../pages/shop.html?cat=blazers">Blazers</a>
-        <a href="../pages/shop.html?cat=indo-western">Indo-Western</a>
-        <a href="../pages/shop.html?cat=shirts">Shirts</a>
-        <a href="../pages/shop.html?cat=accessories">Accessories</a>
-      </div>
-    </div>
-    <div class="mobile-nav-item"><a href="../pages/shop.html" class="mobile-nav-link">Shop All</a></div>
-    <div class="mobile-nav-item"><a href="../pages/blog.html" class="mobile-nav-link">Journal</a></div>
-    <div class="mobile-nav-item"><a href="../pages/about.html" class="mobile-nav-link">About</a></div>
-    <div class="mobile-nav-item"><a href="../pages/contact.html" class="mobile-nav-link">Contact</a></div>
-  </div>
-  <div class="mobile-nav-footer">
-    <p style="font-size:0.75rem;color:var(--gray-500);margin-bottom:8px">Follow us</p>
-    <div class="social-links">
-      <a href="#" aria-label="Instagram"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-      <a href="#" aria-label="Facebook"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="16" height="16"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
-      <a href="#" aria-label="WhatsApp"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="16" height="16"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></a>
-    </div>
-  </div>
-</div>
-
-<!-- Cart Drawer -->
-<div id="cart-drawer" class="cart-drawer">
-  <div class="cart-drawer-header">
-    <div class="cart-drawer-title">Shopping Bag <span id="cart-count-text"></span></div>
-    <button id="cart-drawer-close" class="cart-drawer-close" aria-label="Close cart">
-      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/></svg>
-    </button>
-  </div>
-  <div id="cart-drawer-body" class="cart-drawer-body"></div>
-  <div class="cart-drawer-footer">
-    <div class="cart-subtotal">
-      <span class="cart-subtotal-label">Subtotal</span>
-      <span class="cart-subtotal-price" id="cart-subtotal">â‚¹0</span>
-    </div>
-    <p class="cart-shipping-note">Shipping & taxes calculated at checkout</p>
-    <a href="../pages/cart.html" class="btn btn-outline w-full" style="margin-bottom:10px">View Cart</a>
-    <a href="../pages/checkout.html" class="btn btn-primary w-full cart-checkout-btn">Checkout</a>
-  </div>
-</div>
-
-<!-- Mobile Bottom Bar -->
-<div class="mobile-bottom-bar">
-  <div class="mobile-bottom-bar-inner">
-    <a href="../index.html" class="mobile-bottom-btn active">
-      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
-      Home
-    </a>
-    <button class="mobile-bottom-btn" onclick="openSearch()">
-      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-      Search
-    </button>
-    <a href="../pages/wishlist.html" class="mobile-bottom-btn">
-      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
-      Wishlist
-    </a>
-    <button class="mobile-bottom-btn" onclick="openCartDrawer()">
-      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
-      Cart
-    </button>
-  </div>
-</div>
-
-<!-- Overlay -->
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Shop — Treyond World</title><meta name="description" content="Shop premium mens sherwanis, suits, kurta sets and indo-western wear."><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../css/global.css"><link rel="stylesheet" href="../css/nav.css"><link rel="stylesheet" href="../css/homepage.css"><link rel="stylesheet" href="../css/category.css"><link rel="stylesheet" href="../css/footer.css"></head><body>
+<div id="announcement-bar" class="announcement-bar">✦ FREE SHIPPING ON ORDERS ABOVE ₹2999 &nbsp;|&nbsp; USE CODE <strong>TREYOND10</strong> FOR 10% OFF &nbsp;|&nbsp; <a href="../pages/shop.html">SHOP NOW</a><button id="announcement-close" class="announcement-close" aria-label="Close">×</button></div>
+<header id="site-header" class="site-header"><div class="container header-inner"><button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open menu"><span></span><span></span><span></span></button><a href="../index.html" class="nav-logo">TREYOND WORLD</a><nav class="nav-menu" aria-label="Main navigation"><div class="nav-item"><a href="../index.html" class="nav-link">Home</a></div><div class="nav-item"><a href="../pages/collections.html" class="nav-link">Collections<svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></a><div class="mega-dropdown"><div class="mega-inner"><div class="mega-col"><div class="mega-col-title">Traditional</div><a href="../pages/shop.html?cat=sherwanis">Sherwanis</a><a href="../pages/shop.html?cat=kurta-sets">Kurta Sets</a><a href="../pages/shop.html?cat=dhoti-sets">Dhoti Sets</a><a href="../pages/shop.html?cat=pathani">Pathani Suits</a></div><div class="mega-col"><div class="mega-col-title">Formal</div><a href="../pages/shop.html?cat=suits">Men's Suits</a><a href="../pages/shop.html?cat=tuxedos">Tuxedos</a><a href="../pages/shop.html?cat=blazers">Blazers</a><a href="../pages/shop.html?cat=indo-western">Indo-Western</a></div><div class="mega-col"><div class="mega-col-title">Essentials</div><a href="../pages/shop.html?cat=shirts">Shirts</a><a href="../pages/shop.html?cat=trousers">Trousers</a><a href="../pages/shop.html?cat=accessories">Accessories</a><a href="../pages/shop.html?cat=check-shirts">Check Shirts</a><a href="../pages/shop.html?cat=t-shirts">T-Shirts</a></div><div class="mega-col"><div class="mega-featured"><img src="https://media.treyondworld.com/2024/05/Best-wardi-shop-for-army-police.png" alt="New Collection"><div class="mega-featured-label">New Season</div></div></div></div></div></div><div class="nav-item"><a href="../pages/shop.html" class="nav-link">Shop</a></div><div class="nav-item"><a href="../pages/blog.html" class="nav-link">Journal</a></div><div class="nav-item"><a href="../pages/about.html" class="nav-link">About</a></div><div class="nav-item"><a href="../pages/contact.html" class="nav-link">Contact</a></div></nav><div class="nav-icons"><button id="search-icon" class="nav-icon-btn" aria-label="Search"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg></button><button class="nav-icon-btn" aria-label="Wishlist" onclick="window.location='../pages/wishlist.html'"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg></button><button id="cart-icon" class="nav-icon-btn" aria-label="Cart"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg><span class="cart-badge" style="display:none">0</span></button></div></div></header>
+<div id="search-bar" class="search-bar"><div class="search-bar-inner"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20" style="color:var(--gray-400);flex-shrink:0"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg><input id="search-input" type="search" placeholder="Search for sherwanis, suits, kurtas…" autocomplete="off"><button id="search-close" class="search-close" aria-label="Close search"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/></svg></button></div><div id="search-suggestions" class="search-suggestions"></div></div>
+<div id="mobile-nav" class="mobile-nav"><div class="mobile-nav-header"><span class="nav-logo" style="font-size:1.1rem">TREYOND WORLD</span><button id="mobile-nav-close" class="mobile-nav-close" aria-label="Close menu"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="22" height="22"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/></svg></button></div><div class="mobile-nav-body"><div class="mobile-nav-item"><a href="../index.html" class="mobile-nav-link">Home</a></div><div class="mobile-nav-item"><div class="mobile-nav-link" data-submenu="mob-collections">Collections <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/></svg></div><div id="mob-collections" class="mobile-nav-submenu"><a href="../pages/shop.html?cat=sherwanis">Sherwanis</a><a href="../pages/shop.html?cat=kurta-sets">Kurta Sets</a><a href="../pages/shop.html?cat=suits">Men's Suits</a><a href="../pages/shop.html?cat=blazers">Blazers</a><a href="../pages/shop.html?cat=uniforms">Uniforms</a><a href="../pages/shop.html?cat=shirts">Shirts</a></div></div><div class="mobile-nav-item"><a href="../pages/shop.html" class="mobile-nav-link">Shop All</a></div><div class="mobile-nav-item"><a href="../pages/blog.html" class="mobile-nav-link">Journal</a></div><div class="mobile-nav-item"><a href="../pages/about.html" class="mobile-nav-link">About</a></div><div class="mobile-nav-item"><a href="../pages/contact.html" class="mobile-nav-link">Contact</a></div></div></div>
+<div id="cart-drawer" class="cart-drawer"><div class="cart-drawer-header"><div class="cart-drawer-title">Shopping Bag <span id="cart-count-text"></span></div><button id="cart-drawer-close" class="cart-drawer-close" aria-label="Close cart"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/></svg></button></div><div id="cart-drawer-body" class="cart-drawer-body"></div><div class="cart-drawer-footer"><div class="cart-subtotal"><span class="cart-subtotal-label">Subtotal</span><span class="cart-subtotal-price" id="cart-subtotal">₹0</span></div><p class="cart-shipping-note">Shipping & taxes calculated at checkout</p><a href="../pages/cart.html" class="btn btn-outline w-full" style="margin-bottom:10px">View Cart</a><a href="../pages/checkout.html" class="btn btn-primary w-full cart-checkout-btn">Checkout</a></div></div>
+<div class="mobile-bottom-bar"><div class="mobile-bottom-bar-inner"><a href="../index.html" class="mobile-bottom-btn active"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>Home</a><button class="mobile-bottom-btn" onclick="openSearch()"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>Search</button><a href="../pages/wishlist.html" class="mobile-bottom-btn"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>Wishlist</a><button class="mobile-bottom-btn" onclick="openCartDrawer()"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>Cart</button></div></div>
 <div id="overlay" class="overlay"></div>
-
-<!-- Quick View Modal -->
-<div id="quickview-modal" class="modal">
-  <div class="modal-backdrop" onclick="closeQuickView()"></div>
-  <div class="modal-box quickview-modal" style="max-width:900px;padding:0;overflow:hidden">
-    <div class="quickview-inner">
-      <div class="quickview-gallery">
-        <img src="" alt="Product" style="width:100%;height:100%;object-fit:cover">
-      </div>
-      <div class="quickview-info" style="padding:40px;overflow-y:auto"></div>
-    </div>
-  </div>
-</div>
+<div id="quickview-modal" class="modal"><div class="modal-backdrop" onclick="closeQuickView()"></div><div class="modal-box quickview-modal" style="max-width:900px;padding:0;overflow:hidden"><div class="quickview-inner"><div class="quickview-gallery"><img src="" alt="Product" style="width:100%;height:100%;object-fit:cover"></div><div class="quickview-info" style="padding:40px;overflow-y:auto"></div></div></div></div>
 <main>
   <div style="position:relative;height:260px;overflow:hidden">
-    <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Shop" style="width:100%;height:100%;object-fit:cover">
-    <div class="category-hero-content">
-      <div class="section-label" style="color:var(--accent)">Premium Menswear</div>
-      <h1 class="category-title">Shop All</h1>
-    </div>
+    <img src="https://media.treyondworld.com/2024/05/Best-wardi-shop-for-army-police.png" alt="Shop" style="width:100%;height:100%;object-fit:cover">
+    <div class="category-hero-content"><div class="section-label" style="color:var(--accent)">Premium Menswear</div><h1 class="category-title">Shop All</h1></div>
   </div>
   <div class="container">
-    <nav class="breadcrumb">
-      <a href="../index.html">Home</a><span class="breadcrumb-sep">›</span><span class="breadcrumb-current">Shop</span>
-    </nav>
+    <nav class="breadcrumb"><a href="../index.html">Home</a><span class="breadcrumb-sep">›</span><span class="breadcrumb-current">Shop</span></nav>
     <div class="shop-layout" id="shop-section">
       <aside class="filter-sidebar">
-        <div class="filter-sidebar-header">
-          <span class="filter-title">Filters</span>
-          <span class="filter-clear" id="filter-clear">Clear All</span>
+        <div class="filter-sidebar-header"><span class="filter-title">Filters</span><span class="filter-clear" id="filter-clear">Clear All</span></div>
+        <div class="filter-group"><div class="filter-group-header open"><span class="filter-group-label">Category</span></div>
+          <div class="filter-group-body open"><div class="filter-options">
+            <div class="filter-option" data-category="suits"><div class="filter-checkbox"></div>Suits</div>
+            <div class="filter-option" data-category="blazers"><div class="filter-checkbox"></div>Blazers</div>
+            <div class="filter-option" data-category="modi-jacket"><div class="filter-checkbox"></div>Modi Jacket</div>
+            <div class="filter-option" data-category="shirts"><div class="filter-checkbox"></div>Shirts</div>
+            <div class="filter-option" data-category="check-shirts"><div class="filter-checkbox"></div>Check Shirts</div>
+            <div class="filter-option" data-category="strap-shirts"><div class="filter-checkbox"></div>Strap Shirts</div>
+            <div class="filter-option" data-category="t-shirts"><div class="filter-checkbox"></div>T-Shirts</div>
+            <div class="filter-option" data-category="trousers"><div class="filter-checkbox"></div>Trousers</div>
+            <div class="filter-option" data-category="uniforms"><div class="filter-checkbox"></div>Uniforms</div>
+            <div class="filter-option" data-category="combat-uniforms"><div class="filter-checkbox"></div>Combat Uniforms</div>
+          </div></div>
         </div>
-        <div class="filter-group">
-          <div class="filter-group-header open">
-            <span class="filter-group-label">Category</span>
-          </div>
-          <div class="filter-group-body open">
-            <div class="filter-options">
-              <div class="filter-option" data-category="sherwanis"><div class="filter-checkbox"></div>Sherwanis</div>
-              <div class="filter-option" data-category="suits"><div class="filter-checkbox"></div>Suits</div>
-              <div class="filter-option" data-category="kurta-sets"><div class="filter-checkbox"></div>Kurta Sets</div>
-              <div class="filter-option" data-category="blazers"><div class="filter-checkbox"></div>Blazers</div>
-              <div class="filter-option" data-category="indo-western"><div class="filter-checkbox"></div>Indo-Western</div>
-              <div class="filter-option" data-category="shirts"><div class="filter-checkbox"></div>Shirts</div>
-              <div class="filter-option" data-category="check-shirts"><div class="filter-checkbox"></div>Check Shirts</div>
-              <div class="filter-option" data-category="t-shirts"><div class="filter-checkbox"></div>T-Shirts</div>
-              <div class="filter-option" data-category="uniforms"><div class="filter-checkbox"></div>Uniforms</div>
-              <div class="filter-option" data-category="combat-uniforms"><div class="filter-checkbox"></div>Combat Uniforms</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter-group">
-          <div class="filter-group-header">
-            <span class="filter-group-label">Size</span>
-          </div>
-          <div class="filter-group-body">
-            <div class="filter-options">
-              <div class="filter-option" data-size="S"><div class="filter-checkbox"></div>S</div>
-              <div class="filter-option" data-size="M"><div class="filter-checkbox"></div>M</div>
-              <div class="filter-option" data-size="L"><div class="filter-checkbox"></div>L</div>
-              <div class="filter-option" data-size="XL"><div class="filter-checkbox"></div>XL</div>
-              <div class="filter-option" data-size="XXL"><div class="filter-checkbox"></div>XXL</div>
-              <div class="filter-option" data-size="38"><div class="filter-checkbox"></div>38</div>
-              <div class="filter-option" data-size="40"><div class="filter-checkbox"></div>40</div>
-              <div class="filter-option" data-size="42"><div class="filter-checkbox"></div>42</div>
-              <div class="filter-option" data-size="44"><div class="filter-checkbox"></div>44</div>
-              <div class="filter-option" data-size="46"><div class="filter-checkbox"></div>46</div>
-            </div>
-          </div>
+        <div class="filter-group"><div class="filter-group-header"><span class="filter-group-label">Size</span></div>
+          <div class="filter-group-body"><div class="filter-options">
+            <div class="filter-option" data-size="S"><div class="filter-checkbox"></div>S</div>
+            <div class="filter-option" data-size="M"><div class="filter-checkbox"></div>M</div>
+            <div class="filter-option" data-size="L"><div class="filter-checkbox"></div>L</div>
+            <div class="filter-option" data-size="XL"><div class="filter-checkbox"></div>XL</div>
+            <div class="filter-option" data-size="36"><div class="filter-checkbox"></div>36</div>
+            <div class="filter-option" data-size="38"><div class="filter-checkbox"></div>38</div>
+            <div class="filter-option" data-size="40"><div class="filter-checkbox"></div>40</div>
+            <div class="filter-option" data-size="42"><div class="filter-checkbox"></div>42</div>
+            <div class="filter-option" data-size="44"><div class="filter-checkbox"></div>44</div>
+            <div class="filter-option" data-size="46"><div class="filter-checkbox"></div>46</div>
+          </div></div>
         </div>
       </aside>
       <div>
         <div class="shop-controls">
           <span id="results-count" class="results-count"></span>
           <div class="shop-controls-right">
-            <select class="sort-select" id="sort-select">
-              <option value="featured">Featured</option>
-              <option value="newest">Newest</option>
-              <option value="price-asc">Price: Low–High</option>
-              <option value="price-desc">Price: High–Low</option>
-            </select>
-            <div class="view-toggle">
-              <button class="view-btn active" data-view="grid">
-                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="16" height="16">
-                  <rect x="3" y="3" width="7" height="7"/>
-                  <rect x="14" y="3" width="7" height="7"/>
-                  <rect x="3" y="14" width="7" height="7"/>
-                  <rect x="14" y="14" width="7" height="7"/>
-                </svg>
-              </button>
-              <button class="view-btn" data-view="list">
-                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="16" height="16">
-                  <line x1="3" y1="6" x2="21" y2="6"/>
-                  <line x1="3" y1="12" x2="21" y2="12"/>
-                  <line x1="3" y1="18" x2="21" y2="18"/>
-                </svg>
-              </button>
-            </div>
+            <select class="sort-select" id="sort-select"><option value="featured">Featured</option><option value="newest">Newest</option><option value="price-asc">Price: Low–High</option><option value="price-desc">Price: High–Low</option></select>
+            <div class="view-toggle"><button class="view-btn active" data-view="grid"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="16" height="16"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></button><button class="view-btn" data-view="list"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="16" height="16"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button></div>
           </div>
         </div>
         <div id="active-filters" class="active-filters"></div>
@@ -287,40 +61,7 @@
     </div>
   </div>
 </main>
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <span class="nav-logo">TREYOND WORLD</span>
-        <p>Premium menswear crafted for every milestone.</p>
-      </div>
-      <div>
-        <div class="footer-col-title">Shop</div>
-        <div class="footer-links">
-          <a href="shop.html">All Products</a>
-          <a href="shop.html?cat=sherwanis">Sherwanis</a>
-          <a href="shop.html?cat=suits">Suits</a>
-        </div>
-      </div>
-      <div>
-        <div class="footer-col-title">Help</div>
-        <div class="footer-links">
-          <a href="contact.html">Contact</a>
-          <a href="shipping.html">Shipping</a>
-          <a href="refund.html">Returns</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2025 Treyond World</span>
-      <div class="footer-bottom-links">
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <a href="refund.html">Refund</a>
-      </div>
-    </div>
-  </div>
-</footer>
+<footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand"><span class="nav-logo">TREYOND WORLD</span><p>Premium menswear crafted for every milestone.</p></div><div><div class="footer-col-title">Shop</div><div class="footer-links"><a href="shop.html">All Products</a><a href="shop.html?cat=suits">Suits</a><a href="shop.html?cat=blazers">Blazers</a><a href="shop.html?cat=uniforms">Uniforms</a></div></div><div><div class="footer-col-title">Help</div><div class="footer-links"><a href="contact.html">Contact</a><a href="shipping.html">Shipping</a><a href="refund.html">Returns</a></div></div></div><div class="footer-bottom"><span>© 2025 Treyond World</span><div class="footer-bottom-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="refund.html">Refund</a></div></div></div></footer>
 <div id="toast-container" class="toast-container"></div>
 <script src="../js/global.js"></script>
 <script src="../js/search.js"></script>
@@ -338,9 +79,7 @@ window.CATEGORY_PRODUCTS = [
       'https://media.treyondworld.com/2024/02/New-Fabric__ocm_b3_acrylicshirt_2__2024-2-5-20-23-38__2730X4096.jpg',
       'https://media.treyondworld.com/2024/02/New-Fabric__a2_all_set211_shirtfolded_front2__2024-2-5-20-22-4__2730X4096.jpg',
       'https://media.treyondworld.com/2024/02/New-Fabric__all_set199_m_trouser_front2__2024-2-5-20-22-26__2730X4096.jpg',
-      'https://media.treyondworld.com/2024/02/New-Fabric__all_set211_nomo_shirtfolded_front7__2024-2-5-20-22-41__2730X4096.jpg',
-      'https://media.treyondworld.com/2024/02/New-Fabric__all_set211_shirtfolded_front3__2024-2-5-20-22-55__2730X4096.jpg',
-      'https://media.treyondworld.com/2024/02/New-Fabric__all_set255_hanger_shirt__2024-2-5-20-23-13__2730X4096.jpg'
+      'https://media.treyondworld.com/2024/02/New-Fabric__all_set211_nomo_shirtfolded_front7__2024-2-5-20-22-41__2730X4096.jpg'
     ],
     url: 'mens-premium-multi-color-printed-cotton-casual-party-wear-shirt.html',
     category: 'check-shirts'
@@ -353,47 +92,9 @@ window.CATEGORY_PRODUCTS = [
     sizes: ['38','40','42','44'],
     images: [
       'https://media.treyondworld.com/2024/02/New-Fabric__ocm_b3_acrylicshirt_2__2024-2-4-22-52-25__2730X4096.jpg',
-      'https://media.treyondworld.com/2024/02/New-Fabric__all_set255_hanger_shirt__2024-2-4-22-50-59__2730X4096.jpg',
-      'https://media.treyondworld.com/2024/02/New-Fabric__all_set250_shirtandswatch__2024-2-4-22-50-34__2730X4096.jpg',
-      'https://media.treyondworld.com/2024/02/New-Fabric__all_set211_shirtfolded_front3__2024-2-4-22-50-18__2730X4096.jpg',
-      'https://media.treyondworld.com/2024/02/New-Fabric__all_set211_nomo_shirtfolded_front7__2024-2-4-22-49-57__2730X4096.jpg',
-      'https://media.treyondworld.com/2024/02/New-Fabric__a2_all_set211_shirtfolded_front2__2024-2-4-22-48-58__2730X4096.jpg'
+      'https://media.treyondworld.com/2024/02/New-Fabric__all_set255_hanger_shirt__2024-2-4-22-50-59__2730X4096.jpg'
     ],
     url: 'mens-premium-multi-color-printed-cotton-party-wear-shirt.html',
-    category: 'check-shirts'
-  },
-  {
-    id: 'shirt-07',
-    name: "Men's Premium Sky Color Printed Cotton Regular Fit Shirt",
-    price: 1400,
-    badge: 'Check Shirts',
-    sizes: ['38','40','42','44'],
-    images: [
-      'https://media.treyondworld.com/2024/02/New-Fabric__ocm_b3_acrylicshirt_2__2024-2-4-21-7-44__2730X4096.jpg',
-      'https://media.treyondworld.com/2024/02/New-Fabric__all_set161_men_formal_side2__2024-2-4-21-12-27__2730X4096.jpg',
-      'https://media.treyondworld.com/2024/02/New-Fabric__all_set199_m_trouser_front2__2024-2-4-21-12-2__2730X4096.jpg',
-      'https://media.treyondworld.com/2024/02/New-Fabric__all_set211_nomo_shirtfolded_front7__2024-2-4-21-11-37__2730X4096.jpg',
-      'https://media.treyondworld.com/2024/02/New-Fabric__all_set211_shirtfolded_front3__2024-2-4-21-11-26__2730X4096.jpg',
-      'https://media.treyondworld.com/2024/02/New-Fabric__all_set255_hanger_shirt__2024-2-4-21-8-40__2730X4096.jpg'
-    ],
-    url: 'mens-premium-sky-color-printed-cotton-regular-fit-shirt.html',
-    category: 'check-shirts'
-  },
-  {
-    id: 'shirt-08',
-    name: "Men's Premium Firoz Printed Cotton Party Wear Shirt",
-    price: 1400,
-    badge: 'Check Shirts',
-    sizes: ['38','40','42','44'],
-    images: [
-      'https://media.treyondworld.com/2024/02/New-Fabric__ocm_b3_acrylicshirt_2__2024-2-4-21-30-23__2730X4096.jpg',
-      'https://media.treyondworld.com/2024/02/New-Fabric__ocm_b3_acrylicshirt_4__2024-2-4-21-30-40__2730X4096.jpg',
-      'https://media.treyondworld.com/2024/02/New-Fabric__all_set255_hanger_shirt__2024-2-4-21-31-1__2730X4096.jpg',
-      'https://media.treyondworld.com/2024/02/New-Fabric__all_set211_shirtfolded_front3__2024-2-4-21-32-19__2730X4096.jpg',
-      'https://media.treyondworld.com/2024/02/New-Fabric__all_set211_nomo_shirtfolded_front7__2024-2-4-21-32-33__2730X4096.jpg',
-      'https://media.treyondworld.com/2024/02/New-Fabric__all_set199_m_trouser_front2__2024-2-4-21-32-44__2730X4096.jpg'
-    ],
-    url: 'men-premium-firoz-printed-cotton-party-wear-shirt.html',
     category: 'check-shirts'
   },
   {
@@ -406,126 +107,10 @@ window.CATEGORY_PRODUCTS = [
       'https://media.treyondworld.com/2023/12/CKS08714.jpg',
       'https://media.treyondworld.com/2023/12/CKS08720.jpg',
       'https://media.treyondworld.com/2023/12/CKS08718.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08717.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08708.jpg'
+      'https://media.treyondworld.com/2023/12/CKS08717.jpg'
     ],
     url: 'men-light-khaki-oxford-soft-premium-cotton-formal-shirt-for-mens.html',
     category: 'shirts'
-  },
-  {
-    id: 'shirt-02',
-    name: 'Gray Color Oxford Soft Premium Cotton Formal Shirt',
-    price: 1300,
-    badge: 'Shirts',
-    sizes: ['38','40','42','44'],
-    images: [
-      'https://media.treyondworld.com/2023/12/CKS08729.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08735.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08733.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08732.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08724.jpg'
-    ],
-    url: 'gray-color-oxford-soft-premium-cotton-formal-shirt-for-mens.html',
-    category: 'shirts'
-  },
-  {
-    id: 'shirt-03',
-    name: 'Dark Grey Fila Fill Soft Premium Cotton Formal Shirt',
-    price: 1100,
-    badge: 'Shirts',
-    sizes: ['38','40','42','44'],
-    images: [
-      'https://media.treyondworld.com/2023/12/CKS08743.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08746.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08749.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08747.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08738.jpg'
-    ],
-    url: 'men-dark-grey-fila-fill-soft-premium-cotton-formal-shirt.html',
-    category: 'shirts'
-  },
-  {
-    id: 'shirt-04',
-    name: 'Orange Color Super Soft Premium Cotton Dobby Formal Shirt',
-    price: 1100,
-    badge: 'Shirts',
-    sizes: ['38','40','42','44'],
-    images: [
-      'https://media.treyondworld.com/2023/12/CKS08768.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08775.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08773.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08772.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08771.jpg'
-    ],
-    url: 'men-orange-color-super-soft-premium-cotton-dobby-formal-shirt.html',
-    category: 'shirts'
-  },
-  {
-    id: 'shirt-09',
-    name: "Mango Color Fila Fill Soft Premium Cotton Formal Shirt",
-    price: 1100,
-    badge: 'Plain Shirts',
-    sizes: ['38','40','42','44'],
-    images: [
-      'https://media.treyondworld.com/2023/12/CKS08491.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08483.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08495.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08493.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08489.jpg'
-    ],
-    url: 'men-mango-color-fila-fill-soft-premium-cotton-formal-shirt.html',
-    category: 'plain-shirts'
-  },
-  {
-    id: 'shirt-10',
-    name: "Lemon Color Super Soft Premium Dobby Cotton Formal Shirt",
-    price: 1100,
-    badge: 'Plain Shirts',
-    sizes: ['38','40','42','44'],
-    images: [
-      'https://media.treyondworld.com/2023/12/CKS08471.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08481.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08479.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08477.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08475.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08473.jpg'
-    ],
-    url: 'men-lemon-color-super-soft-premium-dobby-cotton-formal-shirt.html',
-    category: 'plain-shirts'
-  },
-  {
-    id: 'shirt-11',
-    name: "Pink Color Super Soft Premium Cotton Dobby Formal Shirt For Men’s",
-    price: 1100,
-    badge: 'Plain Shirts',
-    sizes: ['38','40','42','44'],
-    images: [
-      'https://media.treyondworld.com/2023/12/CKS08458.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08468.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08467.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08464.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08463.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08461.jpg'
-    ],
-    url: 'men-pink-color-super-soft-premium-cotton-dobby-formal-shirt-for-mens.html',
-    category: 'plain-shirts'
-  },
-  {
-    id: 'shirt-12',
-    name: "Move Color Fila Fill Soft Premium Cotton Formal Shirt",
-    price: 1100,
-    badge: 'Plain Shirts',
-    sizes: ['38','40','42','44'],
-    images: [
-      'https://media.treyondworld.com/2023/12/CKS08445.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08454.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08452.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08451.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08450.jpg',
-      'https://media.treyondworld.com/2023/12/CKS08447.jpg'
-    ],
-    url: 'men-move-color-fila-fill-soft-premium-cotton-formal-shirt.html',
-    category: 'plain-shirts'
   },
   {
     id: 'uniform-01',
@@ -536,127 +121,9 @@ window.CATEGORY_PRODUCTS = [
     images: [
       'https://media.treyondworld.com/2024/05/CKS00578-copy-scaled.jpg',
       'https://media.treyondworld.com/2024/05/CKS00585-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00583-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00582-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00580-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00575-copy-scaled.jpg'
+      'https://media.treyondworld.com/2024/05/CKS00583-copy-scaled.jpg'
     ],
     url: 'crpf-khaki-uniform-oswal-ajanta.html',
-    category: 'uniforms'
-  },
-  {
-    id: 'uniform-02',
-    name: 'Police Stretchable Khaki Uniform By Vimal Officer Stretch fit',
-    price: 2199,
-    badge: 'Uniform',
-    sizes: ['38','40','42','44','46'],
-    images: [
-      'https://media.treyondworld.com/2024/05/CKS00690-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00697-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00693-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00726-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00696-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00694-scaled.jpg'
-    ],
-    url: 'police-stretchable-khaki-uniform.html',
-    category: 'uniforms'
-  },
-  {
-    id: 'uniform-03',
-    name: 'Police Khaki Uniform By Vimal Premium Trovine',
-    price: 2199,
-    badge: 'Uniform',
-    sizes: ['38','40','42','44','46'],
-    images: [
-      'https://media.treyondworld.com/2024/05/CKS00651-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00657-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00653-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00659-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00656-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00655-copy-scaled.jpg'
-    ],
-    url: 'police-khaki-uniform-premium.html',
-    category: 'uniforms'
-  },
-  {
-    id: 'uniform-04',
-    name: 'Police Khaki Uniform Vimal Premium Trovine Light Color',
-    price: 2199,
-    badge: 'Uniform',
-    sizes: ['38','40','42','44','46'],
-    images: [
-      'https://media.treyondworld.com/2024/05/CKS00640-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00646-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00644-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00641-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00645-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00648-copy-scaled.jpg'
-    ],
-    url: 'police-khaki-uniform-premium-trovine.html',
-    category: 'uniforms'
-  },
-  {
-    id: 'uniform-05',
-    name: 'BSF Graviera Khaki Uniform',
-    price: 1700,
-    badge: 'Uniform',
-    sizes: ['36','38','40','42','44','46'],
-    images: [
-      'https://media.treyondworld.com/2024/05/CKS00468-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00472-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00473-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00476-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00477-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00493-scaled.jpg'
-    ],
-    url: 'bsf-khaki-uniform-graviera.html',
-    category: 'uniforms'
-  },
-  {
-    id: 'uniform-06',
-    name: 'Police Khaki Uniform BY Vimal Super Trovine',
-    price: 1999,
-    badge: 'Uniform',
-    sizes: ['36','38','40','42','44','46'],
-    images: [
-      'https://media.treyondworld.com/2024/05/CKS00667-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00669-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00668-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00676-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00675-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00673-copy-scaled.jpg'
-    ],
-    url: 'police-khaki-uniform-vimal-super-fabric.html',
-    category: 'uniforms'
-  },
-  {
-    id: 'uniform-07',
-    name: 'BSF Khaki Uniform Vimal Super Premium Trovine',
-    price: 2099,
-    badge: 'Uniform',
-    sizes: ['36','38','40','42','44','46'],
-    images: [
-      'https://media.treyondworld.com/2024/05/CKS00496-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00506-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00507-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00504-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00503-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00498-scaled.jpg'
-    ],
-    url: 'bsf-khaki-uniform-vimal-super-premium-trovine.html',
-    category: 'uniforms'
-  },
-  {
-    id: 'uniform-08',
-    name: 'BSF Khaki Uniform Vimal Saphire matty',
-    price: 1999,
-    badge: 'Uniform',
-    sizes: ['36','38','40','42','44','46'],
-    images: [
-      'https://media.treyondworld.com/2024/05/CKS00512-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00510-scaled.jpg'
-    ],
-    url: 'bsf-khaki-uniform-vimal-saphire-matty.html',
     category: 'uniforms'
   },
   {
@@ -668,148 +135,9 @@ window.CATEGORY_PRODUCTS = [
     images: [
       'https://media.treyondworld.com/2024/05/CKS00770-scaled.jpg',
       'https://media.treyondworld.com/2024/05/CKS00772-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00778-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00776-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00775-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00774-scaled.jpg'
+      'https://media.treyondworld.com/2024/05/CKS00778-scaled.jpg'
     ],
     url: 'ssb-new-pattern-combat-uniforms.html',
-    category: 'combat-uniforms'
-  },
-  {
-    id: 'combat-02',
-    name: 'SSB US Pattern Combat Uniform (Trovine Premium)',
-    price: 2199,
-    badge: 'Combat',
-    sizes: ['38','40','42','44','46'],
-    images: [
-      'https://media.treyondworld.com/2024/05/CKS00758-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00760-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00768-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00765-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00764-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00763-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00760-1-scaled.jpg'
-    ],
-    url: 'ssb-us-pattern-combat-uniform-ssb-3.html',
-    category: 'combat-uniforms'
-  },
-  {
-    id: 'combat-03',
-    name: 'SSB New Pattern Combat Uniform',
-    price: 1799,
-    badge: 'Combat',
-    sizes: ['38','40','42','44','46'],
-    images: [
-      'https://media.treyondworld.com/2024/05/CKS00743-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00745-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00756-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00754-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00752-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00749-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00748-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00747-scaled.jpg'
-    ],
-    url: 'ssb-new-pattern-combat.html',
-    category: 'combat-uniforms'
-  },
-  {
-    id: 'combat-04',
-    name: 'SSB US Pattern Combat Uniform',
-    price: 1999,
-    badge: 'Combat',
-    sizes: ['38','40','42','44','46'],
-    images: [
-      'https://media.treyondworld.com/2024/05/CKS00728-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00729-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00741-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00740-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00738-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00737-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00734-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00733-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00732-scaled.jpg'
-    ],
-    url: 'ssb-new-pattern-combat-uniform.html',
-    category: 'combat-uniforms'
-  },
-  {
-    id: 'combat-05',
-    name: 'CRPF Combat Cotton 80% Poly 20% Us Pattern Wardi',
-    price: 1550,
-    badge: 'Combat',
-    sizes: ['36','38','40','42','44','46'],
-    images: [
-      'https://media.treyondworld.com/2024/05/CKS00598-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00608-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00602-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00600-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00611-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00610-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00607-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00606-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00603-copy-scaled.jpg'
-    ],
-    url: 'crpf-combat-cotton-80-poly-20-us-pattern-wardi.html',
-    category: 'combat-uniforms'
-  },
-  {
-    id: 'combat-06',
-    name: 'CRPF Combat Manipuri Pattern Uniform By Cool Touch Ajanta Osawal',
-    price: 2199,
-    badge: 'Combat',
-    sizes: ['36','38','40','42','44','46'],
-    images: [
-      'https://media.treyondworld.com/2024/05/CKS00613-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00615-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00627-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00626-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00625-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00623-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00622-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00620-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00619-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00618-copy-scaled.jpg'
-    ],
-    url: 'crpf-combet-manipuri-pattern-uniform-cool-touch.html',
-    category: 'combat-uniforms'
-  },
-  {
-    id: 'combat-07',
-    name: 'CRPF Cotton Us Pattern Combat Uniform',
-    price: 2199,
-    badge: 'Combat',
-    sizes: ['36','38','40','42','44','46'],
-    images: [
-      'https://media.treyondworld.com/2024/05/CKS00598-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00608-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00602-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00600-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00611-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00610-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00607-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00606-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00603-copy-scaled.jpg'
-    ],
-    url: 'crpf-cotton-us-pattern-combat-uniform.html',
-    category: 'combat-uniforms'
-  },
-  {
-    id: 'combat-08',
-    name: 'CRPF Combat Uniform Cool Touch Fast color by Ajanta',
-    price: 1799,
-    badge: 'Combat',
-    sizes: ['36','38','40','42','44','46'],
-    images: [
-      'https://media.treyondworld.com/2024/05/crpf-poly-coot-touch-main-photo.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00594-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00590-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00592-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00596-copy-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00593-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00593-copy-scaled.jpg'
-    ],
-    url: 'crpf-combat-uniform-cool-touch-fast-colour-by-ajanta.html',
     category: 'combat-uniforms'
   },
   {
@@ -820,61 +148,181 @@ window.CATEGORY_PRODUCTS = [
     sizes: ['36','38','40','42'],
     images: [
       'https://media.treyondworld.com/2024/05/CKS00717-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00720-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00724-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00723-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00722-scaled.jpg'
+      'https://media.treyondworld.com/2024/05/CKS00720-scaled.jpg'
     ],
     url: 'white-cotton-t-shirt1.html',
     category: 't-shirts'
   },
-  {
-    id: 'tshirt-02',
-    name: 'White Cotton T-Shirt',
-    price: 450,
-    badge: 'T-Shirt',
-    sizes: ['36','38','40','42'],
-    images: [
-      'https://media.treyondworld.com/2024/05/CKS00709-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00711-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00715-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00714-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00713-scaled.jpg'
-    ],
-    url: 'white-cotton-t-shirt.html',
-    category: 't-shirts'
-  },
-  {
-    id: 'tshirt-03',
-    name: 'White Cotton T-Shirt (Matty)',
-    price: 399,
-    badge: 'T-Shirt',
-    sizes: ['36','38','40','42'],
-    images: [
-      'https://media.treyondworld.com/2024/05/CKS00709-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00711-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00715-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00714-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00713-scaled.jpg'
-    ],
-    url: 'white-t-shirt-cotton-matty.html',
-    category: 't-shirts'
-  },
-  {
-    id: 'tshirt-04',
-    name: 'White Premium Cotton T-Shirt',
-    price: 599,
-    badge: 'T-Shirt',
-    sizes: ['36','38','40','42'],
-    images: [
-      'https://media.treyondworld.com/2024/05/CKS00700-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00702-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00706-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00705-scaled.jpg',
-      'https://media.treyondworld.com/2024/05/CKS00704-scaled.jpg'
-    ],
-    url: 'white-t-shirt-cotton.html',
-    category: 't-shirts'
-  }
+  { id: 'p6538', name: 'Men’s Yellow Jacquard Jacket With Silk Kurta And Pajama', price: 1999, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08288.jpg'], url: 'mens-yellow-jacquard-jacket-with-silk-kurta-and-pajama.html', category: 'modi-jacket' },
+  { id: 'p6558', name: 'Men’s Light Yellow Jacquard Modi Jacket With Silk Kurta Pajama', price: 1999, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08320.jpg'], url: 'mens-light-yellow-jacquard-modi-jacket-with-silk-kurta-pajam.html', category: 'modi-jacket' },
+  { id: 'p6566', name: 'Men’s Grey Tuxedo 3 Piece Suits Wedding Groomsmen Fashion Suits', price: 7000, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08338.jpg'], url: 'mens-grey-tuxedo-3-piece-suits-wedding-groomsmen-fashion-sui.html', category: 'suits' },
+  { id: 'p6578', name: 'Men’s Dark Blue Sequins Embroidered Tuxedo Blazer With Blue Vest coat and Pant', price: 7000, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2023/12/CKS08366.jpg'], url: 'mens-dark-blue-sequins-embroidered-tuxedo-blazer-with-blue-v.html', category: 'suits' },
+  { id: 'p6587', name: 'Men’s Maroon Sequins Embroidered Tuxedo 3 Piece Suit', price: 7000, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08392.jpg'], url: 'mens-maroon-sequins-embroidered-tuxedo-3-piece-suit.html', category: 'suits' },
+  { id: 'p6597', name: 'Men’s Black Sequins Embroidered Tuxedo 3 Piece Suit', price: 7000, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08410.jpg'], url: 'mens-black-sequins-embroidered-tuxedo-3-piece-suit.html', category: 'suits' },
+  { id: 'p6606', name: 'Pista Green Color Fila Fill Soft Premium Cotton Formal Shirt For Men’s', price: 1100, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08431.jpg'], url: 'pista-green-color-fila-fill-soft-premium-cotton-formal-shirt.html', category: 'shirts' },
+  { id: 'p6615', name: 'Move Color Fila Fill Soft Premium Cotton Formal Shirt For Men’s', price: 1100, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08445.jpg'], url: 'move-color-fila-fill-soft-premium-cotton-formal-shirt-for-me.html', category: 'shirts' },
+  { id: 'p6624', name: 'Pink Color Super Soft Premium Cotton Dobby Formal Shirt For Men’s', price: 1100, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08458.jpg'], url: 'pink-color-super-soft-premium-cotton-dobby-formal-shirt-for.html', category: 'shirts' },
+  { id: 'p6635', name: 'lemon Color Super Soft Premium Dobby Cotton Formal Shirt For Men’s', price: 1100, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08471.jpg'], url: 'lemon-color-super-soft-premium-dobby-cotton-formal-shirt-for.html', category: 'shirts' },
+  { id: 'p6644', name: 'Mango Color Fila Fill Soft Premium Cotton Formal Shirt For Men’s', price: 1100, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08491.jpg'], url: 'mango-color-fila-fill-soft-premium-cotton-formal-shirt-for-m.html', category: 'shirts' },
+  { id: 'p6653', name: 'Sky Color Super Soft Premium Dobby Cotton Formal Shirt For Men’s', price: 1100, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08508.jpg'], url: 'sky-color-super-soft-premium-dobby-cotton-formal-shirt-for-m.html', category: 'shirts' },
+  { id: 'p6662', name: 'Dark Pink Fila Fill Soft Premium Cotton Formal Shirt For Men’s', price: 1100, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08519.jpg'], url: 'dark-pink-fila-fill-soft-premium-cotton-formal-shirt-for-men.html', category: 'shirts' },
+  { id: 'p6671', name: 'Light Fawn Fila Fill Soft Premium Cotton Formal Shirt For Men’s', price: 1100, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08537.jpg'], url: 'light-fawn-fila-fill-soft-premium-cotton-formal-shirt-for-me.html', category: 'shirts' },
+  { id: 'p6680', name: 'Sky Color Fila Fill Soft Premium Cotton Formal Shirt For Men’s', price: 1100, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08549.jpg'], url: 'sky-color-fila-fill-soft-premium-cotton-formal-shirt-for-men.html', category: 'shirts' },
+  { id: 'p6689', name: 'Peach Color Super Soft Premium Cotton Dobby Formal Shirt For Men’s', price: 1100, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08564.jpg'], url: 'peach-color-super-soft-premium-cotton-dobby-formal-shirt-for.html', category: 'shirts' },
+  { id: 'p6698', name: 'Light Gajari Color Fila Fill Soft Premium Cotton Formal Shirt For Men’s', price: 1100, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08579.jpg'], url: 'light-gajari-color-fila-fill-soft-premium-cotton-formal-shir.html', category: 'shirts' },
+  { id: 'p6707', name: 'Light Gajari Color Oxford Soft Premium Cotton Formal Shirt For Men’s', price: 1300, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08594.jpg'], url: 'light-gajari-color-oxford-soft-premium-cotton-formal-shirt-f.html', category: 'shirts' },
+  { id: 'p6716', name: 'Green Color Oxford Soft Premium Cotton Formal Shirt For Men’s', price: 1300, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08622.jpg'], url: 'green-color-oxford-soft-premium-cotton-formal-shirt-for-mens.html', category: 'shirts' },
+  { id: 'p6725', name: 'Froze Color Fila Fill Soft Premium Cotton Formal Shirt For Men’s', price: 1100, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08634.jpg'], url: 'froze-color-fila-fill-soft-premium-cotton-formal-shirt-for-m.html', category: 'shirts' },
+  { id: 'p6734', name: 'Orange Color Oxford Soft Premium Cotton Formal Shirt For Men’s', price: 1300, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08646.jpg'], url: 'orange-color-oxford-soft-premium-cotton-formal-shirt-for-men.html', category: 'shirts' },
+  { id: 'p6743', name: 'Fawn Color Super Soft Premium Cotton Dobby Formal Shirt For Men’s', price: 1100, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08664.jpg'], url: 'fawn-color-super-soft-premium-cotton-dobby-formal-shirt-for.html', category: 'shirts' },
+  { id: 'p6752', name: 'Light Khaki Oxford Soft Premium Cotton Formal Shirt For Men’s', price: 1300, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2023/12/CKS08714.jpg'], url: 'light-khaki-oxford-soft-premium-cotton-formal-shirt-for-mens.html', category: 'uniforms' },
+  { id: 'p6761', name: 'Gray Color Oxford Soft Premium Cotton Formal Shirt For Men’s', price: 1300, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08729.jpg'], url: 'gray-color-oxford-soft-premium-cotton-formal-shirt-for-mens.html', category: 'shirts' },
+  { id: 'p6770', name: 'Dark Grey Fila Fill Soft Premium Cotton Formal Shirt For Men’s', price: 1100, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08743.jpg'], url: 'dark-grey-fila-fill-soft-premium-cotton-formal-shirt-for-men.html', category: 'shirts' },
+  { id: 'p6779', name: 'Orange Color Super Soft Premium Cotton Dobby Formal Shirt For Men’s', price: 1100, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08768.jpg'], url: 'orange-color-super-soft-premium-cotton-dobby-formal-shirt-fo.html', category: 'shirts' },
+  { id: 'p6788', name: 'Mustard Color Super Soft Premium Cotton Dobby Formal Shirt For Men’s', price: 1100, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08790.jpg'], url: 'mustard-color-super-soft-premium-cotton-dobby-formal-shirt-f.html', category: 'shirts' },
+  { id: 'p6797', name: 'Light Broun Fila Fill Soft Premium Cotton Formal Shirt For Men’s', price: 1100, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08805.jpg'], url: 'light-broun-fila-fill-soft-premium-cotton-formal-shirt-for-m.html', category: 'shirts' },
+  { id: 'p6806', name: 'Purple Color Super Soft Premium Cotton Dobby Formal Shirt For Men’s', price: 1100, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08843.jpg'], url: 'purple-color-super-soft-premium-cotton-dobby-formal-shirt-fo.html', category: 'shirts' },
+  { id: 'p6815', name: 'Navy Blue Oxford Soft Premium Cotton Formal Shirt For Men’s', price: 1300, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08859.jpg'], url: 'navy-blue-oxford-soft-premium-cotton-formal-shirt-for-mens.html', category: 'shirts' },
+  { id: 'p6824', name: 'Red Color Super Soft Premium Cotton Satin Party Wear Shirt For Men’s', price: 1100, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08876.jpg'], url: 'red-color-super-soft-premium-cotton-satin-party-wear-shirt-f.html', category: 'shirts' },
+  { id: 'p6833', name: 'Black Super Soft Premium Cotton Satin Party Wear Shirt For Men’s', price: 1100, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08912.jpg'], url: 'black-super-soft-premium-cotton-satin-party-wear-shirt-for-m.html', category: 'shirts' },
+  { id: 'p6842', name: 'Maroon Dobby Premium Soft Cotton Shirt', price: 1100, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08926.jpg'], url: 'maroon-dobby-premium-soft-cotton-shirt.html', category: 'shirts' },
+  { id: 'p6851', name: 'Navy Blue Satin Finish Premium Cotton Shirt', price: 1100, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08938.jpg'], url: 'navy-blue-satin-finish-premium-cotton-shirt.html', category: 'shirts' },
+  { id: 'p6860', name: 'Green Satin Finish Premium Cotton Shirt For Men’s', price: 1100, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08956.jpg'], url: 'green-satin-finish-premium-cotton-shirt-for-mens.html', category: 'shirts' },
+  { id: 'p6869', name: 'Dobby Royal Blue Premium shirt', price: 1100, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08982.jpg'], url: 'dobby-royal-blue-premium-shirt.html', category: 'shirts' },
+  { id: 'p6879', name: 'Black Satin finish Premium Cotton Shirt', price: 1100, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08996.jpg'], url: 'black-satin-finish-premium-cotton-shirt.html', category: 'shirts' },
+  { id: 'p6888', name: 'Men\'s Premium Firoz Printed Cotton Party Wear Shirt', price: 1400, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/02/New-Fabric__ocm_b3_acrylicshirt_2__2024-2-4-21-30-23__2730X4096.jpg'], url: 'mens-premium-firoz-printed-cotton-party-wear-shirt.html', category: 'check-shirts' },
+  { id: 'p6897', name: 'White Satin Finish Super Soft  Premium Cotton Shirt', price: 1100, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/CKS08682.jpg'], url: 'white-satin-finish-super-soft-premium-cotton-shirt.html', category: 'shirts' },
+  { id: 'p6906', name: 'men\'s light Grey Italian Wool Rich Formal Fit Trouser', price: 1600, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2023/12/t-wool-col-19__a4_all_set158_trouser_front__2024-1-31-22-59-54__2730X4096.jpg'], url: 'mens-light-grey-italian-wool-rich-formal-fit-trouser.html', category: 'trousers' },
+  { id: 'p6916', name: 'Men\'s Dark Blue Italian Wool Rich Formal Fit Trouser', price: 1600, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2023/12/T-wool-col-32__a4_all_set158_trouser_front__2024-1-31-22-47-57__2730X4096.jpg'], url: 'mens-dark-blue-italian-wool-rich-formal-fit-trouser.html', category: 'trousers' },
+  { id: 'p6925', name: 'Men\'s Grey Stripe Italian Wool rich Formal Trouser', price: 1600, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2023/12/t-wool-col-28__a4_all_set158_trouser_front__2024-1-31-22-40-6__2730X4096.jpg'], url: 'mens-grey-stripe-italian-wool-rich-formal-trouser.html', category: 'trousers' },
+  { id: 'p6934', name: 'Men\'s Grey Check Italian Wool Rich Formal Trouser', price: 1600, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2023/12/t-wool-col-40__a4_all_set158_trouser_front__2024-1-31-19-11-15__2730X4096.jpg'], url: 'mens-grey-check-italian-wool-rich-formal-trouser.html', category: 'trousers' },
+  { id: 'p6943', name: 'Men\'s Blue Italian Terry Wool Formal Trouser', price: 1600, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2023/12/t-wool-col-39__a4_all_set158_trouser_front__2024-1-31-19-9-44__2730X4096.jpg'], url: 'mens-blue-italian-terry-wool-formal-trouser.html', category: 'trousers' },
+  { id: 'p6952', name: 'Men\'s Green Italian Terry Wool Formal Pant', price: 1600, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2023/12/t-wool-color-03__a4_all_set158_trouser_front__2024-1-31-17-15-11__2730X4096.jpg'], url: 'mens-green-italian-terry-wool-formal-pant.html', category: 'trousers' },
+  { id: 'p6961', name: 'Men\'s Italian Khaki Formal Trouser', price: 1500, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2023/12/Khaki__a4_all_set158_trouser_front__2024-1-31-16-57-50__2730X4096.jpg'], url: 'mens-italian-khaki-formal-trouser.html', category: 'uniforms' },
+  { id: 'p6970', name: 'Men\'s light Green Wool Rich Check Trouser', price: 1600, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2023/12/Raymond-wool-grey__a4_all_set158_trouser_front__2024-1-31-17-11-0__2730X4096.jpg'], url: 'mens-light-green-wool-rich-check-trouser.html', category: 'trousers' },
+  { id: 'p6979', name: 'Men\'s Light Blue Italian Wool Rich Checks Trouser', price: 1600, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2023/12/T-wool-Col-38__a4_all_set158_trouser_front__2024-1-31-19-5-13__2730X4096.jpg'], url: 'mens-light-blue-italian-wool-rich-checks-trouser.html', category: 'trousers' },
+  { id: 'p6988', name: 'Men\'s Grey Italian Regular Fit Trouser', price: 1500, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2023/12/New-Fabric__a4_all_set158_trouser_back__2024-1-31-16-42-22__2730X4096.jpg'], url: 'mens-grey-italian-regular-fit-trouser.html', category: 'trousers' },
+  { id: 'p6997', name: 'men\'s Blue Italian Regular Fit Trouser', price: 1500, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2023/12/terry-rayon-52a__a4_all_set158_trouser_front__2024-1-31-19-14-54__2730X4096.jpg'], url: 'mens-blue-italian-regular-fit-trouser.html', category: 'trousers' },
+  { id: 'p7006', name: 'Men\'s Light parrot Green Italian Wool Rich Formal Trouser', price: 1600, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2023/12/t-wool-col-36__a4_all_set158_trouser_front__2024-1-31-19-2-43__2730X4096.jpg'], url: 'mens-light-parrot-green-italian-wool-rich-formal-trouser.html', category: 'trousers' },
+  { id: 'p7015', name: 'Men\'s Regular Fit Most Comfortable Grey Color Lycra Jeans', price: 1600, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2023/12/CKS09084.jpg'], url: 'mens-regular-fit-most-comfortable-grey-color-lycra-jeans.html', category: 'trousers' },
+  { id: 'p7024', name: 'Men\'s Grey super soft lycra jeans', price: 1600, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2023/12/CKS09234.jpg'], url: 'mens-grey-super-soft-lycra-jeans.html', category: 'trousers' },
+  { id: 'p7408', name: 'Men’s Blue Classic Formal 2 Piece suit', price: 7000, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/Tri3dImage_1706377413175.jpeg'], url: 'mens-blue-classic-formal-2-piece-suit.html', category: 'suits' },
+  { id: 'p7416', name: 'Men’s Grey Formal Fashion Suit', price: 7000, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2023/12/Tri3dImage_1706374145377.jpeg'], url: 'mens-grey-formal-fashion-suit.html', category: 'shirts' },
+  { id: 'p7425', name: 'Men’s Khaki Classic & luxurious Men Suits', price: 7000, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2023/12/Tri3dImage_1706373712015.jpeg'], url: 'mens-khaki-classic-luxurious-men-suits.html', category: 'uniforms' },
+  { id: 'p7912', name: 'Men’s Khaki Color Terry Rayon Regular Fit Blazer', price: 5500, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/01/1000040290.jpg'], url: 'mens-khaki-color-terry-rayon-regular-fit-blazer.html', category: 'uniforms' },
+  { id: 'p7921', name: 'Men\'s Navy Blue Woven Italian Classic Blazer', price: 5500, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/01/1000040295.jpg'], url: 'mens-navy-blue-woven-italian-classic-blazer.html', category: 'blazers' },
+  { id: 'p7930', name: 'Men’s Grey Color Terry Rayon Regular Fit Blazer', price: 5500, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/01/1000040303.jpg'], url: 'mens-grey-color-terry-rayon-regular-fit-blazer.html', category: 'blazers' },
+  { id: 'p7939', name: 'Men’s Royal Green Color Regular Fit Blazer', price: 5500, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/01/1000040284.jpg'], url: 'mens-royal-green-color-regular-fit-blazer.html', category: 'blazers' },
+  { id: 'p7948', name: 'Men’s Dark Brick Color Regular Fit Blazer', price: 6000, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/01/1000040255.jpg'], url: 'mens-dark-brick-color-regular-fit-blazer.html', category: 'blazers' },
+  { id: 'p7959', name: 'Men’s Brown Color Terry Rayon Regular Fit Blazer', price: 5500, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/01/1000040271.jpg'], url: 'mens-brown-color-terry-rayon-regular-fit-blazer.html', category: 'blazers' },
+  { id: 'p7967', name: 'Men’s Sky Color Regular Fit Blazer', price: 5500, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/01/1000040276.jpg'], url: 'mens-sky-color-regular-fit-blazer.html', category: 'blazers' },
+  { id: 'p7978', name: 'Men\'s Blue Stripe Terry Rayon Regular Fit Blazer', price: 5500, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/01/1000040085.jpg'], url: 'mens-blue-stripe-terry-rayon-regular-fit-blazer.html', category: 'blazers' },
+  { id: 'p7988', name: 'Men’s Light Grey Check Formal Fit Blazer', price: 6000, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/01/1000040086.jpg'], url: 'mens-light-grey-check-formal-fit-blazer.html', category: 'blazers' },
+  { id: 'p7996', name: 'Men\'s Black Terry Rayon Regular Fit Blazer', price: 5500, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/01/1000040091.jpg'], url: 'mens-black-terry-rayon-regular-fit-blazer.html', category: 'blazers' },
+  { id: 'p8004', name: 'Men’s Light Green Formal Fit Blazer', price: 5500, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/01/1000040096.jpg'], url: 'mens-light-green-formal-fit-blazer.html', category: 'blazers' },
+  { id: 'p8013', name: 'Men’s Navy Blue Formal Blazer', price: 6000, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/01/1000040105.jpg'], url: 'mens-navy-blue-formal-blazer.html', category: 'blazers' },
+  { id: 'p8021', name: 'Men\'s light Grey Check Regular fit Blazer', price: 6000, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/01/1000040112.jpg'], url: 'mens-light-grey-check-regular-fit-blazer.html', category: 'blazers' },
+  { id: 'p8030', name: 'Men\'s Ink Blue Regular fit Blazer', price: 6000, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/01/1000040119.jpg'], url: 'mens-ink-blue-regular-fit-blazer.html', category: 'blazers' },
+  { id: 'p8040', name: 'Men\'s Light Parrot Green Regular Fit Blazer', price: 6000, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/01/1000040120.jpg'], url: 'mens-light-parrot-green-regular-fit-blazer.html', category: 'blazers' },
+  { id: 'p8049', name: 'Men Light Blue Check Regular Fit Blazer', price: 6000, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/01/1000040126.jpg'], url: 'men-light-blue-check-regular-fit-blazer.html', category: 'blazers' },
+  { id: 'p8058', name: 'Men Maroon Check Terry Wool Regular Fit  Formal Blazer', price: 6000, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/01/1000040135.jpg'], url: 'men-maroon-check-terry-wool-regular-fit-formal-blazer.html', category: 'blazers' },
+  { id: 'p8068', name: 'Men Dark Grey Regular Fit Blazer', price: 5500, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/01/1000040137.jpg'], url: 'men-dark-grey-regular-fit-blazer.html', category: 'blazers' },
+  { id: 'p8076', name: 'Men Grey Terry Wool Regular Fit Stripe Formal Blazer', price: 6000, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/01/1000040145.jpg'], url: 'men-grey-terry-wool-regular-fit-stripe-formal-blazer.html', category: 'blazers' },
+  { id: 'p9050', name: 'Men’s Parrot Color Classic & luxurious 3 Piece Suits', price: 8000, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/02/Tri3dImage_17055051577161.jpeg'], url: 'mens-parrot-color-classic-luxurious-3-piece-suits.html', category: 'suits' },
+  { id: 'p9108', name: 'Men’s Blue Classic & luxurious 3 Piece Suits', price: 8000, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/02/Tri3dImage_1705511954057.jpeg'], url: 'mens-blue-classic-luxurious-3-piece-suits.html', category: 'suits' },
+  { id: 'p9171', name: 'Men’s Grey Check Italian Terry Wool  Classic & luxurious 3 Piece Suits', price: 9000, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/02/Tri3dImage_1705512389809.jpeg'], url: 'mens-grey-check-italian-terry-wool-classic-luxurious-3-piece.html', category: 'suits' },
+  { id: 'p9255', name: 'Men’s Light Blue Check Italian Terry Wool  Classic & luxurious 3 Piece Suits', price: 9000, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/02/Tri3dImage_1705512862984.jpeg'], url: 'mens-light-blue-check-italian-terry-wool-classic-luxurious-3.html', category: 'suits' },
+  { id: 'p9321', name: 'Men’s Light Parrot Green Check Italian Terry Wool Classic & luxurious 3 Piece Suit', price: 9000, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/02/Tri3dImage_1705513011774.jpeg'], url: 'mens-light-parrot-green-check-italian-terry-wool-classic-lux.html', category: 'suits' },
+  { id: 'p9391', name: 'Men’s Wine Check Italian Terry Wool  Classic & luxurious 3 Piece Suit', price: 9000, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/02/Tri3dImage_1705513295546.jpeg'], url: 'mens-wine-check-italian-terry-wool-classic-luxurious-3-piece.html', category: 'suits' },
+  { id: 'p9462', name: 'Men\'s  Premium Stripe Cotton Formal Shirt', price: 1400, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/02/lining-shirt-__ocm_b3_acrylicshirt_2__2024-2-4-20-4-40__2730X4096.jpg'], url: 'mens-premium-stripe-cotton-formal-shirt.html', category: 'strap-shirts' },
+  { id: 'p9482', name: 'Men\'s  Light Blue With White Stripe Premium  Cotton Formal Shirt', price: 1400, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/02/shirt-__ocm_b3_acrylicshirt_2__2024-2-4-20-33-8__2730X4096.jpg'], url: 'mens-light-blue-with-white-stripe-premium-cotton-formal-shir.html', category: 'strap-shirts' },
+  { id: 'p9503', name: 'Men\'s  Premium Multi Color Stripe Cotton Formal Shirt', price: 1400, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/02/shirt-__ocm_b3_acrylicshirt_2__2024-2-4-20-52-33__2730X4096.jpg'], url: 'mens-premium-multi-color-stripe-cotton-formal-shirt.html', category: 'strap-shirts' },
+  { id: 'p9523', name: 'Men\'s  Premium Sky Color Printed Cotton Regular Fit Shirt', price: 1400, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/02/New-Fabric__ocm_b3_acrylicshirt_2__2024-2-4-21-7-44__2730X4096.jpg'], url: 'mens-premium-sky-color-printed-cotton-regular-fit-shirt.html', category: 'check-shirts' },
+  { id: 'p9543', name: 'Men\'s  Premium multi Color Printed Cotton Party Wear Shirt', price: 1400, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/02/New-Fabric__ocm_b3_acrylicshirt_2__2024-2-4-22-52-25__2730X4096.jpg'], url: 'mens-premium-multi-color-printed-cotton-party-wear-shirt.html', category: 'check-shirts' },
+  { id: 'p9562', name: 'Men\'s  Premium Printed Cotton Party Wear Shirt', price: 1400, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/02/New-Fabric__ocm_b3_acrylicshirt_2__2024-2-4-22-1-1__2730X4096.jpg'], url: 'mens-premium-printed-cotton-party-wear-shirt.html', category: 'check-shirts' },
+  { id: 'p9600', name: 'Men\'s  Premium Khaki multi Color Printed Cotton Party Wear Shirt', price: 1400, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/02/New-Fabric__ocm_b3_acrylicshirt_2__2024-2-4-23-12-20__2730X4096.jpg'], url: 'mens-premium-khaki-multi-color-printed-cotton-party-wear-shi.html', category: 'uniforms' },
+  { id: 'p9624', name: 'Men\'s  Premium multi Color Printed Cotton Casual Party Wear Shirt', price: 1400, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/02/New-Fabric__ocm_b3_acrylicshirt_2__2024-2-5-20-23-38__2730X4096.jpg'], url: 'mens-premium-multi-color-printed-cotton-casual-party-wear-sh.html', category: 'check-shirts' },
+  { id: 'p9863', name: 'Men’s Navy Blue Modi Jacket', price: 2400, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/02/terry-rayon-52a__all_set309_nehrujacket_side__2024-2-10-20-50-12__2730X4096.jpg'], url: 'mens-navy-blue-modi-jacket.html', category: 'modi-jacket' },
+  { id: 'p10018', name: 'Men’s Gray Check With Wool Rich Modi Jacket', price: 3000, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/02/t-wool-col-40__all_set309_nehrujacket_side__2024-2-10-20-52-8__2730X4096.jpg'], url: 'mens-gray-check-with-wool-rich-modi-jacket.html', category: 'modi-jacket' },
+  { id: 'p10032', name: 'Men’s Ink Blue Check With Wool Rich Modi Jacket', price: 3000, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/02/t-wool-col-39__all_set309_nehrujacket_side__2024-2-10-20-54-5__2730X4096.jpg'], url: 'mens-ink-blue-check-with-wool-rich-modi-jacket.html', category: 'modi-jacket' },
+  { id: 'p10047', name: 'Men’s Light Parrot Green Check With Wool Rich Modi Jacket', price: 3000, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/02/t-wool-col-36__all_set309_nehrujacket_side__2024-2-10-20-56-34__2730X4096.jpg'], url: 'mens-light-parrot-green-check-with-wool-rich-modi-jacket.html', category: 'modi-jacket' },
+  { id: 'p10061', name: 'Men’s Blue Check With Wool Rich Modi Jacket', price: 3000, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/02/T-wool-Col-38__all_set309_nehrujacket_side__2024-2-10-20-57-26__2730X4096.jpg'], url: 'mens-blue-check-with-wool-rich-modi-jacket.html', category: 'modi-jacket' },
+  { id: 'p10074', name: 'Men’s Wine Color Check With Wool Rich Modi Jacket', price: 3000, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/02/t-wool-col-33__all_set309_nehrujacket_side__2024-2-10-20-59-7__2730X4096.jpg'], url: 'mens-wine-color-check-with-wool-rich-modi-jacket.html', category: 'modi-jacket' },
+  { id: 'p10088', name: 'Men’s Dark Blue Color Check With Wool Rich Modi Jacket', price: 3000, badge: '', sizes: ['38','40','42','44'], images: ['https://media.treyondworld.com/2024/02/T-wool-col-32__all_set309_nehrujacket_side__2024-2-10-20-59-43__2730X4096.jpg'], url: 'mens-dark-blue-color-check-with-wool-rich-modi-jacket.html', category: 'modi-jacket' },
+  { id: 'p10218', name: 'BSF Khaki Uniform By Graviera', price: 1700, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00468.jpg'], url: 'bsf-khaki-uniform-by-graviera.html', category: 'uniforms' },
+  { id: 'p10223', name: 'BSF Khaki Uniform By Raymond Fabric', price: 2200, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00484.jpg'], url: 'bsf-khaki-uniform-by-raymond-fabric.html', category: 'uniforms' },
+  { id: 'p10233', name: 'BSF Khaki Uniform Vimal Super Premium Trovine', price: 2099, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00496.jpg'], url: 'bsf-khaki-uniform-vimal-super-premium-trovine.html', category: 'uniforms' },
+  { id: 'p10248', name: 'BSF Khaki Uniform Vimal Saphire matty', price: 1999, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00512.jpg'], url: 'bsf-khaki-uniform-vimal-saphire-matty.html', category: 'uniforms' },
+  { id: 'p10252', name: 'BSF Khaki Uniform Vimal Super Valiant Trovine', price: 2000, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00523.jpg'], url: 'bsf-khaki-uniform-vimal-super-valiant-trovine.html', category: 'uniforms' },
+  { id: 'p10260', name: 'BSF Khaki Uniform Vimal Super Trovine Valiant', price: 2000, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00535.jpg'], url: 'bsf-khaki-uniform-vimal-super-trovine-valiant.html', category: 'uniforms' },
+  { id: 'p10275', name: 'CRPF Khaki Uniform Vimal Sapphre', price: 1999, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00548.jpg'], url: 'crpf-khaki-uniform-vimal-sapphre.html', category: 'uniforms' },
+  { id: 'p10284', name: 'CRPF Khaki Uniform By Raymond', price: 1999, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00558.jpg'], url: 'crpf-khaki-uniform-by-raymond.html', category: 'uniforms' },
+  { id: 'p10291', name: 'CRPF Khaki Uniform By Siyaram matte', price: 1999, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00567.jpg'], url: 'crpf-khaki-uniform-by-siyaram-matte.html', category: 'uniforms' },
+  { id: 'p10300', name: 'SSB Khaki Uniform By Ajanta Oswal super Premium Trovine', price: 1999, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00578-copy.jpg'], url: 'ssb-khaki-uniform-by-ajanta-oswal-super-premium-trovine.html', category: 'uniforms' },
+  { id: 'p10308', name: 'CRPF Combat Uniform Cool Touch Fast color by Ajanta', price: 1799, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/crpf-poly-coot-touch-main-photo.jpg'], url: 'crpf-combat-uniform-cool-touch-fast-color-by-ajanta.html', category: 'combat-uniforms' },
+  { id: 'p10317', name: 'CRPF Cotton Us Pattern Combat Uniform', price: 2199, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00598-copy.jpg'], url: 'crpf-cotton-us-pattern-combat-uniform.html', category: 'combat-uniforms' },
+  { id: 'p10424', name: 'CRPF Combat Manipuri Pattern Uniform By Cool Touch Ajanta Osawal', price: 2199, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00613-copy.jpg'], url: 'crpf-combat-manipuri-pattern-uniform-by-cool-touch-ajanta-os.html', category: 'combat-uniforms' },
+  { id: 'p10426', name: 'CRPF Khaki Uniform Vimal Super Trovine', price: 2199, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00629-copy.jpg'], url: 'crpf-khaki-uniform-vimal-super-trovine.html', category: 'uniforms' },
+  { id: 'p10428', name: 'CRPF Khaki Uniform Veliant Vimal Prmium Trovine Light Color', price: 1600, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00640-copy.jpg'], url: 'crpf-khaki-uniform-veliant-vimal-prmium-trovine-light-color.html', category: 'uniforms' },
+  { id: 'p10430', name: 'CRPF Khaki Uniform By Vimal Primium Trovine', price: 2099, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00651-copy.jpg'], url: 'crpf-khaki-uniform-by-vimal-primium-trovine.html', category: 'uniforms' },
+  { id: 'p10432', name: 'CRPF Khaki Uniform BY Vimal Super Trovine', price: 1999, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00667-copy.jpg'], url: 'crpf-khaki-uniform-by-vimal-super-trovine.html', category: 'uniforms' },
+  { id: 'p10434', name: 'CRPF Khaki Uniform By Vimal Super  Trovine', price: 1999, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00680-copy.jpg'], url: 'crpf-khaki-uniform-by-vimal-super-trovine.html', category: 'uniforms' },
+  { id: 'p10436', name: 'CRPF Khaki Uniform Vimal Super Trovine', price: 2099, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00680-copy.jpg'], url: 'crpf-khaki-uniform-vimal-super-trovine.html', category: 'uniforms' },
+  { id: 'p10438', name: 'CRPF Stretchable Khaki Uniform By Vimal Officer Stretch fit', price: 2199, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00690.jpg'], url: 'crpf-stretchable-khaki-uniform-by-vimal-officer-stretch-fit.html', category: 'uniforms' },
+  { id: 'p10440', name: 'White Premium Cotton T-Shirt', price: 599, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00700.jpg'], url: 'white-premium-cotton-t-shirt.html', category: 't-shirts' },
+  { id: 'p10442', name: 'White Cotton T-Shirt', price: 399, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00709.jpg'], url: 'white-cotton-t-shirt.html', category: 't-shirts' },
+  { id: 'p10444', name: 'White Cotton T-Shirt', price: 450, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00709.jpg'], url: 'white-cotton-t-shirt.html', category: 't-shirts' },
+  { id: 'p10446', name: 'White Premium cotton T-Shirt', price: 450, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00717.jpg'], url: 'white-premium-cotton-t-shirt.html', category: 't-shirts' },
+  { id: 'p10448', name: 'SSB US Pattern Combat Uniform', price: 1999, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00728.jpg'], url: 'ssb-us-pattern-combat-uniform.html', category: 'combat-uniforms' },
+  { id: 'p10450', name: 'SSB New Pattern Combat Uniform', price: 1799, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00743.jpg'], url: 'ssb-new-pattern-combat-uniform.html', category: 'combat-uniforms' },
+  { id: 'p10452', name: 'SSB US Pattern Combat Uniform', price: 2199, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00758.jpg'], url: 'ssb-us-pattern-combat-uniform.html', category: 'combat-uniforms' },
+  { id: 'p10454', name: 'SSB New Pattern Combat uniform', price: 2099, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00770.jpg'], url: 'ssb-new-pattern-combat-uniform.html', category: 'combat-uniforms' },
+  { id: 'p10456', name: 'CRPF Khaki Uniform Vimal Officer', price: 2000, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00468-1.jpg'], url: 'crpf-khaki-uniform-vimal-officer.html', category: 'uniforms' },
+  { id: 'p10496', name: 'CRPF Cotton Combat Uniform', price: 2200, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2025/01/Untitled-design-11.png'], url: 'crpf-cotton-combat-uniform.html', category: 'combat-uniforms' },
+  { id: 'p10676', name: 'SSB Stretchable Khaki Uniform By Vimal Officer Stretch fit', price: 2199, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00690.jpg'], url: 'ssb-stretchable-khaki-uniform-by-vimal-officer-stretch-fit.html', category: 'uniforms' },
+  { id: 'p10678', name: 'SSB Khaki Uniform Vimal Super Trovine', price: 2099, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00680-copy.jpg'], url: 'ssb-khaki-uniform-vimal-super-trovine.html', category: 'uniforms' },
+  { id: 'p10680', name: 'SSB Khaki Uniform By Vimal Super  Trovine', price: 1999, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00680-copy.jpg'], url: 'ssb-khaki-uniform-by-vimal-super-trovine.html', category: 'uniforms' },
+  { id: 'p10683', name: 'SSB Khaki Uniform BY Vimal Super Trovine', price: 1999, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00667-copy.jpg'], url: 'ssb-khaki-uniform-by-vimal-super-trovine.html', category: 'uniforms' },
+  { id: 'p10688', name: 'SSB Khaki Uniform By Vimal Premium Trovine', price: 2199, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00651-copy.jpg'], url: 'ssb-khaki-uniform-by-vimal-premium-trovine.html', category: 'uniforms' },
+  { id: 'p10690', name: 'SSB Khaki Uniform Vimal Premium Trovine Light Color', price: 2199, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00640-copy.jpg'], url: 'ssb-khaki-uniform-vimal-premium-trovine-light-color.html', category: 'uniforms' },
+  { id: 'p10693', name: 'SSB Khaki Uniform Vimal Super Trovine', price: 2199, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00629-copy.jpg'], url: 'ssb-khaki-uniform-vimal-super-trovine.html', category: 'uniforms' },
+  { id: 'p10698', name: 'SSB Khaki Uniform By Siyaram matte', price: 1999, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00567.jpg'], url: 'ssb-khaki-uniform-by-siyaram-matte.html', category: 'uniforms' },
+  { id: 'p10700', name: 'SSB Khaki Uniform By Vimal sapphire', price: 1999, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00558.jpg'], url: 'ssb-khaki-uniform-by-vimal-sapphire.html', category: 'uniforms' },
+  { id: 'p10783', name: 'Blue Beret Cap For CRPF SSB', price: 249, badge: '', sizes: ['One Size'], images: ['https://media.treyondworld.com/2024/06/CKS02464-copy.jpg'], url: 'blue-beret-cap-for-crpf-ssb.html', category: 'combat-uniforms' },
+  { id: 'p10789', name: 'Beret Cap For BSF', price: 249, badge: '', sizes: ['One Size'], images: ['https://media.treyondworld.com/2024/06/CKS02471-copy.jpg'], url: 'beret-cap-for-bsf.html', category: 'combat-uniforms' },
+  { id: 'p10795', name: 'CRPF Monkey Cap', price: 249, badge: '', sizes: ['One Size'], images: ['https://media.treyondworld.com/2024/06/CKS02479-copy.jpg'], url: 'crpf-monkey-cap.html', category: 'combat-uniforms' },
+  { id: 'p10801', name: 'CRPF Combat Uniform Tactical Belt', price: 249, badge: '', sizes: ['One Size'], images: ['https://media.treyondworld.com/2024/06/CKS02489-copy.jpg'], url: 'crpf-combat-uniform-tactical-belt.html', category: 'combat-uniforms' },
+  { id: 'p10811', name: 'BSF Combat Uniform Tactical Belt', price: 249, badge: '', sizes: ['One Size'], images: ['https://media.treyondworld.com/2024/06/CKS02496-copy-copy.jpg'], url: 'bsf-combat-uniform-tactical-belt.html', category: 'combat-uniforms' },
+  { id: 'p10818', name: 'D M Boot For Paramilitary And (CAPF)', price: 999, badge: '', sizes: ['One Size'], images: ['https://media.treyondworld.com/2024/06/CKS02504-copy.jpg'], url: 'd-m-boot-for-paramilitary-and-capf.html', category: 'combat-uniforms' },
+  { id: 'p10827', name: 'D M Boot for BSF CRPF CISF SSB ITBP', price: 999, badge: '', sizes: ['One Size'], images: ['https://media.treyondworld.com/2024/06/CKS02511-copy.jpg'], url: 'd-m-boot-for-bsf-crpf-cisf-ssb-itbp.html', category: 'combat-uniforms' },
+  { id: 'p10836', name: 'Leather Boot For Paramilitary', price: 899, badge: '', sizes: ['One Size'], images: ['https://media.treyondworld.com/2024/06/CKS02524-copy.jpg'], url: 'leather-boot-for-paramilitary.html', category: 'combat-uniforms' },
+  { id: 'p10845', name: 'Jungle Boot For Paramilitary (Forces)', price: 999, badge: '', sizes: ['One Size'], images: ['https://media.treyondworld.com/2024/06/CKS02541-copy.jpg'], url: 'jungle-boot-for-paramilitary-forces.html', category: 'combat-uniforms' },
+  { id: 'p10908', name: 'Police Khaki Uniform By Vimal sapphire', price: 1999, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00558.jpg'], url: 'police-khaki-uniform-by-vimal-sapphire.html', category: 'uniforms' },
+  { id: 'p10911', name: 'Police Khaki Uniform By Siyaram matte', price: 1999, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00567.jpg'], url: 'police-khaki-uniform-by-siyaram-matte.html', category: 'uniforms' },
+  { id: 'p10914', name: 'Police Khaki Uniform Vimal Super Trovine', price: 2199, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00629-copy.jpg'], url: 'police-khaki-uniform-vimal-super-trovine.html', category: 'uniforms' },
+  { id: 'p10920', name: 'Police Khaki Uniform Vimal Premium Trovine Light Color', price: 2199, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00640-copy.jpg'], url: 'police-khaki-uniform-vimal-premium-trovine-light-color.html', category: 'uniforms' },
+  { id: 'p10923', name: 'Police Khaki Uniform By Vimal Premium Trovine', price: 2199, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00651-copy.jpg'], url: 'police-khaki-uniform-by-vimal-premium-trovine.html', category: 'uniforms' },
+  { id: 'p10928', name: 'Police Khaki Uniform BY Vimal Super Trovine', price: 1999, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00667-copy.jpg'], url: 'police-khaki-uniform-by-vimal-super-trovine.html', category: 'uniforms' },
+  { id: 'p10931', name: 'Police Uniform By Vimal Super Trovine', price: 2199, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00680-copy.jpg'], url: 'police-uniform-by-vimal-super-trovine.html', category: 'uniforms' },
+  { id: 'p10933', name: 'Police Stretchable Khaki Uniform By Vimal Officer Stretch fit', price: 2199, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00690.jpg'], url: 'police-stretchable-khaki-uniform-by-vimal-officer-stretch-fi.html', category: 'uniforms' },
+  { id: 'p10935', name: 'Police Uniform Reymonds', price: 2199, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00578-copy.jpg'], url: 'police-uniform-reymonds.html', category: 'uniforms' },
+  { id: 'p11039', name: 'CRPF Khaki Uniform By Ajanta Oswal super Premium Trovine', price: 1999, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00578-copy.jpg'], url: 'crpf-khaki-uniform-by-ajanta-oswal-super-premium-trovine.html', category: 'uniforms' },
+  { id: 'p11223', name: 'CRPF Cotton Combat Uniform For Head Constable', price: 2050, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2025/01/Untitled-design-10.png'], url: 'crpf-cotton-combat-uniform-for-head-constable.html', category: 'combat-uniforms' },
+  { id: 'p11227', name: 'CRPF Cotton Combat Uniform For ASI', price: 2100, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2025/01/Untitled-design-12.png'], url: 'crpf-cotton-combat-uniform-for-asi.html', category: 'combat-uniforms' },
+  { id: 'p11230', name: 'CRPF Cotton Combat Uniform For Sub Inspector', price: 2150, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2025/01/Untitled-design-13.png'], url: 'crpf-cotton-combat-uniform-for-sub-inspector.html', category: 'combat-uniforms' },
+  { id: 'p11238', name: 'CRPF Combat Uniform Cool Touch Fast color by Ajanta For Head-Constable', price: 1850, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2025/01/Untitled-design-9.png'], url: 'crpf-combat-uniform-cool-touch-fast-color-by-ajanta-for-head.html', category: 'combat-uniforms' },
+  { id: 'p11242', name: 'CRPF Combat Uniform Cool Touch Pakka color For ASI', price: 1899, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/Untitled-design-5.png'], url: 'crpf-combat-uniform-cool-touch-pakka-color-for-asi.html', category: 'combat-uniforms' },
+  { id: 'p11245', name: 'CRPF Combat Uniform Cool Touch Pakka color For Sub-Insptor', price: 1950, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/Untitled-design-6.png'], url: 'crpf-combat-uniform-cool-touch-pakka-color-for-sub-insptor.html', category: 'combat-uniforms' },
+  { id: 'p11253', name: 'CRPF Cotton Combat Uniform Constable', price: 1999, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2025/01/Untitled-design-11.png'], url: 'crpf-cotton-combat-uniform-constable.html', category: 'combat-uniforms' },
+  { id: 'p11256', name: 'CRPF Combat Uniform Pakka color For Sub-Insptor', price: 1650, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/Untitled-design-6.png'], url: 'crpf-combat-uniform-pakka-color-for-sub-insptor.html', category: 'combat-uniforms' },
+  { id: 'p11259', name: 'CRPF Combat Uniform  Pakka color For ASI', price: 1599, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/Untitled-design-5.png'], url: 'crpf-combat-uniform-pakka-color-for-asi.html', category: 'combat-uniforms' },
+  { id: 'p11262', name: 'CRPF Combat Uniform Pakka color For Head-Constable', price: 1550, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2025/01/Untitled-design-9.png'], url: 'crpf-combat-uniform-pakka-color-for-head-constable.html', category: 'combat-uniforms' },
+  { id: 'p11265', name: 'CRPF Combat Uniform Pakka Color for Constable', price: 1499, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2025/01/Untitled-design-11.png'], url: 'crpf-combat-uniform-pakka-color-for-constable.html', category: 'combat-uniforms' },
+  { id: 'p11279', name: 'CRPF Combat Uniform Pakka Color for Constable', price: 1499, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2025/01/Untitled-design-11.png'], url: 'crpf-combat-uniform-pakka-color-for-constable.html', category: 'combat-uniforms' },
+  { id: 'p11563', name: 'CRPF Combat Mix Pakka Color Wardi', price: 1299, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00590-copy.jpg'], url: 'crpf-combat-mix-pakka-color-wardi.html', category: 'combat-uniforms' },
+  { id: 'p11567', name: 'CRPF Combat Cotton 80% Poly 20% Us Pattern Wardi', price: 1550, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00598-copy.jpg'], url: 'crpf-combat-cotton-80-poly-20-us-pattern-wardi.html', category: 'combat-uniforms' },
+  { id: 'p11575', name: 'CRPF Cotton Combat Trouser For PT', price: 800, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2025/06/Buy-online-Uniforms.png'], url: 'crpf-cotton-combat-trouser-for-pt.html', category: 'combat-uniforms' },
+  { id: 'p11581', name: 'CRPF Polly cotton Combat Trouser For PT', price: 900, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2025/06/Buy-online-Uniforms.png'], url: 'crpf-polly-cotton-combat-trouser-for-pt.html', category: 'combat-uniforms' },
+  { id: 'p11587', name: 'CRPF Cotton Combat PT T-Shirt – Olive Green | 100% Cotton | For Daily PT & Training', price: 399, badge: '', sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2025/06/Untitled-1080-x-1080-px-1200-x-1800-px.png'], url: 'crpf-cotton-combat-pt-t-shirt-olive-green-100-cotton-for-dai.html', category: 'combat-uniforms' },
 ];
 </script></body></html>
