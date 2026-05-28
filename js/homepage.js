@@ -165,12 +165,12 @@ const PRODUCTS_DATA = [
     badge: 'Check Shirts',
     sizes: ['38','40','42','44'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__ocm_b3_acrylicshirt_2__2024-2-5-20-23-38__2730X4096.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__a2_all_set211_shirtfolded_front2__2024-2-5-20-22-4__2730X4096.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set199_m_trouser_front2__2024-2-5-20-22-26__2730X4096.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set211_nomo_shirtfolded_front7__2024-2-5-20-22-41__2730X4096.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set211_shirtfolded_front3__2024-2-5-20-22-55__2730X4096.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set255_hanger_shirt__2024-2-5-20-23-13__2730X4096.jpg'
+      'https://media.treyondworld.com/2024/02/New-Fabric__ocm_b3_acrylicshirt_2__2024-2-5-20-23-38__2730X4096.jpg',
+      'https://media.treyondworld.com/2024/02/New-Fabric__a2_all_set211_shirtfolded_front2__2024-2-5-20-22-4__2730X4096.jpg',
+      'https://media.treyondworld.com/2024/02/New-Fabric__all_set199_m_trouser_front2__2024-2-5-20-22-26__2730X4096.jpg',
+      'https://media.treyondworld.com/2024/02/New-Fabric__all_set211_nomo_shirtfolded_front7__2024-2-5-20-22-41__2730X4096.jpg',
+      'https://media.treyondworld.com/2024/02/New-Fabric__all_set211_shirtfolded_front3__2024-2-5-20-22-55__2730X4096.jpg',
+      'https://media.treyondworld.com/2024/02/New-Fabric__all_set255_hanger_shirt__2024-2-5-20-23-13__2730X4096.jpg'
     ],
     url: '/pages/mens-premium-multi-color-printed-cotton-casual-party-wear-shirt.html',
     category: 'check-shirts'
@@ -182,12 +182,12 @@ const PRODUCTS_DATA = [
     badge: 'Check Shirts',
     sizes: ['38','40','42','44'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__ocm_b3_acrylicshirt_2__2024-2-4-22-52-25__2730X4096.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set255_hanger_shirt__2024-2-4-22-50-59__2730X4096.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set250_shirtandswatch__2024-2-4-22-50-34__2730X4096.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set211_shirtfolded_front3__2024-2-4-22-50-18__2730X4096.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set211_nomo_shirtfolded_front7__2024-2-4-22-49-57__2730X4096.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__a2_all_set211_shirtfolded_front2__2024-2-4-22-48-58__2730X4096.jpg'
+      'https://media.treyondworld.com/2024/02/New-Fabric__ocm_b3_acrylicshirt_2__2024-2-4-22-52-25__2730X4096.jpg',
+      'https://media.treyondworld.com/2024/02/New-Fabric__all_set255_hanger_shirt__2024-2-4-22-50-59__2730X4096.jpg',
+      'https://media.treyondworld.com/2024/02/New-Fabric__all_set250_shirtandswatch__2024-2-4-22-50-34__2730X4096.jpg',
+      'https://media.treyondworld.com/2024/02/New-Fabric__all_set211_shirtfolded_front3__2024-2-4-22-50-18__2730X4096.jpg',
+      'https://media.treyondworld.com/2024/02/New-Fabric__all_set211_nomo_shirtfolded_front7__2024-2-4-22-49-57__2730X4096.jpg',
+      'https://media.treyondworld.com/2024/02/New-Fabric__a2_all_set211_shirtfolded_front2__2024-2-4-22-48-58__2730X4096.jpg'
     ],
     url: '/pages/mens-premium-multi-color-printed-cotton-party-wear-shirt.html',
     category: 'check-shirts'
@@ -199,12 +199,12 @@ const PRODUCTS_DATA = [
     badge: 'Check Shirts',
     sizes: ['38','40','42','44'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__ocm_b3_acrylicshirt_2__2024-2-4-21-7-44__2730X4096.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set161_men_formal_side2__2024-2-4-21-12-27__2730X4096.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set199_m_trouser_front2__2024-2-4-21-12-2__2730X4096.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set211_nomo_shirtfolded_front7__2024-2-4-21-11-37__2730X4096.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set211_shirtfolded_front3__2024-2-4-21-11-26__2730X4096.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set255_hanger_shirt__2024-2-4-21-8-40__2730X4096.jpg'
+      'https://media.treyondworld.com/2024/02/New-Fabric__ocm_b3_acrylicshirt_2__2024-2-4-21-7-44__2730X4096.jpg',
+      'https://media.treyondworld.com/2024/02/New-Fabric__all_set161_men_formal_side2__2024-2-4-21-12-27__2730X4096.jpg',
+      'https://media.treyondworld.com/2024/02/New-Fabric__all_set199_m_trouser_front2__2024-2-4-21-12-2__2730X4096.jpg',
+      'https://media.treyondworld.com/2024/02/New-Fabric__all_set211_nomo_shirtfolded_front7__2024-2-4-21-11-37__2730X4096.jpg',
+      'https://media.treyondworld.com/2024/02/New-Fabric__all_set211_shirtfolded_front3__2024-2-4-21-11-26__2730X4096.jpg',
+      'https://media.treyondworld.com/2024/02/New-Fabric__all_set255_hanger_shirt__2024-2-4-21-8-40__2730X4096.jpg'
     ],
     url: '/pages/mens-premium-sky-color-printed-cotton-regular-fit-shirt.html',
     category: 'check-shirts'
@@ -216,12 +216,12 @@ const PRODUCTS_DATA = [
     badge: 'Check Shirts',
     sizes: ['38','40','42','44'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__ocm_b3_acrylicshirt_2__2024-2-4-21-30-23__2730X4096.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__ocm_b3_acrylicshirt_4__2024-2-4-21-30-40__2730X4096.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set255_hanger_shirt__2024-2-4-21-31-1__2730X4096.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set211_shirtfolded_front3__2024-2-4-21-32-19__2730X4096.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set211_nomo_shirtfolded_front7__2024-2-4-21-32-33__2730X4096.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/02/New-Fabric__all_set199_m_trouser_front2__2024-2-4-21-32-44__2730X4096.jpg'
+      'https://media.treyondworld.com/2024/02/New-Fabric__ocm_b3_acrylicshirt_2__2024-2-4-21-30-23__2730X4096.jpg',
+      'https://media.treyondworld.com/2024/02/New-Fabric__ocm_b3_acrylicshirt_4__2024-2-4-21-30-40__2730X4096.jpg',
+      'https://media.treyondworld.com/2024/02/New-Fabric__all_set255_hanger_shirt__2024-2-4-21-31-1__2730X4096.jpg',
+      'https://media.treyondworld.com/2024/02/New-Fabric__all_set211_shirtfolded_front3__2024-2-4-21-32-19__2730X4096.jpg',
+      'https://media.treyondworld.com/2024/02/New-Fabric__all_set211_nomo_shirtfolded_front7__2024-2-4-21-32-33__2730X4096.jpg',
+      'https://media.treyondworld.com/2024/02/New-Fabric__all_set199_m_trouser_front2__2024-2-4-21-32-44__2730X4096.jpg'
     ],
     url: '/pages/men-premium-firoz-printed-cotton-party-wear-shirt.html',
     category: 'check-shirts'
@@ -233,11 +233,11 @@ const PRODUCTS_DATA = [
     badge: 'Shirts',
     sizes: ['38','40','42','44'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08714.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08720.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08718.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08717.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08708.jpg'
+      'https://media.treyondworld.com/2023/12/CKS08714.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08720.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08718.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08717.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08708.jpg'
     ],
     url: '/pages/men-light-khaki-oxford-soft-premium-cotton-formal-shirt-for-mens.html',
     category: 'shirts'
@@ -249,11 +249,11 @@ const PRODUCTS_DATA = [
     badge: 'Shirts',
     sizes: ['38','40','42','44'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08729.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08735.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08733.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08732.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08724.jpg'
+      'https://media.treyondworld.com/2023/12/CKS08729.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08735.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08733.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08732.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08724.jpg'
     ],
     url: '/pages/gray-color-oxford-soft-premium-cotton-formal-shirt-for-mens.html',
     category: 'shirts'
@@ -265,11 +265,11 @@ const PRODUCTS_DATA = [
     badge: 'Shirts',
     sizes: ['38','40','42','44'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08743.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08746.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08749.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08747.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08738.jpg'
+      'https://media.treyondworld.com/2023/12/CKS08743.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08746.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08749.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08747.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08738.jpg'
     ],
     url: '/pages/men-dark-grey-fila-fill-soft-premium-cotton-formal-shirt.html',
     category: 'shirts'
@@ -281,11 +281,11 @@ const PRODUCTS_DATA = [
     badge: 'Shirts',
     sizes: ['38','40','42','44'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08768.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08775.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08773.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08772.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08771.jpg'
+      'https://media.treyondworld.com/2023/12/CKS08768.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08775.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08773.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08772.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08771.jpg'
     ],
     url: '/pages/men-orange-color-super-soft-premium-cotton-dobby-formal-shirt.html',
     category: 'shirts'
@@ -305,11 +305,11 @@ const PRODUCTS_DATA = [
     badge: 'Plain Shirts',
     sizes: ['38','40','42','44'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08491.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08483.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08495.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08493.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08489.jpg'
+      'https://media.treyondworld.com/2023/12/CKS08491.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08483.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08495.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08493.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08489.jpg'
     ],
     url: '/pages/men-mango-color-fila-fill-soft-premium-cotton-formal-shirt.html',
     category: 'plain-shirts'
@@ -321,12 +321,12 @@ const PRODUCTS_DATA = [
     badge: 'Plain Shirts',
     sizes: ['38','40','42','44'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08471.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08481.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08479.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08477.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08475.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08473.jpg'
+      'https://media.treyondworld.com/2023/12/CKS08471.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08481.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08479.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08477.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08475.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08473.jpg'
     ],
     url: '/pages/men-lemon-color-super-soft-premium-dobby-cotton-formal-shirt.html',
     category: 'plain-shirts'
@@ -338,12 +338,12 @@ const PRODUCTS_DATA = [
     badge: 'Plain Shirts',
     sizes: ['38','40','42','44'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08458.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08468.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08467.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08464.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08463.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08461.jpg'
+      'https://media.treyondworld.com/2023/12/CKS08458.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08468.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08467.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08464.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08463.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08461.jpg'
     ],
     url: '/pages/men-pink-color-super-soft-premium-cotton-dobby-formal-shirt-for-mens.html',
     category: 'plain-shirts'
@@ -355,12 +355,12 @@ const PRODUCTS_DATA = [
     badge: 'Plain Shirts',
     sizes: ['38','40','42','44'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08445.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08454.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08452.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08451.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08450.jpg',
-      'https://treyondworld.com/wp-content/uploads/2023/12/CKS08447.jpg'
+      'https://media.treyondworld.com/2023/12/CKS08445.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08454.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08452.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08451.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08450.jpg',
+      'https://media.treyondworld.com/2023/12/CKS08447.jpg'
     ],
     url: '/pages/men-move-color-fila-fill-soft-premium-cotton-formal-shirt.html',
     category: 'plain-shirts'
@@ -372,12 +372,12 @@ const PRODUCTS_DATA = [
     badge: 'Uniform',
     sizes: ['38','40','42','44','46'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00578-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00585-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00583-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00582-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00580-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00575-copy-scaled.jpg'
+      'https://media.treyondworld.com/2024/05/CKS00578-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00585-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00583-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00582-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00580-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00575-copy-scaled.jpg'
     ],
     url: '/pages/crpf-khaki-uniform-oswal-ajanta.html',
     category: 'uniforms'
@@ -389,12 +389,12 @@ const PRODUCTS_DATA = [
     badge: 'Uniform',
     sizes: ['38','40','42','44','46'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00690-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00697-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00693-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00726-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00696-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00694-scaled.jpg'
+      'https://media.treyondworld.com/2024/05/CKS00690-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00697-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00693-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00726-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00696-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00694-scaled.jpg'
     ],
     url: '/pages/police-stretchable-khaki-uniform.html',
     category: 'uniforms'
@@ -406,12 +406,12 @@ const PRODUCTS_DATA = [
     badge: 'Uniform',
     sizes: ['38','40','42','44','46'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00651-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00657-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00653-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00659-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00656-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00655-copy-scaled.jpg'
+      'https://media.treyondworld.com/2024/05/CKS00651-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00657-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00653-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00659-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00656-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00655-copy-scaled.jpg'
     ],
     url: '/pages/police-khaki-uniform-premium.html',
     category: 'uniforms'
@@ -423,12 +423,12 @@ const PRODUCTS_DATA = [
     badge: 'Uniform',
     sizes: ['38','40','42','44','46'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00640-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00646-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00644-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00641-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00645-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00648-copy-scaled.jpg'
+      'https://media.treyondworld.com/2024/05/CKS00640-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00646-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00644-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00641-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00645-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00648-copy-scaled.jpg'
     ],
     url: '/pages/police-khaki-uniform-premium-trovine.html',
     category: 'uniforms'
@@ -440,12 +440,12 @@ const PRODUCTS_DATA = [
     badge: 'Uniform',
     sizes: ['36','38','40','42','44','46'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00468-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00472-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00473-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00476-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00477-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00493-scaled.jpg'
+      'https://media.treyondworld.com/2024/05/CKS00468-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00472-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00473-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00476-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00477-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00493-scaled.jpg'
     ],
     url: '/pages/bsf-khaki-uniform-graviera.html',
     category: 'uniforms'
@@ -457,12 +457,12 @@ const PRODUCTS_DATA = [
     badge: 'Uniform',
     sizes: ['36','38','40','42','44','46'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00667-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00669-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00668-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00676-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00675-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00673-copy-scaled.jpg'
+      'https://media.treyondworld.com/2024/05/CKS00667-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00669-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00668-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00676-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00675-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00673-copy-scaled.jpg'
     ],
     url: '/pages/police-khaki-uniform-vimal-super-fabric.html',
     category: 'uniforms'
@@ -474,12 +474,12 @@ const PRODUCTS_DATA = [
     badge: 'Uniform',
     sizes: ['36','38','40','42','44','46'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00496-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00506-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00507-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00504-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00503-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00498-scaled.jpg'
+      'https://media.treyondworld.com/2024/05/CKS00496-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00506-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00507-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00504-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00503-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00498-scaled.jpg'
     ],
     url: '/pages/bsf-khaki-uniform-vimal-super-premium-trovine.html',
     category: 'uniforms'
@@ -491,8 +491,8 @@ const PRODUCTS_DATA = [
     badge: 'Uniform',
     sizes: ['36','38','40','42','44','46'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00512-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00510-scaled.jpg'
+      'https://media.treyondworld.com/2024/05/CKS00512-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00510-scaled.jpg'
     ],
     url: '/pages/bsf-khaki-uniform-vimal-saphire-matty.html',
     category: 'uniforms'
@@ -504,12 +504,12 @@ const PRODUCTS_DATA = [
     badge: 'Combat',
     sizes: ['38','40','42','44','46'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00770-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00772-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00778-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00776-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00775-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00774-scaled.jpg'
+      'https://media.treyondworld.com/2024/05/CKS00770-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00772-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00778-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00776-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00775-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00774-scaled.jpg'
     ],
     url: '/pages/ssb-new-pattern-combat-uniforms.html',
     category: 'combat-uniforms'
@@ -521,13 +521,13 @@ const PRODUCTS_DATA = [
     badge: 'Combat',
     sizes: ['38','40','42','44','46'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00758-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00760-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00768-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00765-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00764-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00763-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00760-1-scaled.jpg'
+      'https://media.treyondworld.com/2024/05/CKS00758-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00760-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00768-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00765-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00764-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00763-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00760-1-scaled.jpg'
     ],
     url: '/pages/ssb-us-pattern-combat-uniform-ssb-3.html',
     category: 'combat-uniforms'
@@ -539,14 +539,14 @@ const PRODUCTS_DATA = [
     badge: 'Combat',
     sizes: ['38','40','42','44','46'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00743-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00745-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00756-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00754-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00752-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00749-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00748-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00747-scaled.jpg'
+      'https://media.treyondworld.com/2024/05/CKS00743-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00745-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00756-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00754-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00752-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00749-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00748-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00747-scaled.jpg'
     ],
     url: '/pages/ssb-new-pattern-combat.html',
     category: 'combat-uniforms'
@@ -558,15 +558,15 @@ const PRODUCTS_DATA = [
     badge: 'Combat',
     sizes: ['38','40','42','44','46'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00728-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00729-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00741-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00740-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00738-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00737-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00734-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00733-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00732-scaled.jpg'
+      'https://media.treyondworld.com/2024/05/CKS00728-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00729-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00741-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00740-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00738-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00737-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00734-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00733-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00732-scaled.jpg'
     ],
     url: '/pages/ssb-new-pattern-combat-uniform.html',
     category: 'combat-uniforms'
@@ -578,15 +578,15 @@ const PRODUCTS_DATA = [
     badge: 'Combat',
     sizes: ['36','38','40','42','44','46'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00598-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00608-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00602-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00600-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00611-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00610-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00607-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00606-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00603-copy-scaled.jpg'
+      'https://media.treyondworld.com/2024/05/CKS00598-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00608-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00602-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00600-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00611-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00610-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00607-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00606-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00603-copy-scaled.jpg'
     ],
     url: '/pages/crpf-combat-cotton-80-poly-20-us-pattern-wardi.html',
     category: 'combat-uniforms'
@@ -598,16 +598,16 @@ const PRODUCTS_DATA = [
     badge: 'Combat',
     sizes: ['36','38','40','42','44','46'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00613-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00615-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00627-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00626-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00625-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00623-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00622-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00620-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00619-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00618-copy-scaled.jpg'
+      'https://media.treyondworld.com/2024/05/CKS00613-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00615-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00627-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00626-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00625-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00623-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00622-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00620-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00619-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00618-copy-scaled.jpg'
     ],
     url: '/pages/crpf-combet-manipuri-pattern-uniform-cool-touch.html',
     category: 'combat-uniforms'
@@ -619,15 +619,15 @@ const PRODUCTS_DATA = [
     badge: 'Combat',
     sizes: ['36','38','40','42','44','46'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00598-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00608-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00602-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00600-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00611-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00610-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00607-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00606-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00603-copy-scaled.jpg'
+      'https://media.treyondworld.com/2024/05/CKS00598-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00608-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00602-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00600-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00611-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00610-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00607-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00606-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00603-copy-scaled.jpg'
     ],
     url: '/pages/crpf-cotton-us-pattern-combat-uniform.html',
     category: 'combat-uniforms'
@@ -639,13 +639,13 @@ const PRODUCTS_DATA = [
     badge: 'Combat',
     sizes: ['36','38','40','42','44','46'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2024/05/crpf-poly-coot-touch-main-photo.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00594-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00590-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00592-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00596-copy-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00593-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00593-copy-scaled.jpg'
+      'https://media.treyondworld.com/2024/05/crpf-poly-coot-touch-main-photo.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00594-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00590-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00592-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00596-copy-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00593-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00593-copy-scaled.jpg'
     ],
     url: '/pages/crpf-combat-uniform-cool-touch-fast-colour-by-ajanta.html',
     category: 'combat-uniforms'
@@ -657,11 +657,11 @@ const PRODUCTS_DATA = [
     badge: 'T-Shirt',
     sizes: ['36','38','40','42'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00717-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00720-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00724-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00723-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00722-scaled.jpg'
+      'https://media.treyondworld.com/2024/05/CKS00717-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00720-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00724-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00723-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00722-scaled.jpg'
     ],
     url: '/pages/white-cotton-t-shirt1.html',
     category: 't-shirts'
@@ -673,11 +673,11 @@ const PRODUCTS_DATA = [
     badge: 'T-Shirt',
     sizes: ['36','38','40','42'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00709-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00711-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00715-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00714-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00713-scaled.jpg'
+      'https://media.treyondworld.com/2024/05/CKS00709-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00711-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00715-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00714-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00713-scaled.jpg'
     ],
     url: '/pages/white-cotton-t-shirt.html',
     category: 't-shirts'
@@ -689,11 +689,11 @@ const PRODUCTS_DATA = [
     badge: 'T-Shirt',
     sizes: ['36','38','40','42'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00709-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00711-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00715-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00714-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00713-scaled.jpg'
+      'https://media.treyondworld.com/2024/05/CKS00709-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00711-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00715-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00714-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00713-scaled.jpg'
     ],
     url: '/pages/white-t-shirt-cotton-matty.html',
     category: 't-shirts'
@@ -705,11 +705,11 @@ const PRODUCTS_DATA = [
     badge: 'T-Shirt',
     sizes: ['36','38','40','42'],
     images: [
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00700-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00702-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00706-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00705-scaled.jpg',
-      'https://treyondworld.com/wp-content/uploads/2024/05/CKS00704-scaled.jpg'
+      'https://media.treyondworld.com/2024/05/CKS00700-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00702-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00706-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00705-scaled.jpg',
+      'https://media.treyondworld.com/2024/05/CKS00704-scaled.jpg'
     ],
     url: '/pages/white-t-shirt-cotton.html',
     category: 't-shirts'
