@@ -17,9 +17,13 @@
 .category-hero-content{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center;padding:24px}
 .category-hero-title{font-family:var(--font-serif);font-size:clamp(2rem,5vw,3rem);font-weight:400;margin-bottom:8px}
 .category-hero-desc{font-size:.9rem;opacity:.8;max-width:500px}
-.cat-grid-section{padding:40px 0 60px}
-.cat-grid-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
-.cat-grid-title{font-size:1rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.cat-grid-section{padding:40px 0 20px}
+.cat-section{padding:20px 0}
+.cat-section-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
+.cat-section-title{font-size:1.3rem;font-weight:700;letter-spacing:-.01em}
+.cat-view-all{font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--gray-500);text-decoration:none;display:flex;align-items:center;gap:4px;transition:color .2s}
+.cat-view-all:hover{color:var(--black)}
+.cat-section-alt{background:var(--gray-50)}
 .cat-count{font-size:.8rem;color:var(--gray-500)}
 </style>
 </head>
@@ -64,22 +68,37 @@
     <span class="breadcrumb-current">CRPF Uniforms</span>
   </nav>
 </div>
+
+<!-- KHAKI UNIFORMS -->
 <section class="cat-grid-section">
   <div class="container">
-    <div class="cat-grid-header">
-      <span class="cat-grid-title">CRPF Uniforms</span>
+    <div class="cat-section-header">
+      <span class="cat-section-title">Khaki Uniforms</span>
       <span class="cat-count" id="cat-count"></span>
     </div>
     <div class="products-grid" id="cat-products-grid"></div>
   </div>
 </section>
+
+
+<!-- COMBAT SECTION -->
+<section class="cat-section cat-section-alt" style="margin-top:20px">
+  <div class="container">
+    <div class="cat-section-header">
+      <h2 class="cat-section-title">Combat Uniforms</h2>
+      <a href="../../uniforms/crpf/combat" class="cat-view-all">View All <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="12" height="12"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="products-grid" id="combat-grid"></div>
+  </div>
+</section>
+
 </main>
 <footer class="site-footer">
   <div class="container">
     <div class="footer-top">
       <div class="footer-brand"><span class="nav-logo">TREYOND WORLD</span><p>Premium men's fashion crafted for every occasion.</p></div>
-      <div><div class="footer-col-title">Uniforms</div><div class="footer-links"><a href="../../uniforms">All Uniforms</a><a href="../../uniforms/bsf">BSF</a><a href="../../uniforms/crpf">CRPF</a><a href="../../uniforms/crpf/combat">Combat</a><a href="../../uniforms/police">Police</a><a href="../../uniforms/ssb">SSB</a></div></div>
-      <div><div class="footer-col-title">Help</div><div class="footer-links"><a href="../../pages/contact.html">Contact</a><a href="../../pages/shipping.html">Shipping</a><a href="../../pages/refund.html">Returns</a></div></div>
+      <div><div class="footer-col-title">Uniforms</div><div class="footer-links"><a href="../../uniforms">All Uniforms</a><a href="../../uniforms/bsf">BSF</a><a href="../../uniforms/crpf">CRPF</a><a href="../../uniforms/crpf/combat">CRPF Combat</a><a href="../../uniforms/police">Police</a><a href="../../uniforms/ssb">SSB</a><a href="../../uniforms/ssb/combat">SSB Combat</a></div></div>
+      <div><div class="footer-col-title">Help</div><div class="footer-links"><a href="../../pages/contact.html">Contact</a><a href="../../pages/refund.html">Returns</a></div></div>
     </div>
     <div class="footer-bottom"><span>© 2025 Treyond World</span></div>
   </div>
@@ -96,6 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const products = UNIFORM_PRODUCTS.filter(p => cats.includes(p.category));
   document.getElementById('cat-count').textContent = products.length + ' products';
   renderProductGrid('cat-products-grid', products);
+  renderProductGrid('combat-grid', UNIFORM_PRODUCTS.filter(p => p.category === 'uniforms-combat').slice(0,4));
 });
 </script>
 </body>
