@@ -167,14 +167,25 @@
   </div>
 </section>
 
-<!-- 3. COMBAT -->
+<!-- 3. CRPF COMBAT -->
 <section class="cat-section">
   <div class="container">
     <div class="cat-section-header">
       <h2 class="cat-section-title">CRPF Combat Uniforms</h2>
       <a href="uniforms/crpf/combat" class="cat-view-all">View All <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="12" height="12"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
     </div>
-    <div class="products-grid" id="combat-grid"></div>
+    <div class="products-grid" id="crpf-combat-grid"></div>
+  </div>
+</section>
+
+<!-- 3b. SSB COMBAT -->
+<section class="cat-section cat-section-alt">
+  <div class="container">
+    <div class="cat-section-header">
+      <h2 class="cat-section-title">SSB Combat Uniforms</h2>
+      <a href="uniforms/ssb/combat" class="cat-view-all">View All <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="12" height="12"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="products-grid" id="ssb-combat-grid"></div>
   </div>
 </section>
 
@@ -235,7 +246,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initHeroSlider();
   renderProductGrid('bsf-grid', UNIFORM_PRODUCTS.filter(p => p.category === 'uniforms-bsf').slice(0,4));
   renderProductGrid('crpf-grid', UNIFORM_PRODUCTS.filter(p => p.category === 'uniforms-crpf').slice(0,4));
-  renderProductGrid('combat-grid', UNIFORM_PRODUCTS.filter(p => ['uniforms-combat','uniforms-ssb-combat'].includes(p.category)).slice(0,4));
+  renderProductGrid('crpf-combat-grid', UNIFORM_PRODUCTS.filter(p => p.category === 'uniforms-combat').slice(0,4));
+  renderProductGrid('ssb-combat-grid', UNIFORM_PRODUCTS.filter(p => p.category === 'uniforms-ssb-combat').slice(0,4));
   renderProductGrid('police-grid', UNIFORM_PRODUCTS.filter(p => p.category === 'uniforms-police').slice(0,4));
   renderProductGrid('ssb-grid', UNIFORM_PRODUCTS.filter(p => p.category === 'uniforms-ssb').slice(0,4));
 });
