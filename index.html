@@ -1,25 +1,29 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Treyond World | Premium Men's Fashion</title><meta name="description" content="Premium men's traditional and formal wear. Sherwanis, Suits, Kurta Sets, Indo-Western outfits."><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/global.css"><link rel="stylesheet" href="css/nav.css"><link rel="stylesheet" href="css/homepage.css"><link rel="stylesheet" href="css/footer.css"><style>
-/* Hero critical fixes */
-.hero { position:relative; width:100%; height:100svh; min-height:580px; max-height:900px; overflow:hidden; background:#111; display:block; }
-.hero-slider { position:absolute; top:0; left:0; right:0; bottom:0; width:100%; height:100%; }
-.hero-slide { position:absolute; top:0; left:0; width:100%; height:100%; opacity:0; transition:opacity 0.9s ease; }
-.hero-slide.active { opacity:1; }
-.hero-slide-img { position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; object-position:center center; transform:scale(1.05); transition:transform 6s ease; }
-.hero-slide.active .hero-slide-img { transform:scale(1); }
-.hero-slide-overlay { position:absolute; top:0; left:0; width:100%; height:100%; background:linear-gradient(110deg,rgba(0,0,0,.65) 0%,rgba(0,0,0,.3) 55%,rgba(0,0,0,.05) 100%); z-index:1; }
-.hero-content { position:absolute; top:0; left:0; width:100%; height:100%; display:flex; align-items:center; z-index:3; pointer-events:none; }
-.hero-content > div { width:100%; max-width:1440px; margin:0 auto; padding:0 clamp(16px,4vw,80px); pointer-events:auto; }
-.hero-text { max-width:560px; color:#fff; }
-.hero-controls { position:absolute; bottom:40px; left:50%; transform:translateX(-50%); z-index:10; display:flex; align-items:center; gap:8px; }
-.hero-arrows { position:absolute; right:clamp(16px,4vw,80px); bottom:36px; display:flex; gap:8px; z-index:10; }
-.modal { display:none !important; }
-.modal.active { display:flex !important; }
-.countdown-block{display:inline-flex;flex-direction:column;align-items:center;background:rgba(255,255,255,.08);padding:12px 16px;min-width:60px}
-.count-num{font-size:2rem;font-weight:700;line-height:1}
-.count-label{font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;margin-top:4px;opacity:.6}
-.countdown-sep{font-size:2rem;font-weight:300;padding:0 8px;opacity:.5;align-self:center}
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Treyond World | Premium Men's Fashion</title><meta name="description" content="Premium men's traditional and formal wear. Shirts, Suits, Blazers, Modi Jackets, Trousers and more."><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/global.css"><link rel="stylesheet" href="css/nav.css"><link rel="stylesheet" href="css/homepage.css"><link rel="stylesheet" href="css/footer.css"><style>
+.hero{position:relative;width:100%;height:100svh;min-height:580px;max-height:900px;overflow:hidden;background:#111;display:block}
+.hero-slider{position:absolute;top:0;left:0;right:0;bottom:0;width:100%;height:100%}
+.hero-slide{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;transition:opacity 0.9s ease}
+.hero-slide.active{opacity:1}
+.hero-slide-img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center center;transform:scale(1.05);transition:transform 6s ease}
+.hero-slide.active .hero-slide-img{transform:scale(1)}
+.hero-slide-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(110deg,rgba(0,0,0,.65) 0%,rgba(0,0,0,.3) 55%,rgba(0,0,0,.05) 100%);z-index:1}
+.hero-content{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;z-index:3;pointer-events:none}
+.hero-content>div{width:100%;max-width:1440px;margin:0 auto;padding:0 clamp(16px,4vw,80px);pointer-events:auto}
+.hero-text{max-width:560px;color:#fff}
+.hero-controls{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);z-index:10;display:flex;align-items:center;gap:8px}
+.hero-arrows{position:absolute;right:clamp(16px,4vw,80px);bottom:36px;display:flex;gap:8px;z-index:10}
+.modal{display:none !important}
+.modal.active{display:flex !important}
+/* Uniform nav link */
+.uniform-nav-link{display:inline-flex;align-items:center;gap:6px;background:#1a1a2e;color:#fff;padding:6px 16px;border-radius:4px;font-size:0.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;transition:background .2s}
+.uniform-nav-link:hover{background:#e53e3e}
+/* Category section */
+.category-section{padding:40px 0 20px}
+.category-section-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
+.category-section-title{font-size:1.4rem;font-weight:700;letter-spacing:-.01em}
+.category-view-all{font-size:0.8rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--gray-500);text-decoration:none;display:flex;align-items:center;gap:4px;transition:color .2s}
+.category-view-all:hover{color:var(--black)}
 </style></head><body>
-<!-- _nav.html - Include this header in every page -->
+
 <div id="announcement-bar" class="announcement-bar">
   ✦ FREE SHIPPING ON ORDERS ABOVE ₹2999 &nbsp;|&nbsp; USE CODE <strong>TREYOND10</strong> FOR 10% OFF &nbsp;|&nbsp; <a href="/pages/shop.html">SHOP NOW</a>
   <button id="announcement-close" class="announcement-close" aria-label="Close">×</button>
@@ -27,209 +31,140 @@
 
 <header id="site-header" class="site-header">
   <div class="container header-inner">
-    <!-- Mobile Menu Button -->
-    <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
-
-    <!-- Logo -->
+    <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open menu"><span></span><span></span><span></span></button>
     <a href="/index.html" class="nav-logo">TREYOND WORLD</a>
-
-    <!-- Desktop Nav -->
     <nav class="nav-menu" aria-label="Main navigation">
+      <div class="nav-item"><a href="/index.html" class="nav-link">Home</a></div>
       <div class="nav-item">
-        <a href="/index.html" class="nav-link">Home</a>
-      </div>
-      <div class="nav-item">
-        <a href="/pages/collections.html" class="nav-link">Collections
+        <a href="/pages/shop.html" class="nav-link">Shop
           <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </a>
         <div class="mega-dropdown">
           <div class="mega-inner">
             <div class="mega-col">
-              <div class="mega-col-title">Traditional</div>
-              <a href="/pages/shop.html?cat=sherwanis">Sherwanis</a>
-              <a href="/pages/shop.html?cat=kurta-sets">Kurta Sets</a>
-              <a href="/pages/shop.html?cat=dhoti-sets">Dhoti Sets</a>
-              <a href="/pages/shop.html?cat=pathani">Pathani Suits</a>
+              <div class="mega-col-title">Shirts</div>
+              <a href="/pages/shop.html?cat=shirts">Plain Shirts</a>
+              <a href="/pages/shop.html?cat=check-shirts">Check Shirts</a>
+              <a href="/pages/shop.html?cat=strap-shirts">Strap Shirts</a>
             </div>
             <div class="mega-col">
               <div class="mega-col-title">Formal</div>
-              <a href="/pages/shop.html?cat=suits">Men's Suits</a>
-              <a href="/pages/shop.html?cat=tuxedos">Tuxedos</a>
+              <a href="/pages/shop.html?cat=suits">Suits</a>
               <a href="/pages/shop.html?cat=blazers">Blazers</a>
-              <a href="/pages/shop.html?cat=indo-western">Indo-Western</a>
+              <a href="/pages/shop.html?cat=modi-jacket">Modi Jacket</a>
+              <a href="/pages/shop.html?cat=trousers">Trousers</a>
             </div>
             <div class="mega-col">
-              <div class="mega-col-title">Essentials</div>
-              <a href="/pages/shop.html?cat=shirts">Shirts</a>
-              <a href="/pages/shop.html?cat=trousers">Trousers</a>
-              <a href="/pages/shop.html?cat=accessories">Accessories</a>
-              <a href="/pages/shop.html?cat=check-shirts">Check Shirts</a>
+              <div class="mega-col-title">Casuals</div>
               <a href="/pages/shop.html?cat=t-shirts">T-Shirts</a>
+              <a href="/pages/shop.html?cat=jeans">Jeans</a>
             </div>
             <div class="mega-col">
               <div class="mega-featured">
-                <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=800" alt="New Collection">
+                <img src="https://media.treyondworld.com/2024/05/CKS00578-copy-scaled.jpg" alt="New Collection">
                 <div class="mega-featured-label">New Season</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="nav-item">
-        <a href="/pages/shop.html" class="nav-link">Shop</a>
-      </div>
-      <div class="nav-item">
-        <a href="/pages/blog.html" class="nav-link">Journal</a>
-      </div>
-      <div class="nav-item">
-        <a href="/pages/about.html" class="nav-link">About</a>
-      </div>
-      <div class="nav-item">
-        <a href="/pages/contact.html" class="nav-link">Contact</a>
-      </div>
+      <div class="nav-item"><a href="/uniform" class="nav-link uniform-nav-link">🪖 Uniforms</a></div>
+      <div class="nav-item"><a href="/pages/about.html" class="nav-link">About</a></div>
+      <div class="nav-item"><a href="/pages/contact.html" class="nav-link">Contact</a></div>
     </nav>
-
-    <!-- Icons -->
     <div class="nav-icons">
-      <button id="search-icon" class="nav-icon-btn" aria-label="Search">
-        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-      </button>
-      <button class="nav-icon-btn" aria-label="Wishlist" onclick="window.location='/pages/wishlist.html'">
-        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
-      </button>
-      <button id="cart-icon" class="nav-icon-btn" aria-label="Cart">
-        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
-        <span class="cart-badge" style="display:none">0</span>
-      </button>
+      <button id="search-icon" class="nav-icon-btn" aria-label="Search"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg></button>
+      <button class="nav-icon-btn" aria-label="Wishlist" onclick="window.location='/pages/wishlist.html'"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg></button>
+      <button id="cart-icon" class="nav-icon-btn" aria-label="Cart"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg><span class="cart-badge" style="display:none">0</span></button>
     </div>
   </div>
 </header>
 
-<!-- Search Bar -->
 <div id="search-bar" class="search-bar">
   <div class="search-bar-inner">
     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20" style="color:var(--gray-400);flex-shrink:0"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-    <input id="search-input" type="search" placeholder="Search for sherwanis, suits, kurtas…" autocomplete="off">
-    <button id="search-close" class="search-close" aria-label="Close search">
-      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/></svg>
-    </button>
+    <input id="search-input" type="search" placeholder="Search shirts, suits, blazers…" autocomplete="off">
+    <button id="search-close" class="search-close"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/></svg></button>
   </div>
   <div id="search-suggestions" class="search-suggestions"></div>
 </div>
 
-<!-- Mobile Nav -->
 <div id="mobile-nav" class="mobile-nav">
   <div class="mobile-nav-header">
     <span class="nav-logo" style="font-size:1.1rem">TREYOND WORLD</span>
-    <button id="mobile-nav-close" class="mobile-nav-close" aria-label="Close menu">
-      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="22" height="22"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/></svg>
-    </button>
+    <button id="mobile-nav-close" class="mobile-nav-close"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="22" height="22"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/></svg></button>
   </div>
   <div class="mobile-nav-body">
+    <div class="mobile-nav-item"><a href="/index.html" class="mobile-nav-link">Home</a></div>
+    <div class="mobile-nav-item"><a href="/uniform" class="mobile-nav-link" style="color:#e53e3e;font-weight:700">🪖 Uniforms</a></div>
     <div class="mobile-nav-item">
-      <a href="/index.html" class="mobile-nav-link">Home</a>
-    </div>
-    <div class="mobile-nav-item">
-      <div class="mobile-nav-link" data-submenu="mob-collections">Collections <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/></svg></div>
-      <div id="mob-collections" class="mobile-nav-submenu">
-        <a href="/pages/shop.html?cat=sherwanis">Sherwanis</a>
-        <a href="/pages/shop.html?cat=kurta-sets">Kurta Sets</a>
-        <a href="/pages/shop.html?cat=suits">Men's Suits</a>
+      <div class="mobile-nav-link" data-submenu="mob-shop">Shop <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/></svg></div>
+      <div id="mob-shop" class="mobile-nav-submenu">
+        <a href="/pages/shop.html?cat=shirts">Plain Shirts</a>
+        <a href="/pages/shop.html?cat=check-shirts">Check Shirts</a>
+        <a href="/pages/shop.html?cat=strap-shirts">Strap Shirts</a>
+        <a href="/pages/shop.html?cat=suits">Suits</a>
         <a href="/pages/shop.html?cat=blazers">Blazers</a>
-        <a href="/pages/shop.html?cat=indo-western">Indo-Western</a>
-        <a href="/pages/shop.html?cat=shirts">Shirts</a>
-        <a href="/pages/shop.html?cat=accessories">Accessories</a>
+        <a href="/pages/shop.html?cat=modi-jacket">Modi Jacket</a>
+        <a href="/pages/shop.html?cat=trousers">Trousers</a>
+        <a href="/pages/shop.html?cat=t-shirts">T-Shirts</a>
       </div>
     </div>
-    <div class="mobile-nav-item"><a href="/pages/shop.html" class="mobile-nav-link">Shop All</a></div>
-    <div class="mobile-nav-item"><a href="/pages/blog.html" class="mobile-nav-link">Journal</a></div>
     <div class="mobile-nav-item"><a href="/pages/about.html" class="mobile-nav-link">About</a></div>
     <div class="mobile-nav-item"><a href="/pages/contact.html" class="mobile-nav-link">Contact</a></div>
   </div>
-  <div class="mobile-nav-footer">
-    <p style="font-size:0.75rem;color:var(--gray-500);margin-bottom:8px">Follow us</p>
-    <div class="social-links">
-      <a href="#" aria-label="Instagram"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-      <a href="#" aria-label="Facebook"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="16" height="16"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
-      <a href="#" aria-label="WhatsApp"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="16" height="16"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></a>
-    </div>
-  </div>
 </div>
 
-<!-- Cart Drawer -->
 <div id="cart-drawer" class="cart-drawer">
   <div class="cart-drawer-header">
     <div class="cart-drawer-title">Shopping Bag <span id="cart-count-text"></span></div>
-    <button id="cart-drawer-close" class="cart-drawer-close" aria-label="Close cart">
-      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/></svg>
-    </button>
+    <button id="cart-drawer-close" class="cart-drawer-close"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/></svg></button>
   </div>
   <div id="cart-drawer-body" class="cart-drawer-body"></div>
   <div class="cart-drawer-footer">
-    <div class="cart-subtotal">
-      <span class="cart-subtotal-label">Subtotal</span>
-      <span class="cart-subtotal-price" id="cart-subtotal">₹0</span>
-    </div>
+    <div class="cart-subtotal"><span class="cart-subtotal-label">Subtotal</span><span class="cart-subtotal-price" id="cart-subtotal">₹0</span></div>
     <p class="cart-shipping-note">Shipping & taxes calculated at checkout</p>
     <a href="/pages/cart.html" class="btn btn-outline w-full" style="margin-bottom:10px">View Cart</a>
     <a href="/pages/checkout.html" class="btn btn-primary w-full cart-checkout-btn">Checkout</a>
   </div>
 </div>
 
-<!-- Mobile Bottom Bar -->
 <div class="mobile-bottom-bar">
   <div class="mobile-bottom-bar-inner">
-    <a href="/index.html" class="mobile-bottom-btn active">
-      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
-      Home
-    </a>
-    <button class="mobile-bottom-btn" onclick="openSearch()">
-      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-      Search
-    </button>
-    <a href="/pages/wishlist.html" class="mobile-bottom-btn">
-      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
-      Wishlist
-    </a>
-    <button class="mobile-bottom-btn" onclick="openCartDrawer()">
-      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
-      Cart
-    </button>
+    <a href="/index.html" class="mobile-bottom-btn active"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>Home</a>
+    <button class="mobile-bottom-btn" onclick="openSearch()"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>Search</button>
+    <a href="/uniform" class="mobile-bottom-btn"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>Uniform</a>
+    <button class="mobile-bottom-btn" onclick="openCartDrawer()"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>Cart</button>
   </div>
 </div>
 
-<!-- Overlay -->
 <div id="overlay" class="overlay"></div>
 
-<!-- Quick View Modal -->
 <div id="quickview-modal" class="modal">
   <div class="modal-backdrop" onclick="closeQuickView()"></div>
   <div class="modal-box quickview-modal" style="max-width:900px;padding:0;overflow:hidden">
     <div class="quickview-inner">
-      <div class="quickview-gallery">
-        <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Product" style="width:100%;height:100%;object-fit:cover">
-      </div>
+      <div class="quickview-gallery"><img src="https://media.treyondworld.com/2024/05/CKS00578-copy-scaled.jpg" alt="Product" style="width:100%;height:100%;object-fit:cover"></div>
       <div class="quickview-info" style="padding:40px;overflow-y:auto"></div>
     </div>
   </div>
 </div>
 
 <main id="home-page">
+
 <!-- HERO -->
 <section class="hero" aria-label="Hero banner">
   <div class="hero-slider">
     <div class="hero-slide active">
-      <img class="hero-slide-img" src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Premium Suits Collection" loading="eager">
+      <img class="hero-slide-img" src="https://media.treyondworld.com/2024/05/CKS00578-copy-scaled.jpg" alt="Premium Uniforms Collection" loading="eager">
       <div class="hero-slide-overlay"></div>
     </div>
     <div class="hero-slide">
-      <img class="hero-slide-img" src="https://images.pexels.com/photos/3622608/pexels-photo-3622608.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Wedding Sherwanis" loading="lazy">
+      <img class="hero-slide-img" src="https://media.treyondworld.com/2023/12/CKS08714.jpg" alt="Premium Shirts" loading="lazy">
       <div class="hero-slide-overlay"></div>
     </div>
     <div class="hero-slide">
-      <img class="hero-slide-img" src="https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Indo-Western Fashion" loading="lazy">
+      <img class="hero-slide-img" src="https://media.treyondworld.com/2023/12/tr__tr__New-Fabric__tr__tr____all_set183_threepiecesuit_front__2023-12-10-19-40-23__2730X4096-PhotoRoom.png" alt="Premium Suits" loading="lazy">
       <div class="hero-slide-overlay"></div>
     </div>
   </div>
@@ -238,10 +173,10 @@
       <div class="hero-text">
         <div class="hero-label">New Collection 2025</div>
         <h1 class="hero-title">Beyond the<br>Ordinary</h1>
-        <p class="hero-subtitle">Premium men's traditional and contemporary fashion. Crafted for moments that matter.</p>
+        <p class="hero-subtitle">Premium men's fashion — shirts, suits, blazers, uniforms. Crafted for every occasion.</p>
         <div class="hero-actions">
-          <a href="/pages/shop.html" class="btn btn-white btn-lg">Shop Collection</a>
-          <a href="/pages/collections.html" class="btn btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.5)">Explore Lookbook</a>
+          <a href="/pages/shop.html" class="btn btn-white btn-lg">Shop Now</a>
+          <a href="/uniform" class="btn btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.5)">Shop Uniforms</a>
         </div>
       </div>
     </div>
@@ -254,12 +189,8 @@
     </div>
   </div>
   <div class="hero-arrows">
-    <button id="hero-prev" class="hero-arrow" aria-label="Previous slide">
-      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19l-7-7 7-7"/></svg>
-    </button>
-    <button id="hero-next" class="hero-arrow" aria-label="Next slide">
-      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7"/></svg>
-    </button>
+    <button id="hero-prev" class="hero-arrow"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19l-7-7 7-7"/></svg></button>
+    <button id="hero-next" class="hero-arrow"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7"/></svg></button>
   </div>
 </section>
 
@@ -269,173 +200,116 @@
     <span class="marquee-item">Free Shipping Above ₹2999</span>
     <span class="marquee-item">Premium Quality Fabrics</span>
     <span class="marquee-item">Custom Tailoring Available</span>
-    <span class="marquee-item">Wedding Specialists</span>
-    <span class="marquee-item">Easy Returns</span>
+    <span class="marquee-item">Police & Defense Wardi</span>
+    <span class="marquee-item">Easy 7-Day Returns</span>
     <span class="marquee-item">100+ Premium Styles</span>
     <span class="marquee-item">Free Shipping Above ₹2999</span>
     <span class="marquee-item">Premium Quality Fabrics</span>
     <span class="marquee-item">Custom Tailoring Available</span>
-    <span class="marquee-item">Wedding Specialists</span>
-    <span class="marquee-item">Easy Returns</span>
+    <span class="marquee-item">Police & Defense Wardi</span>
+    <span class="marquee-item">Easy 7-Day Returns</span>
     <span class="marquee-item">100+ Premium Styles</span>
   </div>
 </div>
-<!-- COLLECTIONS GRID -->
-<section class="section-sm" aria-label="Collections">
-  <div class="container" style="margin-bottom:40px">
-    <div class="section-label reveal">Shop by Category</div>
-    <h2 class="section-title reveal reveal-delay-1">Our Collections</h2>
-  </div>
-  <div class="categories-container">
-    <!-- Row 1: 5 Items -->
-    <div class="categories-row">
-      <a href="/pages/shop.html" class="category-card">
-        <div class="category-card-img-wrap">
-          <img src="assets/images/categories/new_arrivals.png" alt="New Arrivals" loading="lazy">
-        </div>
-        <div class="category-card-title">New Arrivals</div>
-      </a>
-      <a href="/pages/shop.html?cat=uniforms" class="category-card">
-        <div class="category-card-img-wrap">
-          <img src="assets/images/categories/uniform.png" alt="Uniform" loading="lazy">
-        </div>
-        <div class="category-card-title">Uniform</div>
-      </a>
-      <a href="/pages/shop.html?cat=bestsellers" class="category-card">
-        <div class="category-card-img-wrap">
-          <img src="assets/images/categories/bestsellers.png" alt="Bestsellers" loading="lazy">
-        </div>
-        <div class="category-card-title">Bestsellers</div>
-      </a>
-      <a href="/pages/shop.html?cat=shirts" class="category-card">
-        <div class="category-card-img-wrap">
-          <img src="assets/images/categories/shirts.jpg" alt="Shirts" loading="lazy">
-        </div>
-        <div class="category-card-title">Shirts</div>
-      </a>
-      <a href="/pages/shop.html?cat=check-shirts" class="category-card">
-        <div class="category-card-img-wrap">
-          <img src="assets/images/categories/check_shirts.png" alt="Check Shirts" loading="lazy">
-        </div>
-        <div class="category-card-title">Check Shirts</div>
-      </a>
-    </div>
 
-    <!-- Row 2: 5 Items -->
-    <div class="categories-row">
-      <a href="/pages/shop.html?cat=t-shirts" class="category-card">
-        <div class="category-card-img-wrap">
-          <img src="https://media.treyondworld.com/2024/05/CKS00717-scaled.jpg" alt="T-Shirts" loading="lazy">
-        </div>
-        <div class="category-card-title">T-Shirts</div>
-      </a>
-      <a href="/pages/shop.html?cat=strap-shirts" class="category-card">
-        <div class="category-card-img-wrap">
-          <img src="assets/images/categories/strap_shirt.jpg" alt="Strap Shirt" loading="lazy">
-        </div>
-        <div class="category-card-title">Strap Shirt</div>
-      </a>
-      <a href="/pages/shop.html?cat=trousers" class="category-card">
-        <div class="category-card-img-wrap">
-          <img src="assets/images/categories/pants.jpg" alt="Pants" loading="lazy">
-        </div>
-        <div class="category-card-title">Pants</div>
-      </a>
-      <a href="/pages/shop.html?cat=jeans" class="category-card">
-        <div class="category-card-img-wrap">
-          <img src="assets/images/categories/jeans.jpg" alt="Jeans" loading="lazy">
-        </div>
-        <div class="category-card-title">Jeans</div>
-      </a>
-      <a href="/pages/shop.html?cat=suits" class="category-card">
-        <div class="category-card-img-wrap">
-          <img src="assets/images/categories/suits.jpg" alt="Suits" loading="lazy">
-        </div>
-        <div class="category-card-title">Suits</div>
-      </a>
+<!-- SHIRTS -->
+<section class="category-section" aria-label="Shirts">
+  <div class="container">
+    <div class="category-section-header">
+      <h2 class="category-section-title">Shirts</h2>
+      <a href="/pages/shop.html?cat=shirts" class="category-view-all">View All <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="12" height="12"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
     </div>
-
-    <!-- Row 3: 5 Items -->
-    <div class="categories-row">
-      <a href="/pages/shop.html?cat=party-wear-suits" class="category-card">
-        <div class="category-card-img-wrap">
-          <img src="assets/images/categories/party_wear_suits.jpg" alt="Party Wear Suits" loading="lazy">
-        </div>
-        <div class="category-card-title">Party Wear Suits</div>
-      </a>
-      <a href="/pages/shop.html?cat=blazers" class="category-card">
-        <div class="category-card-img-wrap">
-          <img src="assets/images/categories/blazer.jpg" alt="Blazer" loading="lazy">
-        </div>
-        <div class="category-card-title">Blazer</div>
-      </a>
-      <a href="/pages/shop.html?cat=bandhgala-suits" class="category-card">
-        <div class="category-card-img-wrap">
-          <img src="assets/images/categories/bandhgala_suits.jpg" alt="Bandhgala Suits" loading="lazy">
-        </div>
-        <div class="category-card-title">Bandhgala Suits</div>
-      </a>
-      <a href="/pages/shop.html?cat=modi-jacket" class="category-card">
-        <div class="category-card-img-wrap">
-          <img src="assets/images/categories/modi_jacket.png" alt="Modi Jacket" loading="lazy">
-        </div>
-        <div class="category-card-title">Modi Jacket</div>
-      </a>
-      <a href="/pages/shop.html?cat=trousers" class="category-card">
-        <div class="category-card-img-wrap">
-          <img src="assets/images/categories/trousers.png" alt="Trousers" loading="lazy">
-        </div>
-        <div class="category-card-title">Trousers</div>
-      </a>
-    </div>
+    <div class="products-grid" id="shirts-grid"></div>
   </div>
 </section>
 
-<!-- FEATURED PRODUCTS -->
-<section class="section tabs-section" aria-label="Featured products">
+<!-- CHECK SHIRTS -->
+<section class="category-section" style="background:var(--gray-50)" aria-label="Check Shirts">
   <div class="container">
-    <div class="section-header">
-      <div class="section-header-left">
-        <div class="section-label reveal">Handpicked</div>
-        <h2 class="section-title reveal reveal-delay-1">Our Finest</h2>
-      </div>
-      <a href="/pages/shop.html" class="section-view-all reveal">View All <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="12" height="12"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
+    <div class="category-section-header">
+      <h2 class="category-section-title">Check Shirts</h2>
+      <a href="/pages/shop.html?cat=check-shirts" class="category-view-all">View All <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="12" height="12"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
     </div>
-    <div class="tabs">
-      <button class="tab-btn active" data-tab="featured">Shirts</button>
-      <button class="tab-btn" data-tab="new">Check Shirts</button>
-      <button class="tab-btn" data-tab="t-shirts">T-Shirts</button>
+    <div class="products-grid" id="check-shirts-grid"></div>
+  </div>
+</section>
+
+<!-- STRAP SHIRTS -->
+<section class="category-section" aria-label="Strap Shirts">
+  <div class="container">
+    <div class="category-section-header">
+      <h2 class="category-section-title">Strap Shirts</h2>
+      <a href="/pages/shop.html?cat=strap-shirts" class="category-view-all">View All <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="12" height="12"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
     </div>
-    <div class="tab-panel products-grid" data-panel="featured" id="featured-products"></div>
-    <div class="tab-panel products-grid hidden" data-panel="new" id="new-arrivals-grid"></div>
-    <div class="tab-panel products-grid hidden" data-panel="t-shirts" id="t-shirts-grid"></div>
+    <div class="products-grid" id="strap-shirts-grid"></div>
   </div>
 </section>
 
 <!-- PROMO BANNER -->
 <section class="section-sm" aria-label="Promotion">
   <div class="promo-banner">
-    <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Wedding Season Collection" class="promo-banner-img" loading="lazy">
+    <img src="https://media.treyondworld.com/2024/05/CKS00770-scaled.jpg" alt="Combat Uniform Collection" class="promo-banner-img" loading="lazy">
     <div class="promo-banner-content">
-      <div class="section-label" style="color:var(--accent)">Limited Time</div>
-      <h2 class="promo-banner-title">Wedding Season Sale</h2>
-      <p class="promo-banner-sub">Up to 30% off on Sherwanis & Kurta Sets</p>
-      <a href="/pages/shop.html?sale=1" class="btn btn-white btn-lg">Shop the Sale</a>
+      <div class="section-label" style="color:var(--accent)">Best Quality</div>
+      <h2 class="promo-banner-title">Premium Uniforms</h2>
+      <p class="promo-banner-sub">Police, CRPF, BSF & Combat Wardi at Best Prices</p>
+      <a href="/uniform" class="btn btn-white btn-lg">Shop Uniforms</a>
     </div>
   </div>
 </section>
 
-<!-- TRENDING -->
-<section class="section" style="background:var(--gray-50)" aria-label="Trending products">
+<!-- BLAZERS -->
+<section class="category-section" aria-label="Blazers">
   <div class="container">
-    <div class="section-header">
-      <div>
-        <div class="section-label reveal">Popular Right Now</div>
-        <h2 class="section-title reveal reveal-delay-1">Trending Styles</h2>
-      </div>
-      <a href="/pages/shop.html" class="section-view-all">View All <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="12" height="12"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
+    <div class="category-section-header">
+      <h2 class="category-section-title">Blazers</h2>
+      <a href="/pages/shop.html?cat=blazers" class="category-view-all">View All <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="12" height="12"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
     </div>
-    <div class="products-grid" id="trending-grid"></div>
+    <div class="products-grid" id="blazers-grid"></div>
+  </div>
+</section>
+
+<!-- SUITS -->
+<section class="category-section" style="background:var(--gray-50)" aria-label="Suits">
+  <div class="container">
+    <div class="category-section-header">
+      <h2 class="category-section-title">Suits</h2>
+      <a href="/pages/shop.html?cat=suits" class="category-view-all">View All <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="12" height="12"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="products-grid" id="suits-grid"></div>
+  </div>
+</section>
+
+<!-- MODI JACKET -->
+<section class="category-section" aria-label="Modi Jacket">
+  <div class="container">
+    <div class="category-section-header">
+      <h2 class="category-section-title">Modi Jacket</h2>
+      <a href="/pages/shop.html?cat=modi-jacket" class="category-view-all">View All <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="12" height="12"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="products-grid" id="modi-grid"></div>
+  </div>
+</section>
+
+<!-- TROUSERS -->
+<section class="category-section" style="background:var(--gray-50)" aria-label="Trousers">
+  <div class="container">
+    <div class="category-section-header">
+      <h2 class="category-section-title">Trousers</h2>
+      <a href="/pages/shop.html?cat=trousers" class="category-view-all">View All <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="12" height="12"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="products-grid" id="trousers-grid"></div>
+  </div>
+</section>
+
+<!-- T-SHIRTS -->
+<section class="category-section" aria-label="T-Shirts">
+  <div class="container">
+    <div class="category-section-header">
+      <h2 class="category-section-title">T-Shirts</h2>
+      <a href="/pages/shop.html?cat=t-shirts" class="category-view-all">View All <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="12" height="12"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="products-grid" id="tshirts-grid"></div>
   </div>
 </section>
 
@@ -466,6 +340,7 @@
     </div>
   </div>
 </section>
+
 <!-- TESTIMONIALS -->
 <section class="section" aria-label="Customer reviews">
   <div class="container">
@@ -475,35 +350,31 @@
         <h2 class="section-title reveal reveal-delay-1">What They Say</h2>
       </div>
       <div style="display:flex;gap:8px">
-        <button id="test-prev" class="hero-arrow" style="width:40px;height:40px;border-color:var(--gray-200);color:var(--black)">
-          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19l-7-7 7-7"/></svg>
-        </button>
-        <button id="test-next" class="hero-arrow" style="width:40px;height:40px;border-color:var(--gray-200);color:var(--black)">
-          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7"/></svg>
-        </button>
+        <button id="test-prev" class="hero-arrow" style="width:40px;height:40px;border-color:var(--gray-200);color:var(--black)"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19l-7-7 7-7"/></svg></button>
+        <button id="test-next" class="hero-arrow" style="width:40px;height:40px;border-color:var(--gray-200);color:var(--black)"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7"/></svg></button>
       </div>
     </div>
     <div class="testimonials-slider" style="overflow:hidden">
       <div class="testimonials-track" id="testimonials-track">
         <div class="testimonial-card reveal">
           <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Wore the Royal Sherwani at my wedding and received compliments all evening. The craftsmanship is exceptional — worth every rupee."</p>
+          <p class="testimonial-text">"The BSF Khaki Uniform is of outstanding quality. Premium fabric, very breathable. Fits perfectly right out of the box."</p>
           <div class="testimonial-author">
             <div style="width:44px;height:44px;border-radius:50%;background:var(--gray-300);display:flex;align-items:center;justify-content:center;font-weight:600;color:var(--gray-600)">R</div>
-            <div><div class="testimonial-name">Rahul Mehta</div><div class="testimonial-location">Mumbai</div></div>
+            <div><div class="testimonial-name">Rajesh Kumar</div><div class="testimonial-location">Delhi</div></div>
           </div>
         </div>
         <div class="testimonial-card reveal reveal-delay-1">
           <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"The Italian Tuxedo is absolutely stunning. Perfect fit, premium fabric. Treyond World has become my go-to for all formal occasions."</p>
+          <p class="testimonial-text">"The Light Khaki Oxford Shirt is excellent. Super soft fabric and perfect fit. Great value for money!"</p>
           <div class="testimonial-author">
             <div style="width:44px;height:44px;border-radius:50%;background:var(--gray-300);display:flex;align-items:center;justify-content:center;font-weight:600;color:var(--gray-600)">A</div>
-            <div><div class="testimonial-name">Arjun Singh</div><div class="testimonial-location">Delhi</div></div>
+            <div><div class="testimonial-name">Arjun Singh</div><div class="testimonial-location">Jammu</div></div>
           </div>
         </div>
         <div class="testimonial-card reveal reveal-delay-2">
           <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Ordered the Kurta Set for a family function. The quality far exceeded expectations. Fast delivery and beautiful packaging too."</p>
+          <p class="testimonial-text">"Ordered the Italian Terry Blazer. Premium stitching and amazing fabric. Treyond World is my go-to for formal wear."</p>
           <div class="testimonial-author">
             <div style="width:44px;height:44px;border-radius:50%;background:var(--gray-300);display:flex;align-items:center;justify-content:center;font-weight:600;color:var(--gray-600)">V</div>
             <div><div class="testimonial-name">Vikram Patel</div><div class="testimonial-location">Ahmedabad</div></div>
@@ -511,7 +382,7 @@
         </div>
         <div class="testimonial-card">
           <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Best menswear brand online. The Indo-Western Blazer is a showstopper. Already placed two more orders!"</p>
+          <p class="testimonial-text">"Best menswear brand online. The Modi Jacket is stunning. Already placed two more orders!"</p>
           <div class="testimonial-author">
             <div style="width:44px;height:44px;border-radius:50%;background:var(--gray-300);display:flex;align-items:center;justify-content:center;font-weight:600;color:var(--gray-600)">K</div>
             <div><div class="testimonial-name">Karan Sharma</div><div class="testimonial-location">Bangalore</div></div>
@@ -519,22 +390,6 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- INSTAGRAM GALLERY -->
-<section aria-label="Instagram gallery">
-  <div style="text-align:center;padding:40px 0 24px">
-    <div class="section-label">@treyondworld</div>
-    <h2 class="section-title">Follow Our Journey</h2>
-  </div>
-  <div class="gallery-grid">
-    <div class="gallery-item"><img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Style 1" loading="lazy"><div class="gallery-item-overlay"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/></svg></div></div>
-    <div class="gallery-item"><img src="https://images.pexels.com/photos/3622608/pexels-photo-3622608.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Style 2" loading="lazy"><div class="gallery-item-overlay"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/></svg></div></div>
-    <div class="gallery-item"><img src="https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Style 3" loading="lazy"><div class="gallery-item-overlay"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/></svg></div></div>
-    <div class="gallery-item"><img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Style 4" loading="lazy"><div class="gallery-item-overlay"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/></svg></div></div>
-    <div class="gallery-item"><img src="https://images.pexels.com/photos/1300402/pexels-photo-1300402.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Style 5" loading="lazy"><div class="gallery-item-overlay"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/></svg></div></div>
-    <div class="gallery-item"><img src="https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Style 6" loading="lazy"><div class="gallery-item-overlay"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/></svg></div></div>
   </div>
 </section>
 
@@ -551,61 +406,58 @@
     <p class="newsletter-note">No spam. Unsubscribe anytime.</p>
   </div>
 </section>
+
 </main>
-<!-- FOOTER -->
+
 <footer class="site-footer" role="contentinfo">
   <div class="container">
     <div class="footer-top">
       <div class="footer-brand">
         <span class="nav-logo">TREYOND WORLD</span>
-        <p>Premium men's traditional and formal wear, blending modern aesthetics with timeless Indian craftsmanship. Dressed for every milestone.</p>
+        <p>Premium men's fashion — shirts, suits, blazers, uniforms. Crafted for every milestone.</p>
         <div class="footer-social">
           <a href="#" class="footer-social-link" aria-label="Instagram"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
           <a href="#" class="footer-social-link" aria-label="Facebook"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
-          <a href="#" class="footer-social-link" aria-label="YouTube"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.4a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg></a>
-          <a href="https://wa.me/919999999999" class="footer-social-link" aria-label="WhatsApp"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></a>
+          <a href="https://wa.me/919512102102" class="footer-social-link" aria-label="WhatsApp"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></a>
         </div>
       </div>
       <div>
         <div class="footer-col-title">Shop</div>
         <div class="footer-links">
-          <a href="/pages/shop.html?cat=sherwanis">Sherwanis</a>
-          <a href="/pages/shop.html?cat=suits">Suits & Tuxedos</a>
-          <a href="/pages/shop.html?cat=kurta-sets">Kurta Sets</a>
+          <a href="/pages/shop.html?cat=shirts">Shirts</a>
+          <a href="/pages/shop.html?cat=suits">Suits</a>
           <a href="/pages/shop.html?cat=blazers">Blazers</a>
-          <a href="/pages/shop.html?cat=indo-western">Indo-Western</a>
-          <a href="/pages/shop.html?cat=accessories">Accessories</a>
-          <a href="/pages/shop.html?sale=1">Sale</a>
+          <a href="/pages/shop.html?cat=modi-jacket">Modi Jacket</a>
+          <a href="/pages/shop.html?cat=trousers">Trousers</a>
+          <a href="/pages/shop.html?cat=t-shirts">T-Shirts</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Uniforms</div>
+        <div class="footer-links">
+          <a href="/uniform?cat=uniforms">Police Uniforms</a>
+          <a href="/uniform?cat=uniforms">BSF Uniforms</a>
+          <a href="/uniform?cat=uniforms">CRPF Uniforms</a>
+          <a href="/uniform?cat=combat-uniforms">Combat Uniforms</a>
         </div>
       </div>
       <div>
         <div class="footer-col-title">Company</div>
         <div class="footer-links">
           <a href="/pages/about.html">About Us</a>
-          <a href="/pages/blog.html">Journal</a>
           <a href="/pages/contact.html">Contact</a>
-          <a href="/pages/careers.html">Careers</a>
-          <a href="/pages/about.html#custom">Custom Tailoring</a>
+          <a href="/pages/privacy.html">Privacy Policy</a>
+          <a href="/pages/shipping.html">Shipping Policy</a>
+          <a href="/pages/refund.html">Refund Policy</a>
         </div>
-      </div>
-      <div>
-        <div class="footer-col-title">Newsletter</div>
-        <p style="font-size:.875rem;color:var(--gray-400);margin-bottom:16px;line-height:1.6">Get exclusive deals, new arrivals and styling inspiration.</p>
-        <form class="newsletter-form" onsubmit="event.preventDefault();showToast('Subscribed!','success');this.reset()">
-          <div class="newsletter-form" style="display:flex">
-            <input class="newsletter-input" type="email" placeholder="Email address" required>
-            <button class="newsletter-submit" type="submit">Join</button>
-          </div>
-        </form>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© 2025 Treyond World. All rights reserved.</span>
       <div class="footer-bottom-links">
-        <a href="/pages/privacy.html">Privacy Policy</a>
-        <a href="/pages/terms.html">Terms of Service</a>
-        <a href="/pages/refund.html">Refund Policy</a>
-        <a href="/pages/shipping.html">Shipping Policy</a>
+        <a href="/pages/privacy.html">Privacy</a>
+        <a href="/pages/terms.html">Terms</a>
+        <a href="/pages/refund.html">Refunds</a>
       </div>
       <div class="footer-payment">
         <span class="payment-icon">Visa</span>
