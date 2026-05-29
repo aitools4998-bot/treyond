@@ -211,6 +211,17 @@
   </div>
 </section>
 
+<!-- ACCESSORIES -->
+<section class="cat-section cat-section-alt">
+  <div class="container">
+    <div class="cat-section-header">
+      <h2 class="cat-section-title">Accessories</h2>
+      <a href="uniforms/accessories" class="cat-view-all">View All <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="12" height="12"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="products-grid" id="accessories-grid"></div>
+  </div>
+</section>
+
 <!-- FEATURES -->
 <section class="features-strip">
   <div class="container"><div class="features-grid">
@@ -250,6 +261,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderProductGrid('ssb-combat-grid', UNIFORM_PRODUCTS.filter(p => p.category === 'uniforms-ssb-combat').slice(0,4));
   renderProductGrid('police-grid', UNIFORM_PRODUCTS.filter(p => p.category === 'uniforms-police').slice(0,4));
   renderProductGrid('ssb-grid', UNIFORM_PRODUCTS.filter(p => p.category === 'uniforms-ssb').slice(0,4));
+  renderProductGrid('accessories-grid', UNIFORM_PRODUCTS.filter(p => p.category === 'uniforms-accessories').slice(0,4));
 });
 </script>
 </body>
