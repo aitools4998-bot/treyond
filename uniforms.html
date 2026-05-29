@@ -235,7 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initHeroSlider();
   renderProductGrid('bsf-grid', UNIFORM_PRODUCTS.filter(p => p.category === 'uniforms-bsf').slice(0,4));
   renderProductGrid('crpf-grid', UNIFORM_PRODUCTS.filter(p => p.category === 'uniforms-crpf').slice(0,4));
-  renderProductGrid('combat-grid', UNIFORM_PRODUCTS.filter(p => p.category === 'uniforms-combat').slice(0,4));
+  renderProductGrid('combat-grid', UNIFORM_PRODUCTS.filter(p => ['uniforms-combat','uniforms-ssb-combat'].includes(p.category)).slice(0,4));
   renderProductGrid('police-grid', UNIFORM_PRODUCTS.filter(p => p.category === 'uniforms-police').slice(0,4));
   renderProductGrid('ssb-grid', UNIFORM_PRODUCTS.filter(p => p.category === 'uniforms-ssb').slice(0,4));
 });
