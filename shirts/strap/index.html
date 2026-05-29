@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Strap Shirts — Treyond World</title>
+<meta name="description" content="Premium stripe cotton formal shirts for men.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../css/global.css">
+<link rel="stylesheet" href="../../css/nav.css">
+<link rel="stylesheet" href="../../css/homepage.css">
+<link rel="stylesheet" href="../../css/footer.css">
+<style>
+.category-hero{position:relative;height:280px;overflow:hidden;background:#111}
+.category-hero img{width:100%;height:100%;object-fit:cover;opacity:.7}
+.category-hero-content{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center;padding:24px}
+.category-hero-title{font-family:var(--font-serif);font-size:clamp(2rem,5vw,3rem);font-weight:400;margin-bottom:8px}
+.category-hero-desc{font-size:.9rem;opacity:.8;max-width:500px}
+.cat-grid-section{padding:48px 0}
+.cat-grid-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+.cat-grid-title{font-size:1rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.cat-count{font-size:.8rem;color:var(--gray-500)}
+.subcats{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:36px}
+.subcat-pill{padding:8px 20px;border:1px solid var(--gray-200);font-size:.8rem;font-weight:500;cursor:pointer;transition:all .2s;text-decoration:none;color:var(--gray-600)}
+.subcat-pill:hover,.subcat-pill.active{background:var(--black);color:#fff;border-color:var(--black)}
+</style>
+</head>
+<body>
+<div id="announcement-bar" class="announcement-bar">
+  ✦ FREE SHIPPING ON ORDERS ABOVE ₹2999 &nbsp;|&nbsp; USE CODE <strong>TREYOND10</strong> FOR 10% OFF
+  <button id="announcement-close" class="announcement-close">×</button>
+</div>
+<header id="site-header" class="site-header">
+  <div class="container header-inner">
+    <button id="mobile-menu-btn" class="mobile-menu-btn"><span></span><span></span><span></span></button>
+    <a href="../../index.html" class="nav-logo">TREYOND WORLD</a>
+    <nav class="nav-menu">
+      <div class="nav-item"><a href="../../index.html" class="nav-link">Home</a></div>
+      <div class="nav-item"><a href="../../uniforms/" class="nav-link" style="font-weight:600">Uniforms</a></div>
+      <div class="nav-item"><a href="../../shirts/" class="nav-link">Shirts</a></div>
+      <div class="nav-item"><a href="../../blazers/" class="nav-link">Blazers</a></div>
+      <div class="nav-item"><a href="../../suits/" class="nav-link">Suits</a></div>
+      <div class="nav-item"><a href="../../modi-jacket/" class="nav-link">Modi Jacket</a></div>
+      <div class="nav-item"><a href="../../trousers/" class="nav-link">Trousers</a></div>
+      <div class="nav-item"><a href="../../t-shirts/" class="nav-link">T-Shirts</a></div>
+    </nav>
+    <div class="nav-icons">
+      <button id="search-icon" class="nav-icon-btn"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg></button>
+      <button id="cart-icon" class="nav-icon-btn"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg><span class="cart-badge" style="display:none">0</span></button>
+    </div>
+  </div>
+</header>
+<div id="search-bar" class="search-bar"><div class="search-bar-inner"><input id="search-input" type="search" placeholder="Search…" autocomplete="off"><button id="search-close" class="search-close">✕</button></div><div id="search-suggestions" class="search-suggestions"></div></div>
+<div id="cart-drawer" class="cart-drawer"><div class="cart-drawer-header"><div class="cart-drawer-title">Shopping Bag</div><button id="cart-drawer-close" class="cart-drawer-close">✕</button></div><div id="cart-drawer-body" class="cart-drawer-body"></div><div class="cart-drawer-footer"><div class="cart-subtotal"><span>Subtotal</span><span id="cart-subtotal">₹0</span></div><a href="../../pages/cart.html" class="btn btn-outline w-full" style="margin-bottom:10px">View Cart</a><a href="../../pages/checkout.html" class="btn btn-primary w-full">Checkout</a></div></div>
+<div id="overlay" class="overlay"></div>
+<div id="quickview-modal" class="modal"><div class="modal-backdrop" onclick="closeQuickView()"></div><div class="modal-box quickview-modal" style="max-width:900px;padding:0;overflow:hidden"><div class="quickview-inner"><div class="quickview-gallery"><img src="" alt="Product" style="width:100%;height:100%;object-fit:cover"></div><div class="quickview-info" style="padding:40px;overflow-y:auto"></div></div></div></div>
+
+<main>
+<section class="category-hero">
+  <img src="https://media.treyondworld.com/2024/05/CKS00578-copy-scaled.jpg" alt="Strap Shirts" loading="eager">
+  <div class="category-hero-content">
+    <h1 class="category-hero-title">Strap Shirts</h1>
+    <p class="category-hero-desc">Premium stripe cotton formal shirts for men.</p>
+  </div>
+</section>
+
+<div class="container">
+  <nav class="breadcrumb" style="padding:16px 0">
+    <a href="../../index.html">Home</a>
+    <span class="breadcrumb-sep">›</span>
+    <a href="../../shirts/">Shirts</a><span class="breadcrumb-sep">›</span>
+    <span class="breadcrumb-current">Strap Shirts</span>
+  </nav>
+</div>
+
+<section class="cat-grid-section">
+  <div class="container">
+    <div class="cat-grid-header">
+      <span class="cat-grid-title">Strap Shirts</span>
+      <span class="cat-count" id="cat-count"></span>
+    </div>
+    <div class="products-grid" id="cat-products-grid"></div>
+    <div id="load-more-trigger" style="height:40px"></div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><span class="nav-logo">TREYOND WORLD</span><p>Premium men's fashion crafted for every occasion.</p></div>
+      <div><div class="footer-col-title">Shop</div><div class="footer-links"><a href="../../shirts/">Shirts</a><a href="../../blazers/">Blazers</a><a href="../../suits/">Suits</a><a href="../../uniforms/">Uniforms</a></div></div>
+      <div><div class="footer-col-title">Help</div><div class="footer-links"><a href="../../pages/contact.html">Contact</a><a href="../../pages/shipping.html">Shipping</a><a href="../../pages/refund.html">Returns</a></div></div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 Treyond World</span></div>
+  </div>
+</footer>
+
+<div id="toast-container" class="toast-container"></div>
+<script src="../../js/global.js"></script>
+<script src="../../js/search.js"></script>
+<script src="../../js/animations.js"></script>
+<script src="../../js/homepage.js"></script>
+<script>
+const FILTER_CATEGORY = ['strap-shirts'];
+document.addEventListener('DOMContentLoaded', () => {
+  const products = PRODUCTS_DATA.filter(p => ['strap-shirts'].includes(p.category));
+  document.getElementById('cat-count').textContent = products.length + ' products';
+  renderProductGrid('cat-products-grid', products);
+});
+</script>
+</body>
+</html>
