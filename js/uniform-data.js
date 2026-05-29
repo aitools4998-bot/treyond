@@ -2,8 +2,8 @@
 'use strict';
 
 const UNIFORM_PRODUCTS = [
-  { id: 'bsf-khaki-uniform-greviera-2', name: `BSF Khaki Uniform By Graviera`, price: 1700, sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00493.jpg'], url: '/uniforms/bsf/bsf-khaki-uniform-greviera-2', category: 'uniforms-bsf' },
-  { id: 'bsf-khaki-uniform-raymond', name: `BSF Khaki Uniform By Raymond Fabric`, price: 2200, sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00494.jpg'], url: '/uniforms/bsf/bsf-khaki-uniform-raymond', category: 'uniforms-bsf' },
+  { id: 'bsf-khaki-uniform-greviera-2', name: `BSF Khaki Uniform By Graviera`, price: 1700, sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00473.jpg'], url: '/uniforms/bsf/bsf-khaki-uniform-greviera-2', category: 'uniforms-bsf' },
+  { id: 'bsf-khaki-uniform-raymond', name: `BSF Khaki Uniform By Raymond Fabric`, price: 2200, sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00486.jpg'], url: '/uniforms/bsf/bsf-khaki-uniform-raymond', category: 'uniforms-bsf' },
   { id: 'bsf-khaki-uniform-raymond-2', name: `BSF Khaki Uniform Vimal Super Premium Trovine`, price: 2099, sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00498.jpg'], url: '/uniforms/bsf/bsf-khaki-uniform-raymond-2', category: 'uniforms-bsf' },
   { id: 'bsf-khaki-uniform-vimal-saphire-matty', name: `BSF Khaki Uniform Vimal Saphire Matty`, price: 1999, sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00510.jpg'], url: '/uniforms/bsf/bsf-khaki-uniform-vimal-saphire-matty', category: 'uniforms-bsf' },
   { id: 'bsf-khaki-uniform-vimal-super-valiant-trovine', name: `BSF Khaki Uniform Vimal Super Valiant Trovine`, price: 2000, sizes: ['36','38','40','42','44','46'], images: ['https://media.treyondworld.com/2024/05/CKS00531.jpg'], url: '/uniforms/bsf/bsf-khaki-uniform-vimal-super-valiant-trovine', category: 'uniforms-bsf' },
