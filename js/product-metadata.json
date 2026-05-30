@@ -1047,35 +1047,40 @@
     "file": "uniforms/combat/https-treyondworld-com-crpf-combat-uniform-tactical-belt.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-crpf-combat"
   },
   {
     "slug": "https-treyondworld-com-beret-cap-for-bsf",
     "file": "uniforms/combat/https-treyondworld-com-beret-cap-for-bsf.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-bsf"
   },
   {
     "slug": "crpf-combat-uniform-cool-touch-fast-color-by-ajanta-for-head-constable",
     "file": "uniforms/combat/crpf-combat-uniform-cool-touch-fast-color-by-ajanta-for-head-constable.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-crpf-combat"
   },
   {
     "slug": "crpf-combat-uniform-pakka-color-for-sub-insptor",
     "file": "uniforms/combat/crpf-combat-uniform-pakka-color-for-sub-insptor.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-crpf-combat"
   },
   {
     "slug": "crpf-cotton-80-20-us-pattern-combat",
     "file": "uniforms/combat/crpf-cotton-80-20-us-pattern-combat.html",
     "category": "uniforms",
     "color": "",
-    "fabric": "cotton"
+    "fabric": "cotton",
+    "subcategory": "uniforms-crpf-combat"
   },
   {
     "slug": "https-treyondworld-com-leather-boot-for-paramilitary",
@@ -1089,35 +1094,40 @@
     "file": "uniforms/combat/crpf-combat-cotton-80-poly-20-us-pattern-wardi.html",
     "category": "uniforms",
     "color": "",
-    "fabric": "cotton"
+    "fabric": "cotton",
+    "subcategory": "uniforms-crpf-combat"
   },
   {
     "slug": "crpf-combat-uniform-pakka-color-for-constable",
     "file": "uniforms/combat/crpf-combat-uniform-pakka-color-for-constable.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-crpf-combat"
   },
   {
     "slug": "ssb-new-pattern-combat-uniform",
     "file": "uniforms/combat/ssb-new-pattern-combat-uniform.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-ssb-combat"
   },
   {
     "slug": "https-treyondworld-com-bsf-combat-uniform-tactical-belt",
     "file": "uniforms/combat/https-treyondworld-com-bsf-combat-uniform-tactical-belt.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-bsf"
   },
   {
     "slug": "https-treyondworld-com-blue-beret-cap-crp-ssb",
     "file": "uniforms/combat/https-treyondworld-com-blue-beret-cap-crp-ssb.html",
     "category": "uniforms",
     "color": "blue",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-ssb-combat"
   },
   {
     "slug": "combet-uniform-manipuri-pattern-cool-touch",
@@ -1131,70 +1141,80 @@
     "file": "uniforms/combat/https-treyondworld-com-d-m-boot-for-bsf-crpf-ssb-itbp.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-ssb-combat"
   },
   {
     "slug": "crpf-combat-uniform-cool-touch-fast-colour-by-ajanta",
     "file": "uniforms/combat/crpf-combat-uniform-cool-touch-fast-colour-by-ajanta.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-crpf-combat"
   },
   {
     "slug": "crpf-cotton-us-pattern-combat-uniform",
     "file": "uniforms/combat/crpf-cotton-us-pattern-combat-uniform.html",
     "category": "uniforms",
     "color": "",
-    "fabric": "cotton"
+    "fabric": "cotton",
+    "subcategory": "uniforms-crpf-combat"
   },
   {
     "slug": "crpf-combat-uniform-pakka-color-for-asi",
     "file": "uniforms/combat/crpf-combat-uniform-pakka-color-for-asi.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-crpf-combat"
   },
   {
     "slug": "crpf-combat-mix-pakka-color-wardi",
     "file": "uniforms/combat/crpf-combat-mix-pakka-color-wardi.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-crpf-combat"
   },
   {
     "slug": "https-treyondworld-com-crpf-monkey-caf",
     "file": "uniforms/combat/https-treyondworld-com-crpf-monkey-caf.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-crpf-combat"
   },
   {
     "slug": "ssb-new-pattern-combat",
     "file": "uniforms/combat/ssb-new-pattern-combat.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-ssb-combat"
   },
   {
     "slug": "crpf-combet-manipuri-pattern-uniform-cool-touch",
     "file": "uniforms/combat/crpf-combet-manipuri-pattern-uniform-cool-touch.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-crpf-combat"
   },
   {
     "slug": "https-treyondworld-com-dm-boot-crpf-ssb-itbp-bsf-cisf",
     "file": "uniforms/combat/https-treyondworld-com-dm-boot-crpf-ssb-itbp-bsf-cisf.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-ssb-combat"
   },
   {
     "slug": "combat-us-pattern-ssb-uniform",
     "file": "uniforms/combat/combat-us-pattern-ssb-uniform.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-ssb-combat"
   },
   {
     "slug": "us-pattern-combet-uniform-officer-choice-by-valiant-vimal",
@@ -1208,21 +1228,24 @@
     "file": "uniforms/combat/ssb-new-pattern-combat-uniforms.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-ssb-combat"
   },
   {
     "slug": "crpf-cotton-combat-uniform-constable",
     "file": "uniforms/combat/crpf-cotton-combat-uniform-constable.html",
     "category": "uniforms",
     "color": "",
-    "fabric": "cotton"
+    "fabric": "cotton",
+    "subcategory": "uniforms-crpf-combat"
   },
   {
     "slug": "crpf-combat-uniform-pakka-color-for-constable-2",
     "file": "uniforms/combat/crpf-combat-uniform-pakka-color-for-constable-2.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-crpf-combat"
   },
   {
     "slug": "combat-uniform-cool-touch-fast-colour-by-ajanta",
@@ -1243,70 +1266,80 @@
     "file": "uniforms/combat/crpf-combat-uniform-pakka-color-for-head-constable.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-crpf-combat"
   },
   {
     "slug": "crpf-cotton-combat-uniform",
     "file": "uniforms/combat/crpf-cotton-combat-uniform.html",
     "category": "uniforms",
     "color": "",
-    "fabric": "cotton"
+    "fabric": "cotton",
+    "subcategory": "uniforms-crpf-combat"
   },
   {
     "slug": "crpf-combat-uniform-cool-touch-pakka-color-for-asi",
     "file": "uniforms/combat/crpf-combat-uniform-cool-touch-pakka-color-for-asi.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-crpf-combat"
   },
   {
     "slug": "crpf-cotton-combat-uniform-for-asi",
     "file": "uniforms/combat/crpf-cotton-combat-uniform-for-asi.html",
     "category": "uniforms",
     "color": "",
-    "fabric": "cotton"
+    "fabric": "cotton",
+    "subcategory": "uniforms-crpf-combat"
   },
   {
     "slug": "crpf-combat-uniform",
     "file": "uniforms/combat/crpf-combat-uniform.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-crpf-combat"
   },
   {
     "slug": "crpf-combat-uniform-cool-touch-pakka-color-for-sub-insptor",
     "file": "uniforms/combat/crpf-combat-uniform-cool-touch-pakka-color-for-sub-insptor.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-crpf-combat"
   },
   {
     "slug": "ssb-us-pattern-combat-uniform-ssb-3",
     "file": "uniforms/combat/ssb-us-pattern-combat-uniform-ssb-3.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-ssb-combat"
   },
   {
     "slug": "crpf-cotton-combat-uniform-for-sub-inspector",
     "file": "uniforms/combat/crpf-cotton-combat-uniform-for-sub-inspector.html",
     "category": "uniforms",
     "color": "",
-    "fabric": "cotton"
+    "fabric": "cotton",
+    "subcategory": "uniforms-crpf-combat"
   },
   {
     "slug": "combat-uniform-ssb-new-pattern",
     "file": "uniforms/combat/combat-uniform-ssb-new-pattern.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-ssb-combat"
   },
   {
     "slug": "ssb-us-pattern-combat-uniform",
     "file": "uniforms/combat/ssb-us-pattern-combat-uniform.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-ssb-combat"
   },
   {
     "slug": "crpf-khaki-uniform-by-ajanta-oswal-super-premium-trovine",
