@@ -1,0 +1,1472 @@
+[
+  {
+    "slug": "men-ink-blue-regular-fit-blazer",
+    "file": "blazers/men-ink-blue-regular-fit-blazer.html",
+    "category": "blazers",
+    "color": "blue",
+    "fabric": ""
+  },
+  {
+    "slug": "mens-light-parrot-green-regular-fit-blazer",
+    "file": "blazers/mens-light-parrot-green-regular-fit-blazer.html",
+    "category": "blazers",
+    "color": "green",
+    "fabric": ""
+  },
+  {
+    "slug": "men-royal-green-color-regular-fit-blazer",
+    "file": "blazers/men-royal-green-color-regular-fit-blazer.html",
+    "category": "blazers",
+    "color": "green",
+    "fabric": ""
+  },
+  {
+    "slug": "men-khaki-color-terry-rayon-regular-fit-blazer",
+    "file": "blazers/men-khaki-color-terry-rayon-regular-fit-blazer.html",
+    "category": "blazers",
+    "color": "khaki",
+    "fabric": "rayon"
+  },
+  {
+    "slug": "men-grey-color-terry-rayon-regular-fit-blazer",
+    "file": "blazers/men-grey-color-terry-rayon-regular-fit-blazer.html",
+    "category": "blazers",
+    "color": "grey",
+    "fabric": "rayon"
+  },
+  {
+    "slug": "men-black-terry-rayon-regular-fit-blazer",
+    "file": "blazers/men-black-terry-rayon-regular-fit-blazer.html",
+    "category": "blazers",
+    "color": "black",
+    "fabric": "rayon"
+  },
+  {
+    "slug": "men-dark-brick-color-regular-fit-blazer",
+    "file": "blazers/men-dark-brick-color-regular-fit-blazer.html",
+    "category": "blazers",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "men-light-grey-check-regular-fit-blazer",
+    "file": "blazers/men-light-grey-check-regular-fit-blazer.html",
+    "category": "blazers",
+    "color": "grey",
+    "fabric": ""
+  },
+  {
+    "slug": "men-brown-color-terry-rayon-regular-fit-blazer",
+    "file": "blazers/men-brown-color-terry-rayon-regular-fit-blazer.html",
+    "category": "blazers",
+    "color": "brown",
+    "fabric": "rayon"
+  },
+  {
+    "slug": "men-blue-stripe-terry-rayon-regular-fit-blazer",
+    "file": "blazers/men-blue-stripe-terry-rayon-regular-fit-blazer.html",
+    "category": "blazers",
+    "color": "blue",
+    "fabric": "rayon"
+  },
+  {
+    "slug": "men-sky-color-regular-fit-blazer",
+    "file": "blazers/men-sky-color-regular-fit-blazer.html",
+    "category": "blazers",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "men-dark-grey-blazer-italian-terry-rayon",
+    "file": "blazers/men-dark-grey-blazer-italian-terry-rayon.html",
+    "category": "blazers",
+    "color": "grey",
+    "fabric": "rayon"
+  },
+  {
+    "slug": "maroon-check-terry-wool-blazer",
+    "file": "blazers/maroon-check-terry-wool-blazer.html",
+    "category": "blazers",
+    "color": "",
+    "fabric": "wool"
+  },
+  {
+    "slug": "men-navy-blue-formal-blazer",
+    "file": "blazers/men-navy-blue-formal-blazer.html",
+    "category": "blazers",
+    "color": "blue",
+    "fabric": ""
+  },
+  {
+    "slug": "men-grey-terry-wool-stripe-formal-blazer",
+    "file": "blazers/men-grey-terry-wool-stripe-formal-blazer.html",
+    "category": "blazers",
+    "color": "grey",
+    "fabric": "wool"
+  },
+  {
+    "slug": "men-light-blue-check-regular-fit-blazer",
+    "file": "blazers/men-light-blue-check-regular-fit-blazer.html",
+    "category": "blazers",
+    "color": "blue",
+    "fabric": ""
+  },
+  {
+    "slug": "men-navy-blue-woven-italian-classic-blazer",
+    "file": "blazers/men-navy-blue-woven-italian-classic-blazer.html",
+    "category": "blazers",
+    "color": "blue",
+    "fabric": "italian"
+  },
+  {
+    "slug": "men-light-green-formal-fit-blazer",
+    "file": "blazers/men-light-green-formal-fit-blazer.html",
+    "category": "blazers",
+    "color": "green",
+    "fabric": ""
+  },
+  {
+    "slug": "men-light-grey-check-formal-fit-blazer",
+    "file": "blazers/men-light-grey-check-formal-fit-blazer.html",
+    "category": "blazers",
+    "color": "grey",
+    "fabric": ""
+  },
+  {
+    "slug": "mens-ink-blue-check-with-wool-rich-modi-jacket",
+    "file": "modi-jacket/mens-ink-blue-check-with-wool-rich-modi-jacket.html",
+    "category": "modi-jacket",
+    "color": "blue",
+    "fabric": "wool"
+  },
+  {
+    "slug": "mens-wine-color-check-with-wool-rich-modi-jacket",
+    "file": "modi-jacket/mens-wine-color-check-with-wool-rich-modi-jacket.html",
+    "category": "modi-jacket",
+    "color": "wine",
+    "fabric": "wool"
+  },
+  {
+    "slug": "men-light-yellow-jacquard-modi-jacket-with-silk-kurta-pajama",
+    "file": "modi-jacket/men-light-yellow-jacquard-modi-jacket-with-silk-kurta-pajama.html",
+    "category": "modi-jacket",
+    "color": "yellow",
+    "fabric": ""
+  },
+  {
+    "slug": "mens-dark-blue-color-check-with-wool-rich-modi-jacket",
+    "file": "modi-jacket/mens-dark-blue-color-check-with-wool-rich-modi-jacket.html",
+    "category": "modi-jacket",
+    "color": "blue",
+    "fabric": "wool"
+  },
+  {
+    "slug": "mens-navy-blue-modi-jacket",
+    "file": "modi-jacket/mens-navy-blue-modi-jacket.html",
+    "category": "modi-jacket",
+    "color": "blue",
+    "fabric": ""
+  },
+  {
+    "slug": "mens-blue-check-with-wool-rich-modi-jacket",
+    "file": "modi-jacket/mens-blue-check-with-wool-rich-modi-jacket.html",
+    "category": "modi-jacket",
+    "color": "blue",
+    "fabric": "wool"
+  },
+  {
+    "slug": "mens-light-parrot-green-check-with-wool-rich-modi-jacket",
+    "file": "modi-jacket/mens-light-parrot-green-check-with-wool-rich-modi-jacket.html",
+    "category": "modi-jacket",
+    "color": "green",
+    "fabric": "wool"
+  },
+  {
+    "slug": "mens-gray-check-modi-jacket",
+    "file": "modi-jacket/mens-gray-check-modi-jacket.html",
+    "category": "modi-jacket",
+    "color": "gray",
+    "fabric": ""
+  },
+  {
+    "slug": "men-yellow-jacquard-jacket-with-silk-kurta-and-pajama",
+    "file": "modi-jacket/men-yellow-jacquard-jacket-with-silk-kurta-and-pajama.html",
+    "category": "modi-jacket",
+    "color": "yellow",
+    "fabric": ""
+  },
+  {
+    "slug": "men-light-gajari-color-fila-fill-soft-premium-cotton-formal-shirt-for-mens",
+    "file": "shirts/men-light-gajari-color-fila-fill-soft-premium-cotton-formal-shirt-for-mens.html",
+    "category": "shirts",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "men-mango-color-fila-fill-soft-premium-cotton-formal-shirt",
+    "file": "shirts/men-mango-color-fila-fill-soft-premium-cotton-formal-shirt.html",
+    "category": "shirts",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "men-green-satin-finish-premium-cotton-shirt",
+    "file": "shirts/men-green-satin-finish-premium-cotton-shirt.html",
+    "category": "shirts",
+    "color": "green",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "gray-color-oxford-soft-premium-cotton-formal-shirt-for-mens",
+    "file": "shirts/gray-color-oxford-soft-premium-cotton-formal-shirt-for-mens.html",
+    "category": "shirts",
+    "color": "gray",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "men-maroon-dobby-premium-soft-cotton-shirt",
+    "file": "shirts/men-maroon-dobby-premium-soft-cotton-shirt.html",
+    "category": "shirts",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "men-light-fawn-fila-fill-soft-premium-cotton-formal-shirt",
+    "file": "shirts/men-light-fawn-fila-fill-soft-premium-cotton-formal-shirt.html",
+    "category": "shirts",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "men-dark-grey-fila-fill-soft-premium-cotton-formal-shirt",
+    "file": "shirts/men-dark-grey-fila-fill-soft-premium-cotton-formal-shirt.html",
+    "category": "shirts",
+    "color": "grey",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "mens-white-satin-cotton-shirt",
+    "file": "shirts/mens-white-satin-cotton-shirt.html",
+    "category": "shirts",
+    "color": "white",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "froze-color-fila-fill-soft-premium-cotton-formal-shirt-for-mens",
+    "file": "shirts/froze-color-fila-fill-soft-premium-cotton-formal-shirt-for-mens.html",
+    "category": "shirts",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "men-light-gajari-color-oxford-soft-premium-cotton-formal-shirt-for-mens",
+    "file": "shirts/men-light-gajari-color-oxford-soft-premium-cotton-formal-shirt-for-mens.html",
+    "category": "shirts",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "men-green-color-oxford-soft-premium-cotton-formal-shirt-for-mens",
+    "file": "shirts/men-green-color-oxford-soft-premium-cotton-formal-shirt-for-mens.html",
+    "category": "shirts",
+    "color": "green",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "men-light-broun-fila-fill-soft-premium-cotton-formal-shirt",
+    "file": "shirts/men-light-broun-fila-fill-soft-premium-cotton-formal-shirt.html",
+    "category": "shirts",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "sky-color-fila-fill-soft-premium-cotton-formal-shirt-for-mens",
+    "file": "shirts/sky-color-fila-fill-soft-premium-cotton-formal-shirt-for-mens.html",
+    "category": "shirts",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "men-lemon-color-super-soft-premium-dobby-cotton-formal-shirt",
+    "file": "shirts/men-lemon-color-super-soft-premium-dobby-cotton-formal-shirt.html",
+    "category": "shirts",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "men-dobby-royal-blue-premium-shirt",
+    "file": "shirts/men-dobby-royal-blue-premium-shirt.html",
+    "category": "shirts",
+    "color": "blue",
+    "fabric": ""
+  },
+  {
+    "slug": "men-pink-color-super-soft-premium-cotton-dobby-formal-shirt-for-mens",
+    "file": "shirts/men-pink-color-super-soft-premium-cotton-dobby-formal-shirt-for-mens.html",
+    "category": "shirts",
+    "color": "pink",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "men-orange-color-super-soft-premium-cotton-dobby-formal-shirt",
+    "file": "shirts/men-orange-color-super-soft-premium-cotton-dobby-formal-shirt.html",
+    "category": "shirts",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "men-purple-color-super-soft-premium-cotton-dobby-formal-shirt",
+    "file": "shirts/men-purple-color-super-soft-premium-cotton-dobby-formal-shirt.html",
+    "category": "shirts",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "pista-green-color-fila-fill-soft-premium-cotton-formal-shirt",
+    "file": "shirts/pista-green-color-fila-fill-soft-premium-cotton-formal-shirt.html",
+    "category": "shirts",
+    "color": "green",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "men-black-super-soft-premium-cotton-satin-party-wear-shirt",
+    "file": "shirts/men-black-super-soft-premium-cotton-satin-party-wear-shirt.html",
+    "category": "shirts",
+    "color": "black",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "men-navy-blue-oxford-soft-premium-cotton-formal-shirt",
+    "file": "shirts/men-navy-blue-oxford-soft-premium-cotton-formal-shirt.html",
+    "category": "shirts",
+    "color": "blue",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "men-black-satin-finish-premium-cotton-shirt",
+    "file": "shirts/men-black-satin-finish-premium-cotton-shirt.html",
+    "category": "shirts",
+    "color": "black",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "men-red-color-super-soft-premium-cotton-satin-party-wear-shirt",
+    "file": "shirts/men-red-color-super-soft-premium-cotton-satin-party-wear-shirt.html",
+    "category": "shirts",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "men-fawn-color-super-soft-premium-cotton-dobby-formal-shirt-for-mens",
+    "file": "shirts/men-fawn-color-super-soft-premium-cotton-dobby-formal-shirt-for-mens.html",
+    "category": "shirts",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "men-mustard-color-super-soft-premium-cotton-dobby-formal-shirt-for-mens",
+    "file": "shirts/men-mustard-color-super-soft-premium-cotton-dobby-formal-shirt-for-mens.html",
+    "category": "shirts",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "men-orange-color-oxford-soft-premium-cotton-formal-shirt",
+    "file": "shirts/men-orange-color-oxford-soft-premium-cotton-formal-shirt.html",
+    "category": "shirts",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "men-peach-color-super-soft-premium-cotton-dobby-formal-shirt-for-mens",
+    "file": "shirts/men-peach-color-super-soft-premium-cotton-dobby-formal-shirt-for-mens.html",
+    "category": "shirts",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "men-sky-color-super-soft-premium-dobby-cotton-formal-shirt",
+    "file": "shirts/men-sky-color-super-soft-premium-dobby-cotton-formal-shirt.html",
+    "category": "shirts",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "men-dark-pink-fila-fill-soft-premium-cotton-formal-shirt",
+    "file": "shirts/men-dark-pink-fila-fill-soft-premium-cotton-formal-shirt.html",
+    "category": "shirts",
+    "color": "pink",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "men-navy-blue-satin-finish-premium-cotton-shirt",
+    "file": "shirts/men-navy-blue-satin-finish-premium-cotton-shirt.html",
+    "category": "shirts",
+    "color": "blue",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "men-light-khaki-oxford-soft-premium-cotton-formal-shirt-for-mens",
+    "file": "shirts/men-light-khaki-oxford-soft-premium-cotton-formal-shirt-for-mens.html",
+    "category": "shirts",
+    "color": "khaki",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "men-move-color-fila-fill-soft-premium-cotton-formal-shirt",
+    "file": "shirts/men-move-color-fila-fill-soft-premium-cotton-formal-shirt.html",
+    "category": "shirts",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "mens-light-blue-with-white-stripe-cotton-formal-shirt",
+    "file": "shirts/strap/mens-light-blue-with-white-stripe-cotton-formal-shirt.html",
+    "category": "shirts",
+    "color": "blue",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "mens-stripe-cotton-formal-shirt",
+    "file": "shirts/strap/mens-stripe-cotton-formal-shirt.html",
+    "category": "shirts",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "mens-premium-muliti-color-stripe-cotton-formal-shirt",
+    "file": "shirts/strap/mens-premium-muliti-color-stripe-cotton-formal-shirt.html",
+    "category": "shirts",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "mens-premium-khaki-multi-color-printed-cotton-party-wear-shirt",
+    "file": "shirts/check/mens-premium-khaki-multi-color-printed-cotton-party-wear-shirt.html",
+    "category": "shirts",
+    "color": "khaki",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "mens-premium-printed-cotton-party-wear-shirt",
+    "file": "shirts/check/mens-premium-printed-cotton-party-wear-shirt.html",
+    "category": "shirts",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "mens-premium-sky-color-printed-cotton-regular-fit-shirt",
+    "file": "shirts/check/mens-premium-sky-color-printed-cotton-regular-fit-shirt.html",
+    "category": "shirts",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "mens-premium-multi-color-printed-cotton-party-wear-shirt",
+    "file": "shirts/check/mens-premium-multi-color-printed-cotton-party-wear-shirt.html",
+    "category": "shirts",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "men-premium-firoz-printed-cotton-party-wear-shirt",
+    "file": "shirts/check/men-premium-firoz-printed-cotton-party-wear-shirt.html",
+    "category": "shirts",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "mens-premium-multi-color-printed-cotton-casual-party-wear-shirt",
+    "file": "shirts/check/mens-premium-multi-color-printed-cotton-casual-party-wear-shirt.html",
+    "category": "shirts",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "mens-blue-color-classic-luxurious-3-piece-suits",
+    "file": "suits/mens-blue-color-classic-luxurious-3-piece-suits.html",
+    "category": "suits",
+    "color": "blue",
+    "fabric": ""
+  },
+  {
+    "slug": "mens-light-blue-check-italian-terry-wool-classic-luxurious-3-piece-suits",
+    "file": "suits/mens-light-blue-check-italian-terry-wool-classic-luxurious-3-piece-suits.html",
+    "category": "suits",
+    "color": "blue",
+    "fabric": "wool"
+  },
+  {
+    "slug": "men-dark-blue-sequins-embroidered-tuxedo-blazer-with-blue-vest-coat-and-pant",
+    "file": "suits/men-dark-blue-sequins-embroidered-tuxedo-blazer-with-blue-vest-coat-and-pant.html",
+    "category": "suits",
+    "color": "blue",
+    "fabric": ""
+  },
+  {
+    "slug": "men-grey-tuxedo-3-piece-suits-wedding-groomsmen-fashion-suits",
+    "file": "suits/men-grey-tuxedo-3-piece-suits-wedding-groomsmen-fashion-suits.html",
+    "category": "suits",
+    "color": "grey",
+    "fabric": ""
+  },
+  {
+    "slug": "men-blue-classic-formal-2-piece-suit",
+    "file": "suits/men-blue-classic-formal-2-piece-suit.html",
+    "category": "suits",
+    "color": "blue",
+    "fabric": ""
+  },
+  {
+    "slug": "mens-grey-classic-luxurious-3-piece-suits",
+    "file": "suits/mens-grey-classic-luxurious-3-piece-suits.html",
+    "category": "suits",
+    "color": "grey",
+    "fabric": ""
+  },
+  {
+    "slug": "men-black-sequins-embroidered-tuxedo-3-piece-suit",
+    "file": "suits/men-black-sequins-embroidered-tuxedo-3-piece-suit.html",
+    "category": "suits",
+    "color": "black",
+    "fabric": ""
+  },
+  {
+    "slug": "men-grey-formal-fashion-suit",
+    "file": "suits/men-grey-formal-fashion-suit.html",
+    "category": "suits",
+    "color": "grey",
+    "fabric": ""
+  },
+  {
+    "slug": "mens-wine-color-check-italian-terry-wool-classic-luxurious-3-piece-suit",
+    "file": "suits/mens-wine-color-check-italian-terry-wool-classic-luxurious-3-piece-suit.html",
+    "category": "suits",
+    "color": "wine",
+    "fabric": "wool"
+  },
+  {
+    "slug": "men-khaki-classic-luxurious-men-suits",
+    "file": "suits/men-khaki-classic-luxurious-men-suits.html",
+    "category": "suits",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "men-maroon-sequins-embroidered-tuxedo-3-piece-suit",
+    "file": "suits/men-maroon-sequins-embroidered-tuxedo-3-piece-suit.html",
+    "category": "suits",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "mens-parrot-color-classic-luxurious-3-piece-suit",
+    "file": "suits/mens-parrot-color-classic-luxurious-3-piece-suit.html",
+    "category": "suits",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "mens-light-parrot-green-check-italian-terry-wool-classic-luxurious-3-piece-suit",
+    "file": "suits/mens-light-parrot-green-check-italian-terry-wool-classic-luxurious-3-piece-suit.html",
+    "category": "suits",
+    "color": "green",
+    "fabric": "wool"
+  },
+  {
+    "slug": "white-t-shirt-cotton-2",
+    "file": "t-shirts/white-t-shirt-cotton-2.html",
+    "category": "t-shirts",
+    "color": "white",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "white-t-shirt-cotton-matty",
+    "file": "t-shirts/white-t-shirt-cotton-matty.html",
+    "category": "t-shirts",
+    "color": "white",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "white-cotton-t-shirt1",
+    "file": "t-shirts/white-cotton-t-shirt1.html",
+    "category": "t-shirts",
+    "color": "white",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "white-t-shirt-cotton",
+    "file": "t-shirts/white-t-shirt-cotton.html",
+    "category": "t-shirts",
+    "color": "white",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "white-premium-cotton-t-shirt",
+    "file": "t-shirts/white-premium-cotton-t-shirt.html",
+    "category": "t-shirts",
+    "color": "white",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "whit-t-shirt-cotton-matty",
+    "file": "t-shirts/whit-t-shirt-cotton-matty.html",
+    "category": "t-shirts",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "white-cotton-t-shirt",
+    "file": "t-shirts/white-cotton-t-shirt.html",
+    "category": "t-shirts",
+    "color": "white",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "crpf-cotton-combat-pt-t-shirt-olive-green-100-cotton-for-daily-pt-training",
+    "file": "t-shirts/crpf-cotton-combat-pt-t-shirt-olive-green-100-cotton-for-daily-pt-training.html",
+    "category": "t-shirts",
+    "color": "green",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "mens-grey-check-italian-formal-trouser",
+    "file": "trousers/mens-grey-check-italian-formal-trouser.html",
+    "category": "trousers",
+    "color": "grey",
+    "fabric": "italian"
+  },
+  {
+    "slug": "mens-regular-fit-lycra-jeans",
+    "file": "trousers/mens-regular-fit-lycra-jeans.html",
+    "category": "trousers",
+    "color": "",
+    "fabric": "lycra"
+  },
+  {
+    "slug": "mens-blue-italian-regular-trouser",
+    "file": "trousers/mens-blue-italian-regular-trouser.html",
+    "category": "trousers",
+    "color": "blue",
+    "fabric": "italian"
+  },
+  {
+    "slug": "mens-light-green-check-trouser",
+    "file": "trousers/mens-light-green-check-trouser.html",
+    "category": "trousers",
+    "color": "green",
+    "fabric": ""
+  },
+  {
+    "slug": "mens-grey-regular-trouser",
+    "file": "trousers/mens-grey-regular-trouser.html",
+    "category": "trousers",
+    "color": "grey",
+    "fabric": ""
+  },
+  {
+    "slug": "mens-light-grey-italian-wool-trouser",
+    "file": "trousers/mens-light-grey-italian-wool-trouser.html",
+    "category": "trousers",
+    "color": "grey",
+    "fabric": "wool"
+  },
+  {
+    "slug": "mens-grey-stripe-italian-trouser",
+    "file": "trousers/mens-grey-stripe-italian-trouser.html",
+    "category": "trousers",
+    "color": "grey",
+    "fabric": "italian"
+  },
+  {
+    "slug": "mens-light-parrot-green-formal-trouser",
+    "file": "trousers/mens-light-parrot-green-formal-trouser.html",
+    "category": "trousers",
+    "color": "green",
+    "fabric": ""
+  },
+  {
+    "slug": "mens-light-blue-italian-trouser",
+    "file": "trousers/mens-light-blue-italian-trouser.html",
+    "category": "trousers",
+    "color": "blue",
+    "fabric": "italian"
+  },
+  {
+    "slug": "mens-khaki-formal-trouser",
+    "file": "trousers/mens-khaki-formal-trouser.html",
+    "category": "trousers",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "mens-light-green-formal-trouser",
+    "file": "trousers/mens-light-green-formal-trouser.html",
+    "category": "trousers",
+    "color": "green",
+    "fabric": ""
+  },
+  {
+    "slug": "mens-blue-italian-terry-wool-trouser",
+    "file": "trousers/mens-blue-italian-terry-wool-trouser.html",
+    "category": "trousers",
+    "color": "blue",
+    "fabric": "wool"
+  },
+  {
+    "slug": "mens-dark-blue-italian-formal-trouser",
+    "file": "trousers/mens-dark-blue-italian-formal-trouser.html",
+    "category": "trousers",
+    "color": "blue",
+    "fabric": "italian"
+  },
+  {
+    "slug": "khaki-uniform-vimal-prmium-super-trovine",
+    "file": "uniforms/khaki-uniform-vimal-prmium-super-trovine.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "khaki-uniform-siyaram-matty",
+    "file": "uniforms/khaki-uniform-siyaram-matty.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "khaki-uniform-vimal-prmium",
+    "file": "uniforms/khaki-uniform-vimal-prmium.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "police",
+    "file": "uniforms/police.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "khaki-uniform-vimal-prmium-trovine",
+    "file": "uniforms/khaki-uniform-vimal-prmium-trovine.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "crpf",
+    "file": "uniforms/crpf.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "khaki-uniform-vimal-sapphre",
+    "file": "uniforms/khaki-uniform-vimal-sapphre.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "khaki-uniform-vimal-super-trovine",
+    "file": "uniforms/khaki-uniform-vimal-super-trovine.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "ssb",
+    "file": "uniforms/ssb.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "khaki-uniform-oswal-ajanta-super-primium-trovin",
+    "file": "uniforms/khaki-uniform-oswal-ajanta-super-primium-trovin.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "khaki-uniform-vimal-super-trovine-2",
+    "file": "uniforms/khaki-uniform-vimal-super-trovine-2.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "bsf",
+    "file": "uniforms/bsf.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "khaki-uniform-vimal-officer-strech-fit",
+    "file": "uniforms/khaki-uniform-vimal-officer-strech-fit.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "khki-uniform-vimal-primium-trovin",
+    "file": "uniforms/khki-uniform-vimal-primium-trovin.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "khaki-uniform-vimal-officer-strech-fit-27",
+    "file": "uniforms/khaki-uniform-vimal-officer-strech-fit-27.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "accessories",
+    "file": "uniforms/accessories.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "khaki-uniform-vimal-super-trovine-3",
+    "file": "uniforms/khaki-uniform-vimal-super-trovine-3.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "combat",
+    "file": "uniforms/ssb/combat.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "ssb-khaki-uniform-vimal-super-trovine-2",
+    "file": "uniforms/ssb/ssb-khaki-uniform-vimal-super-trovine-2.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "ssb-khaki-uniform-by-vimal-primium-trovine",
+    "file": "uniforms/ssb/ssb-khaki-uniform-by-vimal-primium-trovine.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "ssb-khaki-uniform-by-vimal-sapphire",
+    "file": "uniforms/ssb/ssb-khaki-uniform-by-vimal-sapphire.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "ssb-khaki-uniform-vimal-prmium-trovine-light-color",
+    "file": "uniforms/ssb/ssb-khaki-uniform-vimal-prmium-trovine-light-color.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "ssb-stretchable-khaki-uniform-by-vimal-officer-stretch-fit",
+    "file": "uniforms/ssb/ssb-stretchable-khaki-uniform-by-vimal-officer-stretch-fit.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "ssb-khaki-uniform-by-vimal-super-trovine-2",
+    "file": "uniforms/ssb/ssb-khaki-uniform-by-vimal-super-trovine-2.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "ssb-khaki-uniform-vimal-super-trovine",
+    "file": "uniforms/ssb/ssb-khaki-uniform-vimal-super-trovine.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "ssb-khaki-uniform-by-siyaram-matte",
+    "file": "uniforms/ssb/ssb-khaki-uniform-by-siyaram-matte.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "ssb-khaki-uniform-by-vimal-super-trovine",
+    "file": "uniforms/ssb/ssb-khaki-uniform-by-vimal-super-trovine.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "beret-cap-for-bsf",
+    "file": "uniforms/accessories/beret-cap-for-bsf.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "dm-boot-bsf-crpf-ssb",
+    "file": "uniforms/accessories/dm-boot-bsf-crpf-ssb.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "jungle-boot-paramilitary",
+    "file": "uniforms/accessories/jungle-boot-paramilitary.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "bsf-tactical-belt",
+    "file": "uniforms/accessories/bsf-tactical-belt.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "crpf-monkey-cap",
+    "file": "uniforms/accessories/crpf-monkey-cap.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "leather-boot-paramilitary",
+    "file": "uniforms/accessories/leather-boot-paramilitary.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "dm-boot-paramilitary",
+    "file": "uniforms/accessories/dm-boot-paramilitary.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "crpf-tactical-belt",
+    "file": "uniforms/accessories/crpf-tactical-belt.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "blue-beret-cap-crpf-ssb",
+    "file": "uniforms/accessories/blue-beret-cap-crpf-ssb.html",
+    "category": "uniforms",
+    "color": "blue",
+    "fabric": ""
+  },
+  {
+    "slug": "https-treyondworld-com-crpf-combat-uniform-tactical-belt",
+    "file": "uniforms/combat/https-treyondworld-com-crpf-combat-uniform-tactical-belt.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "https-treyondworld-com-beret-cap-for-bsf",
+    "file": "uniforms/combat/https-treyondworld-com-beret-cap-for-bsf.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "crpf-combat-uniform-cool-touch-fast-color-by-ajanta-for-head-constable",
+    "file": "uniforms/combat/crpf-combat-uniform-cool-touch-fast-color-by-ajanta-for-head-constable.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "crpf-combat-uniform-pakka-color-for-sub-insptor",
+    "file": "uniforms/combat/crpf-combat-uniform-pakka-color-for-sub-insptor.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "crpf-cotton-80-20-us-pattern-combat",
+    "file": "uniforms/combat/crpf-cotton-80-20-us-pattern-combat.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "https-treyondworld-com-leather-boot-for-paramilitary",
+    "file": "uniforms/combat/https-treyondworld-com-leather-boot-for-paramilitary.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "crpf-combat-cotton-80-poly-20-us-pattern-wardi",
+    "file": "uniforms/combat/crpf-combat-cotton-80-poly-20-us-pattern-wardi.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "crpf-combat-uniform-pakka-color-for-constable",
+    "file": "uniforms/combat/crpf-combat-uniform-pakka-color-for-constable.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "ssb-new-pattern-combat-uniform",
+    "file": "uniforms/combat/ssb-new-pattern-combat-uniform.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "https-treyondworld-com-bsf-combat-uniform-tactical-belt",
+    "file": "uniforms/combat/https-treyondworld-com-bsf-combat-uniform-tactical-belt.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "https-treyondworld-com-blue-beret-cap-crp-ssb",
+    "file": "uniforms/combat/https-treyondworld-com-blue-beret-cap-crp-ssb.html",
+    "category": "uniforms",
+    "color": "blue",
+    "fabric": ""
+  },
+  {
+    "slug": "combet-uniform-manipuri-pattern-cool-touch",
+    "file": "uniforms/combat/combet-uniform-manipuri-pattern-cool-touch.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "https-treyondworld-com-d-m-boot-for-bsf-crpf-ssb-itbp",
+    "file": "uniforms/combat/https-treyondworld-com-d-m-boot-for-bsf-crpf-ssb-itbp.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "crpf-combat-uniform-cool-touch-fast-colour-by-ajanta",
+    "file": "uniforms/combat/crpf-combat-uniform-cool-touch-fast-colour-by-ajanta.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "crpf-cotton-us-pattern-combat-uniform",
+    "file": "uniforms/combat/crpf-cotton-us-pattern-combat-uniform.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "crpf-combat-uniform-pakka-color-for-asi",
+    "file": "uniforms/combat/crpf-combat-uniform-pakka-color-for-asi.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "crpf-combat-mix-pakka-color-wardi",
+    "file": "uniforms/combat/crpf-combat-mix-pakka-color-wardi.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "https-treyondworld-com-crpf-monkey-caf",
+    "file": "uniforms/combat/https-treyondworld-com-crpf-monkey-caf.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "ssb-new-pattern-combat",
+    "file": "uniforms/combat/ssb-new-pattern-combat.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "crpf-combet-manipuri-pattern-uniform-cool-touch",
+    "file": "uniforms/combat/crpf-combet-manipuri-pattern-uniform-cool-touch.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "https-treyondworld-com-dm-boot-crpf-ssb-itbp-bsf-cisf",
+    "file": "uniforms/combat/https-treyondworld-com-dm-boot-crpf-ssb-itbp-bsf-cisf.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "combat-us-pattern-ssb-uniform",
+    "file": "uniforms/combat/combat-us-pattern-ssb-uniform.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "us-pattern-combet-uniform-officer-choice-by-valiant-vimal",
+    "file": "uniforms/combat/us-pattern-combet-uniform-officer-choice-by-valiant-vimal.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "ssb-new-pattern-combat-uniforms",
+    "file": "uniforms/combat/ssb-new-pattern-combat-uniforms.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "crpf-cotton-combat-uniform-constable",
+    "file": "uniforms/combat/crpf-cotton-combat-uniform-constable.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "crpf-combat-uniform-pakka-color-for-constable-2",
+    "file": "uniforms/combat/crpf-combat-uniform-pakka-color-for-constable-2.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "combat-uniform-cool-touch-fast-colour-by-ajanta",
+    "file": "uniforms/combat/combat-uniform-cool-touch-fast-colour-by-ajanta.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "https-treyondworld-com-jungle-boot-for-peramilitary",
+    "file": "uniforms/combat/https-treyondworld-com-jungle-boot-for-peramilitary.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "crpf-combat-uniform-pakka-color-for-head-constable",
+    "file": "uniforms/combat/crpf-combat-uniform-pakka-color-for-head-constable.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "crpf-cotton-combat-uniform",
+    "file": "uniforms/combat/crpf-cotton-combat-uniform.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "crpf-combat-uniform-cool-touch-pakka-color-for-asi",
+    "file": "uniforms/combat/crpf-combat-uniform-cool-touch-pakka-color-for-asi.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "crpf-cotton-combat-uniform-for-asi",
+    "file": "uniforms/combat/crpf-cotton-combat-uniform-for-asi.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "crpf-combat-uniform",
+    "file": "uniforms/combat/crpf-combat-uniform.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "crpf-combat-uniform-cool-touch-pakka-color-for-sub-insptor",
+    "file": "uniforms/combat/crpf-combat-uniform-cool-touch-pakka-color-for-sub-insptor.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "ssb-us-pattern-combat-uniform-ssb-3",
+    "file": "uniforms/combat/ssb-us-pattern-combat-uniform-ssb-3.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "crpf-cotton-combat-uniform-for-sub-inspector",
+    "file": "uniforms/combat/crpf-cotton-combat-uniform-for-sub-inspector.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "combat-uniform-ssb-new-pattern",
+    "file": "uniforms/combat/combat-uniform-ssb-new-pattern.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "ssb-us-pattern-combat-uniform",
+    "file": "uniforms/combat/ssb-us-pattern-combat-uniform.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "crpf-khaki-uniform-by-ajanta-oswal-super-premium-trovine",
+    "file": "uniforms/crpf/crpf-khaki-uniform-by-ajanta-oswal-super-premium-trovine.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "combat",
+    "file": "uniforms/crpf/combat.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "crpf-khaki-uniform-oswal-ajanta",
+    "file": "uniforms/crpf/crpf-khaki-uniform-oswal-ajanta.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "crpf-cotton-combat-trouser-for-pt-2",
+    "file": "uniforms/crpf/crpf-cotton-combat-trouser-for-pt-2.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "bsf-khaki-uniform-vimal-saphire-matty",
+    "file": "uniforms/bsf/bsf-khaki-uniform-vimal-saphire-matty.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "bsf-khaki-uniform-vimal-super-valiant-trovine",
+    "file": "uniforms/bsf/bsf-khaki-uniform-vimal-super-valiant-trovine.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "bsf-khaki-uniform-graviera",
+    "file": "uniforms/bsf/bsf-khaki-uniform-graviera.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "bsf-khaki-uniform-raymond",
+    "file": "uniforms/bsf/bsf-khaki-uniform-raymond.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "bsf-khaki-uniform-vimal-super-premium-trovine",
+    "file": "uniforms/bsf/bsf-khaki-uniform-vimal-super-premium-trovine.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "bsf-khaki-uniform-vimal-super-trovine-valiant",
+    "file": "uniforms/bsf/bsf-khaki-uniform-vimal-super-trovine-valiant.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "bsf-khaki-uniform-greviera-2",
+    "file": "uniforms/bsf/bsf-khaki-uniform-greviera-2.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "bsf-khaki-uniform-raymond-2",
+    "file": "uniforms/bsf/bsf-khaki-uniform-raymond-2.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "police-khaki-uniform-by-vimal-super-trovine",
+    "file": "uniforms/police/police-khaki-uniform-by-vimal-super-trovine.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "police-khaki-uniform-vimal-super-trovine",
+    "file": "uniforms/police/police-khaki-uniform-vimal-super-trovine.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "police-khaki-uniform-vimal-premium-trovine-light-color",
+    "file": "uniforms/police/police-khaki-uniform-vimal-premium-trovine-light-color.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "police-uniform-by-vimal-super-trovine",
+    "file": "uniforms/police/police-uniform-by-vimal-super-trovine.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "police-stretchable-khaki-uniform",
+    "file": "uniforms/police/police-stretchable-khaki-uniform.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "police-khaki-uniform-vimal-super-fabric",
+    "file": "uniforms/police/police-khaki-uniform-vimal-super-fabric.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "police-stretchable-khaki-uniform-by-vimal-officer-stretch-fit",
+    "file": "uniforms/police/police-stretchable-khaki-uniform-by-vimal-officer-stretch-fit.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "police-khaki-uniform-by-vimal-premium-trovine",
+    "file": "uniforms/police/police-khaki-uniform-by-vimal-premium-trovine.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "police-khaki-uniform-by-vimal-sapphire",
+    "file": "uniforms/police/police-khaki-uniform-by-vimal-sapphire.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "police-khaki-uniform-premium",
+    "file": "uniforms/police/police-khaki-uniform-premium.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "police-khaki-uniform-premium-trovine",
+    "file": "uniforms/police/police-khaki-uniform-premium-trovine.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "police-uniform-reymonds",
+    "file": "uniforms/police/police-uniform-reymonds.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "police-khaki-uniform-by-siyaram-matte",
+    "file": "uniforms/police/police-khaki-uniform-by-siyaram-matte.html",
+    "category": "uniforms",
+    "color": "khaki",
+    "fabric": ""
+  },
+  {
+    "slug": "crpf-combat-uniform-cool-touch-fast-color-by-ajanta-for-head-constable",
+    "file": "uniforms/crpf/combat/crpf-combat-uniform-cool-touch-fast-color-by-ajanta-for-head-constable.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "combat-uniform-cool-touch-fast-colour-by-ajanta",
+    "file": "uniforms/crpf/combat/combat-uniform-cool-touch-fast-colour-by-ajanta.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "crpf-cotton-combat-uniform",
+    "file": "uniforms/crpf/combat/crpf-cotton-combat-uniform.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": "cotton"
+  },
+  {
+    "slug": "crpf-combat-uniform",
+    "file": "uniforms/crpf/combat/crpf-combat-uniform.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "ssb-new-pattern-combat-uniform",
+    "file": "uniforms/ssb/combat/ssb-new-pattern-combat-uniform.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "combat-us-pattern-ssb-uniform",
+    "file": "uniforms/ssb/combat/combat-us-pattern-ssb-uniform.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "combat-uniform-ssb-new-pattern",
+    "file": "uniforms/ssb/combat/combat-uniform-ssb-new-pattern.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  },
+  {
+    "slug": "ssb-us-pattern-combat-uniform",
+    "file": "uniforms/ssb/combat/ssb-us-pattern-combat-uniform.html",
+    "category": "uniforms",
+    "color": "",
+    "fabric": ""
+  }
+]
