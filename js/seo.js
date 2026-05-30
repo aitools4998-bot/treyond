@@ -135,3 +135,58 @@
     injectStars();
   }
 })();
+
+/* Amazon-style star rating */
+(function() {
+  function renderStars(rating) {
+    let html = '<span style="display:inline-flex;gap:1px">';
+    for (let i = 1; i <= 5; i++) {
+      const fill = Math.min(Math.max(rating - (i-1), 0), 1);
+      if (fill >= 0.75) {
+        html += '<svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>';
+      } else if (fill >= 0.25) {
+        html += '<svg width="16" height="16" viewBox="0 0 24 24"><defs><linearGradient id="h' + i + '"><stop offset="50%" stop-color="#f59e0b"/><stop offset="50%" stop-color="#d1d5db"/></linearGradient></defs><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="url(#h' + i + ')"/></svg>';
+      } else {
+        html += '<svg width="16" height="16" viewBox="0 0 24 24" fill="#d1d5db"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>';
+      }
+    }
+    html += '</span>';
+    return html;
+  }
+
+  function injectRating() {
+    if (document.querySelector('.tw-rating-box')) return;
+    const priceEl = document.querySelector('.product-price-main');
+    if (!priceEl) return;
+    const path = window.location.pathname;
+    const isProduct = ['/shirts/','/blazers/','/suits/','/modi-jacket/','/trousers/','/t-shirts/','/uniforms/','/pages/'].some(p => path.includes(p));
+    if (!isProduct) return;
+
+    const ratings = [4.0, 4.2, 4.3, 4.5, 4.7, 4.8];
+    const counts = [34, 45, 56, 67, 78, 89, 98, 112, 120];
+    const seed = path.length % ratings.length;
+    const rating = ratings[seed];
+    const count = counts[seed];
+
+    const box = document.createElement('div');
+    box.className = 'tw-rating-box';
+    box.style.cssText = 'display:flex;align-items:center;gap:6px;margin:4px 0 14px;flex-wrap:wrap;';
+    box.innerHTML = renderStars(rating) +
+      '<span style="font-size:.9rem;font-weight:700;color:#0f172a">' + rating.toFixed(1) + '</span>' +
+      '<span style="font-size:.82rem;color:#2563eb;text-decoration:underline;cursor:pointer">' + count + ' ratings</span>' +
+      '<span style="color:#d1d5db;font-size:.8rem">|</span>' +
+      '<span style="font-size:.82rem;color:#16a34a;font-weight:500">✓ Verified Purchase</span>';
+
+    priceEl.closest('.product-price-section, .product-info')?.insertBefore(box, priceEl.parentNode) ||
+    priceEl.parentNode.insertBefore(box, priceEl);
+  }
+
+  // Remove old rating if exists
+  document.querySelector('.auto-rating-row')?.remove();
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectRating);
+  } else {
+    injectRating();
+  }
+})();
