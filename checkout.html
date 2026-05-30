@@ -50,7 +50,7 @@ function renderSummary() {
   let total = 0;
   document.getElementById('checkout-items').innerHTML = cart.map(item => {
     total += item.price * item.qty;
-    return `<div style="display:flex;justify-content:space-between;margin-bottom:12px;font-size:.9rem"><span>${item.name} x${item.qty}</span><span>₹${item.price * item.qty}</span></div>).join('');
+    return `<div style="display:flex;justify-content:space-between;margin-bottom:12px;font-size:.9rem"><span>${item.name} x${item.qty}</span><span>₹${item.price * item.qty}</span></div>`;}).join('');
   document.getElementById('co-subtotal').textContent = '₹'+total.toLocaleString();
   document.getElementById('co-total').textContent = '₹'+total.toLocaleString();
   document.getElementById('co-shipping').textContent = total>=2999 ? 'Free' : '₹99';
