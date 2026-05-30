@@ -99,7 +99,7 @@ function initAddToCart() {
 
   document.getElementById('buy-now-btn')?.addEventListener('click', () => {
     document.getElementById('add-to-cart-btn')?.click();
-    setTimeout(() => { window.location.href = "/checkout.html"; }, 800);
+    setTimeout(() => { window.location.href = "https://treyondworld.com/checkout.html"; }, 800);
   });
 }
 
