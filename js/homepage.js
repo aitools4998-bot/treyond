@@ -237,11 +237,11 @@ function renderProductGrid(containerId, products) {
               const seed=(p.id||'').length % ratings.length;
               const r=ratings[seed];
               const c=counts[seed];
+              const full=Math.round(r);
               let stars='';
               for(let i=1;i<=5;i++){
-                if(r>=i) stars+='<svg width="12" height="12" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>';
-                else if(r>i-1) stars+='<svg width="12" height="12" viewBox="0 0 24 24"><defs><linearGradient id="hg'+i+'p.id+'"><stop offset="50%" stop-color="#f59e0b"/><stop offset="50%" stop-color="#d1d5db"/></linearGradient></defs><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="url(#hg'+i+'p.id+')"/></svg>';
-                else stars+='<svg width="12" height="12" viewBox="0 0 24 24" fill="#d1d5db"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>';
+                const clr=i<=full?'#f59e0b':'#d1d5db';
+                stars+='<svg width="12" height="12" viewBox="0 0 24 24" fill="'+clr+'"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>';
               }
               return stars+'<span style="font-size:.75rem;color:#374151;font-weight:600">'+r.toFixed(1)+'</span><span style="font-size:.72rem;color:#6b7280">('+c+')</span>';
             })()}
