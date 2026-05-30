@@ -1,0 +1,77 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Checkout — Treyond World</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/global.css"><link rel="stylesheet" href="css/nav.css"></head><body>
+<header id="site-header" class="site-header"><div class="container header-inner"><a href="/index.html" class="nav-logo">TREYOND WORLD</a><div style="font-size:.8rem;color:var(--gray-400);letter-spacing:.1em">SECURE CHECKOUT</div></div></header>
+<main class="container" style="max-width:1000px;padding-top:60px;padding-bottom:80px">
+<div style="display:grid;grid-template-columns:1fr 380px;gap:48px">
+<div>
+  <h2 style="font-size:1rem;font-weight:600;letter-spacing:.08em;te-transform:uppercase;margin-bottom:24px">Delivery Information</h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+    <div class="form-group"><label class="form-label">First Name *</label><input type="text" class="form-input" id="fname" placeholder="Raj"></div>
+    <div class="form-group"><label class="form-label">Last Name *</label><input type="text" class="form-input" id="lname" placeholder="Kumar"></div>
+  </div>
+  <div class="form-group" style="margin-bottom:16px"><label class="form-label">Phone Number *</label><input type="tel" class="form-input" id="phone" placeholder="+91 XXXXX XXXXX"></div>
+  <div class="form-group" style="margin-bottom:16px"><label class="form-label">Email</label><input type="email" class="form-input" id="email" placeholder="raj@email.com"></div>
+  <div class="form-group" style="margin-bottom:16px"><label class="form-label">Address *</label><input type="text" class="form-input" id="address" placeholder="House No, Street, Area"></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:16px">
+    <div class="form-group"><label class="form-label">City *</label><input type="text" class="form-input" id="city" placeholder="Delhi"></div>
+    <div class="form-group"><label class="form-label">State *</label><input type="text" class="form-input" id="state" placeholder="Delhi"></div>
+    <div class="form-group"><label class="form-label">Pincode *</label><input type="text" class="form-input" id="pincode" placeholder="110001"></div>
+  </div>
+  <h2 style="font-size:1rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin:32px 0 24px">Payment Method</h2>
+  <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:32px">
+    <label style="display:flex;align-items:center;gap:12px;padding:16px;border:1px solid var(--gray-200);cursor:pointer" id="pay-upi-label">
+      <input type="radio" name="payment" value="upi" checked onchange="selectPayment('upi')"> <span style="font-weight:500">UPI / GPay / PhonePe</span>
+    </label>
+    <label style="display:flex;align-items:center;gap:12px;padding:16px;border:1px solid var(--gray-200);cursor:pointer">
+      <input type="radio" name="payment" value="cod" onchange="selectPayment('cod')"> <span style="font-weight:500">Cash on Delivery</span>
+    </label>
+    <label style="display:flex;align-items:center;gap:12px;padding:16px;border:1px solid var(--gray-200);cursor:pointer">
+      <input type="radio" name="payment" value="whatsapp" onchange="selectPayment('whatsapp')"> <span style="font-weight:500">Order via WhatsApp</span>
+    </label>
+  </div>
+  <button onclick="placeOrder()" class="btn btn-primary btn-lg w-full">Place Order</button>
+</div>
+<div style="background:var(--gray-50);padding:32px;height:fit-content">
+  <h2 style="font-size:1rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:24px">Order Summary</h2>
+  <div id="checkout-items"></div>
+  <div style="border-top:1px solid var(--gray-200);margin:16px 0;padding-top:16px">
+    <div style="display:flex;justify-content:space-between;margin-bottom:8px;font-size:.9rem"><span>Subtotal</span><span id="co-subtotal">₹0</span></div>
+    <div style="display:flex;justify-content:space-between;margin-bottom:8px;font-size:.9rem"><span>Shipping</span><span id="co-shipping">Free</span></div>
+    <div style="display:flex;justify-content:space-between;font-weight:600;margin-top:12px"><span>Total</span><span id="co-total">₹0</span></div>
+  </div>
+</div>
+</div>
+</main>
+<script src="js/global.js"></script>
+<script>
+let selectedPayment = 'upi';
+function selectPayment(p) { selectedPayment = p; }
+function renderSummary() {
+  const cart = JSON.parse(localStorage.getItem('treyond_cart') || '[]');
+  let total = 0;
+  document.getElementById('checkout-items').innerHTML = cart.map(item => {
+    total += item.price * item.qty;
+    return `<div style="display:flex;justify-content:space-between;margin-bottom:12px;font-size:.9rem"><span>${item.name} x${item.qty}</span><span>₹${item.price * item.qty}</span></div>).join('');
+  document.getElementById('co-subtotal').textContent = '₹'+total.toLocaleString();
+  document.getElementById('co-total').textContent = '₹'+total.toLocaleString();
+  document.getElementById('co-shipping').textContent = total>=2999 ? 'Free' : '₹99';
+}
+function placeOrder() {
+  const fname = document.getElementById('fname').value;
+  const phone = document.getElementById('phone').value;
+  const address = document.getElementById('address').value;
+  if (!fname || !phone || !address) { alert('Please fill all required fields'); return; }
+  const cart = JSON.parse(localStorage.getItem('treyond_cart') || '[]');
+  if (!cart.length) { alert('Your cart is empty'); return; }
+  if (selectedPayment === 'whatsapp') {
+    const items = cart.map(i => `${i.name} x${i.qty}`).join(', ');
+    const msg = encodeURIComponent(`New Order\nName: ${fname} ${document.getElementById('lname').value}\nPhone: ${phone}\nAddress: ${address}, ${document.getElementById('city').value}, ${document.getElementById('state').value} cument.getElementById('pincode').value}\nItems: ${items}`);
+    window.open(`https://wa.me/919512102102?text=${msg}`, '_blank');
+  } else {
+    alert('Order placed! We will contact you shortly on ' + phone);
+    localStorage.removeItem('treyond_cart');
+    window.location.href = '/index.html';
+  }
+}
+renderSummary();
+</script>
+</body></html>
