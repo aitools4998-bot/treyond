@@ -19,7 +19,7 @@
   <h2 style="font-size:1rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin:32px 0 24px">Payment Method</h2>
   <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:32px">
     <label style="display:flex;align-items:center;gap:12px;padding:16px;border:1px solid var(--gray-200);cursor:pointer" id="pay-upi-label">
-      <input type="radio" name="payment" value="upi" checked onchange="selectPayment('upi')"> <span style="font-weight:500">UPI / GPay / PhonePe</span>
+      <input type="radio" name="payment" value="phonepe" checked onchange="selectPayment('phonepe')"> <span style="font-weight:600">💳 Pay Online — UPI / GPay / PhonePe / Cards</span>
     </label>
     <label style="display:flex;align-items:center;gap:12px;padding:16px;border:1px solid var(--gray-200);cursor:pointer">
       <input type="radio" name="payment" value="cod" onchange="selectPayment('cod')"> <span style="font-weight:500">Cash on Delivery</span>
@@ -55,16 +55,39 @@ function renderSummary() {
   document.getElementById('co-total').textContent = '₹'+total.toLocaleString();
   document.getElementById('co-shipping').textContent = total>=2999 ? 'Free' : '₹99';
 }
-function placeOrder() {
+async function placeOrder() {
   const fname = document.getElementById('fname').value;
   const phone = document.getElementById('phone').value;
   const address = document.getElementById('address').value;
   if (!fname || !phone || !address) { alert('Please fill all required fields'); return; }
   const cart = JSON.parse(localStorage.getItem('tw_cart') || '[]');
   if (!cart.length) { alert('Your cart is empty'); return; }
-  if (selectedPayment === 'whatsapp') {
+  if (selectedPayment === 'phonepe') {
+    const btn = document.querySelector('.btn.btn-primary.btn-lg');
+    btn.textContent = 'Processing.
+    btn.disabled = true;
+    try {
+      const res = await fetch('https://treyond-orders-api.treyond2023.workers.dev/pay', {
+        method: 'POST', headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(orderData)
+      });
+      const result = await res.json();
+      if (result.redirectUrl) {
+        sessionStorage.setItem('treyond_last_order', JSON.stringify({...orderData, id: result.orderId, total: orderData.total.toLocaleString()}));
+        localStorage.removeItem('tw_cart');
+        window.location.href = result.redirectUrl;
+      } else {
+        alert('Payment initiation failed. Please try again.');
+        btn.textContent = 'Place Order'; btn.disabled = false;
+      }
+    } catch(e) {
+      alert('Network error. Please try again.');
+      btn.textContent = 'Place Order'; btn.disabled = false;
+    }
+    return;
+  } else if (selectedPayment === 'whatsapp') {
     const items = cart.map(i => `${i.name} x${i.qty}`).join(', ');
-    const msg = encodeURIComponent(`New Order\nName: ${fname} ${document.getElementById('lname').value}\nPhone: ${phone}\nAddress: ${address}, ${document.getElementById('city').value}, ${document.getElementById('state').value} cument.getElementById('pincode').value}\nItems: ${items}`);
+    const msg = encodeURIComponent(`New Order\nName: ${fname} ${document.getElementById('lname').value}\nPhone: ${phone}\nAddress: ${address}, ${document.getElementById('city').value}, ${document.getElementById('state').value} ${document.getElementById('pincode').value}\nItems: ${items}`);
     window.open(`https://wa.me/919512102102?text=${msg}`, '_blank');
   } else {
     const orderId = 'TW' + Date.now().toString().slice(-6);
