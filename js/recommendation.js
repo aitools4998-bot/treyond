@@ -6,20 +6,64 @@ async function getRelatedProducts(slug, limit) {
   if (!current) return [];
 
   var results = [];
+  var sub = current.subcategory || '';
 
-  // Uniform logic - same subcategory + accessories
-  if (current.subcategory && current.subcategory.startsWith('uniforms-') && current.subcategory !== 'uniforms-accessories') {
-    var sameSubcat = products.filter(function(p) {
-      return p.slug !== slug && p.subcategory === current.subcategory;
+  if (sub.startsWith('uniforms-')) {
+    // Same subcategory products
+    var same = products.filter(function(p) {
+      return p.slug !== slug && p.subcategory === sub;
     });
-    var accessories = products.filter(function(p) {
-      return p.subcategory === 'uniforms-accessories';
+
+    // Cross show: uniform <-> combat of same force
+    var cross = [];
+    if (sub === 'uniforms-bsf') {
+      // BSF: show other BSF + accessories
+      cross = products.filter(function(p) {
+        return p.subcategory === 'uniforms-accessories';
+      });
+    } else if (sub === 'uniforms-crpf') {
+      cross = products.filter(function(p) {
+        return p.subcategory === 'uniforms-crpf-combat' || p.subcategory === 'uniforms-accessories';
+      });
+    } else if (sub === 'uniforms-crpf-combat') {
+      cross = products.filter(function(p) {
+        return p.subcategory === 'uniforms-crpf' || p.subcategory === 'uniforms-accessories';
+      });
+    } else if (sub === 'uniforms-ssb') {
+      cross = products.filter(function(p) {
+        return p.subcategory === 'uniforms-ssb-combat' || p.subcategory === 'uniforms-accessories';
+      });
+    } else if (sub === 'uniforms-ssb-combat') {
+      cross = products.filter(function(p) {
+        return p.subcategory === 'uniforms-ssb' || p.subcategory === 'uniforms-accessories';
+      });
+    } else if (sub === 'uniforms-police') {
+      cross = products.filter(function(p) {
+        return p.subcategory === 'uniforms-accessories';
+      });
+    } else if (sub === 'uniforms-accessories') {
+      // Accessories - show all uniform subcategories
+      cross = products.filter(function(p) {
+        return p.subcategory && p.subcategory.startsWith('uniforms-') && p.subcategory !== 'uniforms-accessories';
+      }).slice(0, 4);
+    }
+
+    // Combine: same first, then cross, deduplicate
+    var seen = {};
+    seen[slug] = true;
+    var combined = [];
+    same.concat(cross).forEach(function(p) {
+      if (!seen[p.slug]) {
+        seen[p.slug] = true;
+        combined.push(p);
+      }
     });
-    results = sameSubcat.concat(accessories).slice(0, limit);
+    results = combined.slice(0, limit);
+
   } else {
-    // Regular scoring for non-uniform products
+    // Non-uniform: score by category + color + fabric
     results = products
-      .filter(function(p) { return p.slug !== slug; })
+      .filter(function(p) { return p.slug !== slug && !p.subcategory; })
       .map(function(p) {
         var score = 0;
         if (p.category === current.category) score += 40;
