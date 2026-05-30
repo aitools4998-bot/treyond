@@ -12,7 +12,7 @@ async function getRelatedProducts(slug, limit) {
     // Same subcategory uniforms
     var same = products.filter(function(p) {
       return p.slug !== slug && p.subcategory === sub;
-    });
+    }).slice(0, 6);
 
     // Cross force combat/uniform
     var cross = [];
