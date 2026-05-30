@@ -20,22 +20,25 @@ window.getRelatedProducts = getRelatedProducts;
 async function initCompleteYourLook(slug) {
   const grid = document.getElementById('complete-your-look-grid');
   if (!grid) return;
+
   const items = await getRelatedProducts(slug);
   if (!items.length) {
     const sec = document.getElementById('complete-your-look-section');
     if (sec) sec.style.display = 'none';
     return;
   }
+
   const catalog = []
     .concat(typeof ALL_PRODUCTS !== 'undefined' ? ALL_PRODUCTS : [])
     .concat(typeof UNIFORM_PRODUCTS !== 'undefined' ? UNIFORM_PRODUCTS : []);
-  grid.innerHTML = items.map(item => {
+
+  const cards = items.map(item => {
     const cat = catalog.find(p => p.url && p.url.includes(item.slug));
-    const image = cat ? cat.images[0] : '';
-    const price = cat ? '₹' + Number(cat.price).toLocaleString('en-IN') : '';
-    const name = cat ? cat.name : item.slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-    const url = '/' + item.file.replace('.html', '');
-    if (!image) return '';
+    if (!cat) return '';
+    const image = cat.images[0];
+    const price = '₹' + Number(cat.price).toLocaleString('en-IN');
+    const name = cat.name;
+    const url = cat.url.startsWith('/') ? cat.url : '/' + cat.url;
     return `
       <div class="product-card reveal">
         <a href="${url}">
@@ -46,13 +49,16 @@ async function initCompleteYourLook(slug) {
         <a href="${url}">
           <div class="product-card-info">
             <div class="product-card-name">${name}</div>
-            <div class="product-card-price"><span ass="product-price">${price}</span></div>
+            <div class="product-card-price"><span class="product-price">${price}</span></div>
           </div>
         </a>
-      </div>`;
-  }).filter(Boolean).join('');
-  if (!grid.innerHTML.trim()) {
+      </div>`; }).filter(Boolean).join('');
+
+  grid.innerHTML = cards;
+
+  if (!cards) {
     const sec = document.getElementById('complete-your-look-section');
     if (sec) sec.style.display = 'none';
   }
 }
+window.initCompleteYourLook = initCompleteYourLook;
