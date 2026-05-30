@@ -9,39 +9,28 @@ async function getRelatedProducts(slug, limit) {
   var sub = current.subcategory || '';
 
   if (sub.startsWith('uniforms-') && sub !== 'uniforms-accessories') {
+    // Same subcategory uniforms
     var same = products.filter(function(p) {
       return p.slug !== slug && p.subcategory === sub;
-    }).slice(0, 5);
+    });
 
+    // Cross force combat/uniform
     var cross = [];
     if (sub === 'uniforms-crpf') {
-      cross = products.filter(function(p) {
-        return p.subcategory === 'uniforms-crpf-combat';
-      }).slice(0, 2);
+      cross = products.filter(function(p) { return p.subcategory === 'uniforms-crpf-combat'; });
     } else if (sub === 'uniforms-crpf-combat') {
-      cross = products.filter(function(p) {
-        return p.subcategory === 'uniforms-crpf';
-      }).slice(0, 2);
+      cross = products.filter(function(p) { return p.subcategory === 'uniforms-crpf'; });
     } else if (sub === 'uniforms-ssb') {
-      cross = products.filter(function(p) {
-        return p.subcategory === 'uniforms-ssb-combat';
-      }).slice(0, 2);
+      cross = products.filter(function(p) { return p.subcategory === 'uniforms-ssb-combat'; });
     } else if (sub === 'uniforms-ssb-combat') {
-      cross = products.filter(function(p) {
-        return p.subcategory === 'uniforms-ssb';
-      }).slice(0, 2);
+      cross = products.filter(function(p) { return p.subcategory === 'uniforms-ssb'; });
     }
 
-    // Always include boots + other accessories
-    var boots = products.filter(function(p) {
-      return p.subcategory === 'uniforms-accessories' && p.universal === true && 
-             (p.slug.includes('boot') || p.slug.includes('Boot'));
+    // Force-specific accessories only
+    var accessories = products.filter(function(p) {
+      return p.subcategory === 'uniforms-accessories' &&
+             p.forces && p.forces.indexOf(sub) !== -1;
     });
-    var otherAcc = products.filter(function(p) {
-      return p.subcategory === 'uniforms-accessories' && p.universal === true && 
-             !p.slug.includes('boot') && !p.slug.includes('Boot');
-    }).slice(0, 2);
-    var accessories = boots.concat(otherAcc);
 
     var seen = {};
     seen[slug] = true;
@@ -52,21 +41,29 @@ async function getRelatedProducts(slug, limit) {
     results = combined.slice(0, limit);
 
   } else if (sub === 'uniforms-accessories') {
-    var uniforms = products.filter(function(p) {
-      return p.subcategory && p.subcategory.startsWith('uniforms-') && p.subcategory !== 'uniforms-accessories';
-    }).slice(0, 5);
+    // Accessories page - show uniforms that use this accessory + other relevant accessories
+    var relatedUniforms = products.filter(function(p) {
+      var forces = current.forces || [];
+      return p.subcategory && p.subcategory.startsWith('uniforms-') && 
+             p.subcategory !== 'uniforms-accessories' &&
+             forces.indexOf(p.subcategory) !== -1;
+    }).slice(0, 6);
     var otherAcc = products.filter(function(p) {
-      return p.slug !== slug && p.subcategory === 'uniforms-accessories';
-    }).slice(0, 4);
+      return p.slug !== slug && p.subcategory === 'uniforms-accessories' &&
+             p.forces && p.forces.some(function(f) {
+               return (current.forces || []).indexOf(f) !== -1;
+             });
+    }).slice(0, 6);
     var seen = {};
     seen[slug] = true;
     var combined = [];
-    uniforms.concat(otherAcc).forEach(function(p) {
+    relatedUniforms.concat(otherAcc).forEach(function(p) {
       if (!seen[p.slug]) { seen[p.slug] = true; combined.push(p); }
     });
     results = combined.slice(0, limit);
 
   } else {
+    // Non-uniform products
     results = products
       .filter(function(p) { return p.slug !== slug && !p.subcategory; })
       .map(function(p) {

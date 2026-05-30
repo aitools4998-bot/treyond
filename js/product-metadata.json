@@ -926,7 +926,9 @@
     "color": "",
     "fabric": "",
     "subcategory": "uniforms-accessories",
-    "universal": false
+    "forces": [
+      "uniforms-bsf"
+    ]
   },
   {
     "slug": "dm-boot-bsf-crpf-ssb",
@@ -935,7 +937,13 @@
     "color": "",
     "fabric": "",
     "subcategory": "uniforms-accessories",
-    "universal": true
+    "forces": [
+      "uniforms-bsf",
+      "uniforms-crpf",
+      "uniforms-crpf-combat",
+      "uniforms-ssb",
+      "uniforms-ssb-combat"
+    ]
   },
   {
     "slug": "jungle-boot-paramilitary",
@@ -944,7 +952,14 @@
     "color": "",
     "fabric": "",
     "subcategory": "uniforms-accessories",
-    "universal": true
+    "forces": [
+      "uniforms-bsf",
+      "uniforms-crpf",
+      "uniforms-crpf-combat",
+      "uniforms-ssb",
+      "uniforms-ssb-combat",
+      "uniforms-police"
+    ]
   },
   {
     "slug": "bsf-tactical-belt",
@@ -953,7 +968,9 @@
     "color": "",
     "fabric": "",
     "subcategory": "uniforms-accessories",
-    "universal": false
+    "forces": [
+      "uniforms-bsf"
+    ]
   },
   {
     "slug": "crpf-monkey-cap",
@@ -962,7 +979,10 @@
     "color": "",
     "fabric": "",
     "subcategory": "uniforms-accessories",
-    "universal": false
+    "forces": [
+      "uniforms-crpf",
+      "uniforms-crpf-combat"
+    ]
   },
   {
     "slug": "leather-boot-paramilitary",
@@ -971,7 +991,14 @@
     "color": "",
     "fabric": "",
     "subcategory": "uniforms-accessories",
-    "universal": true
+    "forces": [
+      "uniforms-bsf",
+      "uniforms-crpf",
+      "uniforms-crpf-combat",
+      "uniforms-ssb",
+      "uniforms-ssb-combat",
+      "uniforms-police"
+    ]
   },
   {
     "slug": "dm-boot-paramilitary",
@@ -980,7 +1007,14 @@
     "color": "",
     "fabric": "",
     "subcategory": "uniforms-accessories",
-    "universal": true
+    "forces": [
+      "uniforms-bsf",
+      "uniforms-crpf",
+      "uniforms-crpf-combat",
+      "uniforms-ssb",
+      "uniforms-ssb-combat",
+      "uniforms-police"
+    ]
   },
   {
     "slug": "crpf-tactical-belt",
@@ -989,7 +1023,10 @@
     "color": "",
     "fabric": "",
     "subcategory": "uniforms-accessories",
-    "universal": false
+    "forces": [
+      "uniforms-crpf",
+      "uniforms-crpf-combat"
+    ]
   },
   {
     "slug": "blue-beret-cap-crpf-ssb",
@@ -998,7 +1035,12 @@
     "color": "blue",
     "fabric": "",
     "subcategory": "uniforms-accessories",
-    "universal": false
+    "forces": [
+      "uniforms-crpf",
+      "uniforms-crpf-combat",
+      "uniforms-ssb",
+      "uniforms-ssb-combat"
+    ]
   },
   {
     "slug": "https-treyondworld-com-crpf-combat-uniform-tactical-belt",
