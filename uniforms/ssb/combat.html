@@ -156,8 +156,8 @@ function render() {
   document.getElementById('cat-count').textContent = products.length + ' products';
   renderProductGrid('cat-products-grid', products);
   const af = document.getElementById('active-filters'); af.innerHTML = '';
-  activeBrands.forEach(b => { const t=document.createElement('div'); t.className='active-filter-tag'; t.innerHTML=b+' <button onclick="removeBrand(''+b+'')">×</button>'; af.appendChild(t); });
-  activeSizes.forEach(s => { const t=document.createElement('div'); t.className='active-filter-tag'; t.innerHTML='Size '+s+' <button onclick="removeSize(''+s+'')">×</button>'; af.appendChild(t); });
+  activeBrands.forEach(b => { const t=document.createElement('div'); t.className='active-filter-tag'; t.innerHTML=b+' <button onclick="removeBrand('+JSON.stringify(b)+')">×</button>'; af.appendChild(t); });
+  activeSizes.forEach(s => { const t=document.createElement('div'); t.className='active-filter-tag'; t.innerHTML='Size '+s+' <button onclick="removeSize('+JSON.stringify(s)+')">×</button>'; af.appendChild(t); });
 }
 function removeBrand(b) { activeBrands=activeBrands.filter(x=>x!==b); document.querySelectorAll('[data-brand="'+b+'"]').forEach(el=>el.classList.remove('active')); render(); }
 function removeSize(s) { activeSizes=activeSizes.filter(x=>x!==s); document.querySelectorAll('[data-size="'+s+'"]').forEach(el=>el.classList.remove('active')); render(); }
