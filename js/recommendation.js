@@ -34,11 +34,11 @@ async function getRelatedProducts(slug, limit) {
 
     // Always include boots + other accessories
     var boots = products.filter(function(p) {
-      return p.subcategory === 'uniforms-accessories' && 
+      return p.subcategory === 'uniforms-accessories' && p.universal === true && 
              (p.slug.includes('boot') || p.slug.includes('Boot'));
     });
     var otherAcc = products.filter(function(p) {
-      return p.subcategory === 'uniforms-accessories' && 
+      return p.subcategory === 'uniforms-accessories' && p.universal === true && 
              !p.slug.includes('boot') && !p.slug.includes('Boot');
     }).slice(0, 2);
     var accessories = boots.concat(otherAcc);
