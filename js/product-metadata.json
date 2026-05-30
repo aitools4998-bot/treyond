@@ -953,7 +953,7 @@
     "color": "",
     "fabric": "",
     "subcategory": "uniforms-accessories",
-    "universal": true
+    "universal": false
   },
   {
     "slug": "crpf-monkey-cap",
@@ -989,7 +989,7 @@
     "color": "",
     "fabric": "",
     "subcategory": "uniforms-accessories",
-    "universal": true
+    "universal": false
   },
   {
     "slug": "blue-beret-cap-crpf-ssb",
