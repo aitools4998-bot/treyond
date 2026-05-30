@@ -16,8 +16,8 @@ function initParallax() {
 }
 
 function initPageTransitions() {
-  document.body.style.opacity = '0';
-  document.body.style.transition = 'opacity 0.4s ease';
+  document.body.style.opacity = "1";
+  
   requestAnimationFrame(() => { document.body.style.opacity = '1'; });
 
   document.querySelectorAll('a[href]:not([href^="#"]):not([href^="mailto"]):not([href^="tel"]):not([target])').forEach(link => {
@@ -25,7 +25,7 @@ function initPageTransitions() {
       const href = link.getAttribute('href');
       if (!href || href.startsWith('javascript') || link.origin !== location.origin) return;
       e.preventDefault();
-      document.body.style.opacity = '0';
+      document.body.style.opacity = "1";
       setTimeout(() => { window.location.href = href; }, 350);
     });
   });
