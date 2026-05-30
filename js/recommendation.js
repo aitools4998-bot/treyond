@@ -37,7 +37,7 @@ async function initCompleteYourLook(slug) {
     var price = '\u20B9' + Number(cat.price).toLocaleString('en-IN');
     var name = cat.name;
     var url = cat.url.startsWith('/') ? cat.url : '/' + cat.url;
-    return '<div class="product-card">' +
+    return '<div class="product-card" style="opacity:1">' +
       '<a href="' + url + '">' +
       '<div class="product-card-img-wrap">' +
       '<img class="product-card-img" src="' + image + '" alt="' + name + '" loading="lazy">' +
