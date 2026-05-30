@@ -81,7 +81,7 @@ function initAddToCart() {
     const qty = parseInt(document.getElementById('product-qty')?.value || 1);
     const image = document.getElementById('main-product-img')?.src;
     const variant = window._currentVariant || 'Default';
-    const id = document.getElementById('product-id')?.value || 'product';
+    const id = (typeof PRODUCT_DATA !== 'undefined' ? PRODUCT_DATA.id : null) || document.getElementById('product-id')?.value || 'product';
 
     if (!document.querySelector('.size-btn.active') && document.querySelectorAll('.size-btn:not(.unavailable)').length > 0) {
       showToast('Please select a size', 'error');
