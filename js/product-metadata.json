@@ -1043,22 +1043,6 @@
     ]
   },
   {
-    "slug": "https-treyondworld-com-crpf-combat-uniform-tactical-belt",
-    "file": "uniforms/combat/https-treyondworld-com-crpf-combat-uniform-tactical-belt.html",
-    "category": "uniforms",
-    "color": "",
-    "fabric": "",
-    "subcategory": "uniforms-crpf-combat"
-  },
-  {
-    "slug": "https-treyondworld-com-beret-cap-for-bsf",
-    "file": "uniforms/combat/https-treyondworld-com-beret-cap-for-bsf.html",
-    "category": "uniforms",
-    "color": "",
-    "fabric": "",
-    "subcategory": "uniforms-bsf"
-  },
-  {
     "slug": "crpf-combat-uniform-cool-touch-fast-color-by-ajanta-for-head-constable",
     "file": "uniforms/combat/crpf-combat-uniform-cool-touch-fast-color-by-ajanta-for-head-constable.html",
     "category": "uniforms",
@@ -1081,13 +1065,6 @@
     "color": "",
     "fabric": "cotton",
     "subcategory": "uniforms-crpf-combat"
-  },
-  {
-    "slug": "https-treyondworld-com-leather-boot-for-paramilitary",
-    "file": "uniforms/combat/https-treyondworld-com-leather-boot-for-paramilitary.html",
-    "category": "uniforms",
-    "color": "",
-    "fabric": ""
   },
   {
     "slug": "crpf-combat-cotton-80-poly-20-us-pattern-wardi",
@@ -1114,35 +1091,11 @@
     "subcategory": "uniforms-ssb-combat"
   },
   {
-    "slug": "https-treyondworld-com-bsf-combat-uniform-tactical-belt",
-    "file": "uniforms/combat/https-treyondworld-com-bsf-combat-uniform-tactical-belt.html",
-    "category": "uniforms",
-    "color": "",
-    "fabric": "",
-    "subcategory": "uniforms-bsf"
-  },
-  {
-    "slug": "https-treyondworld-com-blue-beret-cap-crp-ssb",
-    "file": "uniforms/combat/https-treyondworld-com-blue-beret-cap-crp-ssb.html",
-    "category": "uniforms",
-    "color": "blue",
-    "fabric": "",
-    "subcategory": "uniforms-ssb-combat"
-  },
-  {
     "slug": "combet-uniform-manipuri-pattern-cool-touch",
     "file": "uniforms/combat/combet-uniform-manipuri-pattern-cool-touch.html",
     "category": "uniforms",
     "color": "",
     "fabric": ""
-  },
-  {
-    "slug": "https-treyondworld-com-d-m-boot-for-bsf-crpf-ssb-itbp",
-    "file": "uniforms/combat/https-treyondworld-com-d-m-boot-for-bsf-crpf-ssb-itbp.html",
-    "category": "uniforms",
-    "color": "",
-    "fabric": "",
-    "subcategory": "uniforms-ssb-combat"
   },
   {
     "slug": "crpf-combat-uniform-cool-touch-fast-colour-by-ajanta",
@@ -1177,14 +1130,6 @@
     "subcategory": "uniforms-crpf-combat"
   },
   {
-    "slug": "https-treyondworld-com-crpf-monkey-caf",
-    "file": "uniforms/combat/https-treyondworld-com-crpf-monkey-caf.html",
-    "category": "uniforms",
-    "color": "",
-    "fabric": "",
-    "subcategory": "uniforms-crpf-combat"
-  },
-  {
     "slug": "ssb-new-pattern-combat",
     "file": "uniforms/combat/ssb-new-pattern-combat.html",
     "category": "uniforms",
@@ -1199,14 +1144,6 @@
     "color": "",
     "fabric": "",
     "subcategory": "uniforms-crpf-combat"
-  },
-  {
-    "slug": "https-treyondworld-com-dm-boot-crpf-ssb-itbp-bsf-cisf",
-    "file": "uniforms/combat/https-treyondworld-com-dm-boot-crpf-ssb-itbp-bsf-cisf.html",
-    "category": "uniforms",
-    "color": "",
-    "fabric": "",
-    "subcategory": "uniforms-ssb-combat"
   },
   {
     "slug": "combat-us-pattern-ssb-uniform",
@@ -1250,13 +1187,6 @@
   {
     "slug": "combat-uniform-cool-touch-fast-colour-by-ajanta",
     "file": "uniforms/combat/combat-uniform-cool-touch-fast-colour-by-ajanta.html",
-    "category": "uniforms",
-    "color": "",
-    "fabric": ""
-  },
-  {
-    "slug": "https-treyondworld-com-jungle-boot-for-peramilitary",
-    "file": "uniforms/combat/https-treyondworld-com-jungle-boot-for-peramilitary.html",
     "category": "uniforms",
     "color": "",
     "fabric": ""
