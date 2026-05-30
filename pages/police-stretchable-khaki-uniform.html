@@ -229,6 +229,15 @@
   <button class="btn btn-primary sticky-atc-btn" id="sticky-atc-btn">Add to Cart</button>
 </div>
 
+
+<section id="complete-your-look-section" style="padding:48px 0">
+  <div class="container">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:28px">
+      <h2 style="font-size:1.3rem;font-weight:700;letter-spacing:-.01em">Complete Your Look</h2>
+    </div>
+    <div class="products-grid" id="complete-your-look-grid"></div>
+  </div>
+</section>
 <footer class="site-footer">
   <div class="container">
     <div class="footer-top">
@@ -252,6 +261,20 @@ document.addEventListener('DOMContentLoaded', () => {
   if (typeof PRODUCTS_DATA !== 'undefined') {
     renderProductGrid('related-products', PRODUCTS_DATA.filter(p => p.id !== pid).slice(0,4));
   }
+});
+</script>
+
+<script src="../js/category-data.js"></script>
+<script src="../js/recommendation.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  initCompleteYourLook('police-stretchable-khaki-uniform').then(() => {
+    document.querySelectorAll('#complete-your-look-grid .reveal').forEach(el => {
+      el.classList.add('revealed');
+      el.style.opacity = '1';
+      el.style.transform = 'none';
+    });
+  });
 });
 </script>
 </body>
