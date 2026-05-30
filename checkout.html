@@ -62,9 +62,20 @@ async function placeOrder() {
   if (!fname || !phone || !address) { alert('Please fill all required fields'); return; }
   const cart = JSON.parse(localStorage.getItem('tw_cart') || '[]');
   if (!cart.length) { alert('Your cart is empty'); return; }
+  const orderId = 'TW' + Date.now().toString().slice(-6);
+  const orderData = {
+    id: orderId,
+    name: fname + ' ' + document.getElementById('lname').value,
+    phone: phone,
+    email: document.getElementById('email').value,
+    address: address + ', ' + document.getElementById('city').value + ', ' + document.getElementById('state').value + ' - ' + document.getElementById('pincode').value,
+    items: cart,
+    total: cart.reduce((s,i) => s + i.price * i.qty, 0),
+    payment_method: selectedPayment
+  };
   if (selectedPayment === 'phonepe') {
     const btn = document.querySelector('.btn.btn-primary.btn-lg');
-    btn.textContent = 'Processing.
+    btn.textContent = 'Processing...';
     btn.disabled = true;
     try {
       const res = await fetch('https://treyond-orders-api.treyond2023.workers.dev/pay', {
@@ -90,17 +101,6 @@ async function placeOrder() {
     const msg = encodeURIComponent(`New Order\nName: ${fname} ${document.getElementById('lname').value}\nPhone: ${phone}\nAddress: ${address}, ${document.getElementById('city').value}, ${document.getElementById('state').value} ${document.getElementById('pincode').value}\nItems: ${items}`);
     window.open(`https://wa.me/919512102102?text=${msg}`, '_blank');
   } else {
-    const orderId = 'TW' + Date.now().toString().slice(-6);
-    const orderData = {
-      id: orderId,
-      name: fname + ' ' + document.getElementById('lname').value,
-      phone: phone,
-      email: document.getElementById('email').value,
-      address: address + ', ' + document.getElementById('city').value + ', ' + document.getElementById('state').value + ' - ' + document.getElementById('pincode').value,
-      items: cart,
-      total: cart.reduce((s,i) => s + i.price * i.qty, 0),
-      payment_method: selectedPayment
-    };
     fetch('https://treyond-orders-api.treyond2023.workers.dev/orders', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
