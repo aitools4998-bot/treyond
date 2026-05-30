@@ -46,7 +46,7 @@
 let selectedPayment = 'upi';
 function selectPayment(p) { selectedPayment = p; }
 function renderSummary() {
-  const cart = JSON.parse(localStorage.getItem('treyond_cart') || '[]');
+  const cart = JSON.parse(localStorage.getItem('tw_cart') || '[]');
   let total = 0;
   document.getElementById('checkout-items').innerHTML = cart.map(item => {
     total += item.price * item.qty;
@@ -60,7 +60,7 @@ function placeOrder() {
   const phone = document.getElementById('phone').value;
   const address = document.getElementById('address').value;
   if (!fname || !phone || !address) { alert('Please fill all required fields'); return; }
-  const cart = JSON.parse(localStorage.getItem('treyond_cart') || '[]');
+  const cart = JSON.parse(localStorage.getItem('tw_cart') || '[]');
   if (!cart.length) { alert('Your cart is empty'); return; }
   if (selectedPayment === 'whatsapp') {
     const items = cart.map(i => `${i.name} x${i.qty}`).join(', ');
@@ -84,7 +84,7 @@ function placeOrder() {
       body: JSON.stringify(orderData)
     }).catch(e => console.log('Order save failed:', e));
     sessionStorage.setItem('treyond_last_order', JSON.stringify({...orderData, total: orderData.total.toLocaleString()}));
-    localStorage.removeItem('treyond_cart');
+    localStorage.removeItem('tw_cart');
     window.location.href = '/order-confirmation.html';
   }
 }
