@@ -4,17 +4,33 @@ async function getRelatedProducts(slug, limit) {
   var products = await res.json();
   var current = products.find(function(p) { return p.slug === slug; });
   if (!current) return [];
-  return products
-    .filter(function(p) { return p.slug !== slug; })
-    .map(function(p) {
-      var score = 0;
-      if (p.category === current.category) score += 40;
-      if (p.color && p.color === current.color) score += 30;
-      if (p.fabric && p.fabric === current.fabric) score += 20;
-      return Object.assign({}, p, {score: score});
-    })
-    .sort(function(a,b) { return b.score - a.score; })
-    .slice(0, limit);
+
+  var results = [];
+
+  // Uniform logic - same subcategory + accessories
+  if (current.subcategory && current.subcategory.startsWith('uniforms-') && current.subcategory !== 'uniforms-accessories') {
+    var sameSubcat = products.filter(function(p) {
+      return p.slug !== slug && p.subcategory === current.subcategory;
+    });
+    var accessories = products.filter(function(p) {
+      return p.subcategory === 'uniforms-accessories';
+    });
+    results = sameSubcat.concat(accessories).slice(0, limit);
+  } else {
+    // Regular scoring for non-uniform products
+    results = products
+      .filter(function(p) { return p.slug !== slug; })
+      .map(function(p) {
+        var score = 0;
+        if (p.category === current.category) score += 40;
+        if (p.color && p.color === current.color) score += 30;
+        if (p.fabric && p.fabric === current.fabric) score += 20;
+        return Object.assign({}, p, {score: score});
+      })
+      .sort(function(a,b) { return b.score - a.score; })
+      .slice(0, limit);
+  }
+  return results;
 }
 window.getRelatedProducts = getRelatedProducts;
 
