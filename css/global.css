@@ -238,8 +238,6 @@ ul, ol { list-style: none; }
 
 /* Scroll reveal */
 .reveal {
-  opacity: 0;
-  transform: translateY(30px);
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
 .reveal.visible {
