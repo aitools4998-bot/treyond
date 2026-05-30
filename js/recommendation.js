@@ -1,5 +1,5 @@
 async function getRelatedProducts(slug, limit) {
-  limit = limit || 8;
+  limit = limit || 9;
   var res = await fetch('/js/product-metadata.json');
   var products = await res.json();
   var current = products.find(function(p) { return p.slug === slug; });
@@ -8,60 +8,65 @@ async function getRelatedProducts(slug, limit) {
   var results = [];
   var sub = current.subcategory || '';
 
-  if (sub.startsWith('uniforms-')) {
-    // Same subcategory products
+  if (sub.startsWith('uniforms-') && sub !== 'uniforms-accessories') {
     var same = products.filter(function(p) {
       return p.slug !== slug && p.subcategory === sub;
-    });
+    }).slice(0, 5);
 
-    // Cross show: uniform <-> combat of same force
     var cross = [];
-    if (sub === 'uniforms-bsf') {
-      // BSF: show other BSF + accessories
+    if (sub === 'uniforms-crpf') {
       cross = products.filter(function(p) {
-        return p.subcategory === 'uniforms-accessories';
-      });
-    } else if (sub === 'uniforms-crpf') {
-      cross = products.filter(function(p) {
-        return p.subcategory === 'uniforms-crpf-combat' || p.subcategory === 'uniforms-accessories';
-      });
+        return p.subcategory === 'uniforms-crpf-combat';
+      }).slice(0, 2);
     } else if (sub === 'uniforms-crpf-combat') {
       cross = products.filter(function(p) {
-        return p.subcategory === 'uniforms-crpf' || p.subcategory === 'uniforms-accessories';
-      });
+        return p.subcategory === 'uniforms-crpf';
+      }).slice(0, 2);
     } else if (sub === 'uniforms-ssb') {
       cross = products.filter(function(p) {
-        return p.subcategory === 'uniforms-ssb-combat' || p.subcategory === 'uniforms-accessories';
-      });
+        return p.subcategory === 'uniforms-ssb-combat';
+      }).slice(0, 2);
     } else if (sub === 'uniforms-ssb-combat') {
       cross = products.filter(function(p) {
-        return p.subcategory === 'uniforms-ssb' || p.subcategory === 'uniforms-accessories';
-      });
-    } else if (sub === 'uniforms-police') {
-      cross = products.filter(function(p) {
-        return p.subcategory === 'uniforms-accessories';
-      });
-    } else if (sub === 'uniforms-accessories') {
-      // Accessories - show all uniform subcategories
-      cross = products.filter(function(p) {
-        return p.subcategory && p.subcategory.startsWith('uniforms-') && p.subcategory !== 'uniforms-accessories';
-      }).slice(0, 4);
+        return p.subcategory === 'uniforms-ssb';
+      }).slice(0, 2);
     }
 
-    // Combine: same first, then cross, deduplicate
+    // Always include boots + other accessories
+    var boots = products.filter(function(p) {
+      return p.subcategory === 'uniforms-accessories' && 
+             (p.slug.includes('boot') || p.slug.includes('Boot'));
+    });
+    var otherAcc = products.filter(function(p) {
+      return p.subcategory === 'uniforms-accessories' && 
+             !p.slug.includes('boot') && !p.slug.includes('Boot');
+    }).slice(0, 2);
+    var accessories = boots.concat(otherAcc);
+
     var seen = {};
     seen[slug] = true;
     var combined = [];
-    same.concat(cross).forEach(function(p) {
-      if (!seen[p.slug]) {
-        seen[p.slug] = true;
-        combined.push(p);
-      }
+    same.concat(cross).concat(accessories).forEach(function(p) {
+      if (!seen[p.slug]) { seen[p.slug] = true; combined.push(p); }
+    });
+    results = combined.slice(0, limit);
+
+  } else if (sub === 'uniforms-accessories') {
+    var uniforms = products.filter(function(p) {
+      return p.subcategory && p.subcategory.startsWith('uniforms-') && p.subcategory !== 'uniforms-accessories';
+    }).slice(0, 5);
+    var otherAcc = products.filter(function(p) {
+      return p.slug !== slug && p.subcategory === 'uniforms-accessories';
+    }).slice(0, 4);
+    var seen = {};
+    seen[slug] = true;
+    var combined = [];
+    uniforms.concat(otherAcc).forEach(function(p) {
+      if (!seen[p.slug]) { seen[p.slug] = true; combined.push(p); }
     });
     results = combined.slice(0, limit);
 
   } else {
-    // Non-uniform: score by category + color + fabric
     results = products
       .filter(function(p) { return p.slug !== slug && !p.subcategory; })
       .map(function(p) {
