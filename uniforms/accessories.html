@@ -4,40 +4,60 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Uniform Accessories — Treyond World</title>
-<meta name="description" content="Beret caps, monkey caps, tactical belts, DM boots and jungle boots for BSF, CRPF, SSB paramilitary forces.">
+<meta name="description" content="Beret caps, tactical belts, boots and more.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/global.css">
-<link rel="stylesheet" href="../css/nav.css">
-<link rel="stylesheet" href="../css/homepage.css">
-<link rel="stylesheet" href="../css/footer.css">
+<link rel="stylesheet" href="../../css/global.css">
+<link rel="stylesheet" href="../../css/nav.css">
+<link rel="stylesheet" href="../../css/homepage.css">
+<link rel="stylesheet" href="../../css/footer.css">
 <style>
+.shop-layout{display:grid;grid-template-columns:240px 1fr;gap:32px;padding:32px 0 60px;align-items:start}
+@media(max-width:768px){.shop-layout{grid-template-columns:1fr}.filter-sidebar{display:none}.filter-sidebar.open{display:block}}
+.filter-sidebar{background:#fff;border:1px solid var(--gray-100);padding:24px;position:sticky;top:80px}
+.filter-sidebar-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+.filter-title{font-size:.85rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.filter-clear{font-size:.75rem;color:var(--gray-400);cursor:pointer;text-decoration:underline}
+.filter-clear:hover{color:var(--black)}
+.filter-group{border-top:1px solid var(--gray-100);padding:16px 0}
+.filter-group-label{font-size:.8rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--gray-700)}
+.filter-group-body{margin-top:12px}
+.size-pills{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.size-pill{padding:4px 10px;border:1px solid var(--gray-200);font-size:.78rem;cursor:pointer;transition:all .15s}
+.size-pill:hover{border-color:var(--black)}
+.size-pill.active{background:var(--black);color:#fff;border-color:var(--black)}
+.price-inputs{display:flex;gap:8px;margin-top:12px;align-items:center}
+.price-input{width:80px;padding:6px 8px;border:1px solid var(--gray-200);font-size:.8rem;font-family:inherit}
+.price-sep{font-size:.8rem;color:var(--gray-400)}
+.sort-select{padding:6px 12px;border:1px solid var(--gray-200);font-size:.8rem;font-family:inherit;background:#fff;cursor:pointer}
+.shop-controls{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid var(--gray-100)}
+.results-count{font-size:.85rem;color:var(--gray-500)}
+.active-filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.active-filter-tag{display:flex;align-items:center;gap:6px;padding:4px 10px;background:var(--gray-100);font-size:.78rem}
+.active-filter-tag button{background:none;border:none;cursor:pointer;color:var(--gray-500);font-size:12px;padding:0;line-height:1}
+.mobile-filter-btn{display:none;align-items:center;gap:6px;padding:8px 16px;border:1px solid var(--gray-200);background:#fff;font-size:.85rem;cursor:pointer;margin-bottom:16px}
+@media(max-width:768px){.mobile-filter-btn{display:flex}}
 .category-hero{position:relative;height:300px;overflow:hidden;background:#111}
 .category-hero img{width:100%;height:100%;object-fit:cover;object-position:center top;opacity:.7}
 .category-hero-content{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center;padding:24px}
 .category-hero-title{font-family:var(--font-serif);font-size:clamp(2rem,5vw,3rem);font-weight:400;margin-bottom:8px}
-.category-hero-desc{font-size:.9rem;opacity:.8;max-width:500px}
-.cat-grid-section{padding:40px 0 60px}
-.cat-grid-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
-.cat-grid-title{font-size:1rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
-.cat-count{font-size:.8rem;color:var(--gray-500)}
-</style>
+.category-hero-desc{font-size:.9rem;opacity:.8;max-width:500px}</style>
 </head>
 <body>
 <div id="announcement-bar" class="announcement-bar">✦ FREE SHIPPING ON ORDERS ABOVE ₹2999 &nbsp;|&nbsp; USE CODE <strong>TREYOND10</strong> FOR 10% OFF<button id="announcement-close" class="announcement-close">×</button></div>
 <header id="site-header" class="site-header">
   <div class="container header-inner">
     <button id="mobile-menu-btn" class="mobile-menu-btn"><span></span><span></span><span></span></button>
-    <a href="../index.html" class="nav-logo">TREYOND WORLD</a>
+    <a href="../../index.html" class="nav-logo">TREYOND WORLD</a>
     <nav class="nav-menu">
-      <div class="nav-item"><a href="../index.html" class="nav-link">Home</a></div>
-      <div class="nav-item"><a href="../uniforms" class="nav-link" style="font-weight:700">Uniforms</a></div>
-      <div class="nav-item"><a href="../shirts" class="nav-link">Shirts</a></div>
-      <div class="nav-item"><a href="../blazers" class="nav-link">Blazers</a></div>
-      <div class="nav-item"><a href="../suits" class="nav-link">Suits</a></div>
-      <div class="nav-item"><a href="../modi-jacket" class="nav-link">Modi Jacket</a></div>
-      <div class="nav-item"><a href="../trousers" class="nav-link">Trousers</a></div>
-      <div class="nav-item"><a href="../t-shirts" class="nav-link">T-Shirts</a></div>
+      <div class="nav-item"><a href="../../index.html" class="nav-link">Home</a></div>
+      <div class="nav-item"><a href="../../uniforms" class="nav-link" style="font-weight:700">Uniforms</a></div>
+      <div class="nav-item"><a href="../../shirts" class="nav-link">Shirts</a></div>
+      <div class="nav-item"><a href="../../blazers" class="nav-link">Blazers</a></div>
+      <div class="nav-item"><a href="../../suits" class="nav-link">Suits</a></div>
+      <div class="nav-item"><a href="../../modi-jacket" class="nav-link">Modi Jacket</a></div>
+      <div class="nav-item"><a href="../../trousers" class="nav-link">Trousers</a></div>
+      <div class="nav-item"><a href="../../t-shirts" class="nav-link">T-Shirts</a></div>
     </nav>
     <div class="nav-icons">
       <button id="search-icon" class="nav-icon-btn"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg></button>
@@ -46,7 +66,7 @@
   </div>
 </header>
 <div id="search-bar" class="search-bar"><div class="search-bar-inner"><input id="search-input" type="search" placeholder="Search…" autocomplete="off"><button id="search-close" class="search-close">✕</button></div><div id="search-suggestions" class="search-suggestions"></div></div>
-<div id="cart-drawer" class="cart-drawer"><div class="cart-drawer-header"><div class="cart-drawer-title">Shopping Bag</div><button id="cart-drawer-close" class="cart-drawer-close">✕</button></div><div id="cart-drawer-body" class="cart-drawer-body"></div><div class="cart-drawer-footer"><div class="cart-subtotal"><span>Subtotal</span><span id="cart-subtotal">₹0</span></div><a href="../pages/cart.html" class="btn btn-outline w-full" style="margin-bottom:10px">View Cart</a><a href="../pages/checkout.html" class="btn btn-primary w-full">Checkout</a></div></div>
+<div id="cart-drawer" class="cart-drawer"><div class="cart-drawer-header"><div class="cart-drawer-title">Shopping Bag</div><button id="cart-drawer-close" class="cart-drawer-close">✕</button></div><div id="cart-drawer-body" class="cart-drawer-body"></div><div class="cart-drawer-footer"><div class="cart-subtotal"><span>Subtotal</span><span id="cart-subtotal">₹0</span></div><a href="../../pages/cart.html" class="btn btn-outline w-full" style="margin-bottom:10px">View Cart</a><a href="../../pages/checkout.html" class="btn btn-primary w-full">Checkout</a></div></div>
 <div id="overlay" class="overlay"></div>
 <div id="quickview-modal" class="modal"><div class="modal-backdrop" onclick="closeQuickView()"></div><div class="modal-box quickview-modal" style="max-width:900px;padding:0;overflow:hidden"><div class="quickview-inner"><div class="quickview-gallery"><img src="" alt="Product" style="width:100%;height:100%;object-fit:cover"></div><div class="quickview-info" style="padding:40px;overflow-y:auto"></div></div></div></div>
 <main>
@@ -54,47 +74,90 @@
   <img src="https://media.treyondworld.com/2024/06/CKS02499-copy.jpg" alt="Uniform Accessories" loading="eager">
   <div class="category-hero-content">
     <h1 class="category-hero-title">Uniform Accessories</h1>
-    <p class="category-hero-desc">Beret caps, monkey caps, tactical belts, DM boots and jungle boots for paramilitary forces.</p>
+    <p class="category-hero-desc">Beret caps, tactical belts, boots and more.</p>
   </div>
 </section>
 <div class="container">
-  <nav class="breadcrumb" style="padding:16px 0">
-    <a href="../index.html">Home</a><span class="breadcrumb-sep">›</span>
-    <a href="../uniforms">Uniforms</a><span class="breadcrumb-sep">›</span>
-    <span class="breadcrumb-current">Accessories</span>
-  </nav>
-</div>
-<section class="cat-grid-section">
-  <div class="container">
-    <div class="cat-grid-header">
-      <span class="cat-grid-title">Uniform Accessories</span>
-      <span class="cat-count" id="cat-count"></span>
+  <nav class="breadcrumb" style="padding:14px 0;font-size:0.8rem;display:flex;align-items:center;flex-wrap:wrap;gap:4px"><a href="/" style="color:var(--gray-500);text-decoration:none">Home</a><span style="color:var(--gray-300);margin:0 2px">›</span><a href="/uniforms" style="color:var(--gray-500);text-decoration:none">Uniforms</a><span style="color:var(--gray-300);margin:0 2px">›</span><span style="color:var(--gray-800);font-weight:500">Uniform Accessories</span></nav>
+  <button class="mobile-filter-btn" id="mobile-filter-btn"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 4h18M7 8h10M11 12h2M11 16h2"/></svg>Filters</button>
+  <div class="shop-layout">
+    <aside class="filter-sidebar" id="filter-sidebar">
+      <div class="filter-sidebar-header"><span class="filter-title">Filters</span><span class="filter-clear" id="filter-clear">Clear All</span></div>
+      <div class="filter-group">
+        <div class="filter-group-label">Size</div>
+        <div class="filter-group-body">
+          <div class="size-pills">
+            <div class="size-pill" data-size="36">36</div><div class="size-pill" data-size="38">38</div><div class="size-pill" data-size="40">40</div><div class="size-pill" data-size="42">42</div><div class="size-pill" data-size="44">44</div><div class="size-pill" data-size="46">46</div>
+          </div>
+        </div>
+      </div>
+      <div class="filter-group">
+        <div class="filter-group-label">Price Range</div>
+        <div class="filter-group-body">
+          <div class="price-inputs"><input class="price-input" type="number" id="price-min" placeholder="₹ Min" min="0"><span class="price-sep">—</span><input class="price-input" type="number" id="price-max" placeholder="₹ Max" min="0"></div>
+        </div>
+      </div>
+      <div class="filter-group">
+        <div class="filter-group-label">Sort By</div>
+        <div class="filter-group-body" style="margin-top:12px">
+          <select class="sort-select" id="sort-select" style="width:100%"><option value="featured">Featured</option><option value="price-asc">Price: Low to High</option><option value="price-desc">Price: High to Low</option><option value="name-asc">Name: A to Z</option></select>
+        </div>
+      </div>
+    </aside>
+    <div>
+      <div class="shop-controls"><span class="results-count" id="cat-count"></span></div>
+      <div id="active-filters" class="active-filters"></div>
+      <div class="products-grid" id="cat-products-grid"></div>
     </div>
-    <div class="products-grid" id="cat-products-grid"></div>
   </div>
-</section>
+</div>
+
 </main>
 <footer class="site-footer">
   <div class="container">
     <div class="footer-top">
       <div class="footer-brand"><span class="nav-logo">TREYOND WORLD</span><p>Premium men's fashion crafted for every occasion.</p></div>
-      <div><div class="footer-col-title">Uniforms</div><div class="footer-links"><a href="../uniforms">All Uniforms</a><a href="../uniforms/bsf">BSF</a><a href="../uniforms/crpf">CRPF</a><a href="../uniforms/crpf/combat">Combat</a><a href="../uniforms/police">Police</a><a href="../uniforms/ssb">SSB</a><a href="../uniforms/accessories">Accessories</a></div></div>
-      <div><div class="footer-col-title">Help</div><div class="footer-links"><a href="../pages/contact.html">Contact</a><a href="../pages/refund.html">Returns</a></div></div>
+      <div><div class="footer-col-title">Uniforms</div><div class="footer-links"><a href="../../uniforms">All Uniforms</a><a href="../../uniforms/bsf">BSF</a><a href="../../uniforms/crpf">CRPF</a><a href="../../uniforms/police">Police</a><a href="../../uniforms/ssb">SSB</a></div></div>
+      <div><div class="footer-col-title">Help</div><div class="footer-links"><a href="../../pages/contact.html">Contact</a><a href="../../pages/refund.html">Returns</a></div></div>
     </div>
     <div class="footer-bottom"><span>© 2025 Treyond World</span></div>
   </div>
 </footer>
 <div id="toast-container" class="toast-container"></div>
-<script src="../js/global.js"></script>
-<script src="../js/search.js"></script>
-<script src="../js/animations.js"></script>
-<script src="../js/uniform-data.js"></script>
-<script src="../js/homepage.js"></script>
+<script src="../../js/global.js"></script>
+<script src="../../js/search.js"></script>
+<script src="../../js/animations.js"></script>
+<script src="../../js/uniform-data.js"></script>
+<script src="../../js/homepage.js"></script>
 <script>
-document.addEventListener('DOMContentLoaded', () => {
-  const products = UNIFORM_PRODUCTS.filter(p => p.category === 'uniforms-accessories');
+const BASE_CATS = ['uniforms-accessories'];
+let activeSizes = [], priceMin = 0, priceMax = Infinity, sortBy = 'featured';
+function getFiltered() {
+  let products = UNIFORM_PRODUCTS.filter(p => BASE_CATS.includes(p.category));
+  if (activeSizes.length) products = products.filter(p => p.sizes && activeSizes.some(s => p.sizes.includes(s)));
+  if (priceMin > 0) products = products.filter(p => p.price >= priceMin);
+  if (priceMax < Infinity) products = products.filter(p => p.price <= priceMax);
+  if (sortBy === 'price-asc') products.sort((a,b) => a.price - b.price);
+  if (sortBy === 'price-desc') products.sort((a,b) => b.price - a.price);
+  if (sortBy === 'name-asc') products.sort((a,b) => a.name.localeCompare(b.name));
+  return products;
+}
+function render() {
+  const products = getFiltered();
   document.getElementById('cat-count').textContent = products.length + ' products';
   renderProductGrid('cat-products-grid', products);
+  const af = document.getElementById('active-filters'); af.innerHTML = '';
+  activeSizes.forEach(s => { const t = document.createElement('div'); t.className='active-filter-tag'; t.innerHTML=`Size ${s} <button onclick="removeSize('${s}')">×</button>`; af.appendChild(t); });
+}
+function removeSize(s) { activeSizes = activeSizes.filter(x => x !== s); document.querySelectorAll('[data-size="'+s+'"]').forEach(el => el.classList.remove('active')); render(); }
+document.addEventListener('DOMContentLoaded', () => {
+  render();
+  document.querySelectorAll('.size-pill').forEach(el => { el.addEventListener('click', () => { const size = el.dataset.size; if (el.classList.contains('active')) { activeSizes = activeSizes.filter(s => s !== size); el.classList.remove('active'); } else { activeSizes.push(size); el.classList.add('active'); } render(); }); });
+  document.getElementById('price-min').addEventListener('input', e => { priceMin = parseInt(e.target.value)||0; render(); });
+  document.getElementById('price-max').addEventListener('input', e => { priceMax = parseInt(e.target.value)||Infinity; render(); });
+  document.getElementById('sort-select').addEventListener('change', e => { sortBy = e.target.value; render(); });
+  document.getElementById('filter-clear').addEventListener('click', () => { activeSizes=[]; priceMin=0; priceMax=Infinity; sortBy='featured'; document.querySelectorAll('.size-pill').forEach(el => el.classList.remove('active')); document.getElementById('price-min').value=''; document.getElementById('price-max').value=''; document.getElementById('sort-select').value='featured'; render(); });
+  document.getElementById('mobile-filter-btn')?.addEventListener('click', () => { document.getElementById('filter-sidebar').classList.toggle('open'); });
 });
 </script>
 </body>
