@@ -67,9 +67,18 @@ function placeOrder() {
     const msg = encodeURIComponent(`New Order\nName: ${fname} ${document.getElementById('lname').value}\nPhone: ${phone}\nAddress: ${address}, ${document.getElementById('city').value}, ${document.getElementById('state').value} cument.getElementById('pincode').value}\nItems: ${items}`);
     window.open(`https://wa.me/919512102102?text=${msg}`, '_blank');
   } else {
-    alert('Order placed! We will contact you shortly on ' + phone);
+    const orderId = 'TW' + Date.now().toString().slice(-6);
+    const orderData = {
+      id: orderId,
+      name: fname + ' ' + document.getElementById('lname').value,
+      phone: phone,
+      address: address + ', ' + document.getElementById('city').value + ', ' + document.getElementById('state').value + ' - ' + document.getElementById('pincode').value,
+      items: cart,
+      total: cart.reduce((s,i) => s + i.price * i.qty, 0).toLocaleString()
+    };
+    sessionStorage.setItem('treyond_last_order', JSON.stringify(orderData));
     localStorage.removeItem('treyond_cart');
-    window.location.href = '/index.html';
+    window.location.href = '/order-confirmation.html';
   }
 }
 renderSummary();
