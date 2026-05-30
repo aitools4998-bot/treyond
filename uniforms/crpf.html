@@ -146,10 +146,19 @@
 <script>
 const BASE_CATS = ['uniforms-crpf'];
 let activeSizes = [], activeBrands = [], priceMin = 0, priceMax = Infinity, sortBy = 'featured';
+
 function getFiltered() {
   let products = UNIFORM_PRODUCTS.filter(p => BASE_CATS.includes(p.category));
-  if (activeBrands.length) products = products.filter(p => activeBrands.some(b => p.name.toLowerCase().includes(b.toLowerCase())));
-  if (activeSizes.length) products = products.filter(p => p.sizes && activeSizes.some(s => p.sizes.includes(s)));
+  if (activeBrands.length) {
+    products = products.filter(p => 
+      activeBrands.some(b => p.name.toLowerCase().includes(b.toLowerCase()))
+    );
+  }
+  if (activeSizes.length) {
+    products = products.filter(p => 
+      p.sizes && activeSizes.some(s => p.sizes.includes(s))
+    );
+  }
   if (priceMin > 0) products = products.filter(p => p.price >= priceMin);
   if (priceMax < Infinity) products = products.filter(p => p.price <= priceMax);
   if (sortBy === 'price-asc') products.sort((a,b) => a.price - b.price);
@@ -157,34 +166,96 @@ function getFiltered() {
   if (sortBy === 'name-asc') products.sort((a,b) => a.name.localeCompare(b.name));
   return products;
 }
+
 function render() {
   const products = getFiltered();
   document.getElementById('cat-count').textContent = products.length + ' products';
   renderProductGrid('cat-products-grid', products);
-  const af = document.getElementById('active-filters'); af.innerHTML = '';
-  activeBrands.forEach(b => { const t=document.createElement('div'); t.className='active-filter-tag'; t.innerHTML=b+' <button onclick="removeBrand('+JSON.stringify(b)+')">×</button>'; af.appendChild(t); });
-  activeSizes.forEach(s => { const t=document.createElement('div'); t.className='active-filter-tag'; t.innerHTML='Size '+s+' <button onclick="removeSize('+JSON.stringify(s)+')">×</button>'; af.appendChild(t); });
-}
-function removeBrand(b) { activeBrands=activeBrands.filter(x=>x!==b); document.querySelectorAll('[data-brand="'+b+'"]').forEach(el=>el.classList.remove('active')); render(); }
-function removeSize(s) { activeSizes=activeSizes.filter(x=>x!==s); document.querySelectorAll('[data-size="'+s+'"]').forEach(el=>el.classList.remove('active')); render(); }
-document.addEventListener('DOMContentLoaded', () => {
-  render();
-  renderProductGrid('combat-grid', UNIFORM_PRODUCTS.filter(p => p.category === 'uniforms-combat').slice(0,4));
-  // Brand filter
-  document.querySelectorAll('[data-brand]').forEach(el => {
-    el.addEventListener('click', () => {
-      const brand = el.dataset.brand;
-      if (el.classList.contains('active')) { activeBrands = activeBrands.filter(b => b !== brand); el.classList.remove('active'); }
-      else { activeBrands.push(brand); el.classList.add('active'); }
+  const af = document.getElementById('active-filters');
+  af.innerHTML = '';
+  activeBrands.forEach(b => {
+    const t = document.createElement('div');
+    t.className = 'active-filter-tag';
+    t.innerHTML = b + ' <button data-remove-brand="' + b + '">×</button>';
+    af.appendChild(t);
+  });
+  activeSizes.forEach(s => {
+    const t = document.createElement('div');
+    t.className = 'active-filter-tag';
+    t.innerHTML = 'Size ' + s + ' <button data-remove-size="' + s + '">×</button>';
+    af.appendChild(t);
+  });
+  // Bind remove buttons
+  document.querySelectorAll('[data-remove-brand]').forEach(btn => {
+    btn.addEventLisner('click', () => {
+      const b = btn.dataset.removeBrand;
+      activeBrands = activeBrands.filter(x => x !== b);
+      document.querySelectorAll('[data-brand="' + b + '"]').forEach(el => el.classList.remove('active'));
       render();
     });
   });
-  document.querySelectorAll('.size-pill').forEach(el => { el.addEventListener('click', () => { const size=el.dataset.size; if(el.classList.contains('active')){activeSizes=activeSizes.filter(s=>s!==size);el.classList.remove('active');}else{activeSizes.push(size);el.classList.add('active');} render(); }); });
-  document.getElementById('price-min').addEventListener('input', e => { priceMin=parseInt(e.target.value)||0; render(); });
-  document.getElementById('price-max').addEventListener('input', e => { priceMax=parseInt(e.target.value)||Infinity; render(); });
-  document.getElementById('sort-select').addEventListener('change', e => { sortBy=e.target.value; render(); });
-  document.getElementById('filter-clear').addEventListener('click', () => { activeSizes=[]; activeBrands=[]; priceMin=0; priceMax=Infinity; sortBy='featured'; document.querySelectorAll('.size-pill,.filter-option').forEach(el=>el.classList.remove('active')); document.getElementById('price-min').value=''; document.getElementById('price-max').value=''; document.getElementById('sort-select').value='featured'; render(); });
-  document.getElementById('mobile-filter-btn')?.addEventListener('click', () => { document.getElementById('filter-sidebar').classList.toggle('open'); });
+  document.querySelectorAll('[data-remove-size]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const s = btn.dataset.removeSize;
+      activeSizes = activeSizes.filter(x => x !== s);
+      document.querySelectorAll('[data-size="' + s + '"]').forEach(el => el.classList.remove('active'));
+      render();
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  render();
+  renderProductGrid('combat-grid', UNIFORM_PRODUCTS.filter(p => p.category === 'uniforms-combat').slice(0,4));
+  document.querySelectorAll('[data-brand]').forEach(el => {
+    el.addEventListener('click', () => {
+      const brand = el.dataset.brand;
+      if (el.classList.contains('active')) {
+        activeBrands = activeBrands.filter(b => b !== brand);
+        el.classList.remove('active');
+      } else {
+        activeBrands.push(brand);
+        el.classList.add('active');
+      }
+      render();
+    });
+  });
+  document.querySelectorAll('.size-pill').forEach(el => {
+    el.addEventListener('click', () => {
+      const size = el.dataset.size;
+      if (el.classList.contains('active')) {
+        activeSizes = activeSizes.filter(s => s !== size);
+        el.classList.remove('active');
+      } else {
+        activeSizes.push(size);
+        el.classList.add('active');
+      }
+      render();
+    });
+  });
+  document.getElementById('price-min').addEventListener('input', e => {
+    priceMin = parseInt(e.target.value) || 0;
+    render();
+  });
+  document.getElementById('price-max').addEventListener('input', e => {
+    priceMax = parseInt(e.target.value) || Infinity;
+    render();
+  });
+  document.getElementById('sort-select').addEventListener('change', e => {
+    sortBy = e.target.value;
+    render();
+  });
+  document.getElementById('filter-clear').addEventListener('click', () => {
+    activeSizes = []; activeBrands = []; priceMin = 0; priceMax = Infinity; sortBy = 'featured';
+    document.querySelectorAll('.size-pill, .filter-option').forEach(el => el.classList.remove('active'));
+    document.getElementById('price-min').value = '';
+    document.getElementById('price-max').value = '';
+    document.getElementById('sort-select').value = 'featured';
+    render();
+  });
+  document.getElementById('mobile-filter-btn')?.addEventListener('click', () => {
+    document.getElementById('filter-sidebar').classList.toggle('open');
+  });
 });
 </script>
 </body>
