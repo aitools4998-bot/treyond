@@ -1,7 +1,6 @@
 async function getRelatedProducts(slug, limit) {
   limit = limit || 12;
-  var res = await fetch('/js/product-metadata.json');
-  var products = await res.json();
+  var products = window.PRODUCT_METADATA || [];
   var current = products.find(function(p) { return p.slug === slug; });
   if (!current) return [];
 
