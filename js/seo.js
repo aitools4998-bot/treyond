@@ -97,45 +97,6 @@
   }
 })();
 
-/* Auto inject visible star rating on product pages */
-(function() {
-  function injectStars() {
-    const priceEl = document.querySelector('.product-price-main, .product-price');
-    if (!priceEl) return;
-    if (document.querySelector('.auto-rating-row')) return;
-
-    const path = window.location.pathname;
-    const isProduct = path.includes('/shirts/') || path.includes('/blazers/') || path.includes('/suits/') || path.includes('/modi-jacket/') || path.includes('/trousers/') || path.includes('/t-shirts/') || path.includes('/uniforms/') || path.includes('/pages/');
-    if (!isProduct) return;
-
-    const ratings = [4.0, 4.2, 4.3, 4.5, 4.7, 4.8];
-    const counts = [34, 45, 56, 67, 78, 89, 98, 112, 120];
-    const seed = window.location.pathname.length % ratings.length;
-    const rating = ratings[seed];
-    const count = counts[seed];
-    const fullStars = Math.floor(rating);
-    const halfStar = rating % 1 >= 0.3;
-
-    let stars = '';
-    for (let i = 0; i < fullStars; i++) stars += '<span style="color:#f59e0b;font-size:1.1rem">★</span>';
-    if (halfStar) stars += '<span style="color:#f59e0b;font-size:1.1rem">½</span>';
-    for (let i = fullStars + (halfStar ? 1 : 0); i < 5; i++) stars += '<span style="color:#d1d5db;font-size:1.1rem">★</span>';
-
-    const div = document.createElement('div');
-    div.className = 'auto-rating-row';
-    div.style.cssText = 'display:flex;align-items:center;gap:8px;margin:8px 0 16px;';
-    div.innerHTML = stars + '<span style="font-size:.85rem;font-weight:600;color:#374151">' + rating + '</span><span style="font-size:.8rem;color:#6b7280">(' + count + ' reviews)</span>';
-
-    priceEl.parentNode.insertBefore(div, priceEl);
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', injectStars);
-  } else {
-    injectStars();
-  }
-})();
-
 /* Amazon-style star rating */
 (function() {
   function renderStars(rating) {
