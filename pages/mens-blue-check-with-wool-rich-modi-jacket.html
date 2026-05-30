@@ -160,7 +160,13 @@ document.addEventListener('DOMContentLoaded', () => {
 <script src="../js/recommendation.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  initCompleteYourLook('mens-blue-check-with-wool-rich-modi-jacket');
+  initCompleteYourLook('mens-blue-check-with-wool-rich-modi-jacket').then(() => {
+    document.querySelectorAll('#complete-your-look-grid .reveal').forEach(el => {
+      el.classList.add('revealed');
+      el.style.opacity = '1';
+      el.style.transform = 'none';
+    });
+  });
 });
 </script>
 </body></html>
