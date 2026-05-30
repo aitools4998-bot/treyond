@@ -72,11 +72,18 @@ function placeOrder() {
       id: orderId,
       name: fname + ' ' + document.getElementById('lname').value,
       phone: phone,
+      email: document.getElementById('email').value,
       address: address + ', ' + document.getElementById('city').value + ', ' + document.getElementById('state').value + ' - ' + document.getElementById('pincode').value,
       items: cart,
-      total: cart.reduce((s,i) => s + i.price * i.qty, 0).toLocaleString()
+      total: cart.reduce((s,i) => s + i.price * i.qty, 0),
+      payment_method: selectedPayment
     };
-    sessionStorage.setItem('treyond_last_order', JSON.stringify(orderData));
+    fetch('https://treyond-orders-api.treyond2023.workers.dev/orders', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(orderData)
+    }).catch(e => console.log('Order save failed:', e));
+    sessionStorage.setItem('treyond_last_order', JSON.stringify({...orderData, total: orderData.total.toLocaleString()}));
     localStorage.removeItem('treyond_cart');
     window.location.href = '/order-confirmation.html';
   }
