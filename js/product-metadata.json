@@ -844,133 +844,152 @@
     "file": "uniforms/ssb/combat.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-ssb-combat"
   },
   {
     "slug": "ssb-khaki-uniform-vimal-super-trovine-2",
     "file": "uniforms/ssb/ssb-khaki-uniform-vimal-super-trovine-2.html",
     "category": "uniforms",
     "color": "khaki",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-ssb"
   },
   {
     "slug": "ssb-khaki-uniform-by-vimal-primium-trovine",
     "file": "uniforms/ssb/ssb-khaki-uniform-by-vimal-primium-trovine.html",
     "category": "uniforms",
     "color": "khaki",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-ssb"
   },
   {
     "slug": "ssb-khaki-uniform-by-vimal-sapphire",
     "file": "uniforms/ssb/ssb-khaki-uniform-by-vimal-sapphire.html",
     "category": "uniforms",
     "color": "khaki",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-ssb"
   },
   {
     "slug": "ssb-khaki-uniform-vimal-prmium-trovine-light-color",
     "file": "uniforms/ssb/ssb-khaki-uniform-vimal-prmium-trovine-light-color.html",
     "category": "uniforms",
     "color": "khaki",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-ssb"
   },
   {
     "slug": "ssb-stretchable-khaki-uniform-by-vimal-officer-stretch-fit",
     "file": "uniforms/ssb/ssb-stretchable-khaki-uniform-by-vimal-officer-stretch-fit.html",
     "category": "uniforms",
     "color": "khaki",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-ssb"
   },
   {
     "slug": "ssb-khaki-uniform-by-vimal-super-trovine-2",
     "file": "uniforms/ssb/ssb-khaki-uniform-by-vimal-super-trovine-2.html",
     "category": "uniforms",
     "color": "khaki",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-ssb"
   },
   {
     "slug": "ssb-khaki-uniform-vimal-super-trovine",
     "file": "uniforms/ssb/ssb-khaki-uniform-vimal-super-trovine.html",
     "category": "uniforms",
     "color": "khaki",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-ssb"
   },
   {
     "slug": "ssb-khaki-uniform-by-siyaram-matte",
     "file": "uniforms/ssb/ssb-khaki-uniform-by-siyaram-matte.html",
     "category": "uniforms",
     "color": "khaki",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-ssb"
   },
   {
     "slug": "ssb-khaki-uniform-by-vimal-super-trovine",
     "file": "uniforms/ssb/ssb-khaki-uniform-by-vimal-super-trovine.html",
     "category": "uniforms",
     "color": "khaki",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-ssb"
   },
   {
     "slug": "beret-cap-for-bsf",
     "file": "uniforms/accessories/beret-cap-for-bsf.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-accessories"
   },
   {
     "slug": "dm-boot-bsf-crpf-ssb",
     "file": "uniforms/accessories/dm-boot-bsf-crpf-ssb.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-accessories"
   },
   {
     "slug": "jungle-boot-paramilitary",
     "file": "uniforms/accessories/jungle-boot-paramilitary.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-accessories"
   },
   {
     "slug": "bsf-tactical-belt",
     "file": "uniforms/accessories/bsf-tactical-belt.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-accessories"
   },
   {
     "slug": "crpf-monkey-cap",
     "file": "uniforms/accessories/crpf-monkey-cap.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-accessories"
   },
   {
     "slug": "leather-boot-paramilitary",
     "file": "uniforms/accessories/leather-boot-paramilitary.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-accessories"
   },
   {
     "slug": "dm-boot-paramilitary",
     "file": "uniforms/accessories/dm-boot-paramilitary.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-accessories"
   },
   {
     "slug": "crpf-tactical-belt",
     "file": "uniforms/accessories/crpf-tactical-belt.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-accessories"
   },
   {
     "slug": "blue-beret-cap-crpf-ssb",
     "file": "uniforms/accessories/blue-beret-cap-crpf-ssb.html",
     "category": "uniforms",
     "color": "blue",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-accessories"
   },
   {
     "slug": "https-treyondworld-com-crpf-combat-uniform-tactical-belt",
@@ -1243,230 +1262,263 @@
     "file": "uniforms/crpf/crpf-khaki-uniform-by-ajanta-oswal-super-premium-trovine.html",
     "category": "uniforms",
     "color": "khaki",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-crpf"
   },
   {
     "slug": "combat",
     "file": "uniforms/crpf/combat.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-crpf-combat"
   },
   {
     "slug": "crpf-khaki-uniform-oswal-ajanta",
     "file": "uniforms/crpf/crpf-khaki-uniform-oswal-ajanta.html",
     "category": "uniforms",
     "color": "khaki",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-crpf"
   },
   {
     "slug": "crpf-cotton-combat-trouser-for-pt-2",
     "file": "uniforms/crpf/crpf-cotton-combat-trouser-for-pt-2.html",
     "category": "uniforms",
     "color": "",
-    "fabric": "cotton"
+    "fabric": "cotton",
+    "subcategory": "uniforms-crpf"
   },
   {
     "slug": "bsf-khaki-uniform-vimal-saphire-matty",
     "file": "uniforms/bsf/bsf-khaki-uniform-vimal-saphire-matty.html",
     "category": "uniforms",
     "color": "khaki",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-bsf"
   },
   {
     "slug": "bsf-khaki-uniform-vimal-super-valiant-trovine",
     "file": "uniforms/bsf/bsf-khaki-uniform-vimal-super-valiant-trovine.html",
     "category": "uniforms",
     "color": "khaki",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-bsf"
   },
   {
     "slug": "bsf-khaki-uniform-graviera",
     "file": "uniforms/bsf/bsf-khaki-uniform-graviera.html",
     "category": "uniforms",
     "color": "khaki",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-bsf"
   },
   {
     "slug": "bsf-khaki-uniform-raymond",
     "file": "uniforms/bsf/bsf-khaki-uniform-raymond.html",
     "category": "uniforms",
     "color": "khaki",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-bsf"
   },
   {
     "slug": "bsf-khaki-uniform-vimal-super-premium-trovine",
     "file": "uniforms/bsf/bsf-khaki-uniform-vimal-super-premium-trovine.html",
     "category": "uniforms",
     "color": "khaki",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-bsf"
   },
   {
     "slug": "bsf-khaki-uniform-vimal-super-trovine-valiant",
     "file": "uniforms/bsf/bsf-khaki-uniform-vimal-super-trovine-valiant.html",
     "category": "uniforms",
     "color": "khaki",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-bsf"
   },
   {
     "slug": "bsf-khaki-uniform-greviera-2",
     "file": "uniforms/bsf/bsf-khaki-uniform-greviera-2.html",
     "category": "uniforms",
     "color": "khaki",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-bsf"
   },
   {
     "slug": "bsf-khaki-uniform-raymond-2",
     "file": "uniforms/bsf/bsf-khaki-uniform-raymond-2.html",
     "category": "uniforms",
     "color": "khaki",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-bsf"
   },
   {
     "slug": "police-khaki-uniform-by-vimal-super-trovine",
     "file": "uniforms/police/police-khaki-uniform-by-vimal-super-trovine.html",
     "category": "uniforms",
     "color": "khaki",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-police"
   },
   {
     "slug": "police-khaki-uniform-vimal-super-trovine",
     "file": "uniforms/police/police-khaki-uniform-vimal-super-trovine.html",
     "category": "uniforms",
     "color": "khaki",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-police"
   },
   {
     "slug": "police-khaki-uniform-vimal-premium-trovine-light-color",
     "file": "uniforms/police/police-khaki-uniform-vimal-premium-trovine-light-color.html",
     "category": "uniforms",
     "color": "khaki",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-police"
   },
   {
     "slug": "police-uniform-by-vimal-super-trovine",
     "file": "uniforms/police/police-uniform-by-vimal-super-trovine.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-police"
   },
   {
     "slug": "police-stretchable-khaki-uniform",
     "file": "uniforms/police/police-stretchable-khaki-uniform.html",
     "category": "uniforms",
     "color": "khaki",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-police"
   },
   {
     "slug": "police-khaki-uniform-vimal-super-fabric",
     "file": "uniforms/police/police-khaki-uniform-vimal-super-fabric.html",
     "category": "uniforms",
     "color": "khaki",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-police"
   },
   {
     "slug": "police-stretchable-khaki-uniform-by-vimal-officer-stretch-fit",
     "file": "uniforms/police/police-stretchable-khaki-uniform-by-vimal-officer-stretch-fit.html",
     "category": "uniforms",
     "color": "khaki",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-police"
   },
   {
     "slug": "police-khaki-uniform-by-vimal-premium-trovine",
     "file": "uniforms/police/police-khaki-uniform-by-vimal-premium-trovine.html",
     "category": "uniforms",
     "color": "khaki",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-police"
   },
   {
     "slug": "police-khaki-uniform-by-vimal-sapphire",
     "file": "uniforms/police/police-khaki-uniform-by-vimal-sapphire.html",
     "category": "uniforms",
     "color": "khaki",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-police"
   },
   {
     "slug": "police-khaki-uniform-premium",
     "file": "uniforms/police/police-khaki-uniform-premium.html",
     "category": "uniforms",
     "color": "khaki",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-police"
   },
   {
     "slug": "police-khaki-uniform-premium-trovine",
     "file": "uniforms/police/police-khaki-uniform-premium-trovine.html",
     "category": "uniforms",
     "color": "khaki",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-police"
   },
   {
     "slug": "police-uniform-reymonds",
     "file": "uniforms/police/police-uniform-reymonds.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-police"
   },
   {
     "slug": "police-khaki-uniform-by-siyaram-matte",
     "file": "uniforms/police/police-khaki-uniform-by-siyaram-matte.html",
     "category": "uniforms",
     "color": "khaki",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-police"
   },
   {
     "slug": "crpf-combat-uniform-cool-touch-fast-color-by-ajanta-for-head-constable",
     "file": "uniforms/crpf/combat/crpf-combat-uniform-cool-touch-fast-color-by-ajanta-for-head-constable.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-crpf-combat"
   },
   {
     "slug": "combat-uniform-cool-touch-fast-colour-by-ajanta",
     "file": "uniforms/crpf/combat/combat-uniform-cool-touch-fast-colour-by-ajanta.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-crpf-combat"
   },
   {
     "slug": "crpf-cotton-combat-uniform",
     "file": "uniforms/crpf/combat/crpf-cotton-combat-uniform.html",
     "category": "uniforms",
     "color": "",
-    "fabric": "cotton"
+    "fabric": "cotton",
+    "subcategory": "uniforms-crpf-combat"
   },
   {
     "slug": "crpf-combat-uniform",
     "file": "uniforms/crpf/combat/crpf-combat-uniform.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-crpf-combat"
   },
   {
     "slug": "ssb-new-pattern-combat-uniform",
     "file": "uniforms/ssb/combat/ssb-new-pattern-combat-uniform.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-ssb-combat"
   },
   {
     "slug": "combat-us-pattern-ssb-uniform",
     "file": "uniforms/ssb/combat/combat-us-pattern-ssb-uniform.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-ssb-combat"
   },
   {
     "slug": "combat-uniform-ssb-new-pattern",
     "file": "uniforms/ssb/combat/combat-uniform-ssb-new-pattern.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-ssb-combat"
   },
   {
     "slug": "ssb-us-pattern-combat-uniform",
     "file": "uniforms/ssb/combat/ssb-us-pattern-combat-uniform.html",
     "category": "uniforms",
     "color": "",
-    "fabric": ""
+    "fabric": "",
+    "subcategory": "uniforms-ssb-combat"
   }
 ]
