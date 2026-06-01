@@ -1,12 +1,15 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Uniform Fabrics — Treyond World</title>
-<meta name="description" content="Premium khaki uniform fabrics — Raymond, Vimal, Oswal, Digjam. BSF, CRPF, SSB, Police grade fabrics.">
+<meta name="description" content="Premium khaki uniform fabrics — Raymond, Vimal, Oswal, Digjam. BSF, CRPF, SSB grade.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/global.css"><link rel="stylesheet" href="/css/nav.css"><link rel="stylesheet" href="/css/homepage.css"><link rel="stylesheet" href="/css/footer.css">
+<link rel="stylesheet" href="/css/global.css">
+<link rel="stylesheet" href="/css/nav.css">
+<link rel="stylesheet" href="/css/homepage.css">
+<link rel="stylesheet" href="/css/footer.css">
 <style>
 .hero{position:relative;width:100%;height:67vh;min-height:400px;max-height:700px;overflow:hidden;background:#fff;display:block}
-.hero-slide-img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:contain;bacund:#fff}
+.hero-slide-img{position:absolute;top:0;left:0;width:10eight:100%;object-fit:contain;background:#fff}
 .uniform-subcat{padding:8px 18px;border:1px solid var(--gray-200);font-size:.8rem;font-weight:500;cursor:pointer;background:#fff;color:var(--gray-600);transition:all .2s}
 .uniform-subcat:hover,.uniform-subcat.active{background:#000;color:#fff;border-color:#000}
 .modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:1000;align-items:center;justify-content:center}
@@ -27,9 +30,9 @@
 </style>
 </head>
 <body>
-<div id="announcement-bar" class="announcement-bar">✦ FREE SHIPPING ON ORDERS ABOVE ₹2999 &nbsp;|&nbsp; USE CODE <strong>TREYOND10</strong> FOR 10% OFF<button id="announcement-close" class="announcement-close">×</button></div>
+<div id="announcement-bar" class="announcement-bar">FREE SHIPPING ABOVE Rs.2999 | CODE: TREYOND10 FOR 10% OFF<button id="announcement-close" class="announcement-close">x</button></div>
 <header id="site-header" class="site-header">
-  <div class="container headerr">
+  <div class="container header-inner">
     <button id="mobile-menu-btn" class="mobile-menu-btn"><span></span><span></span><span></span></button>
     <a href="/uniforms" class="nav-logo">TREYOND WORLD</a>
     <nav class="nav-menu">
@@ -47,43 +50,41 @@
     </div>
   </div>
 </header>
-<div id="search-bar" class="search-bar"><div class="search-bar-inner"><input id="search-input" type="search" placeholder="Search uniforms…" autocomplete="off"><button id="search-close" class="search-close">✕</button></div><div id="search-suggestions" class="search-suggestions"></div></div>
-<div id="cart-drawer" class="cart-drawer"><div class="cart-drawer-header"><div class="cart-drawer-title">Shopping Bag</div><button id="cart-drawer-close" class="cart-drawer-close">✕</button></div><div id="cart-drawer-body" class="cart-drawer-body"></div><div class="cawer-footer"><a href="/cart.html" class="btn btn-outline w-full" style="margin-bottom:10px">View Cart</a><a href="/checkout.html" class="btn btn-primary w-full">Checkout</a></div></div>
+<div id="search-bar" class="search-bar"><div class="search-bar-inner"><input id="search-input" type="search" placeholder="Search uniforms" autocomplete="off"><button id="search-close" class="search-close">x</button></div><div id="search-suggestions" class="search-suggestions"></div></div>
+<div id="cart-drawer" class="cart-drawer"><div class="cart-drawer-header"><div class="cart-drawer-title">Shopping Bag</div><button id="cart-drawer-close" class="cart-drawer-close">x</button></div><div id="cart-drawer-body" class="cart-drawer-body"></div><div class="cart-drawer-footer"><a href="/cart.html" class="btn btn-outline w-full" style="margin-bottom:10px">View Cart</a><a href="/checkout.html" class="btn btn-primary w-full">Checkout</a></div></div>
 <div id="overlay" class="overlay"></div>
-
 <div class="modal-overlay" id="fabric-modal">
   <div class="modal-box">
-    <button class="modal-close" onclick="closeModal()">✕</button>
+    <button class="modal-close" onclick="closeModal()">x</button>
     <img id="modal-img" src="" alt="" class="modal-img">
     <div class="modal-title" id="modal-name"></div>
     <div class="modal-price" id="modal-price"></div>
     <div class="modal-qty-wrap">
       <span class="modal-qty-label">Meters:</span>
       <div class="modal-qty-ctrl">
-        <button onclick="changeQty(-1)">−</button>
+        <button onclick="changeQty(-1)">-</button>
         <span id="modal-qty">1</span>
         <button onclick="changeQty(1)">+</button>
       </div>
       <span style="font-size:.8rem;color:var(--gray-400)" id="modal-total"></span>
     </div>
     <button class="modal-add-btn" onclick="addToCartFromModal()">ADD TO CART</button>
-    <button class="modal-wa-btn" onclickFromModal()">💬 Order on WhatsApp</button>
+    <button class="modal-wa-btn" onclick="waFromModal()">Order on WhatsApp</button>
   </div>
 </div>
-
 <main>
 <section class="hero"><img class="hero-slide-img" src="/images/defence-hero-banner.jpg" alt="Uniform Fabrics" loading="eager"></section>
 <div class="container" style="padding:40px 0 60px">
   <div style="text-align:center;margin-bottom:32px">
     <h1 style="font-family:var(--font-serif);font-size:2rem;font-weight:400;margin-bottom:8px">Uniform Fabrics</h1>
-    <p style="color:var(--gray-500);font-size:.95rem">Premium khaki fabrics — Raymond, Vimal, Oswal, Digjam & more.</p>
+    <p style="color:var(--gray-500);font-size:.95rem">Premium khaki fabrics - Raymond, Vimal, Oswal, Digjam and more.</p>
   </div>
   <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:32px">
     <button class="uniform-subcat active" onclick="filterFabrics(event,'all')">All</button>
     <button class="uniform-subcat" onclick="filterFabrics(event,'raymond')">Raymond</button>
     <button class="uniform-subcat" onclick="filterFabrics(event,'vimal')">Vimal</button>
     <button class="uniform-subcat" onclick="filterFabrics(event,'oswal')">Oswal</button>
-    <bu class="uniform-subcat" onclick="filterFabrics(event,'bsf')">BSF</button>
+    <button class="uniform-subcat" onclick="filterFabrics(event,'bsf')">BSF</button>
     <button class="uniform-subcat" onclick="filterFabrics(event,'crpf')">CRPF</button>
     <button class="uniform-subcat" onclick="filterFabrics(event,'itbp')">ITBP</button>
     <button class="uniform-subcat" onclick="filterFabrics(event,'cisf')">CISF</button>
@@ -92,30 +93,30 @@
   <div class="products-grid" id="fabrics-grid"></div>
 </div>
 </main>
-
 <footer class="site-footer"><div class="container"><div class="footer-top">
-  <div class="footer-brand"><span class="nav-logo">TREYOND WORLD</span><p>Premium police & defense uniforms for every force.</p></div>
+  <div class="footer-brand"><span class="nav-logo">TREYOND WORLD</span><p>Premium police and defense uniforms for every force.</p></div>
   <div><div class="footer-col-title">Uniforms</div><div class="footer-links"><a href="/uniforms">All Uniforms</a><a href="/uniforms/bsf">BSF</a><a href="/uniforms/crpf">CRPF</a><a href="/uniforms/ssb">SSB</a><a href="/uniforms/fabrics">Fabrics</a></div></div>
   <div><div class="footer-col-title">Help</div><div class="footer-links"><a href="/contact">Contact</a><a href="/shipping">Shipping</a><a href="/refund">Returns</a></div></div>
-</div><div class="footer-bottom"><span>© 2025 Treyond World. All rights reserved.</span></div></div></footer>
+</div><div class="footer-bottom"><span>2025 Treyond World. All rights reserved.</span></div></div></footer>
 <div id="toast-container" class="toast-container"></div>
 <script src="/js/global.js"></script>
 <script src="/js/search.js"></script>
 <script src="/js/animations.js"></script>
+<script src="/js/seo.js"></script>
 <script>
-const R2='https://pub-1b08920c6acc4bb5baf433020a5e3b47.r2.dev';
-const FABRICS=[
+var R2='https://pub-1b08920c6acc4bb5baf433020a5e3b47.r2.dev';
+var FABRICS=[
   {name:'Raymond Khaki Trovine',img:'CKS09591-raymond-khaki-trovine-1.jpg',price:600},
   {name:'Oswal Khaki Linen',img:'CKS09599-oswal-khaki-linen-1.jpg',price:750},
   {name:'Oswal Linen Khaki',img:'CKS09596-oswal-linen-khaki-1.jpg',price:750},
   {name:'Gredo Khaki TR',img:'CKS09604-gredo-khaki-tr-1.jpg',price:800},
   {name:'Siyaram Nitivan',img:'CKS09608-siyaram-nitivan-1.jpg',price:820},
   {name:'Vimal Khaki NPA 251',img:'CKS09626-vimal-khaki-npa-251-1.jpg',price:550},
-  {name:'Vimal Khaki Super Trovine',img:'CKS0930-vimal-khaki-super-trovine-1.jpg',price:500},
+  {name:'Vimal Khaki Super Trovine',img:'CKS09630-vimal-khaki-super-trovine-1.jpg',price:500},
   {name:'Raymond Trovine Khaki ITB',img:'CKS09637-raymond-trovine-khaki-itb-1.jpg',price:650},
   {name:'Raymond Light Khaki Trovine',img:'CKS09644-raymond-light-khaki-trovine-1.jpg',price:600},
   {name:'Raymond Trovine Khaki',img:'CKS09648-raymond-trovine-khaki-1.jpg',price:650},
-  {name:'Vimal Khaki Super Trovine',img:'CKS09656-vimal-khaki-super-trovine-1.jpg',price:500},
+  {name:'Vimal Khaki Super Trovine 2',img:'CKS09656-vimal-khaki-super-trovine-1.jpg',price:500},
   {name:'Digjam Khaki Fabric',img:'CKS09661-digjam-khaki-fabric-1.jpg',price:700},
   {name:'Streeza Dual',img:'CKS09667-streeza-dual-1.jpg',price:900},
   {name:'Angola Raymonds',img:'CKS09672-angola-raymonds-1.jpg',price:750},
@@ -124,10 +125,10 @@ const FABRICS=[
   {name:'BSF Siyaram',img:'CKS09690-bsf-siyaram-1.jpg',price:500},
   {name:'Raymond Trovine Khaki Dark',img:'CKS09697-raymond-trovine-khaki-dark-1.jpg',price:650},
   {name:'Vimal Khaki NPA 252',img:'CKS09703-vimal-khaki-npa-252-1.jpg',price:550},
-  {name:'Vimal Khaki Super Trovine',img:'CKS04301-vimal-khaki-super-trovine-1.jpg',price:500},
+  {name:'Vimal Khaki Super Trovine 3',img:'CKS04301-vimal-khaki-super-trovine-1.jpg',price:500},
   {name:'Raymond Natty',img:'CKS09710-raymond-natty-1.jpg',price:600},
-  {name:'Welzim Lady Singham Shade 1',img:'CKS09717-welzim-lady-singham-shade-1-2560m-1.jpg',price:null},
-  {name:'Welzim Lady Singham Shade 2',img:'CKS09727-welzim-lady-singham-shade-2-26m-1.jpg',price:null},
+  {name:'Welzim Lady Singham Shade 1',img:'CKS09717-welzim-lady-singham-shade-1-2560m-1.jpg',price:0},
+  {name:'Welzim Lady Singham Shade 2',img:'CKS09727-welzim-lady-singham-shade-2-26m-1.jpg',price:0},
   {name:'RSI Khaki BSF Fabric',img:'CKS09735-rsi-khaki-bsf-fabric-1.jpg',price:430},
   {name:'CISF Cotton Rib',img:'CKS09743-cisf-cotton-rib-1.jpg',price:300},
   {name:'ITBP Cotton Rib',img:'CKS09819-itbp-cotton-rib-1.jpg',price:300},
@@ -140,104 +141,19 @@ const FABRICS=[
   {name:'SSB Polycotton',img:'CKS09786-ssb-polycotton-1.jpg',price:200},
   {name:'ITBP Cotton',img:'CKS09794-itbp-cotton-1.jpg',price:300},
   {name:'CRPF Arv Cotton Fabric',img:'CKS09802-crpf-arv-cotton-fabric-1.jpg',price:380},
-  {name:'Green Man SSB Cotton',img:'CKS09808-green-man-ssb-cotton-1.jpg',price:350},
+  {name:'Green Man SSB Cotton',img:'CKS09808-green-man-ssb-cotton-1.jpg',price:350}
 ];
-
-function getStars(rating){
-  let s='';
-  for(let i=1;i<=5;i++){
-    s+=`<svg width="13" height="13" viewBox="0 0 24 24" fill="${i<=Math.round(rating)?'#f59e0b':'#d1d5db'}"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>`;
-  }
-  return s;
-}
-
-function getRating(name){
-  const ratings=[4.0,4.2,4.3,4.5,4.7,4.8];
-  const counts=[34,45,56,67,78,89,98,112];
-  const seed=name.length%ratings.length;
-  return {r:ratings[seed],c:counts[seed]};
-}
-
-let currentFabric=null, modalQty=1;
-
-function openModal(idx){
-  const f=FABRICS[idx];
-  currentFabric=f; modalQty=1;
-  document.getElementById('modal-img').src=R2+'/fabrics/'+f.img;
-  document.getElementById('modal-name').textContent=f.name;
-  document.getElementById('modal-price').textContent=f.price?'₹'+f.price+' /mtr':'Price on request';
-  document.getElementById('modal-qty').textContent=1;
-  document.getElementById('modal-total').textContent=f.price?'Total: ₹'+f.price:'';
-  document.getElementById('fabric-modal').classList.add('active');
-  document.body.style.overflow='hidden';
-}
-
-function closeModal(){
-  document.getElementById('fabric-modal').classList.remove('active');
-  document.body.style.overflow='';
-}
-
-document.getElementById('fabric-modal').addEventListener('click',function(e){
-  if(e.target===this) closeModal();
-});
-
-function changeQty(d){
-  modalQty=Math.max(1,modalQty+d);
-  document.getElementById('modal-qty').textContent=modalQty;
-  if(currentFabric?.price) document.getElementById('modal-total').textContent='Total: ₹'+(currentFabric.price*modalQty).toLocaleString();
-}
-
-function addToomModal(){
-  if(!currentFabric) return;
-  Cart.add({
-    id:'fabric-'+currentFabric.name.replace(/\s+/g,'-').toLowerCase(),
-    name:currentFabric.name+' ('+modalQty+' mtr)',
-    price:currentFabric.price?currentFabric.price*modalQty:0,
-    qty:1,
-    image:R2+'/fabrics/'+currentFabric.img,
-    variant:modalQty+' mtr'
-  });
-  closeModal();
-}
-
-function waFromModal(){
-  if(!currentFabric) return;
-  const msg='Enquiry: '+currentFabric.name+', '+modalQty+' mtr'+(currentFabric.price?', Total: ₹'+(currentFabric.price*modalQty):'');
-  window.open('https://wa.me/919512102102?text='+encodeURIComponent(msg),'_blank');
-}
-
-function filterFabrics(e,tag){
-  document.querySelectorAll('.uniform-subcat').forEach(b=>b.classList.remove('active'));
-  e.target.classList.add('active');
-  renderGrid(tag==='all'?FABRICS:FABRICS.filter(f=>f.name.toLowerCase().includes(tag)));
-}
-
-function renderGrid(list){
-  document.getElementById('fabrics-grid').innerHTML=list.map((f,i)=>{
-    const idx=FABRICS.indexOf(f);
-    const {r,c}=getRatg(f.name);
-    const imgUrl=R2+'/fabrics/'+f.img;
-    const priceHtml=f.price?'<span class="product-price">₹'+f.price+'</span><span style="font-size:.75rem;color:var(--gray-400);font-weight:400"> /mtr</span>':'<span style="font-size:.8rem;color:var(--gray-400)">Price on request</span>';
-    const stars='<div style="display:flex;align-items:center;gap:3px;margin-bottom:4px">'+getStars(r)+'<span style="font-size:.72rem;color:#374151;font-weight:600;margin-left:2px">'+r.toFixed(1)+'</span><span style="font-size:.7rem;color:#6b7280">('+c+')</span></div>';
-    return `<div class="product-card reveal">
-      <a href="javascript:void(0)" onclick="openModal(${idx})">
-        <div class="product-card-img-wrap">
-          <img class="product-card-img" src="${imgUrl}" alt="${f.name}" loading="lazy" onerror="this.src='/images/treyond-hero-banner.jpg'">
-          <div class="product-card-actions">
-            <button class="product-card-quick" onclick="event.preventDefault();event.stopPropagation();openModal(${idx})">ick Add</button>
-          </div>
-        </div>
-        <div class="product-card-info">
-          <div class="product-card-name">${f.name}</div>
-          ${stars}
-          <div class="product-card-price">${priceHtml}</div>
-        </div>
-      </a>
-    </div>`;
-  }).join('');
-}
-
+function getStars(r){var s='';for(var i=1;i<=5;i++){s+='<svg width="13" height="13" viewBox="0 0 24 24" fill="'+(i<=Math.round(r)?'#f59e0b':'#d1d5db')+'"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>';}return s;}
+function getRating(name){var ratings=[4.0,4.2,4.3,4.5,4.7,4.8];var counts=[34,45,56,67,78,89,98,112];var seed=name.length%ratings.length;return {r:ratings[seed],c:counts[seed]};}
+var currentFabric=null,modalQty=1;
+function openModal(idx){var f=FABRICS[idx];currentFabric=f;modalQty=1;document.getElementById('modal-img').src=R2+'/fabrics/'+f.img;document.getElementById('modal-name').textContent=f.name;document.getElementById('modal-price').textContent=f.price?'Rs.'+f.price+' /mtr':'Price on request';document.getElementById('modal-qty').textContent=1;document.getElementById('modal-total').textContent=f.price?'Total: Rs.'+f.price:'';document.getElementById('fabric-modal').classList.add('active');document.body.style.overflow='hidden';}
+function closeModal(){document.getElementById('fabric-modal').classList.remove('active');document.body.style.overflow='';}
+document.getElementById('fabric-modal').addEventListener('click',function(e){if(e.target===this)closeModal();});
+function changeQty(d){modalQty=Math.max(1,modalQty+d);document.getElementById('modal-qty').textContent=modalQty;if(currentFabric&&currentFabric.price)document.getElementById('modal-total').textContent='Total: Rs.'+(currentFabric.price*modalQty).toLocaleString();}
+function addToCartFromModal(){if(!currentFabric)return;Cart.add({id:'fabric-'+currentFabric.name.replace(/\s+/g,'-').toLowerCase(),name:currentFabric.name+' ('+modalQty+' mtr)',price:currentFabric.price?currentFabric.price*modalQty:0,qty:1,image:R2+'/fabrics/'+currentFabric.img,variant:modalQty+' mtr'});closeModal();}
+function waFromModal(){if(!currentFabric)return;var msg='Enquiry: '+currentFabric.name+', '+modalQty+' mtr'+(currentFabric.price?', Total: Rs.'+(currentFabric.price*modalQty):'');window.open('https://wa.me/919512102102?text='+encodeURIComponent(msg),'_blank');}
+function filterFabrics(e,tag){document.querySelectorAll('.uniform-subcat').forEach(function(b){b.classList.remove('active');});e.target.classList.add('active');renderGrid(tag==='all'?FABRICS:FABRICS.filter(function(f){return f.name.toLowerCase().indexOf(tag)>=0;}));}
+function renderGrid(list){document.getElementById('fabrics-grid').innerHTML=list.map(function(f){var idx=FABRICS.indexOf(f);var rt=getRating(f.name);var imgUrl=R2+'/fabrics/'+f.img;var priceHtml=f.price?'<span class="product-price">Rs.'+f.price+'</span><span style="font-size:.75rem;color:var(--gray-400);font-weight:400"> /mtr</span>':'<span style="font-size:.8rem;color:var(--gray-400)">Price on request</span>';var stars='<div style="display:flex;align-items:center;gap:3px;margin-bottom:4px">'+getStars(rt.r)+'<span style="font-size:.72rem;color:#374151;font-weight:600;margin-left:2px">'+rt.r.toFixed(1)+'</span><span style="font-size:.7rem;color:#6b7280">('+rt.c+')</span></div>';return '<div class="product-card reveal"><a href="javascript:void(0)" onclick="openModal('+idx+')"><div class="product-card-img-wrap"><img class="product-card-img" src="'+imgUrl+'" alt="'+f.name+'" loading="lazy" onerror="this.src=\'/images/treyond-hero-banner.jpg\'"><div class="product-card-actions"><button class="product-card-quick" onclick="event.preventDefault();event.stopPropagation();openModal('+idx+')">Quick Add</button></div></div><div class="product-card-info"><div class="product-card-name">'+f.name+'</div>'+stars+'<div class="product-card-price">'+priceHtml+'</div></div></a></div>';}).join('');}
 renderGrid(FABRICS);
 </script>
-<script src="/js/seo.js"></script>
 </body></html>
