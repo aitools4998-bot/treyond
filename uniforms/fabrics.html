@@ -1,28 +1,39 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Uniform Fabrics — Treyond World</title>
-<meta name="description" content="Premium khaki uniform fabrics — Raymond, Vimal, Oswal, Digjam. BSF, CRPF, SSB, Police grade fabrics. Buy online at best price.">
+<meta name="description" content="Premium khaki and combat uniforms for BSF, CRPF, SSB, Police. Buy online at best price.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/global.css"><link rel="stylesheet" href="/css/nav.css"><link rel="stylesheet" href="/css/footer.css">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/homepage.css">
+<link rel="stylesheet" href="css/footer.css">
 <style>
-.fabric-hero{background:#f8f6f0;padding:48px 0 32px;text-align:center;border-bottom:1px solid #e5e1d8}
-.fabric-hero h1{font-family:var(--font-serif);font-size:2.2rem;font-weight:400;margin-bottom:8px}
-.fabric-hero p{color:var(--gray-500);font-siz5rem}
-.fabric-filters{display:flex;gap:8px;flex-wrap:wrap;padding:20px 0;justify-content:center}
-.fabric-filter-btn{padding:6px 16px;border:1px solid var(--gray-200);font-size:.8rem;cursor:pointer;background:#fff;transition:all .2s}
-.fabric-filter-btn.active,.fabric-filter-btn:hover{background:#000;color:#fff;border-color:#000}
-.fabrics-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:24px;padding:32px 0 60px}
-.fabric-card{border:1px solid var(--gray-100);background:#fff;transition:box-shadow .2s}
-.fabric-card:hover{box-shadow:0 4px 20px rgba(0,0,0,.1)}
-.fabric-img-wrap{aspect-ratio:1;overflow:hidden;background:var(--gray-50)}
-.fabric-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
-.fabric-card:hover .fabric-img-wrap img{transform:scale(1.04)}
-.fabric-info{padding:14px}
-.fabric-name{font-size:.88rem;font-weight:500;margin-bottom:6px;line-height:1.4}
-.fabric-price{font-size:1rem;font-weight:700;color:#000;margin-bottom:10px}
-.fabric-price span{font-size:.75rem;font-weight:400;color:var(--gray-400)}
-.fabric-btn{display:block;text-align:center;padding:8px;background:#25D366;color:#fff;font-size:.78rem;font-weight:600;text-decoration:none;transition:background .2s}
-.fabric-btn:hover{background:#1da851}
+.hero{position:relative;width:100%;height:67vh;min-height:400px;max-height:700px;overflow:hidden;background:#111;display:block}
+.hero-slider{position:absolute;top:0;left:0;right:0;bottom:0;width:100%;height:100%}
+.hero-slide{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;transition:opacity 0.9s ease}
+.hero-slide.active{opacity:1}
+.hero-slide-img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;transform:scale(1.05);transition:transform 6s ease}
+.hero-slide.active .hero-slide-img{transform:scale(1)}
+.hero-slide-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(110deg,rgba(0,0,0,.65) 0%,rgba(0,0,0,.3) 55%,rgba(0,0,0,.05) 100%);z-index:1}
+.hero-content{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;z-index:3;pointer-events:none}
+.hero-content>div{width:100%;max-width:1440px;margin:0 auto;padding:0 clamp(16px,4vw,80px);pointer-events:auto}
+.hero-text{max-width:560px;color:#fff}
+.hero-controls{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);z-index:10;display:flex;align-items:center;gap:8px}
+.hero-arrows{position:absolute;right:clamp(16px,4vw,80px);bottom:36px;display:flex;gap:8px;z-index:10}
+.modal{display:none !important}.modal.active{display:flex !important}
+.cat-section{padding:40px 0 20px}
+.cat-section-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
+.cat-section-title{font-size:1.3rem;font-weight:700;letter-spacing:-.01em}
+.cat-view-all{font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--gray-500);text-decoration:none;display:flex;align-items:center;gap:4px;transition:color .2s}
+.cat-view-all:hover{color:var(--black)}
+.cat-section-alt{background:var(--gray-50)}
+.uniform-subcats{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:36px}
+.uniform-subcat{padding:8px 18px;border:1px solid var(--gray-200);font-size:.8rem;font-weight:500;text-decoration:none;color:var(--gray-600);transition:all .2s}
+.uniform-subcat:hover,.uniform-subcat.active{background:var(--black);color:#fff;border-color:var(--black)}
 </style>
 </head>
 <body>
@@ -33,55 +44,121 @@
     <a href="/uniforms" class="nav-logo">TREYOND WORLD</a>
     <nav class="nav-menu">
       <div class="nav-item"><a href="/uniforms" class="nav-link" style="font-weight:700">Uniforms</a></div>
-      <div class="nav-item"><a href="/uniforms/bsf" class="nav-link">BSF</a></div>
-      <div class="nav-item"><a href="/uns/crpf" class="nav-link">CRPF</a></div>
+      <div class="nav-item"><a href="/uniforms/bsf" class="nav-link">BSF</a></div><div class="nav-item"><a href="/uniforms/fabrics" class="nav-link">Fabrics</a></div>
+      <div class="nav-item"><a href="/uniforms/crpf" class="nav-link">CRPF</a></div>
       <div class="nav-item"><a href="/uniforms/ssb" class="nav-link">SSB</a></div>
-      <div class="nav-item"><a href="/uniforms/police" class="nav-link">Police</a></div>
-      <div class="nav-item"><a href="/uniforms/combat" class="nav-link">Combat</a></div>
-      <div class="nav-item"><a href="/uniforms/fabrics" class="nav-link" style="font-weight:700">Fabrics</a></div>
+      <div class="nav-item"><a href="/uniforms/police" class="nav-lPolice</a></div>
+      <div class="nav-item"><a href="/uniforms/crpf/combat" class="nav-link">Combat</a></div>
+      <div class="nav-item"><a href="/uniforms/accessories" class="nav-link">Accessories</a></div><div class="nav-item"><a href="/uniforms/fabrics" class="nav-link" style="font-weight:700">Fabrics</a></div>
     </nav>
     <div class="nav-icons">
+      <button id="search-icon" class="nav-icon-btn"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg></button>
       <button id="cart-icon" class="nav-icon-btn"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg><span class="cart-badge" style="display:none">0</span></button>
     </div>
   </div>
 </header>
-<div id="cart-drawer" class="cart-drawer"><div class="cart-drawer-header"><div class="cart-drawer-title">Shopping Bag</div><button id="cart-drawer-close" class="cart-drawer-close">✕</button></div><div id="cart-drawer-body" class="cart-dwer-body"></div><div class="cart-drawer-footer"><a href="/cart.html" class="btn btn-outline w-full" style="margin-bottom:10px">View Cart</a><a href="/checkout.html" class="btn btn-primary w-full">Checkout</a></div></div>
+<nav class="uniform-subnav" style="display:none" style="background:#0a0a0a;padding:10px 0;text-align:center">
+  <div style="display:flex;justify-content:center;gap:32px;flex-wrap:wrap">
+    <a href="/uniforms/bsf" style="color:#fff;font-size:.72rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;text-decoration:none">BSF</a>
+    <a href="/uniforms/crpf" style="color:#fff;font-size:.72rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;text-decoration:none">CRPF</a>
+    <a href="/uniforms/ssb" style="color:#fff;font-size:.72rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;text-decoration:none">SSB</a>
+    <a href="/uniforms/police" style="color:#fff;font-size:.72rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;text-decoration:none">POLICE</a>
+    <a href="/uniforms/crpf/combat" style="color:#fff;font-size:.72rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;text-decoration:none">COMBAT</a>
+    <a href="/uniforms/accessories" style="color:#fff;font-size:.72rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;text-decoration:none">ACCESSORIES</a>
+  </div>
+</nav>
+
+<div id="search-bar" class="search-bar"><div class="search-bar-inner"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20" style="color:var(--gray-400);flex-shrink:0"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg><input id="search-input" type="search" placeholder="Search uniforms…" autocomplete="off"><button id="search-close" class="search-close">✕</button></div><div id="search-suggestions" class="search-suggestions"></div></div>
+
+<div id="mobile-nav" class="mobile-nav">
+  <div class="mobile-nav-header"><span class="nav-logo" style="font-size:1.1rem">TREYOND WORLD</span><button id="mobile-nav-close" class="mobile-nav-close">✕</button></div>
+  <div class="mobile-nav-body">
+    <div class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">Home</a></div>
+    <div class="mobile-nav-item"><a href="uniforms" class="mobile-nav-link" style="font-weight:700">Uniforms</a></div>
+    <div class="mobile-nav-item"><a href="uniforms/bsf" class="mobile-nav-link">BSF Uniforms</a></div>
+    <div class="mobile-nav-item"><a href="uniforms/crpf" class="mobile-nav-link">CRPF Uniforms</a></div>
+    <div class="mobile-nav-item"><a href="uniforms/crpf/combat" class="mobile-nav-link">Combat Uniforms</a></div>
+    <div class="mobile-nav-item"><a href="uniforms/police" class="mobile-nav-link">Police Uniforms</a></div>
+    <div class="mobile-nav-item"><a href="uniforms/ssb" class="mobile-nav-link">SSB Uniforms</a></div>
+    <div class="mobile-nav-item"><a href="shirts" class="mobile-nav-link">Shirts</a></div>
+    <div class="mobile-nav-item"><a href="blazers" class="mobile-nav-link">Blazers</a></div>
+  </div>
+</div>
+
+<div id="cart-drawer" class="cart-drawer"><div class="cart-drawer-header"><div class="cart-drawer-title">Shopping Bag <span id="cart-count-text"></span></div><button id="cart-drawer-close" class="cart-drawer-close">✕</button></div><div id="cart-drawer-body" class="cart-drawer-body"></div><div class="cart-drawer-footer"><div class="cart-subtotal"><span class="cart-subtotal-label">Subtotal</span><span class="cart-subtotal-price" id="cart-subtotal">₹0</span></div><p class="cart-shipping-note">Shipping & taxes calculated at checkout</p><a href="pages/cart.html" class="btn btn-outline w-full" style="margin-bottom:10px">View Cart</a><a href="pages/checkout.html" class="btn btn-primary w-full">Checkout</a></div></div>
+
+<div class="mobile-bottom-bar"><div class="mobile-bottom-bar-inner">
+  <a href="index.html" class="mobile-bottom-btn"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>Home</a>
+  <button class="mobile-bottom-btn" onclick="openSearch()"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>Search</button>
+  <a href="uniforms" class="mobile-bottom-btn active"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>Uniform</a>
+  <button class="mobile-bottom-btn" onclick="openCartDrawer()"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>Cart</button>
+</div></div>
+
 <div id="overlay" class="overlay"></div>
+<div id="quickview-modal" class="modal"><div class="modal-backdrop" onclick="closeQuickView()"></div><div class="modal-box quickview-modal" style="max-width:900px;padding:0;overflow:hidden"><div class="quickview-inner"><div class="quickview-gallery"><img src="" alt="Product" style="width:100%;height:100%;object-fit:cover"></div><div class="quickview-info" style="padding:40px;overflow-y:auto"></div></div></div></div>
 
 <main>
-  <div class="fabric-hero">
-    <div class="container">
-      <h1>Uniform Fabrics</h1>
-      <p>Premium khaki fabrics — Raymond, Vimal, Oswal, Digjam & more. BSF, CRPF, SSB, Police grade.</p>
-    </div>
+<section class="hero"><img class="hero-slide-img" src="/images/defence-hero-banner.jpg" alt="Uniform Fabrics" loading="eager" style="width:100%;height:100%;object-fit:contain;position:absolute;inset:0;background:#ffffff;"></section>
+<div class="container" style="padding:40px 0 60px">
+  <div style="text-align:center;margin-bottom:32px">
+    <h1 style="font-family:var(--font-serif);font-size:2rem;font-weight:400;margin-bottom:8px">Uniform Fabrics</h1>
+    <p style="color:var(--gray-500);font-size:.95rem">Premium khaki fabrics — Raymond, Vimal, Oswal, Digjam & more.</p>
   </div>
+  <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:32px">
+  <button class="uniform-subcat active" onclick="filterFabrics(event,'all')">All</button>
+    <button class="uniform-subcat" onclick="filterFabrics(event,'raymond')">Raymond</button>
+    <button class="uniform-subcat" onclick="filterFabrics(event,'vimal')">Vimal</button>
+    <button class="uniform-subcat" onclick="filterFabrics(event,'oswal')">Oswal</button>
+    <button class="uniform-subcat" onclick="filterFabrics(event,'bsf')">BSF</button>
+    <button class="uniform-subcat" onclick="filterFabrics(event,'crpf')">CRPF</button>
+    <button class="uniform-subcat" onclick="filterFabrics(event,'itbp')">ITBP</button>
+    <button class="uniform-subcat" onclick="filterFabrics(event,'cisf')">CISF</button>
+    <button class="uniform-subcat" onclick="filterFabrics(event,'ssb')">SSB</button>
+  </div>
+  <div class="products-grid" id="fabrics-grid"></div>
+</div>
+</main></main>
+
+<footer class="site-footer">
   <div class="container">
-    <div class="fabric-filters">
-      <button class="fabric-filter-btn active" onclick="filterFabrics('all')">All</button>
-      <button class="fabric-filter-btn" onclick="filterFabrics('raymond')">Raymond</button>
-      <button class="fabric-filter-btn" onclick="filterFabrics('vimal')">Vimal</button>
-      <button class="fabric-filter-btn" onclick="filterFabrics('oswal')">Oswal</button>
-      <button class="fabric-filter-btn" onclick="filterFabrics('bsf')">BSF</button>
-      <button class="fabric-filter-b" onclick="filterFabrics('crpf')">CRPF</button>
-      <button class="fabric-filter-btn" onclick="filterFabrics('itbp')">ITBP</button>
-      <button class="fabric-filter-btn" onclick="filterFabrics('cisf')">CISF</button>
-      <button class="fabric-filter-btn" onclick="filterFabrics('ssb')">SSB</button>
+    <div class="footer-top">
+      <div class="footer-brand"><span class="nav-logo">TREYOND WORLD</span><p>Premium police & defense uniforms for every force.</p><div class="footer-social"><a href="https://wa.me/919512102102" class="footer-social-link"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></a></div></div>
+      <div><div class="footer-col-title">Uniforms</div><div class="footer-links"><a href="/uniforms">All Uniforms</a><a href="/uniforms/bsf">BSF</a><a href="/uniforms/crpf">CRPF</a><a href="/uniforms/ssb">SSB</a><a href="/uniforms/police">Police</a><a href="/uniforms/crpf/combat">Combat</a><a href="/uniforms/accessories">Accessories</a></div></div>
+      <div><div class="footer-col-title">Bulk Orders</div><div class="footer-links"><a href="/bulk-inquiry">Bulk Order Inquiry</a><a href="https://wa.me/919512102102">WhatsApp Us</a></div></div>
+      <div><div class="footer-col-title">Help</div><div class="footer-links"><a href="/about">About Us</a><a href="/contact">Contact</a><a href="/shipping">Shipping</a><a href="/refund">Returns</a><a href="/privacy">Privacy</a></div></div>
     </div>
-    <div class="fabrics-grid" id="fabrics-grid"></div>
+    <div class="footer-bottom"><span>© 2025 Treyond World. All rights reserved.</span></div>
   </div>
-</main>
+</footer>
 
-<footer class="site-footer"><div class="container"><div class="footer-bottom"><span>© 2025 Treyond World. All rights reserved.</span></div></div></footer>
 <div id="toast-container" class="toast-container"></div>
-<script src="/js/global.js"></script>
-
+<script src="js/global.js"></script>
+<script src="js/search.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/uniform-data.js"></script>
+<script src="js/homepage.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  initHeroSlider();
+  renderProductGrid('bsf-grid', UNIFORM_PRODUCTS.filter(p => p.category === 'uniforms-bsf').slice(0,4));
+  renderProductGrid('crpf-grid', UNIFORM_PRODUCTS.filter(p => p.category === 'uniforms-crpf').slice(0,4));
+  renderProductGrid('crpf-combat-grid', UNIFORM_PRODUCTS.filter(p => p.category === 'uniforms-combat').slice(0,4));
+  renderProductGrid('ssb-combat-grid', UNIFORM_PRODUCTS.filter(p => p.category === 'uniforms-ssb-combat').slice(0,4));
+  renderProductGrid('police-grid', UNIFORM_PRODUCTS.filter(p => p.category === 'uniforms-police').slice(0,4));
+  renderProductGrid('ssb-grid', UNIFORM_PRODUCTS.filter(p => p.category === 'uniforms-ssb').slice(0,4));
+  renderProductGrid('accessories-grid', UNIFORM_PRODUCTS.filter(p => p.category === 'uniforms-accessories').slice(0,4));
+});
+</script>
+<script src="/js/seo.js"></script>
+</body>
+</html>
 <script>
 const R2 = 'https://pub-1b08920c6acc4bb5baf433020a5e3b47.r2.dev';
 const FABRICS = [
   {name:'Raymond Khaki Trovine',img:'CKS09590-copy-raymond-khaki-trovine-1.jpg',price:600},
   {name:'Oswal Khaki Linen',img:'CKS09598-oswal-khaki-linen-1.jpg',price:750},
   {name:'Oswal Linen Khaki',img:'CKS09596-oswal-linen-khaki-1.jpg',price:750},
-  {name:'Gredo Khaki TR',img:'CKS09604-redo-khaki-tr-1.jpg',price:800},
+  {name:'Gredo Khaki TR',img:'CKS09604-gredo-khaki-tr-1.jpg',price:800},
   {name:'Siyaram Nitivan',img:'CKS09608-siyaram-nitivan-1.jpg',price:820},
   {name:'Vimal Khaki NPA 251',img:'CKS09626-vimal-khaki-npa-251-1.jpg',price:550},
   {name:'Vimal Khaki Super Trovine',img:'CKS09630-vimal-khaki-super-trovine-1.jpg',price:500},
@@ -115,30 +192,26 @@ const FABRICS = [
   {name:'CRPF Arv Cotton Fabric',img:'CKS09802-crpf-arv-cotton-fabric-1.jpg',price:380},
   {name:'Green Man SSB Cotton',img:'CKS09808-green-man-ssb-cotton-1.jpg',price:350},
 ];
-
-function filterFabrics(tag) {
-  document.querySelectorAll('.fabric-filter-btn').forEach(b => b.classList.remove('active'));
-  event.target.classList.add('active');
-  const grid = document.getElementById('fabrics-grid');
+function filterFabrics(e, tag) {
+  document.querySelectorAll('.uniform-subcat').forEach(b => b.classList.remove('active'));
+  e.target.classList.add('active');
   const filtered = tag === 'all' ? FABRICS : FABRICS.filter(f => f.name.toLowerCase().includes(tag));
   renderGrid(filtered);
 }
-
 function renderGrid(list) {
   document.getElementById('fabrics-grid').innerHTML = list.map(f => `
-    <div class="fabric-card">
-      <div class="fabric-img-wrap">
-        <img src="${R2}/fabrics/${f.img}" alt="${f.name}" loading="lazy" onerror="this.src='/images/treyond-hero-banner.jpg'">
-      </div>
-      <div class="fabric-info">
-        <div class="fabric-name">${f.name}</div>
-        <div class="fabric-price">${f.price ? '₹'+f.price+' <span>/mtr</span>' : 'Price on request'}</div>
-        <a href="https://wa.me/919512102102?text=I want to enquire about ${encodeURIComponent(f.name)}" class="fabric-btn" target="_blank">💬 Enquire on WhatsApp</a>
-      </div>
+    <div class="product-card">
+      <a href="https://wa.me/919512102102?text=Enquiry: ${encodeURIComponent(f.name)}" target="_blank">
+        <div class="product-card-img-wrap">
+          <img class="product-card-img" src="${R2}/fabrics/${f.img}" alt="${f.name}" loading="lazy" onerror="this.src='/images/treyond-hero-banner.jpg'">
+        </div>
+        <div class="product-card-info">
+          <div class="product-card-name">${f.name}</div>
+          <div class="product-card-price">${f.price ? '<span class="product-price">₹'+f.price+' <small>/mtr<mall></span>' : '<span style="color:var(--gray-400);font-size:.8rem">Price on request</span>'}</div>
+          <div style="margin-top:8px;padding:8px;background:#25D366;color:#fff;text-align:center;font-size:.75rem;font-weight:600">💬 Enquire on WhatsApp</div>
+        </div>
+      </a>
     </div>`).join('');
 }
-
 renderGrid(FABRICS);
 </script>
-<script src="/js/seo.js"></script>
-</body></html>
