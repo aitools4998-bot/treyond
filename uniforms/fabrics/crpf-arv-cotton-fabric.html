@@ -41,16 +41,17 @@
 .pdp-desc{font-size:.875rem;line-height:1.7;color:#555;margin-top:16px}
 </style>
 
+
 <style>
 .related-section{padding:40px 0 60px;border-top:1px solid #eee;margin-top:40px}
 .related-title{font-family:var(--font-serif);font-size:1.4rem;font-weight:400;margin-bottom:24px}
 .related-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-@media(max-width:768px){.related-grid{grid-template-columns:repeat(2,1fr);gap:12px}}
+@media(max-width:768px){.related-grid{grid-template-columns:repeat(2,1fr);gap:10px}}
 .related-card{text-decoration:none;color:inherit;display:block}
-.related-card img{width:100%;aspect-ratio:1;object-fit:cover;background:#f5f5f5;display:block;margin-bottom:8px}
-.related-card-name{font-size:.82rem;font-weight:500;margin-bottom:4px;color:#222}
-.related-card-price{font-size:.8rem;color:#666}
-.related-card:hover img{opacity:.85}
+.related-card img{width:100%;aspect-ratio:1;object-fit:cover;background:#f5f5f5;display:block;margin-bottom:8px;transition:opacity .2s}
+.related-card-name{font-size:.82rem;font-weight:500;margin-bottom:3px;color:#222;line-height:1.3}
+.related-card-price{font-size:.78rem;color:#666}
+.related-card:hover img{opacity:.82}
 </style>
 </head>
 <body>
@@ -128,26 +129,70 @@
   </div>
 </div>
 
+
 <div class="container">
   <div class="related-section">
     <div class="related-title">You May Also Like</div>
     <div class="related-grid">
-      <a href="/uniforms/fabrics/vimal-khaki-super-trovine" class="related-card">
+<a href="/uniforms/fabrics/vimal-khaki-super-trovine" class="related-card">
       <img src="https://pub-1b08920c6acc4bb5baf433020a5e3b47.r2.dev/fabrics/CKS09630-vimal-khaki-super-trovine-1.jpg" alt="Vimal Khaki Super Trovine" loading="lazy" onerror="this.src='/images/treyond-hero-banner.jpg'">
       <div class="related-card-name">Vimal Khaki Super Trovine</div>
       <div class="related-card-price">Rs.500/mtr</div>
-    </a><a href="/uniforms/fabrics/vimal-khaki-npa-252" class="related-card">
-      <img src="https://pub-1b08920c6acc4bb5baf433020a5e3b47.r2.dev/fabrics/CKS09703-vimal-khaki-npa-252-1.jpg" alt="Vimal Khaki NPA 252" loading="lazy" onerror="this.src='/images/treyond-hero-banner.jpg'">
-      <div class="related-card-name">Vimal Khaki NPA 252</div>
-      <div class="related-card-price">Rs.550/mtr</div>
-    </a><a href="/uniforms/fabrics/raymond-trovine-khaki-itb" class="related-card">
-      <img src="https://pub-1b08920c6acc4bb5baf433020a5e3b47.r2.dev/fabrics/CKS09637-raymond-trovine-khaki-itb-1.jpg" alt="Raymond Trovine Khaki ITB" loading="lazy" onerror="this.src='/images/treyond-hero-banner.jpg'">
-      <div class="related-card-name">Raymond Trovine Khaki ITB</div>
-      <div class="related-card-price">Rs.650/mtr</div>
-    </a><a href="/uniforms/fabrics/raymond-natty" class="related-card">
+    </a>
+<a href="/uniforms/fabrics/green-man-ssb-cotton" class="related-card">
+      <img src="https://pub-1b08920c6acc4bb5baf433020a5e3b47.r2.dev/fabrics/CKS09808-green-man-ssb-cotton-1.jpg" alt="Green Man SSB Cotton" loading="lazy" onerror="this.src='/images/treyond-hero-banner.jpg'">
+      <div class="related-card-name">Green Man SSB Cotton</div>
+      <div class="related-card-price">Rs.350/mtr</div>
+    </a>
+<a href="/uniforms/fabrics/raymond-natty" class="related-card">
       <img src="https://pub-1b08920c6acc4bb5baf433020a5e3b47.r2.dev/fabrics/CKS09710-raymond-natty-1.jpg" alt="Raymond Natty" loading="lazy" onerror="this.src='/images/treyond-hero-banner.jpg'">
       <div class="related-card-name">Raymond Natty</div>
       <div class="related-card-price">Rs.600/mtr</div>
+    </a>
+<a href="/uniforms/fabrics/bsf-siyaram" class="related-card">
+      <img src="https://pub-1b08920c6acc4bb5baf433020a5e3b47.r2.dev/fabrics/CKS09690-bsf-siyaram-1.jpg" alt="BSF Siyaram" loading="lazy" onerror="this.src='/images/treyond-hero-banner.jpg'">
+      <div class="related-card-name">BSF Siyaram</div>
+      <div class="related-card-price">Rs.500/mtr</div>
+    </a>
+<a href="/uniforms/fabrics/cisf-cotton-rib" class="related-card">
+      <img src="https://pub-1b08920c6acc4bb5baf433020a5e3b47.r2.dev/fabrics/CKS09743-cisf-cotton-rib-1.jpg" alt="CISF Cotton Rib" loading="lazy" onerror="this.src='/images/treyond-hero-banner.jpg'">
+      <div class="related-card-name">CISF Cotton Rib</div>
+      <div class="related-card-price">Rs.300/mtr</div>
+    </a>
+<a href="/uniforms/fabrics/raymond-trovine-khaki" class="related-card">
+      <img src="https://pub-1b08920c6acc4bb5baf433020a5e3b47.r2.dev/fabrics/CKS09648-raymond-trovine-khaki-1.jpg" alt="Raymond Trovine Khaki" loading="lazy" onerror="this.src='/images/treyond-hero-banner.jpg'">
+      <div class="related-card-name">Raymond Trovine Khaki</div>
+      <div class="related-card-price">Rs.650/mtr</div>
+    </a>
+<a href="/uniforms/fabrics/gredo-khaki-tr" class="related-card">
+      <img src="https://pub-1b08920c6acc4bb5baf433020a5e3b47.r2.dev/fabrics/CKS09604-gredo-khaki-tr-1.jpg" alt="Gredo Khaki TR" loading="lazy" onerror="this.src='/images/treyond-hero-banner.jpg'">
+      <div class="related-card-name">Gredo Khaki TR</div>
+      <div class="related-card-price">Rs.800/mtr</div>
+    </a>
+<a href="/uniforms/fabrics/vimal-khaki-super-trovine-2" class="related-card">
+      <img src="https://pub-1b08920c6acc4bb5baf433020a5e3b47.r2.dev/fabrics/CKS09656-vimal-khaki-super-trovine-1.jpg" alt="Vimal Khaki Super Trovine 2" loading="lazy" onerror="this.src='/images/treyond-hero-banner.jpg'">
+      <div class="related-card-name">Vimal Khaki Super Trovine 2</div>
+      <div class="related-card-price">Rs.500/mtr</div>
+    </a>
+<a href="/uniforms/fabrics/raymond-trovine-khaki-itb" class="related-card">
+      <img src="https://pub-1b08920c6acc4bb5baf433020a5e3b47.r2.dev/fabrics/CKS09637-raymond-trovine-khaki-itb-1.jpg" alt="Raymond Trovine Khaki ITB" loading="lazy" onerror="this.src='/images/treyond-hero-banner.jpg'">
+      <div class="related-card-name">Raymond Trovine Khaki ITB</div>
+      <div class="related-card-price">Rs.650/mtr</div>
+    </a>
+<a href="/uniforms/fabrics/raymond-trovine-khaki-dark" class="related-card">
+      <img src="https://pub-1b08920c6acc4bb5baf433020a5e3b47.r2.dev/fabrics/CKS09697-raymond-trovine-khaki-dark-1.jpg" alt="Raymond Trovine Khaki Dark" loading="lazy" onerror="this.src='/images/treyond-hero-banner.jpg'">
+      <div class="related-card-name">Raymond Trovine Khaki Dark</div>
+      <div class="related-card-price">Rs.650/mtr</div>
+    </a>
+<a href="/uniforms/fabrics/siyaram-nitivan" class="related-card">
+      <img src="https://pub-1b08920c6acc4bb5baf433020a5e3b47.r2.dev/fabrics/CKS09608-siyaram-nitivan-1.jpg" alt="Siyaram Nitivan" loading="lazy" onerror="this.src='/images/treyond-hero-banner.jpg'">
+      <div class="related-card-name">Siyaram Nitivan</div>
+      <div class="related-card-price">Rs.820/mtr</div>
+    </a>
+<a href="/uniforms/fabrics/vimal-khaki-super-trovine-3" class="related-card">
+      <img src="https://pub-1b08920c6acc4bb5baf433020a5e3b47.r2.dev/fabrics/CKS04301-vimal-khaki-super-trovine-1.jpg" alt="Vimal Khaki Super Trovine 3" loading="lazy" onerror="this.src='/images/treyond-hero-banner.jpg'">
+      <div class="related-card-name">Vimal Khaki Super Trovine 3</div>
+      <div class="related-card-price">Rs.500/mtr</div>
     </a>
     </div>
   </div>
