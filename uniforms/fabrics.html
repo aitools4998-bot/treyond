@@ -1,0 +1,144 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Uniform Fabrics — Treyond World</title>
+<meta name="description" content="Premium khaki uniform fabrics — Raymond, Vimal, Oswal, Digjam. BSF, CRPF, SSB, Police grade fabrics. Buy online at best price.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/global.css"><link rel="stylesheet" href="/css/nav.css"><link rel="stylesheet" href="/css/footer.css">
+<style>
+.fabric-hero{background:#f8f6f0;padding:48px 0 32px;text-align:center;border-bottom:1px solid #e5e1d8}
+.fabric-hero h1{font-family:var(--font-serif);font-size:2.2rem;font-weight:400;margin-bottom:8px}
+.fabric-hero p{color:var(--gray-500);font-siz5rem}
+.fabric-filters{display:flex;gap:8px;flex-wrap:wrap;padding:20px 0;justify-content:center}
+.fabric-filter-btn{padding:6px 16px;border:1px solid var(--gray-200);font-size:.8rem;cursor:pointer;background:#fff;transition:all .2s}
+.fabric-filter-btn.active,.fabric-filter-btn:hover{background:#000;color:#fff;border-color:#000}
+.fabrics-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:24px;padding:32px 0 60px}
+.fabric-card{border:1px solid var(--gray-100);background:#fff;transition:box-shadow .2s}
+.fabric-card:hover{box-shadow:0 4px 20px rgba(0,0,0,.1)}
+.fabric-img-wrap{aspect-ratio:1;overflow:hidden;background:var(--gray-50)}
+.fabric-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.fabric-card:hover .fabric-img-wrap img{transform:scale(1.04)}
+.fabric-info{padding:14px}
+.fabric-name{font-size:.88rem;font-weight:500;margin-bottom:6px;line-height:1.4}
+.fabric-price{font-size:1rem;font-weight:700;color:#000;margin-bottom:10px}
+.fabric-price span{font-size:.75rem;font-weight:400;color:var(--gray-400)}
+.fabric-btn{display:block;text-align:center;padding:8px;background:#25D366;color:#fff;font-size:.78rem;font-weight:600;text-decoration:none;transition:background .2s}
+.fabric-btn:hover{background:#1da851}
+</style>
+</head>
+<body>
+<div id="announcement-bar" class="announcement-bar">✦ FREE SHIPPING ON ORDERS ABOVE ₹2999 &nbsp;|&nbsp; USE CODE <strong>TREYOND10</strong> FOR 10% OFF<button id="announcement-close" class="announcement-close">×</button></div>
+<header id="site-header" class="site-header">
+  <div class="container header-inner">
+    <button id="mobile-menu-btn" class="mobile-menu-btn"><span></span><span></span><span></span></button>
+    <a href="/uniforms" class="nav-logo">TREYOND WORLD</a>
+    <nav class="nav-menu">
+      <div class="nav-item"><a href="/uniforms" class="nav-link" style="font-weight:700">Uniforms</a></div>
+      <div class="nav-item"><a href="/uniforms/bsf" class="nav-link">BSF</a></div>
+      <div class="nav-item"><a href="/uns/crpf" class="nav-link">CRPF</a></div>
+      <div class="nav-item"><a href="/uniforms/ssb" class="nav-link">SSB</a></div>
+      <div class="nav-item"><a href="/uniforms/police" class="nav-link">Police</a></div>
+      <div class="nav-item"><a href="/uniforms/combat" class="nav-link">Combat</a></div>
+      <div class="nav-item"><a href="/uniforms/fabrics" class="nav-link" style="font-weight:700">Fabrics</a></div>
+    </nav>
+    <div class="nav-icons">
+      <button id="cart-icon" class="nav-icon-btn"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg><span class="cart-badge" style="display:none">0</span></button>
+    </div>
+  </div>
+</header>
+<div id="cart-drawer" class="cart-drawer"><div class="cart-drawer-header"><div class="cart-drawer-title">Shopping Bag</div><button id="cart-drawer-close" class="cart-drawer-close">✕</button></div><div id="cart-drawer-body" class="cart-dwer-body"></div><div class="cart-drawer-footer"><a href="/cart.html" class="btn btn-outline w-full" style="margin-bottom:10px">View Cart</a><a href="/checkout.html" class="btn btn-primary w-full">Checkout</a></div></div>
+<div id="overlay" class="overlay"></div>
+
+<main>
+  <div class="fabric-hero">
+    <div class="container">
+      <h1>Uniform Fabrics</h1>
+      <p>Premium khaki fabrics — Raymond, Vimal, Oswal, Digjam & more. BSF, CRPF, SSB, Police grade.</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="fabric-filters">
+      <button class="fabric-filter-btn active" onclick="filterFabrics('all')">All</button>
+      <button class="fabric-filter-btn" onclick="filterFabrics('raymond')">Raymond</button>
+      <button class="fabric-filter-btn" onclick="filterFabrics('vimal')">Vimal</button>
+      <button class="fabric-filter-btn" onclick="filterFabrics('oswal')">Oswal</button>
+      <button class="fabric-filter-btn" onclick="filterFabrics('bsf')">BSF</button>
+      <button class="fabric-filter-b" onclick="filterFabrics('crpf')">CRPF</button>
+      <button class="fabric-filter-btn" onclick="filterFabrics('itbp')">ITBP</button>
+      <button class="fabric-filter-btn" onclick="filterFabrics('cisf')">CISF</button>
+      <button class="fabric-filter-btn" onclick="filterFabrics('ssb')">SSB</button>
+    </div>
+    <div class="fabrics-grid" id="fabrics-grid"></div>
+  </div>
+</main>
+
+<footer class="site-footer"><div class="container"><div class="footer-bottom"><span>© 2025 Treyond World. All rights reserved.</span></div></div></footer>
+<div id="toast-container" class="toast-container"></div>
+<script src="/js/global.js"></script>
+
+<script>
+const R2 = 'https://pub-1b08920c6acc4bb5baf433020a5e3b47.r2.dev';
+const FABRICS = [
+  {name:'Raymond Khaki Trovine',img:'CKS09590-copy-raymond-khaki-trovine-1.jpg',price:600},
+  {name:'Oswal Khaki Linen',img:'CKS09598-oswal-khaki-linen-1.jpg',price:750},
+  {name:'Oswal Linen Khaki',img:'CKS09596-oswal-linen-khaki-1.jpg',price:750},
+  {name:'Gredo Khaki TR',img:'CKS09604-redo-khaki-tr-1.jpg',price:800},
+  {name:'Siyaram Nitivan',img:'CKS09608-siyaram-nitivan-1.jpg',price:820},
+  {name:'Vimal Khaki NPA 251',img:'CKS09626-vimal-khaki-npa-251-1.jpg',price:550},
+  {name:'Vimal Khaki Super Trovine',img:'CKS09630-vimal-khaki-super-trovine-1.jpg',price:500},
+  {name:'Raymond Trovine Khaki ITB',img:'CKS09637-raymond-trovine-khaki-itb-1.jpg',price:650},
+  {name:'Raymond Light Khaki Trovine',img:'CKS09644-raymond-light-khaki-trovine-1.jpg',price:600},
+  {name:'Raymond Trovine Khaki',img:'CKS09648-raymond-trovine-khaki-1.jpg',price:650},
+  {name:'Vimal Khaki Super Trovine',img:'CKS09656-vimal-khaki-super-trovine-1.jpg',price:500},
+  {name:'Digjam Khaki Fabric',img:'CKS09661-digjam-khaki-fabric-1.jpg',price:700},
+  {name:'Streeza Dual',img:'CKS09667-streeza-dual-1.jpg',price:900},
+  {name:'Angola Raymonds',img:'CKS09672-angola-raymonds-1.jpg',price:750},
+  {name:'BSF Vimal Khaki',img:'CKS09678-bsf-vimal-khaki-1.jpg',price:500},
+  {name:'BSF Greviera Khaki',img:'CKS09686-bsf-greviera-khaki-1.jpg',price:500},
+  {name:'BSF Siyaram',img:'CKS09690-bsf-siyaram-1.jpg',price:500},
+  {name:'Raymond Trovine Khaki Dark',img:'CKS09697-raymond-trovine-khaki-dark-1.jpg',price:650},
+  {name:'Vimal Khaki NPA 252',img:'CKS09703-vimal-khaki-npa-252-1.jpg',price:550},
+  {name:'Vimal Khaki Super Trovine',img:'CKS04301-vimal-khaki-super-trovine-1.jpg',price:500},
+  {name:'Raymond Natty',img:'CKS09710-raymond-natty-1.jpg',price:600},
+  {name:'Welzim Lady Singham Shade 1',img:'CKS09717-welzim-lady-singham-shade-1-2560m-1.jpg',price:null},
+  {name:'Welzim Lady Singham Shade 2',img:'CKS09727-welzim-lady-singham-shade-2-26m-1.jpg',price:null},
+  {name:'RSI Khaki BSF Fabric',img:'CKS09735-rsi-khaki-bsf-fabric-1.jpg',price:430},
+  {name:'CISF Cotton Rib',img:'CKS09743-cisf-cotton-rib-1.jpg',price:300},
+  {name:'ITBP Cotton Rib',img:'CKS09819-itbp-cotton-rib-1.jpg',price:300},
+  {name:'CISF Poly Cotton',img:'CKS09827-cisf-poly-cotton-1.jpg',price:200},
+  {name:'CRPF Combat Soft Cotton',img:'CKS09834-crpf-combat-soft-cotton-1.jpg',price:350},
+  {name:'ITBP Ajanta Oswal',img:'CKS09755-itbp-ajanta-oswal-1.jpg',price:240},
+  {name:'CRPF Rib Cotton',img:'CKS09763-crpf-rib-cotton-1.jpg',price:300},
+  {name:'CRPF Combat Vardhman Poly',img:'CKS09770-crpf-combat-vardhman-poly-1.jpg',price:250},
+  {name:'RAF Tuser',img:'CKS09778-raf-tuser-1.jpg',price:200},
+  {name:'SSB Polycotton',img:'CKS09786-ssb-polycotton-1.jpg',price:200},
+  {name:'ITBP Cotton',img:'CKS09794-itbp-cotton-1.jpg',price:300},
+  {name:'CRPF Arv Cotton Fabric',img:'CKS09802-crpf-arv-cotton-fabric-1.jpg',price:380},
+  {name:'Green Man SSB Cotton',img:'CKS09808-green-man-ssb-cotton-1.jpg',price:350},
+];
+
+function filterFabrics(tag) {
+  document.querySelectorAll('.fabric-filter-btn').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+  const grid = document.getElementById('fabrics-grid');
+  const filtered = tag === 'all' ? FABRICS : FABRICS.filter(f => f.name.toLowerCase().includes(tag));
+  renderGrid(filtered);
+}
+
+function renderGrid(list) {
+  document.getElementById('fabrics-grid').innerHTML = list.map(f => `
+    <div class="fabric-card">
+      <div class="fabric-img-wrap">
+        <img src="${R2}/fabrics/${f.img}" alt="${f.name}" loading="lazy" onerror="this.src='/images/treyond-hero-banner.jpg'">
+      </div>
+      <div class="fabric-info">
+        <div class="fabric-name">${f.name}</div>
+        <div class="fabric-price">${f.price ? '₹'+f.price+' <span>/mtr</span>' : 'Price on request'}</div>
+        <a href="https://wa.me/919512102102?text=I want to enquire about ${encodeURIComponent(f.name)}" class="fabric-btn" target="_blank">💬 Enquire on WhatsApp</a>
+      </div>
+    </div>`).join('');
+}
+
+renderGrid(FABRICS);
+</script>
+<script src="/js/seo.js"></script>
+</body></html>
