@@ -31,6 +31,13 @@
 .pdp-divider{border:none;border-top:1px solid var(--gray-100);margin:24px 0}
 .pdp-features{display:flex;flex-direction:column;gap:10px}
 .pdp-feature{display:flex;align-items:center;gap:10px;font-size:.85rem;color:#444}
+.length-btn{padding:10px 16px;border:1px solid var(--gray-200);background:#fff;font-size:.85rem;cursor:pointer;transition:all .2s}
+.length-btn.active,.length-btn:hover{border-color:#000;background:#000;color:#fff}
+.pdp-main-img{cursor:zoom-in}
+.img-zoom-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:2000;align-items:center;justify-content:center;cursor:zoom-out}
+.img-zoom-overlay.active{display:flex}
+.img-zoom-overlay img{max-width:90vw;max-height:90vh;object-fit:contain}
+.magnifier-hint{position:absolute;bottom:12px;right:12px;background:rgba(0,0,0,.5);color:#fff;font-size:.7rem;padding:4px 8px;pointer-events:none}
 .pdp-desc{font-size:.875rem;line-height:1.7;color:#555;margin-top:16px}
 </style>
 </head>
@@ -63,6 +70,7 @@
   <div class="pdp-wrap">
     <div class="pdp-gallery">
       <img id="main-img" class="pdp-main-img" src="https://pub-1b08920c6acc4bb5baf433020a5e3b47.r2.dev/fabrics/CKS09661-digjam-khaki-fabric-1.jpg" alt="Digjam Khaki Fabric Fabric" onerror="this.src='/images/treyond-hero-banner.jpg'">
+      <div class="magnifier-hint">Click to zoom</div>
       <div class="pdp-thumbs">
         <img class="pdp-thumb active" src="https://pub-1b08920c6acc4bb5baf433020a5e3b47.r2.dev/fabrics/CKS09661-digjam-khaki-fabric-1.jpg" onclick="switchImg(this)" onerror="this.style.display='none'" alt="Digjam Khaki Fabric 1">
         <img class="pdp-thumb" src="https://pub-1b08920c6acc4bb5baf433020a5e3b47.r2.dev/fabrics/CKS09663-digjam-khaki-fabric-2.jpg" onclick="switchImg(this)" onerror="this.style.display='none'" alt="Digjam Khaki Fabric 2">
@@ -74,12 +82,22 @@
       <div class="pdp-stars" id="stars-wrap"></div>
       <div class="pdp-price">Rs.700 /mtr</div>
       <div class="pdp-price-note">Inclusive of all taxes. Free shipping above Rs.2999.</div>
-      <div class="pdp-label">Quantity (meters)</div>
-      <div class="pdp-qty-ctrl">
-        <button onclick="changeQty(-1)">-</button>
-        <span id="qty">1</span>
-        <button onclick="changeQty(1)">+</button>
+      <div class="pdp-label">Select Length</div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px">
+        <button class="length-btn active" onclick="selectLength(this,1,'By meter')">By meter</button>
+        <button class="length-btn" onclick="selectLength(this,1.8,'Shirt (L) 1.8m')">Shirt (L) &middot; 1.8m</button>
+        <button class="length-btn" onclick="selectLength(this,1.6,'Shirt &middot; 1.6m')">Shirt &middot; 1.6m</button>
       </div>
+      <div class="pdp-label">Quantity</div>
+      <div style="display:flex;align-items:center;gap:0;margin-bottom:8px">
+        <div class="pdp-qty-ctrl">
+          <button onclick="changeQty(-1)">-</button>
+          <span id="qty">1</span>
+          <button onclick="changeQty(1)">+</button>
+        </div>
+        <span style="font-size:.85rem;color:#555;margin-left:10px">mts</span>
+      </div>
+      <p style="font-size:.8rem;color:#666;margin-bottom:16px">You will receive <span id="mtr-note">1 meter</span> of fabric</p>
       <div class="pdp-total" id="total-price">Total: Rs.700</div>
       <button class="pdp-add-btn" onclick="addToCart()">Add to Cart</button>
       <button class="pdp-wa-btn" onclick="orderOnWA()">
@@ -109,7 +127,30 @@
 <script>
 var qty=1,price=700,name='Digjam Khaki Fabric';
 function switchImg(el){document.getElementById('main-img').src=el.src;document.querySelectorAll('.pdp-thumb').forEach(function(t){t.classList.remove('active');});el.classList.add('active');}
-function changeQty(d){qty=Math.max(1,qty+d);document.getElementById('qty').textContent=qty;if(price)document.getElementById('total-price').textContent='Total: Rs.'+(price*qty).toLocaleString();}
+
+var selectedLength=1, selectedLengthName='By meter';
+function selectLength(btn,len,name){
+  selectedLength=len; selectedLengthName=name;
+  document.querySelectorAll('.length-btn').forEach(function(b){b.classList.remove('active');});
+  btn.classList.add('active');
+  updateTotal();
+}
+function updateTotal(){
+  var total=selectedLength*qty;
+  if(price) document.getElementById('total-price').textContent='Total: Rs.'+(price*total).toLocaleString();
+  document.getElementById('mtr-note').textContent=(total%1===0?total:total.toFixed(1))+' meter';
+}
+function changeQty(d){qty=Math.max(1,qty+d);document.getElementById('qty').textContent=qty;updateTotal();}
+
+// Image zoom
+document.querySelector('.pdp-main-img').addEventListener('click',function(){
+  var ov=document.getElementById('zoom-overlay');
+  document.getElementById('zoom-img').src=this.src;
+  ov.classList.add('active');
+});
+document.getElementById('zoom-overlay').addEventListener('click',function(){
+  this.classList.remove('active');
+});
 function addToCart(){Cart.add({id:'fabric-digjam-khaki-fabric',name:name+' ('+qty+' mtr)',price:price?price*qty:0,qty:1,image:'https://pub-1b08920c6acc4bb5baf433020a5e3b47.r2.dev/fabrics/CKS09661-digjam-khaki-fabric-1.jpg',variant:qty+' mtr'});}
 function orderOnWA(){var msg='Order: '+name+', '+qty+' mtr'+(price?', Total: Rs.'+(price*qty):'');window.open('https://wa.me/919512102102?text='+encodeURIComponent(msg),'_blank');}
 (function(){var r=4.7,c=89,s='';for(var i=1;i<=5;i++){s+='<svg width="15" height="15" viewBox="0 0 24 24" fill="'+(i<=Math.round(r)?'#f59e0b':'#d1d5db')+'"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>';}
