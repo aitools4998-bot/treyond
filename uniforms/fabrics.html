@@ -6,29 +6,9 @@
 <link rel="stylesheet" href="/css/global.css"><link rel="stylesheet" href="/css/nav.css"><link rel="stylesheet" href="/css/homepage.css"><link rel="stylesheet" href="/css/footer.css">
 <style>
 .hero{position:relative;width:100%;height:67vh;min-height:400px;max-height:700px;overflow:hidden;background:#fff;display:block}
-.hero-slide-img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:contaackground:#fff}
+.hero-slide-img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:contain;bacund:#fff}
 .uniform-subcat{padding:8px 18px;border:1px solid var(--gray-200);font-size:.8rem;font-weight:500;cursor:pointer;background:#fff;color:var(--gray-600);transition:all .2s}
 .uniform-subcat:hover,.uniform-subcat.active{background:#000;color:#fff;border-color:#000}
-.fabric-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:24px}
-.fabric-card{position:relative;border:1px solid var(--gray-100);background:#fff;transition:box-shadow .2s}
-.fabric-card:hover{box-shadow:0 4px 20px rgba(0,0,0,.12)}
-.fabric-img-wrap{position:relative;aspect-ratio:1;overflow:hidden;background:var(--gray-50)}
-.fabric-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
-.fabric-card:hover .fabric-img-wrap img{transform:scale(1.04)}
-.fabric-overlay{position:absolute;inset:0;background:rgba(0,0,0,.55);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;opacity:0;transition:opacity .25s}
-.fabric-card:hover .fabric-overlay{opacity:1}
-.fabric-overlay-btn{padding:10px 20px;font-size:.8rem;font-weight:600;letter-spacing:.05em;cursor:pointer;border:none;width:80%;text-align:center}
-.fabric-overlay-btn.primary{background:#fff;color:#000}
-.fabric-overlay-btn.secondary{background:transparent;color:#fff;border:1px solid #fff}
-.fabric-overlay-btn:hover{opacity:.85}
-.fabric-qty{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.5);padding:4px 12px;border-radius:2px}
-.fabric-qty button{background:none;border:none;color:#fff;font-size:1.1rem;cursor:pointer;padding:0 4px;line-height:1}
-.fabric-qty span{color:#fff;font-size:.85rem;min-width:20px;text-align:center}
-.fabric-info{padding:14px}
-.fabric-name{font-size:.88rem;font-weight:500;margin-bottom:4px;line-height:1.4}
-.fabric-stars{display:flex;align-items:center;gap:4px;margin-bottom:6px}
-.fabric-price{font-size:1rem;font-weight:700;color:#000}
-.fabric-price small{font-size:.75rem;font-weight:400;color:var(--gray-400)}
 .modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:1000;align-items:center;justify-content:center}
 .modal-overlay.active{display:flex}
 .modal-box{background:#fff;padding:32px;max-width:480px;width:90%;position:relative}
@@ -43,18 +23,19 @@
 .modal-qty-ctrl span{min-width:32px;text-align:center;font-size:.9rem}
 .modal-add-btn{width:100%;padding:14px;background:#000;color:#fff;border:none;font-size:.9rem;font-weight:600;letter-spacing:.05em;cursor:pointer;margin-bottom:8px}
 .modal-wa-btn{width:100%;padding:12px;background:#25D366;color:#fff;border:none;font-size:.85rem;font-weight:600;cursor:pointer}
+.product-card-quick{background:#000;color:#fff;border:none;padding:10px;font-size:.75rem;font-weight:600;letter-spacing:.05em;cursor:pointer;width:100%}
 </style>
 </head>
 <body>
 <div id="announcement-bar" class="announcement-bar">✦ FREE SHIPPING ON ORDERS ABOVE ₹2999 &nbsp;|&nbsp; USE CODE <strong>TREYOND10</strong> FOR 10% OFF<button id="announcement-close" class="announcement-close">×</button></div>
 <header id="site-header" class="site-header">
-  <div class="container header-inner">
+  <div class="container headerr">
     <button id="mobile-menu-btn" class="mobile-menu-btn"><span></span><span></span><span></span></button>
     <a href="/uniforms" class="nav-logo">TREYOND WORLD</a>
     <nav class="nav-menu">
       <div class="nav-item"><a href="/uniforms" class="nav-link" style="font-weight:700">Uniforms</a></div>
       <div class="nav-item"><a href="/uniforms/bsf" class="nav-link">BSF</a></div>
-      <div class="nav-item"><a href="/uniforms/crpf" class="nak">CRPF</a></div>
+      <div class="nav-item"><a href="/uniforms/crpf" class="nav-link">CRPF</a></div>
       <div class="nav-item"><a href="/uniforms/ssb" class="nav-link">SSB</a></div>
       <div class="nav-item"><a href="/uniforms/crpf/combat" class="nav-link">Combat</a></div>
       <div class="nav-item"><a href="/uniforms/accessories" class="nav-link">Accessories</a></div>
@@ -67,15 +48,14 @@
   </div>
 </header>
 <div id="search-bar" class="search-bar"><div class="search-bar-inner"><input id="search-input" type="search" placeholder="Search uniforms…" autocomplete="off"><button id="search-close" class="search-close">✕</button></div><div id="search-suggestions" class="search-suggestions"></div></div>
-<div id="cart-drawer" class="cart-drawer"><div class="cart-drawer-header"><div class="cart-drawer-title">Shopping Bag</div><button id="cart-drawer-close" class="cart-drawer-close">✕</button></div><div id="cart-drawer-body" class="cart-drawer-body"></div><div class="cart-drawer-footer"><a href="/cart.html" class="btn btn-outline w-full" style="margin-bottom:10px">View Cart</a><a href="/checkout.html" class="btn btn-primary w-full">Checkout</a></div></div>
+<div id="cart-drawer" class="cart-drawer"><div class="cart-drawer-header"><div class="cart-drawer-title">Shopping Bag</div><button id="cart-drawer-close" class="cart-drawer-close">✕</button></div><div id="cart-drawer-body" class="cart-drawer-body"></div><div class="cawer-footer"><a href="/cart.html" class="btn btn-outline w-full" style="margin-bottom:10px">View Cart</a><a href="/checkout.html" class="btn btn-primary w-full">Checkout</a></div></div>
 <div id="overlay" class="overlay"></div>
 
-<!-- Quick Add Modal -->
 <div class="modal-overlay" id="fabric-modal">
   <div class="modal-box">
     <button class="modal-close" onclick="closeModal()">✕</button>
     <img id="modal-img" src="" alt="" class="modal-img">
-    <divmodal-title" id="modal-name"></div>
+    <div class="modal-title" id="modal-name"></div>
     <div class="modal-price" id="modal-price"></div>
     <div class="modal-qty-wrap">
       <span class="modal-qty-label">Meters:</span>
@@ -87,7 +67,7 @@
       <span style="font-size:.8rem;color:var(--gray-400)" id="modal-total"></span>
     </div>
     <button class="modal-add-btn" onclick="addToCartFromModal()">ADD TO CART</button>
-    <button class="modal-wa-btn" onclick="waFromModal()">💬 Order on WhatsApp</button>
+    <button class="modal-wa-btn" onclickFromModal()">💬 Order on WhatsApp</button>
   </div>
 </div>
 
@@ -96,20 +76,20 @@
 <div class="container" style="padding:40px 0 60px">
   <div style="text-align:center;margin-bottom:32px">
     <h1 style="font-family:var(--font-serif);font-size:2rem;font-weight:400;margin-bottom:8px">Uniform Fabrics</h1>
-    <p st"color:var(--gray-500);font-size:.95rem">Premium khaki fabrics — Raymond, Vimal, Oswal, Digjam & more.</p>
+    <p style="color:var(--gray-500);font-size:.95rem">Premium khaki fabrics — Raymond, Vimal, Oswal, Digjam & more.</p>
   </div>
   <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:32px">
     <button class="uniform-subcat active" onclick="filterFabrics(event,'all')">All</button>
     <button class="uniform-subcat" onclick="filterFabrics(event,'raymond')">Raymond</button>
     <button class="uniform-subcat" onclick="filterFabrics(event,'vimal')">Vimal</button>
     <button class="uniform-subcat" onclick="filterFabrics(event,'oswal')">Oswal</button>
-    <button class="uniform-subcat" onclick="filterFabrics(event,'bsf')">BSF</button>
+    <bu class="uniform-subcat" onclick="filterFabrics(event,'bsf')">BSF</button>
     <button class="uniform-subcat" onclick="filterFabrics(event,'crpf')">CRPF</button>
     <button class="uniform-subcat" onclick="filterFabrics(event,'itbp')">ITBP</button>
     <button class="uniform-subcat" onclick="filterFabrics(event,'cisf')">CISF</button>
     <button class="uniform-subcat" onclick="filterFabrics(event,'ssb')">SSB</button>
   </div>
-  <div ass="fabric-grid" id="fabrics-grid"></div>
+  <div class="products-grid" id="fabrics-grid"></div>
 </div>
 </main>
 
@@ -123,7 +103,7 @@
 <script src="/js/search.js"></script>
 <script src="/js/animations.js"></script>
 <script>
-const R2='https://pu-1b08920c6acc4bb5baf433020a5e3b47.r2.dev';
+const R2='https://pub-1b08920c6acc4bb5baf433020a5e3b47.r2.dev';
 const FABRICS=[
   {name:'Raymond Khaki Trovine',img:'CKS09591-raymond-khaki-trovine-1.jpg',price:600},
   {name:'Oswal Khaki Linen',img:'CKS09599-oswal-khaki-linen-1.jpg',price:750},
@@ -131,7 +111,7 @@ const FABRICS=[
   {name:'Gredo Khaki TR',img:'CKS09604-gredo-khaki-tr-1.jpg',price:800},
   {name:'Siyaram Nitivan',img:'CKS09608-siyaram-nitivan-1.jpg',price:820},
   {name:'Vimal Khaki NPA 251',img:'CKS09626-vimal-khaki-npa-251-1.jpg',price:550},
-  {name:'Vimal Khaki Super Trovine',img:'CKS09630-vimal-khaki-super-trovine-1.jpg',price:500},
+  {name:'Vimal Khaki Super Trovine',img:'CKS0930-vimal-khaki-super-trovine-1.jpg',price:500},
   {name:'Raymond Trovine Khaki ITB',img:'CKS09637-raymond-trovine-khaki-itb-1.jpg',price:650},
   {name:'Raymond Light Khaki Trovine',img:'CKS09644-raymond-light-khaki-trovine-1.jpg',price:600},
   {name:'Raymond Trovine Khaki',img:'CKS09648-raymond-trovine-khaki-1.jpg',price:650},
@@ -180,7 +160,8 @@ function getRating(name){
 
 let currentFabric=null, modalQty=1;
 
-function openModal(f){
+function openModal(idx){
+  const f=FABRICS[idx];
   currentFabric=f; modalQty=1;
   document.getElementById('modal-img').src=R2+'/fabrics/'+f.img;
   document.getElementById('modal-name').textContent=f.name;
@@ -188,7 +169,7 @@ function openModal(f){
   document.getElementById('modal-qty').textContent=1;
   document.getElementById('modal-total').textContent=f.price?'Total: ₹'+f.price:'';
   document.getElementById('fabric-modal').classList.add('active');
-  document.bodyle.overflow='hidden';
+  document.body.style.overflow='hidden';
 }
 
 function closeModal(){
@@ -206,7 +187,7 @@ function changeQty(d){
   if(currentFabric?.price) document.getElementById('modal-total').textContent='Total: ₹'+(currentFabric.price*modalQty).toLocaleString();
 }
 
-function addToCartFromModal(){
+function addToomModal(){
   if(!currentFabric) return;
   Cart.add({
     id:'fabric-'+currentFabric.name.replace(/\s+/g,'-').toLowerCase(),
@@ -221,7 +202,7 @@ function addToCartFromModal(){
 
 function waFromModal(){
   if(!currentFabric) return;
-  const msg=`Enquiry: ${currentFabric.name}, ${modalQty} mtr${currtFabric.price?', Total: ₹'+(currentFabric.price*modalQty):''}`;
+  const msg='Enquiry: '+currentFabric.name+', '+modalQty+' mtr'+(currentFabric.price?', Total: ₹'+(currentFabric.price*modalQty):'');
   window.open('https://wa.me/919512102102?text='+encodeURIComponent(msg),'_blank');
 }
 
@@ -232,28 +213,26 @@ function filterFabrics(e,tag){
 }
 
 function renderGrid(list){
-  document.getElementById('fabrics-grid').innerHTML=list.map(f=>{
-    const {r,c}=getRating(f.name);
+  document.getElementById('fabrics-grid').innerHTML=list.map((f,i)=>{
+    const idx=FABRICS.indexOf(f);
+    const {r,c}=getRatg(f.name);
     const imgUrl=R2+'/fabrics/'+f.img;
-    return `<div class="fabric-card">
-      <div class="fabric-img-wrap">
-        <img src="${imgUrl}" alt="${f.name}" loading="lazy" onerror="this.src='/images/treyond-hero-banner.jpg'">
-        <div class="fabric-overlay">
-          <div class="fabric-qty">
-            <button onclick="event.stopPropagation();this.nextElementSibling.textContent=Math.max(1,parseInt(this.nextElementSibling.textContent)-1)">−</button>
-            <span>1</span>
-        <button onclick="event.stopPropagation();this.previousElementSibling.textContent=parseInt(this.previousElementSibling.textContent)+1">+</button>
-            <span style="color:#fff;font-size:.75rem;margin-left:2px">mtr</span>
+    const priceHtml=f.price?'<span class="product-price">₹'+f.price+'</span><span style="font-size:.75rem;color:var(--gray-400);font-weight:400"> /mtr</span>':'<span style="font-size:.8rem;color:var(--gray-400)">Price on request</span>';
+    const stars='<div style="display:flex;align-items:center;gap:3px;margin-bottom:4px">'+getStars(r)+'<span style="font-size:.72rem;color:#374151;font-weight:600;margin-left:2px">'+r.toFixed(1)+'</span><span style="font-size:.7rem;color:#6b7280">('+c+')</span></div>';
+    return `<div class="product-card reveal">
+      <a href="javascript:void(0)" onclick="openModal(${idx})">
+        <div class="product-card-img-wrap">
+          <img class="product-card-img" src="${imgUrl}" alt="${f.name}" loading="lazy" onerror="this.src='/images/treyond-hero-banner.jpg'">
+          <div class="product-card-actions">
+            <button class="product-card-quick" onclick="event.preventDefault();event.stopPropagation();openModal(${idx})">ick Add</button>
           </div>
-          <button class="fabric-overlay-btn primary" onclick="openModal(FABRICS.find(x=>x.name==='${f.name.replace(/'/g,"\\'")}'))">Quick Add</button>
-          <button class="fabric-overlay-btn secondary" onclick="window.open('https://wa.me/919512102102?text='+encodeURIComponent('Enquiry: ${f.name}'),'_blank')">WhatsApp</button>
         </div>
-      </div>
-      <div class="fabric-info">
-        <div class="fabric-name">${f.name}</div>
-        <div class="fabric-stars">${getStars(r)}<span style="font-size:.75rem;color:#374151;font-weight:600;margin-left:3px">${r.toFixed(1)}</span><span style="font-size:.72rem;color:#6b7280">(${c})</span></div>
-        <div class="fabric-price">${f.price?'₹'+f.price+' <small>/mtr</small>':'<span style="font-size:.8rem;color:var(-ray-400)">Price on request</span>'}</div>
-      </div>
+        <div class="product-card-info">
+          <div class="product-card-name">${f.name}</div>
+          ${stars}
+          <div class="product-card-price">${priceHtml}</div>
+        </div>
+      </a>
     </div>`;
   }).join('');
 }
